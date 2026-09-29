@@ -1,0 +1,36 @@
+{
+  "packages": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "priceRange": "€650 – €850 / month",
+      "description": "A steady baseline of content for businesses just starting to invest in social.",
+      "deliverables": ["4 short-form videos", "8-12 edited photos", "Content planning", "Monthly report"],
+      "bestFor": "Independent shops, single-location venues, first-time content clients"
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "priceRange": "€1,100 – €1,500 / month",
+      "description": "Our most popular package — enough volume and strategy to build real momentum.",
+      "deliverables": ["8 short-form videos", "15-25 photos", "Content calendar", "Creative strategy", "Monthly reporting"],
+      "bestFor": "Growing brands, multi-location businesses, hotels and restaurants"
+    },
+    {
+      "id": "partner",
+      "name": "Content Partner",
+      "priceRange": "€1,800 – €2,500+ / month",
+      "description": "A full content operation across every platform that matters, with priority production.",
+      "deliverables": ["12+ short-form videos", "25+ photos", "Multiple platforms", "Content strategy", "Campaign support", "Monthly reporting", "Priority production"],
+      "bestFor": "Multi-location brands, event venues, businesses running paid campaigns"
+    }
+  ],
+  "oneOffServices": [
+    { "id": "one-off-shoot", "name": "One-off shoot", "priceRange": "From €350", "description": "A single half-day or full-day photo/video shoot." },
+    { "id": "event-coverage", "name": "Event coverage", "priceRange": "From €450", "description": "Full event photography and/or video coverage with a same-week highlight edit." },
+    { "id": "product-photography", "name": "Product photography", "priceRange": "From €300", "description": "Studio or on-location product photography, e-commerce or campaign ready." },
+    { "id": "corporate-photography", "name": "Corporate photography", "priceRange": "From €400", "description": "Team portraits, office/venue photography and employer-branding content." },
+    { "id": "campaign-production", "name": "Campaign production", "priceRange": "Custom quote", "description": "Multi-day, multi-deliverable production for a seasonal or launch campaign." }
+  ],
+  "disclaimer": "All prices are starting/reference prices for planning purposes only. They are not official market rates and every engagement is custom-quoted based on scope."
+}

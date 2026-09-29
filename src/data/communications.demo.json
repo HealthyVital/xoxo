@@ -1,0 +1,146 @@
+[
+  {
+    "id": "comm-035",
+    "prospectId": "demo-prospect-018",
+    "date": "2026-08-30T09:00:00",
+    "channel": "Email",
+    "direction": "outbound",
+    "summary": "Email #1 sent — free content pilot offer."
+  },
+  {
+    "id": "comm-036",
+    "prospectId": "demo-prospect-018",
+    "date": "2026-09-01T14:00:00",
+    "channel": "Email",
+    "direction": "inbound",
+    "summary": "Opened (tracked)."
+  },
+  {
+    "id": "comm-037",
+    "prospectId": "demo-prospect-018",
+    "date": "2026-09-09T11:00:00",
+    "channel": "Instagram DM",
+    "direction": "outbound",
+    "summary": "Instagram DM sent referencing their weekend package."
+  },
+  {
+    "id": "comm-038",
+    "prospectId": "demo-prospect-018",
+    "date": "2026-09-14T16:30:00",
+    "channel": "Email",
+    "direction": "inbound",
+    "summary": "Positive reply — interested in a pilot."
+  },
+  {
+    "id": "comm-039",
+    "prospectId": "demo-prospect-018",
+    "date": "2026-09-19T10:00:00",
+    "channel": "Meeting",
+    "direction": "outbound",
+    "summary": "Discovery call booked and held — 30 min, marketing manager."
+  },
+  {
+    "id": "comm-040",
+    "prospectId": "demo-prospect-018",
+    "date": "2026-09-28T13:00:00",
+    "channel": "Note",
+    "direction": "outbound",
+    "summary": "Prepping pilot proposal for next follow-up."
+  },
+  {
+    "id": "comm-041",
+    "prospectId": "demo-prospect-023",
+    "date": "2026-08-20T09:00:00",
+    "channel": "Email",
+    "direction": "outbound",
+    "summary": "Email #1 sent."
+  },
+  {
+    "id": "comm-042",
+    "prospectId": "demo-prospect-023",
+    "date": "2026-08-24T09:00:00",
+    "channel": "Email",
+    "direction": "outbound",
+    "summary": "Follow-up #1 sent."
+  },
+  {
+    "id": "comm-043",
+    "prospectId": "demo-prospect-023",
+    "date": "2026-08-30T09:00:00",
+    "channel": "LinkedIn DM",
+    "direction": "outbound",
+    "summary": "LinkedIn DM sent to marketing contact."
+  },
+  {
+    "id": "comm-044",
+    "prospectId": "demo-prospect-023",
+    "date": "2026-09-04T12:00:00",
+    "channel": "Email",
+    "direction": "inbound",
+    "summary": "Replied — asked for pricing."
+  },
+  {
+    "id": "comm-045",
+    "prospectId": "demo-prospect-023",
+    "date": "2026-09-11T10:00:00",
+    "channel": "Meeting",
+    "direction": "outbound",
+    "summary": "Discovery call held."
+  },
+  {
+    "id": "comm-046",
+    "prospectId": "demo-prospect-023",
+    "date": "2026-09-17T15:00:00",
+    "channel": "Note",
+    "direction": "outbound",
+    "summary": "Free pilot delivered — 1 Reel, 5 photos, 3 concepts."
+  },
+  {
+    "id": "comm-047",
+    "prospectId": "demo-prospect-023",
+    "date": "2026-09-26T09:00:00",
+    "channel": "Email",
+    "direction": "outbound",
+    "summary": "Proposal sent (Growth package)."
+  },
+  {
+    "id": "comm-048",
+    "prospectId": "demo-prospect-027",
+    "date": "2026-06-01T09:00:00",
+    "channel": "Email",
+    "direction": "outbound",
+    "summary": "Email #1 sent."
+  },
+  {
+    "id": "comm-049",
+    "prospectId": "demo-prospect-027",
+    "date": "2026-06-11T09:00:00",
+    "channel": "Meeting",
+    "direction": "outbound",
+    "summary": "Discovery call held."
+  },
+  {
+    "id": "comm-050",
+    "prospectId": "demo-prospect-027",
+    "date": "2026-06-26T09:00:00",
+    "channel": "Note",
+    "direction": "outbound",
+    "summary": "Free pilot delivered and well received."
+  },
+  {
+    "id": "comm-051",
+    "prospectId": "demo-prospect-027",
+    "date": "2026-07-11T09:00:00",
+    "channel": "Email",
+    "direction": "outbound",
+    "summary": "Proposal sent (Growth package)."
+  },
+  {
+    "id": "comm-052",
+    "prospectId": "demo-prospect-027",
+    "date": "2026-07-31T09:00:00",
+    "channel": "Note",
+    "direction": "inbound",
+    "summary": "Signed — became a client."
+  }
+]

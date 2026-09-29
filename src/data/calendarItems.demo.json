@@ -1,0 +1,242 @@
+[
+  {
+    "id": "cal-061",
+    "date": "2026-09-19",
+    "clientId": "client-053",
+    "platform": "Instagram",
+    "contentType": "Reel",
+    "campaignId": "campaign-057",
+    "status": "Idea",
+    "approval": "Approved"
+  },
+  {
+    "id": "cal-062",
+    "date": "2026-09-22",
+    "clientId": "client-053",
+    "platform": "TikTok",
+    "contentType": "Photo carousel",
+    "campaignId": "campaign-057",
+    "status": "Script",
+    "approval": "Pending"
+  },
+  {
+    "id": "cal-063",
+    "date": "2026-09-25",
+    "clientId": "client-053",
+    "platform": "LinkedIn",
+    "contentType": "Story",
+    "campaignId": "campaign-057",
+    "status": "Scheduled",
+    "approval": "Changes Requested"
+  },
+  {
+    "id": "cal-064",
+    "date": "2026-09-28",
+    "clientId": "client-053",
+    "platform": "Instagram",
+    "contentType": "Short-form video",
+    "campaignId": "campaign-057",
+    "status": "Shot",
+    "approval": "Approved"
+  },
+  {
+    "id": "cal-065",
+    "date": "2026-10-01",
+    "clientId": "client-053",
+    "platform": "TikTok",
+    "contentType": "Reel",
+    "campaignId": "campaign-057",
+    "status": "Editing",
+    "approval": "Pending"
+  },
+  {
+    "id": "cal-066",
+    "date": "2026-10-04",
+    "clientId": "client-053",
+    "platform": "LinkedIn",
+    "contentType": "Photo carousel",
+    "campaignId": "campaign-057",
+    "status": "Client Review",
+    "approval": "Changes Requested"
+  },
+  {
+    "id": "cal-067",
+    "date": "2026-09-19",
+    "clientId": "client-054",
+    "platform": "Instagram",
+    "contentType": "Reel",
+    "campaignId": "campaign-058",
+    "status": "Idea",
+    "approval": "Approved"
+  },
+  {
+    "id": "cal-068",
+    "date": "2026-09-22",
+    "clientId": "client-054",
+    "platform": "TikTok",
+    "contentType": "Photo carousel",
+    "campaignId": "campaign-058",
+    "status": "Script",
+    "approval": "Pending"
+  },
+  {
+    "id": "cal-069",
+    "date": "2026-09-25",
+    "clientId": "client-054",
+    "platform": "LinkedIn",
+    "contentType": "Story",
+    "campaignId": "campaign-058",
+    "status": "Scheduled",
+    "approval": "Changes Requested"
+  },
+  {
+    "id": "cal-070",
+    "date": "2026-09-28",
+    "clientId": "client-054",
+    "platform": "Instagram",
+    "contentType": "Short-form video",
+    "campaignId": "campaign-058",
+    "status": "Shot",
+    "approval": "Approved"
+  },
+  {
+    "id": "cal-071",
+    "date": "2026-10-01",
+    "clientId": "client-054",
+    "platform": "TikTok",
+    "contentType": "Reel",
+    "campaignId": "campaign-058",
+    "status": "Editing",
+    "approval": "Pending"
+  },
+  {
+    "id": "cal-072",
+    "date": "2026-10-04",
+    "clientId": "client-054",
+    "platform": "LinkedIn",
+    "contentType": "Photo carousel",
+    "campaignId": "campaign-058",
+    "status": "Client Review",
+    "approval": "Changes Requested"
+  },
+  {
+    "id": "cal-073",
+    "date": "2026-09-19",
+    "clientId": "client-055",
+    "platform": "Instagram",
+    "contentType": "Reel",
+    "campaignId": "campaign-059",
+    "status": "Idea",
+    "approval": "Approved"
+  },
+  {
+    "id": "cal-074",
+    "date": "2026-09-22",
+    "clientId": "client-055",
+    "platform": "TikTok",
+    "contentType": "Photo carousel",
+    "campaignId": "campaign-059",
+    "status": "Script",
+    "approval": "Pending"
+  },
+  {
+    "id": "cal-075",
+    "date": "2026-09-25",
+    "clientId": "client-055",
+    "platform": "LinkedIn",
+    "contentType": "Story",
+    "campaignId": "campaign-059",
+    "status": "Scheduled",
+    "approval": "Changes Requested"
+  },
+  {
+    "id": "cal-076",
+    "date": "2026-09-28",
+    "clientId": "client-055",
+    "platform": "Instagram",
+    "contentType": "Short-form video",
+    "campaignId": "campaign-059",
+    "status": "Shot",
+    "approval": "Approved"
+  },
+  {
+    "id": "cal-077",
+    "date": "2026-10-01",
+    "clientId": "client-055",
+    "platform": "TikTok",
+    "contentType": "Reel",
+    "campaignId": "campaign-059",
+    "status": "Editing",
+    "approval": "Pending"
+  },
+  {
+    "id": "cal-078",
+    "date": "2026-10-04",
+    "clientId": "client-055",
+    "platform": "LinkedIn",
+    "contentType": "Photo carousel",
+    "campaignId": "campaign-059",
+    "status": "Client Review",
+    "approval": "Changes Requested"
+  },
+  {
+    "id": "cal-079",
+    "date": "2026-09-19",
+    "clientId": "client-056",
+    "platform": "Instagram",
+    "contentType": "Reel",
+    "campaignId": "campaign-060",
+    "status": "Idea",
+    "approval": "Approved"
+  },
+  {
+    "id": "cal-080",
+    "date": "2026-09-22",
+    "clientId": "client-056",
+    "platform": "TikTok",
+    "contentType": "Photo carousel",
+    "campaignId": "campaign-060",
+    "status": "Script",
+    "approval": "Pending"
+  },
+  {
+    "id": "cal-081",
+    "date": "2026-09-25",
+    "clientId": "client-056",
+    "platform": "LinkedIn",
+    "contentType": "Story",
+    "campaignId": "campaign-060",
+    "status": "Scheduled",
+    "approval": "Changes Requested"
+  },
+  {
+    "id": "cal-082",
+    "date": "2026-09-28",
+    "clientId": "client-056",
+    "platform": "Instagram",
+    "contentType": "Short-form video",
+    "campaignId": "campaign-060",
+    "status": "Shot",
+    "approval": "Approved"
+  },
+  {
+    "id": "cal-083",
+    "date": "2026-10-01",
+    "clientId": "client-056",
+    "platform": "TikTok",
+    "contentType": "Reel",
+    "campaignId": "campaign-060",
+    "status": "Editing",
+    "approval": "Pending"
+  },
+  {
+    "id": "cal-084",
+    "date": "2026-10-04",
+    "clientId": "client-056",
+    "platform": "LinkedIn",
+    "contentType": "Photo carousel",
+    "campaignId": "campaign-060",
+    "status": "Client Review",
+    "approval": "Changes Requested"
+  }
+]

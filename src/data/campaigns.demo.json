@@ -1,0 +1,59 @@
+[
+  {
+    "id": "campaign-057",
+    "name": "(Demo) Weekend Package Push",
+    "vertical": "Hotels & Hospitality",
+    "clientId": "client-053",
+    "objective": "Drive direct bookings for weekend packages",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
+    "status": "Live",
+    "contentIdeaIds": [],
+    "startDate": "2026-09-09",
+    "endDate": "2026-10-09"
+  },
+  {
+    "id": "campaign-058",
+    "name": "(Demo) New Product Launch",
+    "vertical": "Cosmetics & Beauty",
+    "clientId": "client-054",
+    "objective": "Launch new skincare line",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
+    "status": "In Production",
+    "contentIdeaIds": [],
+    "startDate": "2026-10-04"
+  },
+  {
+    "id": "campaign-059",
+    "name": "(Demo) New Collection Drop",
+    "vertical": "Footwear & Fashion",
+    "clientId": "client-055",
+    "objective": "Drive foot traffic and online sales for new collection",
+    "platforms": [
+      "Instagram",
+      "TikTok"
+    ],
+    "status": "Planning",
+    "contentIdeaIds": [],
+    "startDate": "2026-10-13"
+  },
+  {
+    "id": "campaign-060",
+    "name": "(Demo) Q4 Conference Aftermovies",
+    "vertical": "Events & Corporate",
+    "clientId": "client-056",
+    "objective": "Aftermovie package for Q4 conference season",
+    "platforms": [
+      "LinkedIn",
+      "Instagram"
+    ],
+    "status": "Planning",
+    "contentIdeaIds": [],
+    "startDate": "2026-10-19"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tpl-email-1",
+    "kind": "Email #1",
+    "sequenceDay": 0,
+    "subject": "Quick idea for {{companyName}}'s content",
+    "body": "Hi {{firstName}},\n\nI came across {{companyName}} and noticed {{specificObservation}}. We work with {{industry}} businesses in Rotterdam on short-form video and photography that's built specifically for Instagram and TikTok.\n\nOne idea that could work well for you: {{contentIdea}}.\n\nWe're currently offering a Free Content Pilot to a small number of {{industry}} businesses this quarter — {{pilotOffer}} — no strings attached, so you can see the quality and fit before committing to anything.\n\nWould a short call make sense? {{bookingLink}}\n\nIf this isn't relevant to you, just reply \"STOP\" and I won't reach out again.\n\nBest,\n[Your name]",
+    "variables": ["firstName", "companyName", "industry", "specificObservation", "contentIdea", "pilotOffer", "bookingLink"]
+  },
+  {
+    "id": "tpl-followup-1",
+    "kind": "Follow-up #1",
+    "sequenceDay": 3,
+    "subject": "Following up — {{companyName}}",
+    "body": "Hi {{firstName}},\n\nJust following up on my note about content for {{companyName}}. I know inboxes get busy, so here's the short version: {{contentIdea}}, delivered as part of a free pilot so there's no cost or commitment to see if it's a fit.\n\n{{bookingLink}}\n\nHappy to keep this brief — let me know either way.\n\nBest,\n[Your name]",
+    "variables": ["firstName", "companyName", "contentIdea", "bookingLink"]
+  },
+  {
+    "id": "tpl-followup-2",
+    "kind": "Follow-up #2",
+    "sequenceDay": 7,
+    "subject": "Last note — {{companyName}}",
+    "body": "Hi {{firstName}},\n\nOne last note on this. If {{specificObservation}} isn't a current priority for {{companyName}}, no worries at all — I'll leave it here.\n\nIf it is, the offer stands: {{pilotOffer}}. {{bookingLink}}\n\nAll the best,\n[Your name]",
+    "variables": ["firstName", "companyName", "specificObservation", "pilotOffer", "bookingLink"]
+  },
+  {
+    "id": "tpl-linkedin-dm",
+    "kind": "LinkedIn DM",
+    "sequenceDay": 7,
+    "body": "Hi {{firstName}} — I sent a note to {{companyName}} about {{contentIdea}} and wanted to reach out here too in case email isn't the best channel. We're running a Free Content Pilot for a handful of {{industry}} businesses in Rotterdam this quarter. Worth a quick chat? {{bookingLink}}",
+    "variables": ["firstName", "companyName", "contentIdea", "industry", "bookingLink"]
+  },
+  {
+    "id": "tpl-instagram-dm",
+    "kind": "Instagram DM",
+    "sequenceDay": 7,
+    "body": "Hey! Love what {{companyName}} is doing 👋 We help {{industry}} brands in Rotterdam turn moments like this into content — {{contentIdea}}. Running a free pilot for a few businesses this quarter, no cost, no catch. Want the details? {{bookingLink}}",
+    "variables": ["companyName", "industry", "contentIdea", "bookingLink"]
+  },
+  {
+    "id": "tpl-whatsapp-followup",
+    "kind": "WhatsApp follow-up",
+    "sequenceDay": 14,
+    "body": "Hi {{firstName}}, following up here in case it's easier — {{pilotOffer}} for {{companyName}}. Let me know if you'd like to grab 15 minutes: {{bookingLink}}. Reply STOP anytime to opt out.",
+    "variables": ["firstName", "pilotOffer", "companyName", "bookingLink"]
+  }
+]
