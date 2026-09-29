@@ -52,7 +52,7 @@ export default function Prospects() {
   }, [prospects, industry, status, companySize, minScore, search, sortKey, sortDir])
 
   function exportCsv() {
-    const headers = ['companyName', 'industry', 'city', 'status', 'leadScore', 'verificationStatus', 'website', 'source', 'sourceUrl']
+    const headers = ['companyName', 'phone', 'email', 'industry', 'city', 'status', 'leadScore', 'verificationStatus', 'website', 'source', 'sourceUrl']
     const rows = filtered.map((p) => headers.map((h) => JSON.stringify((p as unknown as Record<string, unknown>)[h] ?? '')).join(','))
     const csv = [headers.join(','), ...rows].join('\n')
     const blob = new Blob([csv], { type: 'text/csv' })
@@ -145,10 +145,12 @@ export default function Prospects() {
       </Card>
 
       <Card className="overflow-x-auto">
-        <table className="w-full min-w-[900px] text-sm">
+        <table className="w-full min-w-[1150px] text-sm">
           <thead>
             <tr className="border-b border-[var(--color-hairline)] text-left text-xs text-[var(--color-ink-muted)]">
               <th className="px-4 py-3 font-medium">Company</th>
+              <th className="px-4 py-3 font-medium">Phone</th>
+              <th className="px-4 py-3 font-medium">Email</th>
               <th className="px-4 py-3 font-medium">Industry</th>
               <th className="px-4 py-3 font-medium">City</th>
               <th className="px-4 py-3 font-medium">Status</th>
@@ -173,6 +175,20 @@ export default function Prospects() {
                   </div>
                   {p.website && <div className="text-xs text-[var(--color-ink-muted)]">{p.website}</div>}
                 </td>
+                <td className="px-4 py-3 text-[var(--color-ink-secondary)]">{p.phone || '—'}</td>
+                <td className="px-4 py-3 text-[var(--color-ink-secondary)]">
+                  {p.email ? (
+                    <a
+                      href={`mailto:${p.email}`}
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-[var(--color-brand)] hover:underline"
+                    >
+                      {p.email}
+                    </a>
+                  ) : (
+                    '—'
+                  )}
+                </td>
                 <td className="px-4 py-3 text-[var(--color-ink-secondary)]">{p.industry}</td>
                 <td className="px-4 py-3 text-[var(--color-ink-secondary)]">{p.city}</td>
                 <td className="px-4 py-3">
@@ -193,7 +209,7 @@ export default function Prospects() {
             ))}
             {filtered.length === 0 && (
               <tr>
-                <td colSpan={9} className="px-4 py-10 text-center text-sm text-[var(--color-ink-muted)]">
+                <td colSpan={11} className="px-4 py-10 text-center text-sm text-[var(--color-ink-muted)]">
                   No prospects match these filters.
                 </td>
               </tr>
