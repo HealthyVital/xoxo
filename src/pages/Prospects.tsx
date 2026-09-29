@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Plus, Search, Download } from 'lucide-react'
+import { Plus, Search, Download, ArrowUp, ArrowDown, ArrowUpDown } from 'lucide-react'
 import { useDataStore } from '@/store/DataStoreContext'
 import { PageHeader, DemoDataBanner } from '@/components/ui/Misc'
 import { Button } from '@/components/ui/Button'
@@ -11,9 +11,60 @@ import { ProspectDetailModal } from '@/components/prospects/ProspectDetailModal'
 import { ProspectFormModal } from '@/components/prospects/ProspectFormModal'
 import { VERTICALS } from '@/data/verticals'
 import { PROSPECT_STATUSES } from '@/data/statuses'
-import { formatDate, formatCurrencyEUR } from '@/lib/utils'
+import { formatDate, formatCurrencyEUR, cn } from '@/lib/utils'
+import type { Prospect } from '@/types'
 
-type SortKey = 'leadScore' | 'companyName' | 'lastContact' | 'nextFollowUp' | 'createdAt'
+type SortableKey =
+  | 'companyName'
+  | 'phone'
+  | 'email'
+  | 'industry'
+  | 'city'
+  | 'status'
+  | 'leadScore'
+  | 'verificationStatus'
+  | 'lastContact'
+  | 'nextFollowUp'
+  | 'dealValue'
+
+type ColumnType = 'text' | 'number' | 'date'
+
+const COLUMNS: { key: SortableKey; label: string; type: ColumnType }[] = [
+  { key: 'companyName', label: 'Company', type: 'text' },
+  { key: 'phone', label: 'Phone', type: 'text' },
+  { key: 'email', label: 'Email', type: 'text' },
+  { key: 'industry', label: 'Industry', type: 'text' },
+  { key: 'city', label: 'City', type: 'text' },
+  { key: 'status', label: 'Status', type: 'text' },
+  { key: 'leadScore', label: 'Lead score', type: 'number' },
+  { key: 'verificationStatus', label: 'Verification', type: 'text' },
+  { key: 'lastContact', label: 'Last contact', type: 'date' },
+  { key: 'nextFollowUp', label: 'Next follow-up', type: 'date' },
+  { key: 'dealValue', label: 'Deal value', type: 'number' },
+]
+
+function isEmptyValue(v: unknown) {
+  return v === undefined || v === null || v === ''
+}
+
+// Empty values (no phone, no email, no follow-up date, ...) always sort to the
+// bottom regardless of direction — sorting "empty vs. not empty" first, then
+// ordering whatever's left alphabetically, numerically or chronologically.
+function compareProspects(a: Prospect, b: Prospect, key: SortableKey, type: ColumnType, dir: 'asc' | 'desc') {
+  const av = a[key]
+  const bv = b[key]
+  const aEmpty = isEmptyValue(av)
+  const bEmpty = isEmptyValue(bv)
+  if (aEmpty && bEmpty) return 0
+  if (aEmpty) return 1
+  if (bEmpty) return -1
+
+  let cmp: number
+  if (type === 'number') cmp = (av as number) - (bv as number)
+  else if (type === 'date') cmp = new Date(av as string).getTime() - new Date(bv as string).getTime()
+  else cmp = String(av).localeCompare(String(bv))
+  return dir === 'asc' ? cmp : -cmp
+}
 
 export default function Prospects() {
   const { prospects } = useDataStore()
@@ -22,8 +73,18 @@ export default function Prospects() {
   const [status, setStatus] = useState('all')
   const [minScore, setMinScore] = useState(0)
   const [companySize, setCompanySize] = useState('all')
-  const [sortKey, setSortKey] = useState<SortKey>('leadScore')
+  const [sortKey, setSortKey] = useState<SortableKey>('leadScore')
   const [sortDir, setSortDir] = useState<'asc' | 'desc'>('desc')
+
+  function handleSort(key: SortableKey, type: ColumnType) {
+    if (key === sortKey) {
+      setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'))
+    } else {
+      setSortKey(key)
+      // Text starts A→Z; numbers and dates start highest/most-recent first.
+      setSortDir(type === 'text' ? 'asc' : 'desc')
+    }
+  }
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [showAdd, setShowAdd] = useState(false)
   const selected = selectedId ? (prospects.find((p) => p.id === selectedId) ?? null) : null
@@ -41,13 +102,8 @@ export default function Prospects() {
       }
       return true
     })
-    list = [...list].sort((a, b) => {
-      let cmp = 0
-      if (sortKey === 'leadScore') cmp = a.leadScore - b.leadScore
-      else if (sortKey === 'companyName') cmp = a.companyName.localeCompare(b.companyName)
-      else cmp = new Date(a[sortKey] ?? 0).getTime() - new Date(b[sortKey] ?? 0).getTime()
-      return sortDir === 'asc' ? cmp : -cmp
-    })
+    const columnType = COLUMNS.find((c) => c.key === sortKey)?.type ?? 'text'
+    list = [...list].sort((a, b) => compareProspects(a, b, sortKey, columnType, sortDir))
     return list
   }, [prospects, industry, status, companySize, minScore, search, sortKey, sortDir])
 
@@ -126,20 +182,7 @@ export default function Prospects() {
           </div>
         </div>
         <div className="mt-3 flex items-center gap-2 text-xs text-[var(--color-ink-secondary)]">
-          <span>Sort by</span>
-          <Select value={sortKey} onChange={(e) => setSortKey(e.target.value as SortKey)} className="h-8 w-auto py-1">
-            <option value="leadScore">Lead score</option>
-            <option value="companyName">Company name</option>
-            <option value="lastContact">Last contact</option>
-            <option value="nextFollowUp">Next follow-up</option>
-            <option value="createdAt">Date added</option>
-          </Select>
-          <button
-            className="rounded-md border border-[var(--color-border-strong)] px-2 py-1"
-            onClick={() => setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'))}
-          >
-            {sortDir === 'asc' ? '↑ Asc' : '↓ Desc'}
-          </button>
+          <span className="text-[var(--color-ink-muted)]">Click a column header to sort by it.</span>
           <span className="ml-auto">{filtered.length} of {prospects.length} prospects</span>
         </div>
       </Card>
@@ -148,17 +191,34 @@ export default function Prospects() {
         <table className="w-full min-w-[1150px] text-sm">
           <thead>
             <tr className="border-b border-[var(--color-hairline)] text-left text-xs text-[var(--color-ink-muted)]">
-              <th className="px-4 py-3 font-medium">Company</th>
-              <th className="px-4 py-3 font-medium">Phone</th>
-              <th className="px-4 py-3 font-medium">Email</th>
-              <th className="px-4 py-3 font-medium">Industry</th>
-              <th className="px-4 py-3 font-medium">City</th>
-              <th className="px-4 py-3 font-medium">Status</th>
-              <th className="px-4 py-3 font-medium">Lead score</th>
-              <th className="px-4 py-3 font-medium">Verification</th>
-              <th className="px-4 py-3 font-medium">Last contact</th>
-              <th className="px-4 py-3 font-medium">Next follow-up</th>
-              <th className="px-4 py-3 font-medium">Deal value</th>
+              {COLUMNS.map((col) => {
+                const active = sortKey === col.key
+                return (
+                  <th key={col.key} className="px-4 py-3 font-medium">
+                    <button
+                      onClick={() => handleSort(col.key, col.type)}
+                      className={cn(
+                        'inline-flex items-center gap-1 hover:text-[var(--color-ink)]',
+                        active && 'text-[var(--color-ink)]',
+                      )}
+                      title={
+                        col.type === 'number'
+                          ? 'Sort high to low / low to high'
+                          : col.type === 'date'
+                            ? 'Sort by date; empty last'
+                            : 'Sort A–Z / Z–A; empty last'
+                      }
+                    >
+                      {col.label}
+                      {active ? (
+                        sortDir === 'asc' ? <ArrowUp size={12} /> : <ArrowDown size={12} />
+                      ) : (
+                        <ArrowUpDown size={12} className="opacity-30" />
+                      )}
+                    </button>
+                  </th>
+                )
+              })}
             </tr>
           </thead>
           <tbody>
