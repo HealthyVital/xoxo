@@ -9,12 +9,12 @@
     "source": "IHG hotel directory",
     "sourceUrl": "https://www.ihg.com/holidayinnexpress/hotels/us/en/rotterdam/rtmcs/hoteldetail",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -31,7 +31,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31-20-7979196"
   },
   {
     "id": "hilton-rotterdam-rtm",
@@ -115,12 +116,12 @@
     "source": "Accor hotel directory",
     "sourceUrl": "https://all.accor.com/hotel/8188/index.en.shtml",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -137,7 +138,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31 10 750 2520"
   },
   {
     "id": "h3-hotel-rotterdam-city-center-rtm",
@@ -182,12 +184,12 @@
     "source": "Thon Hotels directory",
     "sourceUrl": "https://www.thonhotels.com/hotels/netherlands/rotterdam/thon-hotel-rotterdam/",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -204,7 +206,11 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31 10 413 47 90",
+    "email": "Reservations.nl@thon.com",
+    "address": "Willemsplein 1, 3016 DN Rotterdam",
+    "postalCode": "3016 DN"
   },
   {
     "id": "cityhub-rotterdam-rtm",
@@ -215,12 +221,12 @@
     "source": "Tripadvisor Rotterdam hotel listing",
     "sourceUrl": "https://www.tripadvisor.com/HotelsList-Rotterdam-Downtown-Hotels-zfp706788.html",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -237,24 +243,28 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31-10-3075830",
+    "email": "rotterdam@cityhub.com",
+    "address": "Witte de Withstraat 87, 3012 BN Rotterdam",
+    "postalCode": "3012 BN"
   },
   {
     "id": "the-james-hotel-rotterdam-rtm",
     "companyName": "The James Hotel Rotterdam",
     "industry": "Hotels & Hospitality",
     "subIndustry": "Independent hotel",
-    "address": "Aert van Nesstraat, Rotterdam",
+    "address": "Aert van Nesstraat 25, 3012 CA Rotterdam",
     "city": "Rotterdam",
     "source": "Tripadvisor Rotterdam hotel listing",
     "sourceUrl": "https://www.tripadvisor.com/HotelsList-Rotterdam-Downtown-Hotels-zfp706788.html",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -271,7 +281,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31 (0) 10 7605070",
+    "email": "info@thejames.nl",
+    "postalCode": "3012 CA"
   },
   {
     "id": "nh-atlanta-hotel-rotterdam-rtm",
@@ -283,12 +296,12 @@
     "source": "Tripadvisor Rotterdam hotel listing",
     "sourceUrl": "https://www.tripadvisor.com/HotelsList-Rotterdam-Downtown-Hotels-zfp706788.html",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -305,7 +318,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31 10-206-7800"
   },
   {
     "id": "leonardo-hotel-rotterdam-savoy-rtm",
@@ -316,12 +330,12 @@
     "source": "Tripadvisor Rotterdam hotel listing",
     "sourceUrl": "https://www.tripadvisor.com/HotelsList-Rotterdam-Downtown-Hotels-zfp706788.html",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -338,7 +352,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "31 10-413-9280",
+    "address": "Hoogstraat 81, 3011 PJ Rotterdam",
+    "postalCode": "3011 PJ"
   },
   {
     "id": "postillion-hotel-convention-centre-wtc-rotterdam-rtm",
@@ -349,13 +366,13 @@
     "source": "Meetings & Conventions venue directory",
     "sourceUrl": "https://www.meetings-conventions.com/Meeting-Event-Venues/Rotterdam-Netherlands/Convention-Centers",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 35,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
       "+10 — Business is built around hosting events",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -372,7 +389,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31 (0)10 405 4462"
   },
   {
     "id": "the-social-hub-rotterdam-rtm",
@@ -415,18 +433,18 @@
     "industry": "Cosmetics & Beauty",
     "subIndustry": "Independent skincare & cosmetics store",
     "website": "misunara.nl",
-    "address": "Black Janstraat 73A, 3035 AM Rotterdam",
+    "address": "Zwart Janstraat 73A, 3035 AM Rotterdam",
     "city": "Rotterdam",
     "postalCode": "3035 AM",
     "source": "Company website",
     "sourceUrl": "https://misunara.nl/en",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on product close-up and routine video content.",
     "companySize": "Unknown",
@@ -443,7 +461,9 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "085 004 7968",
+    "email": "info@misunara.nl"
   },
   {
     "id": "haru-haru-beauty-rotterdam-rtm",
@@ -493,12 +513,12 @@
     "source": "Company website",
     "sourceUrl": "https://yaoskin.com/",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on product close-up and routine video content.",
     "companySize": "Unknown",
@@ -515,7 +535,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "email": "info@yaoskin.com"
   },
   {
     "id": "skins-cosmetics-rotterdam-rtm",
@@ -628,12 +649,12 @@
     "source": "Rotterdam cosmetics store roundup",
     "sourceUrl": "https://www.rotterdamballooncompany.com/blog/cosmetics-stores-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on product close-up and routine video content.",
     "companySize": "Unknown",
@@ -650,7 +671,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4666383",
+    "address": "Haagseveer 120, 3011 DB Rotterdam",
+    "postalCode": "3011 DB"
   },
   {
     "id": "le-salon-glawbeauty-rtm",
@@ -694,12 +718,12 @@
     "source": "Rotterdam cosmetics store roundup",
     "sourceUrl": "https://www.rotterdamballooncompany.com/blog/cosmetics-stores-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on product close-up and routine video content.",
     "companySize": "Unknown",
@@ -716,7 +740,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-7956740",
+    "address": "Heemraadssingel 180, 3021 DL Rotterdam",
+    "postalCode": "3021 DL"
   },
   {
     "id": "ave-esthetique-rotterdam-rtm",
@@ -760,12 +787,12 @@
     "source": "Rotterdam Centrum shopping guide",
     "sourceUrl": "https://www.rotterdamcentrum.nl/en/discover/shopping/discover-various-shops-in-rotterdam-centre/shoe-shops-in-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a new-arrivals product + try-on Reel.",
     "companySize": "Unknown",
@@ -782,7 +809,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-2800600"
   },
   {
     "id": "woei-rtm",
@@ -829,12 +857,12 @@
     "source": "Rotterdam Centrum shopping guide",
     "sourceUrl": "https://www.rotterdamcentrum.nl/en/discover/shopping/discover-various-shops-in-rotterdam-centre/shoe-shops-in-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a new-arrivals product + try-on Reel.",
     "companySize": "Unknown",
@@ -851,7 +879,9 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4127351",
+    "email": "info@bothschoenen.nl"
   },
   {
     "id": "both-rotterdam-dames-rtm",
@@ -863,12 +893,12 @@
     "source": "Rotterdam Centrum shopping guide",
     "sourceUrl": "https://www.rotterdamcentrum.nl/en/discover/shopping/discover-various-shops-in-rotterdam-centre/shoe-shops-in-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a new-arrivals product + try-on Reel.",
     "companySize": "Unknown",
@@ -885,7 +915,9 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4131156",
+    "email": "info@bothschoenen.nl"
   },
   {
     "id": "apotheek-erasmus-rtm",
@@ -896,12 +928,12 @@
     "source": "ZorgkaartNederland pharmacy directory",
     "sourceUrl": "https://www.zorgkaartnederland.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -918,7 +950,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4129331",
+    "address": "West-Kruiskade 21A, 3014 AK Rotterdam",
+    "postalCode": "3014 AK"
   },
   {
     "id": "medsen-apotheek-rtm",
@@ -962,12 +997,12 @@
     "source": "ZorgkaartNederland pharmacy directory",
     "sourceUrl": "https://www.zorgkaartnederland.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -984,7 +1019,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4123598",
+    "address": "Oudedijk 60M, 3062 AE Rotterdam",
+    "postalCode": "3062 AE"
   },
   {
     "id": "mediq-apotheek-noordereiland-rtm",
@@ -1028,12 +1066,12 @@
     "source": "ZorgkaartNederland pharmacy directory",
     "sourceUrl": "https://www.zorgkaartnederland.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1050,7 +1088,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4772644",
+    "address": "Beukelsdijk 134-138, 3022 DL Rotterdam",
+    "postalCode": "3022 DL"
   },
   {
     "id": "apotheek-m-cohen-rtm",
@@ -1061,12 +1102,12 @@
     "source": "ZorgkaartNederland pharmacy directory",
     "sourceUrl": "https://www.zorgkaartnederland.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1083,7 +1124,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4764319",
+    "address": "Schiedamseweg 158, 3025 AK Rotterdam",
+    "postalCode": "3025 AK"
   },
   {
     "id": "benu-apotheek-t-slag-rtm",
@@ -1095,12 +1139,12 @@
     "source": "BENU pharmacy directory",
     "sourceUrl": "https://www.benu.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1117,7 +1161,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4324955",
+    "address": "Sandelingplein 16a, 3075 AG Rotterdam",
+    "postalCode": "3075 AG"
   },
   {
     "id": "benu-apotheek-aelbrechtskade-rtm",
@@ -1129,12 +1176,12 @@
     "source": "BENU pharmacy directory",
     "sourceUrl": "https://www.benu.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1151,7 +1198,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-3104410",
+    "address": "Aelbrechtskade 82, 3023 JA Rotterdam",
+    "postalCode": "3023 JA"
   },
   {
     "id": "benu-apotheek-charlois-rtm",
@@ -1163,12 +1213,12 @@
     "source": "BENU pharmacy directory",
     "sourceUrl": "https://www.benu.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1185,7 +1235,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4290983",
+    "address": "Boergoensestraat 78, 3082 KC Rotterdam",
+    "postalCode": "3082 KC"
   },
   {
     "id": "benu-apotheek-crooswijk-rtm",
@@ -1197,12 +1250,12 @@
     "source": "BENU pharmacy directory",
     "sourceUrl": "https://www.benu.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1219,7 +1272,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4136727",
+    "address": "Crooswijkseweg 65A, 3034 HD Rotterdam",
+    "postalCode": "3034 HD"
   },
   {
     "id": "benu-apotheek-de-esch-rtm",
@@ -1231,12 +1287,12 @@
     "source": "BENU pharmacy directory",
     "sourceUrl": "https://www.benu.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1253,7 +1309,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4528464",
+    "address": "Rijnwaterstraat 43, 3063 HC Rotterdam",
+    "postalCode": "3063 HC"
   },
   {
     "id": "benu-apotheek-hesseplaats-rtm",
@@ -1299,12 +1358,12 @@
     "source": "BENU pharmacy directory",
     "sourceUrl": "https://www.benu.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1321,7 +1380,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4201202",
+    "address": "Henk Speksnijderstraat 10, 3067 AC Rotterdam",
+    "postalCode": "3067 AC"
   },
   {
     "id": "benu-apotheek-laan-op-zuid-rtm",
@@ -1333,12 +1395,12 @@
     "source": "BENU pharmacy directory",
     "sourceUrl": "https://www.benu.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1355,7 +1417,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4863177",
+    "address": "Laan op Zuid 919, 3072 DB Rotterdam",
+    "postalCode": "3072 DB"
   },
   {
     "id": "benu-apotheek-lange-hille-rtm",
@@ -1401,12 +1466,12 @@
     "source": "BENU pharmacy directory",
     "sourceUrl": "https://www.benu.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1423,7 +1488,11 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4155519",
+    "email": "oudmathenesse@benu.nl",
+    "address": "Franselaan 246a, 3028 AR Rotterdam",
+    "postalCode": "3028 AR"
   },
   {
     "id": "benu-apotheek-reyeroord-rtm",
@@ -1435,12 +1504,12 @@
     "source": "BENU pharmacy directory",
     "sourceUrl": "https://www.benu.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1457,7 +1526,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4790500",
+    "address": "Kouwenoord 89, 3079 LG Rotterdam",
+    "postalCode": "3079 LG"
   },
   {
     "id": "benu-apotheek-rosestraat-rtm",
@@ -1469,12 +1541,12 @@
     "source": "BENU pharmacy directory",
     "sourceUrl": "https://www.benu.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1491,7 +1563,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4850308",
+    "address": "Rosestraat 91, 3071 JP Rotterdam",
+    "postalCode": "3071 JP"
   },
   {
     "id": "benu-apotheek-spangen-rtm",
@@ -1537,12 +1612,12 @@
     "source": "BENU pharmacy directory",
     "sourceUrl": "https://www.benu.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1559,7 +1634,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4362122",
+    "address": "Nieuwe Binnenweg 143, 3014 GJ Rotterdam",
+    "postalCode": "3014 GJ"
   },
   {
     "id": "apotheek-j-van-den-berg-rtm",
@@ -1570,12 +1648,12 @@
     "source": "ZorgkaartNederland pharmacy directory",
     "sourceUrl": "https://www.zorgkaartnederland.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1592,7 +1670,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4163243",
+    "address": "Binnenban 172-176, 3191 CL Rotterdam",
+    "postalCode": "3191 CL"
   },
   {
     "id": "apotheek-dante-rtm",
@@ -1603,12 +1684,12 @@
     "source": "ZorgkaartNederland pharmacy directory",
     "sourceUrl": "https://www.zorgkaartnederland.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1625,7 +1706,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4192884",
+    "address": "Dantestraat 456, 3076 KV Rotterdam",
+    "postalCode": "3076 KV"
   },
   {
     "id": "service-apotheek-dorpsweg-rtm",
@@ -1636,12 +1720,12 @@
     "source": "ZorgkaartNederland pharmacy directory",
     "sourceUrl": "https://www.zorgkaartnederland.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1658,7 +1742,11 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4814197",
+    "email": "dorpswegapotheek@ezorg.nl",
+    "address": "Dorpsweg 160 C, 3083 LK Rotterdam",
+    "postalCode": "3083 LK"
   },
   {
     "id": "service-apotheek-van-waert-rtm",
@@ -1669,12 +1757,12 @@
     "source": "ZorgkaartNederland pharmacy directory",
     "sourceUrl": "https://www.zorgkaartnederland.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1691,7 +1779,11 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4808636",
+    "email": "assistente@apotheek-vanwaert.nl",
+    "address": "Schere 31, 3085 DT Rotterdam",
+    "postalCode": "3085 DT"
   },
   {
     "id": "apotheek-schiemond-rotterdam-rtm",
@@ -1702,12 +1794,12 @@
     "source": "ZorgkaartNederland pharmacy directory",
     "sourceUrl": "https://www.zorgkaartnederland.nl/apotheek/rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
     "companySize": "Unknown",
@@ -1724,7 +1816,11 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4778810",
+    "email": "info@apotheekschiemond.nl",
+    "address": "Pelgrimsstraat 10, 3029 BJ Rotterdam",
+    "postalCode": "3029 BJ"
   },
   {
     "id": "rotterdam-ahoy-rtm",
@@ -1735,13 +1831,13 @@
     "source": "Eventplanner.net venue directory",
     "sourceUrl": "https://www.eventplanner.net/event-venue-rental/in-NL3000-rotterdam.html",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 35,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
       "+10 — Business is built around hosting events",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -1758,7 +1854,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-2933300"
   },
   {
     "id": "de-doelen-rtm",
@@ -1769,13 +1866,13 @@
     "source": "Eventplanner.net venue directory",
     "sourceUrl": "https://www.eventplanner.net/conference-hall-centre-rental/in-NL3000-rotterdam.html",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
       "+10 — Business is built around hosting events",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -1792,7 +1889,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-2171700",
+    "address": "Kruisstraat 2, 3012 CT Rotterdam",
+    "postalCode": "3012 CT"
   },
   {
     "id": "world-trade-center-rotterdam-rtm",
@@ -1803,13 +1903,13 @@
     "source": "Meetings & Conventions venue directory",
     "sourceUrl": "https://www.meetings-conventions.com/Meeting-Event-Venues/Rotterdam-Netherlands/Convention-Centers",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
       "+10 — Business is built around hosting events",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -1826,7 +1926,9 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31 10 405 4444",
+    "email": "receptie@wtcrotterdam.com"
   },
   {
     "id": "rdm-rotterdam-rtm",
@@ -1837,13 +1939,13 @@
     "source": "Spacebase venue directory",
     "sourceUrl": "https://www.spacebase.com/en/rotterdam/corporate-event-venues/",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
       "+10 — Business is built around hosting events",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -1860,7 +1962,11 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-2524472",
+    "email": "communicatie@rdmrotterdam.nl",
+    "address": "Klinknagelstraat 2, 3089 JP Rotterdam",
+    "postalCode": "3089 JP"
   },
   {
     "id": "wereldmuseum-rotterdam-rtm",
@@ -1871,13 +1977,13 @@
     "source": "Rotterdam.info unique venues guide",
     "sourceUrl": "https://www.rotterdam.info/en/10-unique-venues-in-rotterdam-the-netherlands",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
       "+10 — Business is built around hosting events",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -1894,7 +2000,9 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-2707172",
+    "email": "info@wereldmuseum.nl"
   },
   {
     "id": "de-kuip-rtm",
@@ -1905,13 +2013,13 @@
     "source": "Rotterdam.info unique venues guide",
     "sourceUrl": "https://www.rotterdam.info/en/10-unique-venues-in-rotterdam-the-netherlands",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
       "+10 — Business is built around hosting events",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -1928,7 +2036,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4929455"
   },
   {
     "id": "restaurant-fred-rtm",
@@ -1940,12 +2049,12 @@
     "source": "Rotterdam.info fine dining guide",
     "sourceUrl": "https://www.rotterdam.info/en/visit/guide/luxury-restaurants-in-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -1962,7 +2071,9 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-2120110",
+    "email": "info@restaurantfred.nl"
   },
   {
     "id": "fg-restaurant-rtm",
@@ -2002,17 +2113,17 @@
     "companyName": "Héroine restaurant & bar",
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Upscale restaurant & bar",
-    "address": "Industriegebouw, Rotterdam",
+    "address": "Kipstraat 12, 3011 RT Rotterdam",
     "city": "Rotterdam",
     "source": "Rotterdam.info fine dining guide",
     "sourceUrl": "https://www.rotterdam.info/en/visit/guide/luxury-restaurants-in-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -2029,24 +2140,26 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31681963763",
+    "postalCode": "3011 RT"
   },
   {
     "id": "renilde-rtm",
     "companyName": "Renilde",
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Museum restaurant",
-    "address": "Depot Boijmans Van Beuningen, Rotterdam",
+    "address": "Museumpark 24, 3015 CX Rotterdam",
     "city": "Rotterdam",
     "source": "Rotterdam.info fine dining guide",
     "sourceUrl": "https://www.rotterdam.info/en/visit/guide/luxury-restaurants-in-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -2063,7 +2176,9 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31 10 441 9400",
+    "postalCode": "3015 CX"
   },
   {
     "id": "celest-rtm",
@@ -2171,17 +2286,17 @@
     "companyName": "Fenix Food Factory",
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Food hall / market hall",
-    "address": "Katendrecht, Rotterdam",
+    "address": "Nico Koomanskade 1025, 3072 LM Rotterdam",
     "city": "Rotterdam",
     "source": "Roam & Thrive Rotterdam restaurant guide",
     "sourceUrl": "https://roamandthrive.com/best-restaurants-in-rotterdam-netherlands/",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -2198,7 +2313,9 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31 10 218 0853",
+    "postalCode": "3072 LM"
   },
   {
     "id": "rozey-rotterdam-rtm",
@@ -2245,12 +2362,12 @@
     "source": "TUI branch locator",
     "sourceUrl": "https://www.tui.nl/reisbureaus/rotterdam/",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -2267,7 +2384,9 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4130840",
+    "email": "rotterdamkare@tui.nl"
   },
   {
     "id": "tui-reisbureau-rotterdam-keizerswaard-rtm",
@@ -2281,12 +2400,12 @@
     "source": "TUI branch locator",
     "sourceUrl": "https://www.tui.nl/reisbureaus/rotterdam/",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 25,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -2303,7 +2422,9 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4795911",
+    "email": "rotterdamkeiz@tui.nl"
   },
   {
     "id": "lv-travel-agency-rtm",
@@ -2337,7 +2458,9 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "address": "Weena 1083, 3013 AL Rotterdam",
+    "postalCode": "3013 AL"
   },
   {
     "id": "salsabil-travel-rtm",
@@ -2349,12 +2472,12 @@
     "source": "Company website",
     "sourceUrl": "https://salsabiltravel.nl/",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -2371,7 +2494,11 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31104775614",
+    "email": "info@salsabiltravel.nl",
+    "address": "Vierambachtsstraat 19A, 3022 AB Rotterdam",
+    "postalCode": "3022 AB"
   },
   {
     "id": "lavida-travel-b-v-rtm",
@@ -2382,12 +2509,12 @@
     "source": "RotterdamOnderneemt business directory",
     "sourceUrl": "https://www.rotterdamonderneemt.nl/bedrijven/reisbureau-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -2404,7 +2531,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "+31368200226",
+    "address": "Dorpsweg 98A, 3083 LE Rotterdam",
+    "postalCode": "3083 LE"
   },
   {
     "id": "panta-reizen-rtm",
@@ -2415,12 +2545,12 @@
     "source": "RotterdamOnderneemt business directory",
     "sourceUrl": "https://www.rotterdamonderneemt.nl/bedrijven/reisbureau-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -2437,7 +2567,11 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4925492",
+    "email": "info@panta.nl",
+    "address": "Bierens de Haanweg 22-28, 3076 DC Rotterdam",
+    "postalCode": "3076 DC"
   },
   {
     "id": "reas-reizen-rtm",
@@ -2448,12 +2582,12 @@
     "source": "RotterdamOnderneemt business directory",
     "sourceUrl": "https://www.rotterdamonderneemt.nl/bedrijven/reisbureau-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -2470,7 +2604,11 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4814488",
+    "email": "info@reasreizen.nl",
+    "address": "Laan op Zuid 196, 3071 AA Rotterdam",
+    "postalCode": "3071 AA"
   },
   {
     "id": "reisbureau-buitenlandsche-zaken-rtm",
@@ -2514,12 +2652,12 @@
     "source": "RotterdamOnderneemt business directory",
     "sourceUrl": "https://www.rotterdamonderneemt.nl/bedrijven/reisbureau-rotterdam",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -2536,7 +2674,11 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4614316",
+    "email": "info@reisbureauschiebroek.nl",
+    "address": "Peppelweg 81a, 3053 GD Rotterdam",
+    "postalCode": "3053 GD"
   },
   {
     "id": "travelxl-hillegersberg-rtm",
@@ -2616,12 +2758,12 @@
     "source": "Holidify Rotterdam travel agents list",
     "sourceUrl": "https://www.holidify.com/places/rotterdam/travel-agents.html",
     "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
+    "verificationStatus": "Partially Verified",
     "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -2638,7 +2780,10 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "phone": "010-4852628",
+    "address": "Beijerlandselaan 73, 3074 EC Rotterdam",
+    "postalCode": "3074 EC"
   },
   {
     "id": "cruisereizen-rtm",
@@ -8529,6 +8674,114 @@
     "status": "New",
     "assignedTo": "Unassigned",
     "dealValue": 1100,
+    "doNotContact": false,
+    "createdAt": "2026-09-29",
+    "updatedAt": "2026-09-29",
+    "isDemo": false
+  },
+  {
+    "id": "benu-apotheek-lijn2-rtm",
+    "companyName": "BENU Apotheek Lijn2",
+    "industry": "Pharmacy & Health Retail",
+    "subIndustry": "BENU chain pharmacy",
+    "website": "benu.nl",
+    "phone": "010-4193581",
+    "address": "Slaghekstraat 251b, 3074 LJ Rotterdam",
+    "city": "Rotterdam",
+    "postalCode": "3074 LJ",
+    "source": "Web search (directory listing), Sept 2026",
+    "lastVerified": "2026-09-29",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 25,
+    "scoreReasons": [
+      "+15 — Product/service is well suited to visual marketing",
+      "+10 — Multiple locations (known chain/group)",
+      "Phone/address confirmed via directory search — still confirm before outreach."
+    ],
+    "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
+    "companySize": "Unknown",
+    "location": "Rotterdam",
+    "notes": "",
+    "painPoints": [
+      "Very low visibility on social relative to daily foot traffic",
+      "No apparent short-form video presence"
+    ],
+    "contentOpportunity": "Store and staff content plus seasonal (non-medical) educational content to build local familiarity and trust.",
+    "status": "New",
+    "assignedTo": "Unassigned",
+    "dealValue": 650,
+    "doNotContact": false,
+    "createdAt": "2026-09-29",
+    "updatedAt": "2026-09-29",
+    "isDemo": false
+  },
+  {
+    "id": "benu-apotheek-blijdorp-rtm",
+    "companyName": "BENU Apotheek Blijdorp",
+    "industry": "Pharmacy & Health Retail",
+    "subIndustry": "BENU chain pharmacy",
+    "website": "benu.nl",
+    "phone": "010-4665487",
+    "address": "Stadhoudersplein 37, 3039 ER Rotterdam",
+    "city": "Rotterdam",
+    "postalCode": "3039 ER",
+    "source": "Web search (directory listing), Sept 2026",
+    "lastVerified": "2026-09-29",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 25,
+    "scoreReasons": [
+      "+15 — Product/service is well suited to visual marketing",
+      "+10 — Multiple locations (known chain/group)",
+      "Phone/address confirmed via directory search — still confirm before outreach."
+    ],
+    "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
+    "companySize": "Unknown",
+    "location": "Rotterdam",
+    "notes": "",
+    "painPoints": [
+      "Very low visibility on social relative to daily foot traffic",
+      "No apparent short-form video presence"
+    ],
+    "contentOpportunity": "Store and staff content plus seasonal (non-medical) educational content to build local familiarity and trust.",
+    "status": "New",
+    "assignedTo": "Unassigned",
+    "dealValue": 650,
+    "doNotContact": false,
+    "createdAt": "2026-09-29",
+    "updatedAt": "2026-09-29",
+    "isDemo": false
+  },
+  {
+    "id": "benu-apotheek-punt-zuid-rtm",
+    "companyName": "BENU Apotheek Punt Zuid",
+    "industry": "Pharmacy & Health Retail",
+    "subIndustry": "BENU chain pharmacy",
+    "website": "benu.nl",
+    "phone": "010-4810945",
+    "address": "Nederhorst 75, 3085 VT Rotterdam",
+    "city": "Rotterdam",
+    "postalCode": "3085 VT",
+    "source": "Web search (directory listing), Sept 2026",
+    "lastVerified": "2026-09-29",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 25,
+    "scoreReasons": [
+      "+15 — Product/service is well suited to visual marketing",
+      "+10 — Multiple locations (known chain/group)",
+      "Phone/address confirmed via directory search — still confirm before outreach."
+    ],
+    "recommendedApproach": "Open with a Free Content Pilot centered on store/staff content — no medical claims.",
+    "companySize": "Unknown",
+    "location": "Rotterdam",
+    "notes": "",
+    "painPoints": [
+      "Very low visibility on social relative to daily foot traffic",
+      "No apparent short-form video presence"
+    ],
+    "contentOpportunity": "Store and staff content plus seasonal (non-medical) educational content to build local familiarity and trust.",
+    "status": "New",
+    "assignedTo": "Unassigned",
+    "dealValue": 650,
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
