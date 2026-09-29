@@ -18,8 +18,10 @@ import {
   Settings,
   Camera,
   X,
+  LogOut,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useAuthEmail, logoutTeamMember } from '@/components/layout/AuthGate'
 
 const NAV = [
   { to: '/app/dashboard', label: 'Dashboard', icon: LayoutDashboard },
@@ -41,6 +43,8 @@ const NAV = [
 ]
 
 export function Sidebar({ mobileOpen, onCloseMobile }: { mobileOpen: boolean; onCloseMobile: () => void }) {
+  const authEmail = useAuthEmail()
+
   return (
     <>
       {mobileOpen && (
@@ -86,9 +90,22 @@ export function Sidebar({ mobileOpen, onCloseMobile }: { mobileOpen: boolean; on
             </NavLink>
           ))}
         </nav>
-        <div className="border-t border-[var(--color-hairline)] p-4">
+        <div className="space-y-2 border-t border-[var(--color-hairline)] p-4">
+          {authEmail && (
+            <div className="flex items-center justify-between gap-2 px-1">
+              <p className="truncate text-[11px] text-[var(--color-ink-muted)]" title={authEmail}>
+                Signed in as {authEmail}
+              </p>
+              <button
+                onClick={logoutTeamMember}
+                className="inline-flex shrink-0 items-center gap-1 text-[11px] font-medium text-[var(--color-ink-secondary)] hover:text-[var(--color-critical)]"
+              >
+                <LogOut size={12} /> Log out
+              </button>
+            </div>
+          )}
           <a
-            href="/"
+            href={import.meta.env.BASE_URL}
             className="block rounded-lg border border-[var(--color-hairline)] px-3 py-2 text-center text-xs font-medium text-[var(--color-ink-secondary)] hover:bg-[var(--color-plane)]"
           >
             View public website ↗

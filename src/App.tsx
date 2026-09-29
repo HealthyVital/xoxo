@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { DataStoreProvider } from '@/store/DataStoreContext'
 import { AppLayout } from '@/components/layout/AppLayout'
+import { AuthGate } from '@/components/layout/AuthGate'
 
 const Landing = lazy(() => import('@/pages/Landing'))
 const FreeAudit = lazy(() => import('@/pages/FreeAudit'))
@@ -36,7 +37,14 @@ export default function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/audit" element={<FreeAudit />} />
 
-            <Route path="/app" element={<AppLayout />}>
+            <Route
+              path="/app"
+              element={
+                <AuthGate>
+                  <AppLayout />
+                </AuthGate>
+              }
+            >
               <Route index element={<Navigate to="dashboard" replace />} />
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="prospects" element={<Prospects />} />

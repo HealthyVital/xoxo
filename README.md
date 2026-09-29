@@ -49,7 +49,26 @@ The public marketing site is at `/`, the Free Content Audit at `/audit`, and the
 under `/app/*` (dashboard, prospects, pipeline, outreach, content studio, verticals, free pilot,
 proposals, clients, campaigns, analytics, client reports, calendar, templates, pricing, settings).
 
-There is no authentication in this MVP — `/app` is open. Add auth when Supabase is wired in.
+## Access control — read this before treating it as real security
+
+`/app/*` is gated by an email allowlist (`src/lib/auth.ts`, `src/components/layout/AuthGate.tsx`):
+a visitor types an email, and if it's one of a fixed set of team addresses, the app unlocks and the
+choice is remembered in that browser's `localStorage`.
+
+**This is not secure authentication, and it isn't meant to be treated as one.** This project is a
+static site with no backend, no server, and no database, so there is nothing to check credentials
+against except code running in the visitor's own browser:
+
+- The allowed email list ships inside the public JavaScript bundle — anyone can read it by viewing
+  the page source or the network tab.
+- "Being logged in" is just a value in `localStorage`. Anyone who opens browser dev tools can set
+  that value themselves and get in without knowing any of the allowed emails at all.
+- There is no password, no verification that the visitor actually owns the email they typed, and
+  no server-side check of any kind.
+
+Use it to keep casual or accidental visitors off the internal CRM pages — not to protect anything
+genuinely confidential. Real access control requires a real backend (e.g. Supabase Auth with row-
+level security), which is exactly the kind of upgrade the architecture notes below are written for.
 
 ## Environment variables
 
