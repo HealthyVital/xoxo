@@ -4,7 +4,8 @@
 // strong fit for the Free Content Pilot — runs entirely client-side.
 // ---------------------------------------------------------------------------
 
-import type { QuizAnswer } from '@/types'
+import { todayIso } from '@/lib/utils'
+import type { Prospect, QuizAnswer, Vertical } from '@/types'
 
 export interface QuizOption {
   id: string
@@ -133,4 +134,74 @@ export function computeQuizScore(answers: QuizAnswer[]): { score: number; qualif
 function optionPoints(answer: QuizAnswer): number | undefined {
   const question = QUIZ_QUESTIONS.find((q) => q.id === answer.questionId)
   return question?.options.find((o) => o.id === answer.optionId)?.points
+}
+
+export interface QuizProspectInput {
+  companyName: string
+  industry: Vertical
+  contactName?: string
+  contactEmail?: string
+  contactPhone?: string
+  instagram?: string
+  answers: QuizAnswer[]
+  score: number
+  qualified: boolean
+}
+
+/** Builds a Prospect payload directly from a quiz submission — the lead's own
+ *  answers and contact info are first-party, self-reported data, so this is
+ *  real contact data, not something we researched/invented. Qualifying leads
+ *  (score >= QUALIFYING_THRESHOLD) are marked "Ready to Contact" so they sort
+ *  to the top of the Outreach follow-up queue and stand out as priority. */
+export function buildProspectFromQuiz(
+  input: QuizProspectInput,
+): Omit<Prospect, 'id' | 'createdAt' | 'updatedAt'> {
+  const hasEmail = Boolean(input.contactEmail)
+  const hasPhone = Boolean(input.contactPhone)
+  const verificationStatus = hasEmail && hasPhone ? 'Verified' : hasEmail || hasPhone ? 'Partially Verified' : 'Needs Verification'
+
+  return {
+    companyName: input.companyName,
+    industry: input.industry,
+    country: 'Netherlands',
+    city: '',
+    email: input.contactEmail || undefined,
+    phone: input.contactPhone || undefined,
+    instagram: input.instagram || undefined,
+    marketingContact: input.contactName || undefined,
+    source: `Quiz lead (self-submitted) — score ${input.score}`,
+    sourceUrl: undefined,
+    lastVerified: todayIso(),
+    verificationStatus,
+    leadScore: input.score,
+    scoreReasons: [
+      `Self-reported via the lead quiz, qualification score ${input.score}/100`,
+      'Contact details provided directly by the business, not independently verified yet',
+      ...(input.qualified ? ['PRIORITY — qualified for the Free Content Pilot, follow up within 1 business day'] : []),
+    ],
+    recommendedApproach: input.qualified
+      ? 'Reach out promptly — they qualified for the Free Content Pilot and expressed real interest.'
+      : 'Lower-intent quiz lead — verify fit before offering the free pilot.',
+    companySize: 'Unknown',
+    location: '',
+    notes: `Quiz answers: ${input.answers.map((a) => a.label).join('; ')}`,
+    painPoints: [],
+    contentOpportunity: '',
+    status: input.qualified ? 'Ready to Contact' : 'New',
+    assignedTo: 'Unassigned',
+    doNotContact: false,
+    isDemo: false,
+    subIndustry: undefined,
+    marketingRole: undefined,
+    address: undefined,
+    postalCode: undefined,
+    facebook: undefined,
+    linkedin: undefined,
+    tiktok: undefined,
+    personalizationNotes: undefined,
+    lastContact: undefined,
+    nextFollowUp: undefined,
+    dealValue: 1100,
+    consentNotes: 'Submitted their own info via the public quiz — treat as opted in to being contacted.',
+  }
 }

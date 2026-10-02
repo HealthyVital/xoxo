@@ -6,13 +6,13 @@ import { Card, CardContent } from '@/components/ui/Card'
 import { Input, Label, Select } from '@/components/ui/Input'
 import { useDataStore } from '@/store/DataStoreContext'
 import { VERTICALS } from '@/data/verticals'
-import { QUIZ_QUESTIONS, computeQuizScore } from '@/lib/quiz'
+import { QUIZ_QUESTIONS, computeQuizScore, buildProspectFromQuiz } from '@/lib/quiz'
 import type { QuizAnswer, Vertical } from '@/types'
 
 type Stage = 'question' | 'contact' | 'result'
 
 export default function Quiz() {
-  const { addQuizSubmission } = useDataStore()
+  const { addQuizSubmission, addProspect } = useDataStore()
   const [stage, setStage] = useState<Stage>('question')
   const [step, setStep] = useState(0)
   const [answers, setAnswers] = useState<QuizAnswer[]>([])
@@ -41,8 +41,28 @@ export default function Quiz() {
 
   function handleContactSubmit(e: FormEvent) {
     e.preventDefault()
-    if (!companyName.trim()) return
+    if (!companyName.trim() || !industry) return
     const { score, qualified } = computeQuizScore(answers)
+
+    // Every submission is added straight to Prospects — it's the business's
+    // own self-reported info, not researched/invented, so it's real data.
+    // Qualifying leads are marked "Ready to Contact" so they surface as
+    // priority in the pipeline/follow-up queue immediately, regardless of
+    // whether they filled this in on mobile or desktop (same web page either way).
+    const prospect = addProspect(
+      buildProspectFromQuiz({
+        companyName,
+        industry,
+        contactName: contactName || undefined,
+        contactEmail: contactEmail || undefined,
+        contactPhone: contactPhone || undefined,
+        instagram: instagram || undefined,
+        answers,
+        score,
+        qualified,
+      }),
+    )
+
     addQuizSubmission({
       companyName,
       industry,
@@ -54,6 +74,7 @@ export default function Quiz() {
       qualificationScore: score,
       qualified,
       source: 'Quiz link (social post)',
+      convertedToProspectId: prospect.id,
     })
     setResult({ score, qualified })
     setStage('result')
@@ -123,8 +144,8 @@ export default function Quiz() {
                     <Input id="companyName" required value={companyName} onChange={(e) => setCompanyName(e.target.value)} />
                   </div>
                   <div>
-                    <Label htmlFor="industry">Industry</Label>
-                    <Select id="industry" value={industry} onChange={(e) => setIndustry(e.target.value as Vertical)}>
+                    <Label htmlFor="industry">Industry *</Label>
+                    <Select id="industry" required value={industry} onChange={(e) => setIndustry(e.target.value as Vertical)}>
                       <option value="">Select your industry</option>
                       {VERTICALS.map((v) => (
                         <option key={v} value={v}>

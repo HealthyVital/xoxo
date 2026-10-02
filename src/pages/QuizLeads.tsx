@@ -1,11 +1,13 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ClipboardCopy, UserPlus } from 'lucide-react'
 import { useDataStore } from '@/store/DataStoreContext'
 import { PageHeader } from '@/components/ui/Misc'
 import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
-import { formatDate, todayIso } from '@/lib/utils'
+import { formatDate } from '@/lib/utils'
+import { buildProspectFromQuiz } from '@/lib/quiz'
 
 const QUIZ_LINK = `${location.origin}${import.meta.env.BASE_URL}quiz`
 
@@ -20,54 +22,24 @@ export default function QuizLeads() {
     })
   }
 
+  // Submissions are added to Prospects automatically the moment someone
+  // completes the quiz (see Quiz.tsx) — this stays only as a manual fallback
+  // for any older submission saved before that behavior shipped.
   function convertToProspect(q: (typeof quizSubmissions)[number]) {
     if (!q.industry) return
-    const hasEmail = Boolean(q.contactEmail)
-    const hasPhone = Boolean(q.contactPhone)
-    const verificationStatus = hasEmail && hasPhone ? 'Verified' : hasEmail || hasPhone ? 'Partially Verified' : 'Needs Verification'
-    const record = addProspect({
-      companyName: q.companyName,
-      industry: q.industry,
-      country: 'Netherlands',
-      city: '',
-      email: q.contactEmail || undefined,
-      phone: q.contactPhone || undefined,
-      instagram: q.instagram || undefined,
-      marketingContact: q.contactName || undefined,
-      source: `Quiz lead (self-submitted) — score ${q.qualificationScore}`,
-      sourceUrl: undefined,
-      lastVerified: todayIso(),
-      verificationStatus,
-      leadScore: q.qualificationScore,
-      scoreReasons: [
-        `Self-reported via the lead quiz, qualification score ${q.qualificationScore}/100`,
-        'Contact details provided directly by the business, not independently verified yet',
-      ],
-      recommendedApproach: q.qualified
-        ? 'Reach out promptly — they qualified for the Free Content Pilot and expressed real interest.'
-        : 'Lower-intent quiz lead — verify fit before offering the free pilot.',
-      companySize: 'Unknown',
-      location: '',
-      notes: `Quiz answers: ${q.answers.map((a) => a.label).join('; ')}`,
-      painPoints: [],
-      contentOpportunity: '',
-      status: 'New',
-      assignedTo: 'Unassigned',
-      doNotContact: false,
-      isDemo: false,
-      subIndustry: undefined,
-      marketingRole: undefined,
-      address: undefined,
-      postalCode: undefined,
-      facebook: undefined,
-      linkedin: undefined,
-      tiktok: undefined,
-      personalizationNotes: undefined,
-      lastContact: undefined,
-      nextFollowUp: undefined,
-      dealValue: 1100,
-      consentNotes: 'Submitted their own info via the public quiz — treat as opted in to being contacted.',
-    })
+    const record = addProspect(
+      buildProspectFromQuiz({
+        companyName: q.companyName,
+        industry: q.industry,
+        contactName: q.contactName,
+        contactEmail: q.contactEmail,
+        contactPhone: q.contactPhone,
+        instagram: q.instagram,
+        answers: q.answers,
+        score: q.qualificationScore,
+        qualified: q.qualified,
+      }),
+    )
     markQuizConverted(q.id, record.id)
   }
 
@@ -75,7 +47,7 @@ export default function QuizLeads() {
     <div>
       <PageHeader
         title="Quiz leads"
-        description="Submissions from the public lead-qualification quiz — share the link below on social posts and bios."
+        description="Submissions from the public lead-qualification quiz, added to Prospects automatically — qualified leads are marked priority (Ready to Contact)."
       />
 
       <Card className="mb-4 flex flex-col items-start gap-2 p-4 sm:flex-row sm:items-center sm:justify-between">
@@ -111,15 +83,17 @@ export default function QuizLeads() {
                 </td>
                 <td className="tabular-nums px-4 py-3 text-[var(--color-ink-secondary)]">{q.qualificationScore}</td>
                 <td className="px-4 py-3">
-                  <Badge tone={q.qualified ? 'good' : 'neutral'}>{q.qualified ? 'Qualified' : 'Lower fit'}</Badge>
+                  <Badge tone={q.qualified ? 'good' : 'neutral'}>{q.qualified ? 'Priority — Qualified' : 'Lower fit'}</Badge>
                 </td>
                 <td className="px-4 py-3 text-[var(--color-ink-secondary)]">{formatDate(q.createdAt)}</td>
                 <td className="px-4 py-3">
                   {q.convertedToProspectId ? (
-                    <Badge tone="brand">Added to Prospects</Badge>
+                    <Link to="/app/prospects" className="text-xs font-medium text-[var(--color-brand)] hover:underline">
+                      <Badge tone="brand">View in Prospects ↗</Badge>
+                    </Link>
                   ) : (
                     <Button size="sm" variant="outline" onClick={() => convertToProspect(q)}>
-                      <UserPlus size={13} /> Convert
+                      <UserPlus size={13} /> Add to Prospects
                     </Button>
                   )}
                 </td>
