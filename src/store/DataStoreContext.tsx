@@ -22,6 +22,7 @@ import type {
   PilotProposal,
   Prospect,
   Proposal,
+  QuizSubmission,
   SavedContentIdea,
 } from '@/types'
 
@@ -35,6 +36,7 @@ interface DataStoreValue {
   proposals: Proposal[]
   savedContentIdeas: SavedContentIdea[]
   freeAuditSubmissions: FreeAuditSubmission[]
+  quizSubmissions: QuizSubmission[]
   templates: OutreachTemplate[]
 
   addProspect: (p: Omit<Prospect, 'id' | 'createdAt' | 'updatedAt'>) => Prospect
@@ -62,6 +64,9 @@ interface DataStoreValue {
   updateSavedContentIdea: (id: string, patch: Partial<SavedContentIdea>) => void
 
   addFreeAuditSubmission: (s: Omit<FreeAuditSubmission, 'id' | 'createdAt'>) => FreeAuditSubmission
+
+  addQuizSubmission: (s: Omit<QuizSubmission, 'id' | 'createdAt'>) => QuizSubmission
+  markQuizConverted: (id: string, prospectId: string) => void
 
   updateTemplate: (id: string, patch: Partial<OutreachTemplate>) => void
 
@@ -110,6 +115,7 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
     'freeAuditSubmissions',
     [],
   )
+  const [quizSubmissions, setQuizSubmissions] = usePersistedState<QuizSubmission[]>('quizSubmissions', [])
   const [templates, setTemplates] = usePersistedState<OutreachTemplate[]>('templates', SEED_TEMPLATES)
 
   const addProspect = useCallback<DataStoreValue['addProspect']>(
@@ -253,6 +259,22 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
     [setFreeAuditSubmissions],
   )
 
+  const addQuizSubmission = useCallback<DataStoreValue['addQuizSubmission']>(
+    (s) => {
+      const record: QuizSubmission = { ...s, id: uid('quiz'), createdAt: nowIso() }
+      setQuizSubmissions((prev) => [record, ...prev])
+      return record
+    },
+    [setQuizSubmissions],
+  )
+
+  const markQuizConverted = useCallback<DataStoreValue['markQuizConverted']>(
+    (id, prospectId) => {
+      setQuizSubmissions((prev) => prev.map((q) => (q.id === id ? { ...q, convertedToProspectId: prospectId } : q)))
+    },
+    [setQuizSubmissions],
+  )
+
   const updateTemplate = useCallback<DataStoreValue['updateTemplate']>(
     (id, patch) => {
       setTemplates((prev) => prev.map((t) => (t.id === id ? { ...t, ...patch } : t)))
@@ -276,6 +298,7 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
       proposals,
       savedContentIdeas,
       freeAuditSubmissions,
+      quizSubmissions,
       templates,
       addProspect,
       updateProspect,
@@ -294,6 +317,8 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
       addSavedContentIdea,
       updateSavedContentIdea,
       addFreeAuditSubmission,
+      addQuizSubmission,
+      markQuizConverted,
       updateTemplate,
       resetDemoData,
     }),
@@ -307,6 +332,7 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
       proposals,
       savedContentIdeas,
       freeAuditSubmissions,
+      quizSubmissions,
       templates,
       addProspect,
       updateProspect,
@@ -325,6 +351,8 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
       addSavedContentIdea,
       updateSavedContentIdea,
       addFreeAuditSubmission,
+      addQuizSubmission,
+      markQuizConverted,
       updateTemplate,
       resetDemoData,
     ],

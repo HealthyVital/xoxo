@@ -334,6 +334,28 @@ export interface FreeAuditResult {
   recommendedPackage: PricingPackageId
 }
 
+export interface QuizAnswer {
+  questionId: string
+  optionId: string
+  label: string
+}
+
+export interface QuizSubmission {
+  id: string
+  companyName: string
+  industry: Vertical | ''
+  contactName?: string
+  contactEmail?: string
+  contactPhone?: string
+  instagram?: string
+  answers: QuizAnswer[]
+  qualificationScore: number // 0-100, rule-based from answers
+  qualified: boolean // score >= QUALIFYING_THRESHOLD
+  source: string // e.g. "Instagram bio quiz", "Facebook post quiz"
+  createdAt: string
+  convertedToProspectId?: string
+}
+
 export interface FunnelStage {
   label: string
   value: number

@@ -12,6 +12,7 @@ import {
   Megaphone,
   BarChart3,
   ClipboardList,
+  ListChecks,
   CalendarDays,
   FileStack,
   Tag,
@@ -26,6 +27,7 @@ import { useAuthEmail, logoutTeamMember } from '@/components/layout/AuthGate'
 const NAV = [
   { to: '/app/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { to: '/app/prospects', label: 'Prospects', icon: Users },
+  { to: '/app/quiz-leads', label: 'Quiz leads', icon: ListChecks },
   { to: '/app/pipeline', label: 'Pipeline', icon: KanbanSquare },
   { to: '/app/outreach', label: 'Outreach', icon: Send },
   { to: '/app/content-studio', label: 'Content Studio', icon: Clapperboard },

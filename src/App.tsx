@@ -6,6 +6,8 @@ import { AuthGate } from '@/components/layout/AuthGate'
 
 const Landing = lazy(() => import('@/pages/Landing'))
 const FreeAudit = lazy(() => import('@/pages/FreeAudit'))
+const Quiz = lazy(() => import('@/pages/Quiz'))
+const QuizLeads = lazy(() => import('@/pages/QuizLeads'))
 const Dashboard = lazy(() => import('@/pages/Dashboard'))
 const Prospects = lazy(() => import('@/pages/Prospects'))
 const Pipeline = lazy(() => import('@/pages/Pipeline'))
@@ -36,6 +38,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/audit" element={<FreeAudit />} />
+            <Route path="/quiz" element={<Quiz />} />
 
             <Route
               path="/app"
@@ -48,6 +51,7 @@ export default function App() {
               <Route index element={<Navigate to="dashboard" replace />} />
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="prospects" element={<Prospects />} />
+              <Route path="quiz-leads" element={<QuizLeads />} />
               <Route path="pipeline" element={<Pipeline />} />
               <Route path="outreach" element={<Outreach />} />
               <Route path="content-studio" element={<ContentStudio />} />
