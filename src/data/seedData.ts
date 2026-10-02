@@ -3,7 +3,6 @@ import type {
   Campaign,
   Client,
   CommunicationLogEntry,
-  DemoAnalyticsMonth,
   OutreachTemplate,
   PilotProposal,
   PricingPackage,
@@ -14,25 +13,23 @@ import type {
 } from '@/types'
 
 import prospectsReal from './prospects.real.json'
-import prospectsDemo from './prospects.demo.json'
-import communicationsDemo from './communications.demo.json'
-import clientsDemo from './clients.demo.json'
-import campaignsDemo from './campaigns.demo.json'
-import calendarItemsDemo from './calendarItems.demo.json'
-import demoAnalyticsRaw from './demoAnalytics.json'
 import templatesRaw from './templates.json'
 import pricingRaw from './pricing.json'
 
-export const SEED_PROSPECTS: Prospect[] = [
-  ...(prospectsReal as Prospect[]),
-  ...(prospectsDemo as Prospect[]),
-]
+// ---------------------------------------------------------------------------
+// This app seeds with REAL data only by default — the business hasn't
+// contacted anyone yet, so the live CRM should show that honestly (empty
+// pipeline, zero clients) rather than blended with illustrative numbers.
+// The old *.demo.json files (prospects.demo.json, clients.demo.json, etc.)
+// still exist in this folder for reference/onboarding but are intentionally
+// not imported into the default seed anymore.
+// ---------------------------------------------------------------------------
+export const SEED_PROSPECTS: Prospect[] = prospectsReal as Prospect[]
 
-export const SEED_COMMUNICATIONS: CommunicationLogEntry[] = communicationsDemo as CommunicationLogEntry[]
-export const SEED_CLIENTS: Client[] = clientsDemo as Client[]
-export const SEED_CAMPAIGNS: Campaign[] = campaignsDemo as Campaign[]
-export const SEED_CALENDAR_ITEMS: CalendarItem[] = calendarItemsDemo as CalendarItem[]
-export const SEED_DEMO_ANALYTICS: DemoAnalyticsMonth[] = demoAnalyticsRaw as DemoAnalyticsMonth[]
+export const SEED_COMMUNICATIONS: CommunicationLogEntry[] = []
+export const SEED_CLIENTS: Client[] = []
+export const SEED_CAMPAIGNS: Campaign[] = []
+export const SEED_CALENDAR_ITEMS: CalendarItem[] = []
 export const SEED_TEMPLATES: OutreachTemplate[] = templatesRaw as OutreachTemplate[]
 export const SEED_PRICING_PACKAGES: PricingPackage[] = pricingRaw.packages as PricingPackage[]
 export const SEED_ONE_OFF_SERVICES: OneOffService[] = pricingRaw.oneOffServices as OneOffService[]

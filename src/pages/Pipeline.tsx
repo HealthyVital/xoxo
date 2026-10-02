@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useDataStore } from '@/store/DataStoreContext'
-import { PageHeader, DemoDataBanner } from '@/components/ui/Misc'
+import { PageHeader } from '@/components/ui/Misc'
 import { Card } from '@/components/ui/Card'
 import { DemoBadge } from '@/components/ui/Badge'
 import { LeadScoreBadge } from '@/components/prospects/LeadScoreBadge'
@@ -29,7 +29,6 @@ export default function Pipeline() {
   return (
     <div>
       <PageHeader title="Pipeline" description="Drag a card to move a prospect to a new stage." />
-      <DemoDataBanner />
 
       <div className="flex gap-3 overflow-x-auto pb-4">
         {PIPELINE_STAGES.map((stage) => (

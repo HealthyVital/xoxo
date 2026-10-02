@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Plus, Search, Download, ArrowUp, ArrowDown, ArrowUpDown } from 'lucide-react'
 import { useDataStore } from '@/store/DataStoreContext'
-import { PageHeader, DemoDataBanner } from '@/components/ui/Misc'
+import { PageHeader } from '@/components/ui/Misc'
 import { Button } from '@/components/ui/Button'
 import { Input, Select } from '@/components/ui/Input'
 import { Card } from '@/components/ui/Card'
@@ -145,8 +145,6 @@ export default function Prospects() {
           </>
         }
       />
-      <DemoDataBanner />
-
       <Card className="mb-4 p-4">
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-7">
           <div className="relative lg:col-span-2">

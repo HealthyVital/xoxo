@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { PageHeader, DemoDataBanner } from '@/components/ui/Misc'
+import { PageHeader, EmptyState } from '@/components/ui/Misc'
 import { Card } from '@/components/ui/Card'
 import { Badge, DemoBadge } from '@/components/ui/Badge'
 import { useDataStore } from '@/store/DataStoreContext'
@@ -12,7 +12,10 @@ export default function Clients() {
   return (
     <div>
       <PageHeader title="Clients" description="Active and past content clients." />
-      <DemoDataBanner />
+
+      {clients.length === 0 && (
+        <EmptyState title="No clients yet" description="Clients will show up here once the first deal is won." />
+      )}
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {clients.map((c) => {

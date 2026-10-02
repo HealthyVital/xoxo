@@ -16,23 +16,17 @@ import {
 import { useDataStore } from '@/store/DataStoreContext'
 import { computeCrmStats } from '@/lib/metrics'
 import { formatCurrencyEUR, formatNumber, formatPercent } from '@/lib/utils'
-import { PageHeader, DemoDataBanner } from '@/components/ui/Misc'
+import { PageHeader, EmptyState } from '@/components/ui/Misc'
 import { StatCard } from '@/components/ui/StatCard'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card'
-import {
-  FunnelViz,
-  OutreachActivityChart,
-  RevenueChart,
-  PipelineValueChart,
-  ContentProductionChart,
-  RetentionBar,
-} from '@/components/dashboard/Charts'
-import { SEED_DEMO_ANALYTICS } from '@/data/seedData'
+import { FunnelViz, PipelineValueChart, ContentProductionChart, RetentionBar } from '@/components/dashboard/Charts'
 import { PIPELINE_STAGES } from '@/types'
 
 export default function Dashboard() {
   const { prospects, clients } = useDataStore()
-  const stats = useMemo(() => computeCrmStats(prospects, clients), [prospects, clients])
+  const realProspects = useMemo(() => prospects.filter((p) => !p.isDemo), [prospects])
+  const realClients = useMemo(() => clients.filter((c) => !c.isDemo), [clients])
+  const stats = useMemo(() => computeCrmStats(realProspects, realClients), [realProspects, realClients])
 
   const funnelStages = useMemo(
     () => [
@@ -47,25 +41,16 @@ export default function Dashboard() {
     [stats],
   )
 
-  const outreachActivityData = SEED_DEMO_ANALYTICS.map((m) => ({
-    month: m.month.slice(5),
-    contacted: m.contacted,
-    replies: m.replies,
-    meetings: m.meetings,
-  }))
-
-  const revenueData = SEED_DEMO_ANALYTICS.map((m) => ({ month: m.month.slice(5), mrr: m.mrr }))
-
   const pipelineByStage = useMemo(() => {
     return PIPELINE_STAGES.filter((s) => !['Won', 'Lost'].includes(s)).map((stage) => ({
       stage,
-      value: prospects.filter((p) => p.status === stage).reduce((sum, p) => sum + (p.dealValue ?? 0), 0),
+      value: realProspects.filter((p) => p.status === stage).reduce((sum, p) => sum + (p.dealValue ?? 0), 0),
     }))
-  }, [prospects])
+  }, [realProspects])
 
   const contentProductionData = useMemo(() => {
     const months = new Map<string, number>()
-    for (const c of clients) {
+    for (const c of realClients) {
       for (const h of c.history) {
         months.set(h.period, (months.get(h.period) ?? 0) + h.postsPublished)
       }
@@ -73,22 +58,21 @@ export default function Dashboard() {
     return Array.from(months.entries())
       .sort(([a], [b]) => a.localeCompare(b))
       .map(([month, posts]) => ({ month: month.slice(5), posts }))
-  }, [clients])
+  }, [realClients])
 
   const retention = useMemo(() => {
-    const active = clients.filter((c) => c.status === 'Active').length
-    const paused = clients.filter((c) => c.status === 'Paused').length
-    const churned = clients.filter((c) => c.status === 'Churned').length
+    const active = realClients.filter((c) => c.status === 'Active').length
+    const paused = realClients.filter((c) => c.status === 'Paused').length
+    const churned = realClients.filter((c) => c.status === 'Churned').length
     return { active, paused, churned }
-  }, [clients])
+  }, [realClients])
 
   return (
     <div>
       <PageHeader
         title="Dashboard"
-        description="Your commercial pipeline and content production at a glance."
+        description="Your commercial pipeline and content production at a glance — real data only."
       />
-      <DemoDataBanner />
 
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-6">
         <StatCard label="Total prospects" value={formatNumber(stats.totalProspects)} icon={Users} />
@@ -135,36 +119,46 @@ export default function Dashboard() {
         <Card>
           <CardHeader>
             <div>
-              <CardTitle>Outreach activity (demo)</CardTitle>
-              <CardDescription>Monthly contacted / replies / meetings</CardDescription>
+              <CardTitle>Outreach activity</CardTitle>
+              <CardDescription>Monthly contacted / replies / meetings trend</CardDescription>
             </div>
           </CardHeader>
           <CardContent>
-            <OutreachActivityChart data={outreachActivityData} />
+            <EmptyState
+              title="No outreach activity yet"
+              description="This will start filling in once the team sends the first real outreach message."
+            />
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
             <div>
-              <CardTitle>Monthly revenue (demo)</CardTitle>
+              <CardTitle>Monthly revenue</CardTitle>
               <CardDescription>Monthly recurring revenue trend</CardDescription>
             </div>
           </CardHeader>
           <CardContent>
-            <RevenueChart data={revenueData} />
+            <EmptyState
+              title="No revenue yet"
+              description="This will start filling in once the first client signs on."
+            />
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
             <div>
-              <CardTitle>Content production (demo)</CardTitle>
+              <CardTitle>Content production</CardTitle>
               <CardDescription>Posts published per month across active clients</CardDescription>
             </div>
           </CardHeader>
           <CardContent>
-            <ContentProductionChart data={contentProductionData} />
+            {realClients.length === 0 ? (
+              <EmptyState title="No clients yet" description="Content production tracking starts with your first client." />
+            ) : (
+              <ContentProductionChart data={contentProductionData} />
+            )}
           </CardContent>
         </Card>
 
@@ -176,7 +170,11 @@ export default function Dashboard() {
             </div>
           </CardHeader>
           <CardContent>
-            <RetentionBar {...retention} />
+            {realClients.length === 0 ? (
+              <EmptyState title="No clients yet" />
+            ) : (
+              <RetentionBar {...retention} />
+            )}
           </CardContent>
         </Card>
       </div>

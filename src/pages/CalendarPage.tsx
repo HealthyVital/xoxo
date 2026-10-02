@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { PageHeader, DemoDataBanner } from '@/components/ui/Misc'
+import { PageHeader } from '@/components/ui/Misc'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Badge } from '@/components/ui/Badge'
@@ -74,8 +74,6 @@ export default function CalendarPage() {
           </div>
         }
       />
-      <DemoDataBanner />
-
       <Card className="overflow-hidden p-2">
         <div className="grid grid-cols-7 gap-px bg-[var(--color-hairline)] text-center text-[11px] font-medium text-[var(--color-ink-muted)]">
           {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((d) => (

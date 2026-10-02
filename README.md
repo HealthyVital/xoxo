@@ -79,29 +79,28 @@ every future integration listed below — they're commented out on purpose. The 
 
 ## Data & demo data — read this before showing the app to anyone
 
-- **Real data:** `src/data/prospects.real.json` contains ~82 real, named Rotterdam-area companies
-  (hotels, cosmetics/beauty stores, footwear/fashion retailers, pharmacies, event venues,
-  restaurants, travel agencies), each found via a live web search. **No contact person, phone
-  number, email address or social handle was invented for any of them** — those fields are left
-  empty and `verificationStatus` is `"Needs Verification"` until someone actually verifies them.
-  Every record carries `source`, `sourceUrl` and `lastVerified` so it can be audited and enriched.
-  Lead scores for this list are a conservative baseline (vertical fit + known chain status only) —
-  the score explicitly tells you what hasn't been verified yet (Instagram/TikTok activity,
-  promotions, etc.) so a rep knows what to check before prioritizing a lead.
-- **Why not exactly 200 real companies?** The spec asked for ~200 seeded prospects across 7
-  verticals. Reaching 200 *real, named, sourced* Rotterdam companies without inventing anything
-  would require far more individual research/verification than a single session of web searches
-  responsibly supports — and the same spec explicitly forbids inventing company or contact
-  information. Rather than pad the list with fabricated business names, this MVP ships the ~82
-  companies that were actually verified to exist, with the tooling (CSV export on the Prospects
-  page, a manual "Add prospect" form with the full lead-scoring checklist) needed to grow the list
-  responsibly. Treat this as a real starting seed, not a finished list.
-- **Demo data:** everything needed to make the CRM *feel* alive — pipeline deals in every stage,
-  a communication history, won clients with monthly performance history, campaigns and a content
-  calendar — is clearly synthetic and lives in `src/data/*.demo.json`. Every demo company name is
-  prefixed `(Demo)`, every demo record carries `isDemo: true`, and a purple "Demo" badge plus a
-  banner appears anywhere this data is shown. **None of it represents a real client or a real
-  result.** Reset it any time from Settings → "Reset to seed data".
+- **Real data:** `src/data/prospects.real.json` contains 1,400+ real, named companies across the
+  Netherlands, Latvia, Belarus, Lithuania, Estonia and Poland (hotels, cosmetics/beauty stores,
+  footwear/fashion retailers, pharmacies, event venues, restaurants, travel agencies), each found
+  via a live web search. **No contact person, phone number, email address or social handle was
+  invented for any of them** — those fields are left empty and `verificationStatus` is
+  `"Needs Verification"` or `"Partially Verified"` until someone actually verifies the rest. Every
+  record carries `source` and `lastVerified` so it can be audited and enriched. This list keeps
+  growing over time via the same web-search-and-verify process (see commit history), plus the
+  public lead-qualification quiz at `/quiz`, which adds a prospect automatically from a business's
+  own self-submitted answers.
+- **The app seeds with real data only, by default.** `src/data/seedData.ts` only loads
+  `prospects.real.json` — clients, communications, campaigns and the content calendar all start
+  **empty**, because as of this stage the business has real prospects but hasn't contacted anyone
+  yet. Dashboard, Analytics, Pipeline etc. are reality, not a blended demo: a 0 almost everywhere
+  except prospect count is the honest, expected state until outreach starts.
+- **Demo/illustrative data still exists on disk** (`src/data/*.demo.json` — pipeline deals in every
+  stage, a communication history, won clients with monthly performance history, campaigns, a
+  content calendar) but is **not loaded by default anymore**. It's kept only for reference/future
+  onboarding use; every demo record still carries `isDemo: true` and a `(Demo)` name prefix in case
+  it's ever re-introduced behind an explicit toggle. Reset the live app back to the real-only seed
+  any time from Settings → "Reset to seed data" (useful after clearing a browser that still has an
+  older, demo-blended localStorage cache).
 
 ## Architecture notes (for adding Supabase later)
 

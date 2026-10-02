@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Printer } from 'lucide-react'
-import { PageHeader, DemoDataBanner, EmptyState } from '@/components/ui/Misc'
+import { PageHeader, EmptyState } from '@/components/ui/Misc'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Select } from '@/components/ui/Input'
@@ -45,8 +45,6 @@ export default function ClientReports() {
           </>
         }
       />
-      <DemoDataBanner />
-
       <Card className="mx-auto max-w-3xl p-8">
         <div className="mb-6 flex items-center justify-between border-b border-[var(--color-hairline)] pb-4">
           <div>

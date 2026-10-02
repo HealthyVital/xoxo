@@ -1,22 +1,23 @@
 import { useMemo, useState } from 'react'
-import { PageHeader, DemoDataBanner } from '@/components/ui/Misc'
+import { PageHeader, EmptyState } from '@/components/ui/Misc'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card'
 import { Input, Label } from '@/components/ui/Input'
 import { StatCard } from '@/components/ui/StatCard'
 import { FunnelViz } from '@/components/dashboard/Charts'
 import { useDataStore } from '@/store/DataStoreContext'
 import { computeCrmStats } from '@/lib/metrics'
-import { SEED_DEMO_ANALYTICS } from '@/data/seedData'
-import { formatCurrencyEUR, formatNumber, formatPercent } from '@/lib/utils'
+import { formatCurrencyEUR, formatPercent } from '@/lib/utils'
 import { Percent, TrendingUp, Users, Wallet } from 'lucide-react'
 
 export default function Analytics() {
   const { prospects, clients } = useDataStore()
-  const stats = useMemo(() => computeCrmStats(prospects, clients), [prospects, clients])
+  const realProspects = useMemo(() => prospects.filter((p) => !p.isDemo), [prospects])
+  const realClients = useMemo(() => clients.filter((c) => !c.isDemo), [clients])
+  const stats = useMemo(() => computeCrmStats(realProspects, realClients), [realProspects, realClients])
   const [monthlyCost, setMonthlyCost] = useState(2500)
 
   const funnelStages = [
-    { label: '200 prospects (target research base)', value: Math.max(stats.totalProspects, 1) },
+    { label: 'Prospects', value: Math.max(stats.totalProspects, 1) },
     { label: 'Contacted', value: stats.contacted },
     { label: 'Replies', value: stats.replied },
     { label: 'Meetings', value: stats.meetings },
@@ -33,21 +34,19 @@ export default function Analytics() {
   const proposalConversion = stats.freePilots > 0 ? (stats.proposalsSent / stats.freePilots) * 100 : 0
   const closeRate = stats.proposalsSent > 0 ? (stats.won / stats.proposalsSent) * 100 : 0
 
-  const latestMonth = SEED_DEMO_ANALYTICS[SEED_DEMO_ANALYTICS.length - 1]
-  const cac = latestMonth.won > 0 ? monthlyCost / latestMonth.won : null
+  const cac = stats.won > 0 ? monthlyCost / stats.won : null
 
-  const activeRetention = clients.length > 0 ? (clients.filter((c) => c.status === 'Active').length / clients.length) * 100 : 0
+  const activeRetention = realClients.length > 0 ? (realClients.filter((c) => c.status === 'Active').length / realClients.length) * 100 : 0
 
   return (
     <div>
-      <PageHeader title="Analytics" description="Conversion rates across the full prospecting-to-client funnel." />
-      <DemoDataBanner />
+      <PageHeader title="Analytics" description="Conversion rates across the full prospecting-to-client funnel — real data only." />
 
       <Card className="mb-6">
         <CardHeader>
           <div>
             <CardTitle>Funnel</CardTitle>
-            <CardDescription>200 target Rotterdam prospects → clients</CardDescription>
+            <CardDescription>Real prospects in the database → real clients</CardDescription>
           </div>
         </CardHeader>
         <CardContent>
@@ -69,16 +68,16 @@ export default function Analytics() {
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle>Customer acquisition cost (demo)</CardTitle>
+            <CardTitle>Customer acquisition cost</CardTitle>
             <CardDescription>Enter your monthly sales & marketing cost to estimate CAC</CardDescription>
           </CardHeader>
           <CardContent>
             <Label htmlFor="monthlyCost">Monthly sales & marketing cost (€)</Label>
             <Input id="monthlyCost" type="number" value={monthlyCost} onChange={(e) => setMonthlyCost(Number(e.target.value))} />
             <p className="mt-3 text-sm text-[var(--color-ink-secondary)]">
-              {latestMonth.won} client{latestMonth.won === 1 ? '' : 's'} won in {latestMonth.month} (demo) →{' '}
+              {stats.won} real client{stats.won === 1 ? '' : 's'} won so far →{' '}
               <span className="tabular-nums font-semibold text-[var(--color-ink)]">
-                {cac !== null ? formatCurrencyEUR(cac) : 'N/A (no clients won)'}
+                {cac !== null ? formatCurrencyEUR(cac) : 'N/A (no clients won yet)'}
               </span>{' '}
               CAC
             </p>
@@ -93,49 +92,21 @@ export default function Analytics() {
           <CardContent>
             <p className="tabular-nums text-3xl font-semibold text-[var(--color-ink)]">{formatPercent(activeRetention)}</p>
             <p className="mt-1 text-xs text-[var(--color-ink-muted)]">
-              {clients.filter((c) => c.status === 'Active').length} of {clients.length} clients active
+              {realClients.filter((c) => c.status === 'Active').length} of {realClients.length} clients active
             </p>
           </CardContent>
         </Card>
       </div>
 
-      <Card className="mt-6 overflow-x-auto">
+      <Card className="mt-6">
         <CardHeader>
-          <CardTitle>Monthly history (demo)</CardTitle>
+          <CardTitle>Monthly history</CardTitle>
         </CardHeader>
         <CardContent>
-          <table className="w-full min-w-[700px] text-sm">
-            <thead>
-              <tr className="border-b border-[var(--color-hairline)] text-left text-xs text-[var(--color-ink-muted)]">
-                <th className="py-2 pr-4 font-medium">Month</th>
-                <th className="py-2 pr-4 font-medium">Added</th>
-                <th className="py-2 pr-4 font-medium">Contacted</th>
-                <th className="py-2 pr-4 font-medium">Replies</th>
-                <th className="py-2 pr-4 font-medium">Meetings</th>
-                <th className="py-2 pr-4 font-medium">Pilots</th>
-                <th className="py-2 pr-4 font-medium">Proposals</th>
-                <th className="py-2 pr-4 font-medium">Won</th>
-                <th className="py-2 pr-4 font-medium">Lost</th>
-                <th className="py-2 pr-4 font-medium">MRR</th>
-              </tr>
-            </thead>
-            <tbody>
-              {SEED_DEMO_ANALYTICS.map((m) => (
-                <tr key={m.month} className="border-b border-[var(--color-hairline)] last:border-0">
-                  <td className="py-2 pr-4 font-medium text-[var(--color-ink)]">{m.month}</td>
-                  <td className="tabular-nums py-2 pr-4">{formatNumber(m.prospectsAdded)}</td>
-                  <td className="tabular-nums py-2 pr-4">{formatNumber(m.contacted)}</td>
-                  <td className="tabular-nums py-2 pr-4">{formatNumber(m.replies)}</td>
-                  <td className="tabular-nums py-2 pr-4">{formatNumber(m.meetings)}</td>
-                  <td className="tabular-nums py-2 pr-4">{formatNumber(m.pilots)}</td>
-                  <td className="tabular-nums py-2 pr-4">{formatNumber(m.proposals)}</td>
-                  <td className="tabular-nums py-2 pr-4">{formatNumber(m.won)}</td>
-                  <td className="tabular-nums py-2 pr-4">{formatNumber(m.lost)}</td>
-                  <td className="tabular-nums py-2 pr-4">{formatCurrencyEUR(m.mrr)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <EmptyState
+            title="No monthly history yet"
+            description="This builds up automatically, month by month, once real outreach, pilots and clients start happening."
+          />
         </CardContent>
       </Card>
     </div>

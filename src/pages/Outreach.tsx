@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Send, Clock } from 'lucide-react'
 import { useDataStore } from '@/store/DataStoreContext'
-import { PageHeader, DemoDataBanner, EmptyState } from '@/components/ui/Misc'
+import { PageHeader, EmptyState } from '@/components/ui/Misc'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Select } from '@/components/ui/Input'
@@ -125,8 +125,6 @@ export default function Outreach() {
         title="Outreach"
         description="Day 0 → 3 → 7 → 14 sequence across email, LinkedIn, Instagram and WhatsApp."
       />
-      <DemoDataBanner />
-
       <div className="mb-6">
         <p className="mb-2 text-sm font-semibold text-[var(--color-ink)]">Sequence</p>
         <div className="flex flex-wrap gap-2">

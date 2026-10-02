@@ -11,7 +11,7 @@ import {
   Tooltip,
 } from 'recharts'
 import { useDataStore } from '@/store/DataStoreContext'
-import { PageHeader, DemoDataBanner, EmptyState } from '@/components/ui/Misc'
+import { PageHeader, EmptyState } from '@/components/ui/Misc'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card'
 import { Badge, DemoBadge } from '@/components/ui/Badge'
 import { Input, Label, Select } from '@/components/ui/Input'
@@ -69,8 +69,6 @@ export default function ClientDetail() {
           </>
         }
       />
-      <DemoDataBanner />
-
       <div className="mb-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
         <Card className="p-5">
           <CardTitle className="mb-3">Before collaboration</CardTitle>

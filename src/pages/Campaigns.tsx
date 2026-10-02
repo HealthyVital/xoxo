@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Plus } from 'lucide-react'
-import { PageHeader, DemoDataBanner, EmptyState } from '@/components/ui/Misc'
+import { PageHeader, EmptyState } from '@/components/ui/Misc'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Input, Label, Select } from '@/components/ui/Input'
@@ -33,8 +33,6 @@ export default function Campaigns() {
           </Button>
         }
       />
-      <DemoDataBanner />
-
       <Tabs
         value={statusFilter}
         onChange={setStatusFilter}
