@@ -25,6 +25,12 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          # Base URL of the deployed xoxo-integrations Cloudflare Worker (see
+          # worker/ and INTEGRATIONS_SETUP.md). Until this repo secret is set,
+          # it's an empty string, which src/lib/integrations.ts treats the
+          # same as "unset" — the app builds and runs exactly as before.
+          VITE_INTEGRATIONS_API_URL: ${{ secrets.VITE_INTEGRATIONS_API_URL }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

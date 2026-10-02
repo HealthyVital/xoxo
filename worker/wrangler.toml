@@ -1,0 +1,33 @@
+# Cloudflare Worker config for the xoxo-integrations backend.
+# See ../INTEGRATIONS_SETUP.md for the full, non-developer-friendly deploy
+# walkthrough. Quick reference:
+#
+#   1. npx wrangler login
+#   2. npx wrangler kv namespace create TOKENS   -> paste the id below
+#   3. npx wrangler secret put GOOGLE_CLIENT_ID
+#      npx wrangler secret put GOOGLE_CLIENT_SECRET
+#      npx wrangler secret put STATE_SIGNING_SECRET   (any long random string)
+#   4. npx wrangler deploy
+#
+# Secrets are never written to this file — they're set with `wrangler secret
+# put` and stored encrypted by Cloudflare.
+
+name = "xoxo-integrations"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+
+[[kv_namespaces]]
+binding = "TOKENS"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID" # from `wrangler kv namespace create TOKENS`
+
+[vars]
+# Base URL of the deployed CRM (no trailing slash). The OAuth callback
+# redirects to "${APP_ORIGIN}/app/settings?connected=...". Keep this as
+# localhost for local development; change it to
+# "https://healthyvital.github.io/xoxo" before deploying for the real team
+# (see INTEGRATIONS_SETUP.md step 3).
+APP_ORIGIN = "http://localhost:5173"
+
+# Reminder — keep ALLOWED_TEAM_EMAILS in src/index.ts in sync with
+# ../src/lib/auth.ts ALLOWED_TEAM_EMAILS. There is no shared package, so this
+# has to be done by hand on both sides whenever the team list changes.

@@ -1,0 +1,16 @@
+{
+  "name": "xoxo-integrations-worker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Cloudflare Worker backend for real Gmail-send / Google-Calendar OAuth, used by the Rotterdam Content CRM (see ../INTEGRATIONS_SETUP.md).",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.2",
+    "wrangler": "^3.90.0"
+  }
+}

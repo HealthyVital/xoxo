@@ -73,7 +73,9 @@ level security), which is exactly the kind of upgrade the architecture notes bel
 ## Environment variables
 
 **None are required to run the app.** See [`.env.example`](.env.example) for placeholders covering
-every future integration listed below — they're commented out on purpose.
+every future integration listed below — they're commented out on purpose. The one exception is
+`VITE_INTEGRATIONS_API_URL`, used by the real Gmail/Calendar integration described below — see
+[`INTEGRATIONS_SETUP.md`](INTEGRATIONS_SETUP.md).
 
 ## Data & demo data — read this before showing the app to anyone
 
@@ -119,6 +121,45 @@ Types for every entity (Prospect, Client, Campaign, CalendarItem, Proposal, Pilo
 OutreachTemplate, …) live in `src/types/index.ts` and map directly to what a Postgres schema would
 look like — see [`docs/data-model.md`](docs/data-model.md).
 
+## Gmail & Google Calendar — real integrations, read this before relying on them
+
+Unlike everything else in this document, Gmail-send and Google-Calendar sync are **real,
+working integrations**, not a "Demo / Not Connected" placeholder. Each of the 5 allowed team
+members (`src/lib/auth.ts`) can connect their own Gmail/Calendar account from Settings and send
+actual outreach emails / create actual calendar events from the CRM.
+
+This required adding the one piece of server infrastructure this project otherwise avoids: a
+small, free **Cloudflare Worker** (`worker/` at the repo root). Real Gmail/Calendar OAuth needs a
+confidential client — a client secret that must never reach the browser — and a place to persist
+refresh tokens, and a 100%-static GitHub Pages site has neither. Everything else in this app is
+still local-first and backend-free; this is the one deliberate exception, scoped as narrowly as
+possible.
+
+**How it works, in plain terms:**
+
+- The Worker exposes OAuth start/callback endpoints, a connect/disconnect status check, and two
+  action endpoints (`/gmail/send`, `/calendar/create-event`). It re-validates the same 5-email
+  allowlist from `src/lib/auth.ts` on every request that touches a token (the list is duplicated
+  in `worker/src/index.ts` with a comment pointing back here — there's no shared package across
+  the frontend/worker boundary, so keep both in sync by hand).
+- The frontend never sees a Google client secret or a refresh token — only the Worker does.
+  `src/lib/integrations.ts` is a thin `fetch` client over the Worker's HTTP API.
+- The OAuth `state` parameter is HMAC-signed (`STATE_SIGNING_SECRET`) with a 10-minute expiry, so
+  the callback can't be forged or replayed.
+- CORS on the Worker only allows `https://healthyvital.github.io` and `http://localhost:5173` —
+  nothing else can call it from a browser.
+- **Until an admin deploys the Worker and sets the `VITE_INTEGRATIONS_API_URL` secret**, the app
+  behaves exactly as it always has: Settings shows the old static "Not Connected" badges (with a
+  note pointing at the setup guide) and Outreach's "Log as sent" manual flow is the only option.
+  Nothing about the existing local-first behavior changes until that's configured.
+- **This inherits the same trust model as `AuthGate`** (see above) — whoever can get past the
+  email allowlist screen can act as that team member's Gmail/Calendar. That's an accepted
+  trade-off for a 5-person internal tool, not an oversight.
+
+See [`INTEGRATIONS_SETUP.md`](INTEGRATIONS_SETUP.md) for the full deploy walkthrough (Google Cloud
+OAuth consent screen, Cloudflare Workers deploy, GitHub secret) — $0 cost at this team size and
+volume on both Google Cloud (testing-mode OAuth) and Cloudflare Workers' free tier.
+
 ## Future integrations (not implemented — by design)
 
 The MVP must run without paid APIs, so every integration below is a labeled "Demo / Not
@@ -127,14 +168,23 @@ Connected" surface (see the Settings page) rather than a fake/mocked API call:
 - **Supabase** — real database + auth, replacing the localStorage layer above
 - **Google Analytics** — real website traffic in Client Reports
 - **Meta / Instagram** — real reach, engagement and DM data
-- **LinkedIn** — real DM sending + analytics
+- **LinkedIn** — real DM sending + analytics (not just "not built yet": LinkedIn requires special
+  partner access for messaging automation that isn't available to a small business, so this stays
+  a manual compose-and-open-the-app flow by design, not a gap to fill in later)
 - **TikTok** — real performance data
-- **Gmail / Microsoft Outlook** — real outreach email sending + tracking
-- **Google Calendar / Calendly** — real scheduling for discovery calls and shoots
+- **Microsoft Outlook** — real outreach email sending + tracking (Gmail is covered — see above)
+- **Calendly** — real booking links for discovery calls (Google Calendar sync is covered — see
+  above)
 - **Stripe** — real billing for monthly packages
 
-No fake integrations were built — outreach "sends" on the Outreach page just log a communication
-entry in the CRM timeline and are labeled as such.
+Instagram DM is in the same position as LinkedIn: Meta's Instagram Messaging API only allows
+replying within a 24-hour window after the other person messages first, so it can't power cold
+outreach either. WhatsApp outreach stays manual for the same reason (no cold-outreach API access
+for a business this size). Those three channels' Outreach flows are unchanged by this project —
+compose text, open the app, send it yourself.
+
+No other fake integrations were built — outreach "sends" for non-Email channels on the Outreach
+page just log a communication entry in the CRM timeline and are labeled as such.
 
 ## Repository structure
 
@@ -144,9 +194,12 @@ src/
   pages/          one file per route
   data/           seed data (real + demo, clearly separated) and static reference data
   store/          the single DataStoreContext (localStorage-backed) all pages read/write through
-  lib/            lead scoring, content generator, free-audit scoring, ROI calc, storage, utils
+  lib/            lead scoring, content generator, free-audit scoring, ROI calc, storage, utils,
+                  integrations.ts (client for the Gmail/Calendar Worker)
   types/          shared TypeScript types
 docs/             product spec, data model, outreach strategy
+worker/           Cloudflare Worker backend for real Gmail-send / Google-Calendar OAuth — the one
+                  piece of server infrastructure in this project, see INTEGRATIONS_SETUP.md
 ```
 
 ## Design

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Send, Clock } from 'lucide-react'
 import { useDataStore } from '@/store/DataStoreContext'
 import { PageHeader, DemoDataBanner, EmptyState } from '@/components/ui/Misc'
@@ -8,12 +8,42 @@ import { Select } from '@/components/ui/Input'
 import { Badge, DemoBadge } from '@/components/ui/Badge'
 import { defaultVariablesFor, fillTemplate } from '@/lib/templateFill'
 import { formatDate, nowIso, todayIso, cn } from '@/lib/utils'
-import type { CommunicationChannel, OutreachTemplate } from '@/types'
+import { useAuthEmail } from '@/components/layout/AuthGate'
+import { isIntegrationsConfigured, getIntegrationStatus, sendGmail } from '@/lib/integrations'
+import type { CommunicationChannel, OutreachTemplate, OutreachTemplateKind } from '@/types'
+
+// Template kinds sent by email — every other kind (LinkedIn DM, Instagram DM,
+// WhatsApp follow-up) stays a manual compose-and-paste flow on purpose: see
+// README.md for why those platforms' APIs don't support real cold outreach.
+const EMAIL_TEMPLATE_KINDS: ReadonlySet<OutreachTemplateKind> = new Set(['Email #1', 'Follow-up #1', 'Follow-up #2'])
 
 export default function Outreach() {
   const { prospects, templates, logCommunication, updateProspect } = useDataStore()
+  const authEmail = useAuthEmail()
   const [selectedProspectId, setSelectedProspectId] = useState<string | null>(null)
   const [selectedTemplateId, setSelectedTemplateId] = useState(templates[0].id)
+
+  const [gmailConnected, setGmailConnected] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [sendError, setSendError] = useState<string | null>(null)
+  const [sendSuccess, setSendSuccess] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (!isIntegrationsConfigured() || !authEmail) return
+    let cancelled = false
+    getIntegrationStatus(authEmail).then((result) => {
+      if (!cancelled) setGmailConnected(result.gmail)
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [authEmail])
+
+  // Clear any previous send result when the user switches prospect/template.
+  useEffect(() => {
+    setSendError(null)
+    setSendSuccess(null)
+  }, [selectedProspectId, selectedTemplateId])
 
   const queue = useMemo(() => {
     const today = todayIso()
@@ -34,7 +64,12 @@ export default function Outreach() {
       ? fillTemplate(selectedTemplate.subject, defaultVariablesFor(selectedProspect))
       : ''
 
-  function handleMarkSent() {
+  const isEmailKind = EMAIL_TEMPLATE_KINDS.has(selectedTemplate.kind)
+  const canSendGmail = isEmailKind && gmailConnected && Boolean(selectedProspect?.email)
+
+  /** Shared with the manual "Log as sent" button and a successful real Gmail
+   *  send — logs the communication and advances the prospect's status. */
+  function logSentAndAdvance(summaryOverride?: string) {
     if (!selectedProspect) return
     const channelMap: Record<OutreachTemplate['kind'], CommunicationChannel> = {
       'Email #1': 'Email',
@@ -49,11 +84,38 @@ export default function Outreach() {
       date: nowIso(),
       channel: channelMap[selectedTemplate.kind],
       direction: 'outbound',
-      summary: `${selectedTemplate.kind} sent.`,
+      summary: summaryOverride ?? `${selectedTemplate.kind} sent.`,
       templateId: selectedTemplate.id,
     })
     if (selectedProspect.status === 'New' || selectedProspect.status === 'Researching' || selectedProspect.status === 'Ready to Contact') {
       updateProspect(selectedProspect.id, { status: 'Contacted' })
+    }
+  }
+
+  function handleMarkSent() {
+    logSentAndAdvance()
+  }
+
+  async function handleSendGmail() {
+    if (!selectedProspect?.email || !authEmail) return
+    setSendError(null)
+    setSendSuccess(null)
+    setSending(true)
+    try {
+      await sendGmail({
+        fromEmail: authEmail,
+        to: selectedProspect.email,
+        subject: subjectPreview,
+        body: preview,
+      })
+      logSentAndAdvance(`${selectedTemplate.kind} sent via Gmail.`)
+      setSendSuccess(`Sent to ${selectedProspect.email} via Gmail and logged in the timeline.`)
+    } catch (err) {
+      // Deliberately does NOT log a "sent" entry on failure — only a
+      // confirmed send advances the prospect's status/timeline.
+      setSendError(err instanceof Error ? err.message : 'Could not send this email via Gmail.')
+    } finally {
+      setSending(false)
     }
   }
 
@@ -157,13 +219,35 @@ export default function Outreach() {
                 <pre className="mb-4 rounded-lg border border-[var(--color-hairline)] bg-[var(--color-plane)] p-4 text-xs whitespace-pre-wrap text-[var(--color-ink-secondary)]">
                   {preview}
                 </pre>
-                <p className="mb-3 text-[11px] text-[var(--color-ink-muted)]">
-                  Demo / Not Connected — this logs the send in the CRM timeline. No real email, LinkedIn, Instagram or
-                  WhatsApp message is sent by this MVP.
-                </p>
-                <Button onClick={handleMarkSent}>
-                  <Send size={14} /> Log as sent
-                </Button>
+
+                {canSendGmail ? (
+                  <>
+                    <p className="mb-3 text-[11px] text-[var(--color-ink-muted)]">
+                      Sends a real email from {authEmail} via your connected Gmail account, then logs it in the CRM
+                      timeline automatically.
+                    </p>
+                    {sendError && <p className="mb-3 text-xs text-[var(--color-critical)]">{sendError}</p>}
+                    {sendSuccess && <p className="mb-3 text-xs text-[var(--color-good)]">{sendSuccess}</p>}
+                    <div className="flex flex-wrap gap-2">
+                      <Button onClick={handleSendGmail} disabled={sending}>
+                        <Send size={14} /> {sending ? 'Sending…' : 'Send via Gmail'}
+                      </Button>
+                      <Button variant="outline" onClick={handleMarkSent} disabled={sending}>
+                        Log as sent manually
+                      </Button>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <p className="mb-3 text-[11px] text-[var(--color-ink-muted)]">
+                      Demo / Not Connected — this logs the send in the CRM timeline. No real email, LinkedIn, Instagram or
+                      WhatsApp message is sent by this MVP.
+                    </p>
+                    <Button onClick={handleMarkSent}>
+                      <Send size={14} /> Log as sent
+                    </Button>
+                  </>
+                )}
               </>
             )}
           </CardContent>

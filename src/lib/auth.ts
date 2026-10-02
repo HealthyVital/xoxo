@@ -11,6 +11,10 @@
 // backend (e.g. Supabase Auth) that checks credentials server-side.
 // ---------------------------------------------------------------------------
 
+// NOTE: the Cloudflare Worker backend (worker/src/index.ts) that powers real
+// Gmail/Calendar integrations duplicates this exact list server-side (there's
+// no shared package across the frontend/worker boundary). If you add/remove a
+// team member here, update worker/src/index.ts's ALLOWED_TEAM_EMAILS too.
 export const ALLOWED_TEAM_EMAILS = [
   'dima.gorba4ev123@gmail.com',
   'agrita.gorbacova@gmail.com',
