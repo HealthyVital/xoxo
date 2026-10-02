@@ -24,7 +24,8 @@
     "assignedTo": "Demo Rep",
     "companyName": "(Demo) Verdant Cosmetics Rotterdam",
     "industry": "Cosmetics & Beauty",
-    "status": "New"
+    "status": "New",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-002",
@@ -51,7 +52,8 @@
     "assignedTo": "Demo Rep",
     "companyName": "(Demo) Hotel Wilhelmina",
     "industry": "Hotels & Hospitality",
-    "status": "New"
+    "status": "New",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-003",
@@ -78,7 +80,8 @@
     "assignedTo": "Demo Rep",
     "companyName": "(Demo) Stride Footwear Co.",
     "industry": "Footwear & Fashion",
-    "status": "Researching"
+    "status": "Researching",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-004",
@@ -105,7 +108,8 @@
     "assignedTo": "Demo Rep",
     "companyName": "(Demo) CityPharm Kralingen",
     "industry": "Pharmacy & Health Retail",
-    "status": "Researching"
+    "status": "Researching",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-005",
@@ -132,7 +136,8 @@
     "assignedTo": "Demo Rep",
     "companyName": "(Demo) Blue Horizon Travel",
     "industry": "Travel & Tour Operators",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-006",
@@ -159,7 +164,8 @@
     "assignedTo": "Demo Rep",
     "companyName": "(Demo) Kaap Events Venue",
     "industry": "Events & Corporate",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-007",
@@ -188,7 +194,8 @@
     "industry": "Restaurants & Lifestyle",
     "status": "Contacted",
     "lastContact": "2026-09-25",
-    "nextFollowUp": "2026-10-02"
+    "nextFollowUp": "2026-10-02",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-008",
@@ -217,7 +224,8 @@
     "industry": "Hotels & Hospitality",
     "status": "Contacted",
     "lastContact": "2026-09-26",
-    "nextFollowUp": "2026-10-03"
+    "nextFollowUp": "2026-10-03",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-009",
@@ -246,7 +254,8 @@
     "industry": "Cosmetics & Beauty",
     "status": "Contacted",
     "lastContact": "2026-09-27",
-    "nextFollowUp": "2026-10-04"
+    "nextFollowUp": "2026-10-04",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-010",
@@ -275,7 +284,8 @@
     "industry": "Travel & Tour Operators",
     "status": "Contacted",
     "lastContact": "2026-09-23",
-    "nextFollowUp": "2026-09-30"
+    "nextFollowUp": "2026-09-30",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-011",
@@ -304,7 +314,8 @@
     "industry": "Footwear & Fashion",
     "status": "Opened",
     "lastContact": "2026-09-24",
-    "nextFollowUp": "2026-10-01"
+    "nextFollowUp": "2026-10-01",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-012",
@@ -333,7 +344,8 @@
     "industry": "Pharmacy & Health Retail",
     "status": "Opened",
     "lastContact": "2026-09-25",
-    "nextFollowUp": "2026-10-02"
+    "nextFollowUp": "2026-10-02",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-013",
@@ -362,7 +374,8 @@
     "industry": "Events & Corporate",
     "status": "Replied",
     "lastContact": "2026-09-27",
-    "nextFollowUp": "2026-10-01"
+    "nextFollowUp": "2026-10-01",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-014",
@@ -391,7 +404,8 @@
     "industry": "Restaurants & Lifestyle",
     "status": "Replied",
     "lastContact": "2026-09-28",
-    "nextFollowUp": "2026-09-30"
+    "nextFollowUp": "2026-09-30",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-015",
@@ -420,7 +434,8 @@
     "industry": "Hotels & Hospitality",
     "status": "Replied",
     "lastContact": "2026-09-26",
-    "nextFollowUp": "2026-10-01"
+    "nextFollowUp": "2026-10-01",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-016",
@@ -449,7 +464,8 @@
     "industry": "Cosmetics & Beauty",
     "status": "Positive Reply",
     "lastContact": "2026-09-28",
-    "nextFollowUp": "2026-10-01"
+    "nextFollowUp": "2026-10-01",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-017",
@@ -478,7 +494,8 @@
     "industry": "Footwear & Fashion",
     "status": "Positive Reply",
     "lastContact": "2026-09-27",
-    "nextFollowUp": "2026-10-02"
+    "nextFollowUp": "2026-10-02",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-018",
@@ -507,7 +524,8 @@
     "industry": "Hotels & Hospitality",
     "status": "Meeting",
     "lastContact": "2026-09-28",
-    "nextFollowUp": "2026-10-03"
+    "nextFollowUp": "2026-10-03",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-019",
@@ -536,7 +554,8 @@
     "industry": "Pharmacy & Health Retail",
     "status": "Meeting",
     "lastContact": "2026-09-27",
-    "nextFollowUp": "2026-10-04"
+    "nextFollowUp": "2026-10-04",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-020",
@@ -565,7 +584,8 @@
     "industry": "Travel & Tour Operators",
     "status": "Meeting",
     "lastContact": "2026-09-26",
-    "nextFollowUp": "2026-10-05"
+    "nextFollowUp": "2026-10-05",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-021",
@@ -594,7 +614,8 @@
     "industry": "Restaurants & Lifestyle",
     "status": "Free Pilot",
     "lastContact": "2026-09-25",
-    "nextFollowUp": "2026-10-06"
+    "nextFollowUp": "2026-10-06",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-022",
@@ -623,7 +644,8 @@
     "industry": "Events & Corporate",
     "status": "Free Pilot",
     "lastContact": "2026-09-24",
-    "nextFollowUp": "2026-10-07"
+    "nextFollowUp": "2026-10-07",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-023",
@@ -652,7 +674,8 @@
     "industry": "Cosmetics & Beauty",
     "status": "Proposal",
     "lastContact": "2026-09-26",
-    "nextFollowUp": "2026-10-04"
+    "nextFollowUp": "2026-10-04",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-024",
@@ -681,7 +704,8 @@
     "industry": "Hotels & Hospitality",
     "status": "Proposal",
     "lastContact": "2026-09-27",
-    "nextFollowUp": "2026-10-03"
+    "nextFollowUp": "2026-10-03",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-025",
@@ -710,7 +734,8 @@
     "industry": "Footwear & Fashion",
     "status": "Negotiation",
     "lastContact": "2026-09-28",
-    "nextFollowUp": "2026-10-02"
+    "nextFollowUp": "2026-10-02",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-026",
@@ -739,7 +764,8 @@
     "industry": "Travel & Tour Operators",
     "status": "Negotiation",
     "lastContact": "2026-09-27",
-    "nextFollowUp": "2026-10-01"
+    "nextFollowUp": "2026-10-01",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-027",
@@ -767,7 +793,8 @@
     "companyName": "(Demo) Hotel De Maas",
     "industry": "Hotels & Hospitality",
     "status": "Won",
-    "lastContact": "2026-08-10"
+    "lastContact": "2026-08-10",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-028",
@@ -795,7 +822,8 @@
     "companyName": "(Demo) PureGlow Cosmetics",
     "industry": "Cosmetics & Beauty",
     "status": "Won",
-    "lastContact": "2026-07-21"
+    "lastContact": "2026-07-21",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-029",
@@ -823,7 +851,8 @@
     "companyName": "(Demo) Rotterdam Sneaker Co.",
     "industry": "Footwear & Fashion",
     "status": "Won",
-    "lastContact": "2026-07-01"
+    "lastContact": "2026-07-01",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-030",
@@ -851,7 +880,8 @@
     "companyName": "(Demo) Havenstad Events",
     "industry": "Events & Corporate",
     "status": "Won",
-    "lastContact": "2026-06-21"
+    "lastContact": "2026-06-21",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-031",
@@ -879,7 +909,8 @@
     "companyName": "(Demo) OldTown Pharmacy",
     "industry": "Pharmacy & Health Retail",
     "status": "Lost",
-    "lastContact": "2026-08-30"
+    "lastContact": "2026-08-30",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-032",
@@ -907,7 +938,8 @@
     "companyName": "(Demo) Quick Travel Deals",
     "industry": "Travel & Tour Operators",
     "status": "Lost",
-    "lastContact": "2026-09-04"
+    "lastContact": "2026-09-04",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-033",
@@ -935,7 +967,8 @@
     "companyName": "(Demo) Basic Bistro",
     "industry": "Restaurants & Lifestyle",
     "status": "Not Interested",
-    "lastContact": "2026-09-14"
+    "lastContact": "2026-09-14",
+    "country": "Netherlands"
   },
   {
     "id": "demo-prospect-034",
@@ -964,6 +997,7 @@
     "companyName": "(Demo) Private Wellness Pharmacy",
     "industry": "Pharmacy & Health Retail",
     "status": "Do Not Contact",
-    "lastContact": "2026-09-09"
+    "lastContact": "2026-09-09",
+    "country": "Netherlands"
   }
 ]

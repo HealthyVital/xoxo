@@ -26,6 +26,7 @@ export function ProspectFormModal({ onClose }: { onClose: () => void }) {
   const { addProspect } = useDataStore()
   const [companyName, setCompanyName] = useState('')
   const [industry, setIndustry] = useState<Vertical>('Hotels & Hospitality')
+  const [country, setCountry] = useState('Netherlands')
   const [city, setCity] = useState('Rotterdam')
   const [website, setWebsite] = useState('')
   const [source, setSource] = useState('')
@@ -44,6 +45,7 @@ export function ProspectFormModal({ onClose }: { onClose: () => void }) {
     addProspect({
       companyName,
       industry,
+      country,
       city,
       website: website || undefined,
       source: source || 'Manually added',
@@ -98,6 +100,10 @@ export function ProspectFormModal({ onClose }: { onClose: () => void }) {
               </option>
             ))}
           </Select>
+        </div>
+        <div>
+          <Label htmlFor="country">Country</Label>
+          <Input id="country" value={country} onChange={(e) => setCountry(e.target.value)} />
         </div>
         <div>
           <Label htmlFor="city">City</Label>

@@ -20,6 +20,7 @@ type SortableKey =
   | 'email'
   | 'industry'
   | 'city'
+  | 'country'
   | 'status'
   | 'leadScore'
   | 'verificationStatus'
@@ -35,6 +36,7 @@ const COLUMNS: { key: SortableKey; label: string; type: ColumnType }[] = [
   { key: 'email', label: 'Email', type: 'text' },
   { key: 'industry', label: 'Industry', type: 'text' },
   { key: 'city', label: 'City', type: 'text' },
+  { key: 'country', label: 'Country', type: 'text' },
   { key: 'status', label: 'Status', type: 'text' },
   { key: 'leadScore', label: 'Lead score', type: 'number' },
   { key: 'verificationStatus', label: 'Verification', type: 'text' },
@@ -70,6 +72,7 @@ export default function Prospects() {
   const { prospects } = useDataStore()
   const [search, setSearch] = useState('')
   const [industry, setIndustry] = useState('all')
+  const [country, setCountry] = useState('all')
   const [status, setStatus] = useState('all')
   const [minScore, setMinScore] = useState(0)
   const [companySize, setCompanySize] = useState('all')
@@ -89,9 +92,15 @@ export default function Prospects() {
   const [showAdd, setShowAdd] = useState(false)
   const selected = selectedId ? (prospects.find((p) => p.id === selectedId) ?? null) : null
 
+  const countries = useMemo(
+    () => [...new Set(prospects.map((p) => p.country).filter(Boolean))].sort(),
+    [prospects],
+  )
+
   const filtered = useMemo(() => {
     let list = prospects.filter((p) => {
       if (industry !== 'all' && p.industry !== industry) return false
+      if (country !== 'all' && p.country !== country) return false
       if (status !== 'all' && p.status !== status) return false
       if (companySize !== 'all' && p.companySize !== companySize) return false
       if (p.leadScore < minScore) return false
@@ -105,10 +114,10 @@ export default function Prospects() {
     const columnType = COLUMNS.find((c) => c.key === sortKey)?.type ?? 'text'
     list = [...list].sort((a, b) => compareProspects(a, b, sortKey, columnType, sortDir))
     return list
-  }, [prospects, industry, status, companySize, minScore, search, sortKey, sortDir])
+  }, [prospects, industry, country, status, companySize, minScore, search, sortKey, sortDir])
 
   function exportCsv() {
-    const headers = ['companyName', 'phone', 'email', 'industry', 'city', 'status', 'leadScore', 'verificationStatus', 'website', 'source', 'sourceUrl']
+    const headers = ['companyName', 'phone', 'email', 'industry', 'city', 'country', 'status', 'leadScore', 'verificationStatus', 'website', 'source', 'sourceUrl']
     const rows = filtered.map((p) => headers.map((h) => JSON.stringify((p as unknown as Record<string, unknown>)[h] ?? '')).join(','))
     const csv = [headers.join(','), ...rows].join('\n')
     const blob = new Blob([csv], { type: 'text/csv' })
@@ -139,7 +148,7 @@ export default function Prospects() {
       <DemoDataBanner />
 
       <Card className="mb-4 p-4">
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-6">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-7">
           <div className="relative lg:col-span-2">
             <Search size={14} className="absolute top-1/2 left-3 -translate-y-1/2 text-[var(--color-ink-muted)]" />
             <Input placeholder="Search company, city, industry…" value={search} onChange={(e) => setSearch(e.target.value)} className="pl-8" />
@@ -149,6 +158,14 @@ export default function Prospects() {
             {VERTICALS.map((v) => (
               <option key={v} value={v}>
                 {v}
+              </option>
+            ))}
+          </Select>
+          <Select value={country} onChange={(e) => setCountry(e.target.value)}>
+            <option value="all">All countries</option>
+            {countries.map((c) => (
+              <option key={c} value={c}>
+                {c}
               </option>
             ))}
           </Select>
@@ -251,6 +268,7 @@ export default function Prospects() {
                 </td>
                 <td className="px-4 py-3 text-[var(--color-ink-secondary)]">{p.industry}</td>
                 <td className="px-4 py-3 text-[var(--color-ink-secondary)]">{p.city}</td>
+                <td className="px-4 py-3 text-[var(--color-ink-secondary)]">{p.country}</td>
                 <td className="px-4 py-3">
                   <Badge tone="brand">{p.status}</Badge>
                 </td>
@@ -269,7 +287,7 @@ export default function Prospects() {
             ))}
             {filtered.length === 0 && (
               <tr>
-                <td colSpan={11} className="px-4 py-10 text-center text-sm text-[var(--color-ink-muted)]">
+                <td colSpan={12} className="px-4 py-10 text-center text-sm text-[var(--color-ink-muted)]">
                   No prospects match these filters.
                 </td>
               </tr>

@@ -69,6 +69,7 @@ export interface Prospect {
   marketingRole?: string
   address?: string
   city: string
+  country: string
   postalCode?: string
   instagram?: string
   facebook?: string

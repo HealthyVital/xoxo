@@ -32,7 +32,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "phone": "+31-20-7979196"
+    "phone": "+31-20-7979196",
+    "country": "Netherlands"
   },
   {
     "id": "hilton-rotterdam-rtm",
@@ -69,7 +70,8 @@
     "phone": "+31 10 710 8000",
     "email": "Rotterdam.info@hilton.com",
     "address": "Weena 10, 3012 CM Rotterdam",
-    "postalCode": "3012 CM"
+    "postalCode": "3012 CM",
+    "country": "Netherlands"
   },
   {
     "id": "doubletree-by-hilton-rotterdam-centre-rtm",
@@ -104,7 +106,8 @@
     "isDemo": false,
     "phone": "+31 10 413 4139",
     "address": "Leuvehaven 80, 3011 EA Rotterdam",
-    "postalCode": "3011 EA"
+    "postalCode": "3011 EA",
+    "country": "Netherlands"
   },
   {
     "id": "ibis-rotterdam-city-centre-rtm",
@@ -139,7 +142,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "phone": "+31 10 750 2520"
+    "phone": "+31 10 750 2520",
+    "country": "Netherlands"
   },
   {
     "id": "h3-hotel-rotterdam-city-center-rtm",
@@ -172,7 +176,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "thon-hotel-rotterdam-rtm",
@@ -210,7 +215,8 @@
     "phone": "+31 10 413 47 90",
     "email": "Reservations.nl@thon.com",
     "address": "Willemsplein 1, 3016 DN Rotterdam",
-    "postalCode": "3016 DN"
+    "postalCode": "3016 DN",
+    "country": "Netherlands"
   },
   {
     "id": "cityhub-rotterdam-rtm",
@@ -247,7 +253,8 @@
     "phone": "+31-10-3075830",
     "email": "rotterdam@cityhub.com",
     "address": "Witte de Withstraat 87, 3012 BN Rotterdam",
-    "postalCode": "3012 BN"
+    "postalCode": "3012 BN",
+    "country": "Netherlands"
   },
   {
     "id": "the-james-hotel-rotterdam-rtm",
@@ -284,7 +291,8 @@
     "isDemo": false,
     "phone": "+31 (0) 10 7605070",
     "email": "info@thejames.nl",
-    "postalCode": "3012 CA"
+    "postalCode": "3012 CA",
+    "country": "Netherlands"
   },
   {
     "id": "nh-atlanta-hotel-rotterdam-rtm",
@@ -319,7 +327,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "phone": "+31 10-206-7800"
+    "phone": "+31 10-206-7800",
+    "country": "Netherlands"
   },
   {
     "id": "leonardo-hotel-rotterdam-savoy-rtm",
@@ -355,7 +364,8 @@
     "isDemo": false,
     "phone": "31 10-413-9280",
     "address": "Hoogstraat 81, 3011 PJ Rotterdam",
-    "postalCode": "3011 PJ"
+    "postalCode": "3011 PJ",
+    "country": "Netherlands"
   },
   {
     "id": "postillion-hotel-convention-centre-wtc-rotterdam-rtm",
@@ -390,7 +400,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "phone": "+31 (0)10 405 4462"
+    "phone": "+31 (0)10 405 4462",
+    "country": "Netherlands"
   },
   {
     "id": "the-social-hub-rotterdam-rtm",
@@ -425,7 +436,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "misunara-skin-cosmetics-rtm",
@@ -463,7 +475,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "085 004 7968",
-    "email": "info@misunara.nl"
+    "email": "info@misunara.nl",
+    "country": "Netherlands"
   },
   {
     "id": "haru-haru-beauty-rotterdam-rtm",
@@ -499,7 +512,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "phone": "+31 10 737 0315"
+    "phone": "+31 10 737 0315",
+    "country": "Netherlands"
   },
   {
     "id": "yaoskin-rtm",
@@ -536,7 +550,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "email": "info@yaoskin.com"
+    "email": "info@yaoskin.com",
+    "country": "Netherlands"
   },
   {
     "id": "skins-cosmetics-rotterdam-rtm",
@@ -572,7 +587,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "+31 10 214 2505",
-    "email": "webshop@skins.nl"
+    "email": "webshop@skins.nl",
+    "country": "Netherlands"
   },
   {
     "id": "ici-paris-xl-rotterdam-rtm",
@@ -605,7 +621,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "etos-rotterdam-rtm",
@@ -638,7 +655,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "skin-by-dermalogica-rotterdam-rtm",
@@ -674,7 +692,8 @@
     "isDemo": false,
     "phone": "010-4666383",
     "address": "Haagseveer 120, 3011 DB Rotterdam",
-    "postalCode": "3011 DB"
+    "postalCode": "3011 DB",
+    "country": "Netherlands"
   },
   {
     "id": "le-salon-glawbeauty-rtm",
@@ -707,7 +726,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "derma-kliniek-rotterdam-rtm",
@@ -743,7 +763,8 @@
     "isDemo": false,
     "phone": "010-7956740",
     "address": "Heemraadssingel 180, 3021 DL Rotterdam",
-    "postalCode": "3021 DL"
+    "postalCode": "3021 DL",
+    "country": "Netherlands"
   },
   {
     "id": "ave-esthetique-rotterdam-rtm",
@@ -776,7 +797,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "van-den-assem-rtm",
@@ -810,7 +832,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "phone": "010-2800600"
+    "phone": "010-2800600",
+    "country": "Netherlands"
   },
   {
     "id": "woei-rtm",
@@ -845,7 +868,8 @@
     "isDemo": false,
     "phone": "+31 10 404 8531",
     "address": "Hoogstraat 44-A, 3011 RH Rotterdam",
-    "postalCode": "3011 RH"
+    "postalCode": "3011 RH",
+    "country": "Netherlands"
   },
   {
     "id": "both-rotterdam-heren-rtm",
@@ -881,7 +905,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "010-4127351",
-    "email": "info@bothschoenen.nl"
+    "email": "info@bothschoenen.nl",
+    "country": "Netherlands"
   },
   {
     "id": "both-rotterdam-dames-rtm",
@@ -917,7 +942,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "010-4131156",
-    "email": "info@bothschoenen.nl"
+    "email": "info@bothschoenen.nl",
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-erasmus-rtm",
@@ -953,7 +979,8 @@
     "isDemo": false,
     "phone": "010-4129331",
     "address": "West-Kruiskade 21A, 3014 AK Rotterdam",
-    "postalCode": "3014 AK"
+    "postalCode": "3014 AK",
+    "country": "Netherlands"
   },
   {
     "id": "medsen-apotheek-rtm",
@@ -986,7 +1013,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-rozenburg-rtm",
@@ -1022,7 +1050,8 @@
     "isDemo": false,
     "phone": "010-4123598",
     "address": "Oudedijk 60M, 3062 AE Rotterdam",
-    "postalCode": "3062 AE"
+    "postalCode": "3062 AE",
+    "country": "Netherlands"
   },
   {
     "id": "mediq-apotheek-noordereiland-rtm",
@@ -1055,7 +1084,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-beukelsdijk-rtm",
@@ -1091,7 +1121,8 @@
     "isDemo": false,
     "phone": "010-4772644",
     "address": "Beukelsdijk 134-138, 3022 DL Rotterdam",
-    "postalCode": "3022 DL"
+    "postalCode": "3022 DL",
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-m-cohen-rtm",
@@ -1127,7 +1158,8 @@
     "isDemo": false,
     "phone": "010-4764319",
     "address": "Schiedamseweg 158, 3025 AK Rotterdam",
-    "postalCode": "3025 AK"
+    "postalCode": "3025 AK",
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-t-slag-rtm",
@@ -1164,7 +1196,8 @@
     "isDemo": false,
     "phone": "010-4324955",
     "address": "Sandelingplein 16a, 3075 AG Rotterdam",
-    "postalCode": "3075 AG"
+    "postalCode": "3075 AG",
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-aelbrechtskade-rtm",
@@ -1201,7 +1234,8 @@
     "isDemo": false,
     "phone": "010-3104410",
     "address": "Aelbrechtskade 82, 3023 JA Rotterdam",
-    "postalCode": "3023 JA"
+    "postalCode": "3023 JA",
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-charlois-rtm",
@@ -1238,7 +1272,8 @@
     "isDemo": false,
     "phone": "010-4290983",
     "address": "Boergoensestraat 78, 3082 KC Rotterdam",
-    "postalCode": "3082 KC"
+    "postalCode": "3082 KC",
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-crooswijk-rtm",
@@ -1275,7 +1310,8 @@
     "isDemo": false,
     "phone": "010-4136727",
     "address": "Crooswijkseweg 65A, 3034 HD Rotterdam",
-    "postalCode": "3034 HD"
+    "postalCode": "3034 HD",
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-de-esch-rtm",
@@ -1312,7 +1348,8 @@
     "isDemo": false,
     "phone": "010-4528464",
     "address": "Rijnwaterstraat 43, 3063 HC Rotterdam",
-    "postalCode": "3063 HC"
+    "postalCode": "3063 HC",
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-hesseplaats-rtm",
@@ -1346,7 +1383,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-het-lage-land-rtm",
@@ -1383,7 +1421,8 @@
     "isDemo": false,
     "phone": "010-4201202",
     "address": "Henk Speksnijderstraat 10, 3067 AC Rotterdam",
-    "postalCode": "3067 AC"
+    "postalCode": "3067 AC",
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-laan-op-zuid-rtm",
@@ -1420,7 +1459,8 @@
     "isDemo": false,
     "phone": "010-4863177",
     "address": "Laan op Zuid 919, 3072 DB Rotterdam",
-    "postalCode": "3072 DB"
+    "postalCode": "3072 DB",
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-lange-hille-rtm",
@@ -1454,7 +1494,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-oud-mathenesse-rtm",
@@ -1492,7 +1533,8 @@
     "phone": "010-4155519",
     "email": "oudmathenesse@benu.nl",
     "address": "Franselaan 246a, 3028 AR Rotterdam",
-    "postalCode": "3028 AR"
+    "postalCode": "3028 AR",
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-reyeroord-rtm",
@@ -1529,7 +1571,8 @@
     "isDemo": false,
     "phone": "010-4790500",
     "address": "Kouwenoord 89, 3079 LG Rotterdam",
-    "postalCode": "3079 LG"
+    "postalCode": "3079 LG",
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-rosestraat-rtm",
@@ -1566,7 +1609,8 @@
     "isDemo": false,
     "phone": "010-4850308",
     "address": "Rosestraat 91, 3071 JP Rotterdam",
-    "postalCode": "3071 JP"
+    "postalCode": "3071 JP",
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-spangen-rtm",
@@ -1600,7 +1644,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-wester-rotterdam-rtm",
@@ -1637,7 +1682,8 @@
     "isDemo": false,
     "phone": "010-4362122",
     "address": "Nieuwe Binnenweg 143, 3014 GJ Rotterdam",
-    "postalCode": "3014 GJ"
+    "postalCode": "3014 GJ",
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-j-van-den-berg-rtm",
@@ -1673,7 +1719,8 @@
     "isDemo": false,
     "phone": "010-4163243",
     "address": "Binnenban 172-176, 3191 CL Rotterdam",
-    "postalCode": "3191 CL"
+    "postalCode": "3191 CL",
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-dante-rtm",
@@ -1709,7 +1756,8 @@
     "isDemo": false,
     "phone": "010-4192884",
     "address": "Dantestraat 456, 3076 KV Rotterdam",
-    "postalCode": "3076 KV"
+    "postalCode": "3076 KV",
+    "country": "Netherlands"
   },
   {
     "id": "service-apotheek-dorpsweg-rtm",
@@ -1746,7 +1794,8 @@
     "phone": "010-4814197",
     "email": "dorpswegapotheek@ezorg.nl",
     "address": "Dorpsweg 160 C, 3083 LK Rotterdam",
-    "postalCode": "3083 LK"
+    "postalCode": "3083 LK",
+    "country": "Netherlands"
   },
   {
     "id": "service-apotheek-van-waert-rtm",
@@ -1783,7 +1832,8 @@
     "phone": "010-4808636",
     "email": "assistente@apotheek-vanwaert.nl",
     "address": "Schere 31, 3085 DT Rotterdam",
-    "postalCode": "3085 DT"
+    "postalCode": "3085 DT",
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-schiemond-rotterdam-rtm",
@@ -1820,7 +1870,8 @@
     "phone": "010-4778810",
     "email": "info@apotheekschiemond.nl",
     "address": "Pelgrimsstraat 10, 3029 BJ Rotterdam",
-    "postalCode": "3029 BJ"
+    "postalCode": "3029 BJ",
+    "country": "Netherlands"
   },
   {
     "id": "rotterdam-ahoy-rtm",
@@ -1855,7 +1906,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "phone": "010-2933300"
+    "phone": "010-2933300",
+    "country": "Netherlands"
   },
   {
     "id": "de-doelen-rtm",
@@ -1892,7 +1944,8 @@
     "isDemo": false,
     "phone": "010-2171700",
     "address": "Kruisstraat 2, 3012 CT Rotterdam",
-    "postalCode": "3012 CT"
+    "postalCode": "3012 CT",
+    "country": "Netherlands"
   },
   {
     "id": "world-trade-center-rotterdam-rtm",
@@ -1928,7 +1981,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "+31 10 405 4444",
-    "email": "receptie@wtcrotterdam.com"
+    "email": "receptie@wtcrotterdam.com",
+    "country": "Netherlands"
   },
   {
     "id": "rdm-rotterdam-rtm",
@@ -1966,7 +2020,8 @@
     "phone": "010-2524472",
     "email": "communicatie@rdmrotterdam.nl",
     "address": "Klinknagelstraat 2, 3089 JP Rotterdam",
-    "postalCode": "3089 JP"
+    "postalCode": "3089 JP",
+    "country": "Netherlands"
   },
   {
     "id": "wereldmuseum-rotterdam-rtm",
@@ -2002,7 +2057,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "010-2707172",
-    "email": "info@wereldmuseum.nl"
+    "email": "info@wereldmuseum.nl",
+    "country": "Netherlands"
   },
   {
     "id": "de-kuip-rtm",
@@ -2037,7 +2093,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "phone": "010-4929455"
+    "phone": "010-4929455",
+    "country": "Netherlands"
   },
   {
     "id": "restaurant-fred-rtm",
@@ -2073,7 +2130,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "010-2120110",
-    "email": "info@restaurantfred.nl"
+    "email": "info@restaurantfred.nl",
+    "country": "Netherlands"
   },
   {
     "id": "fg-restaurant-rtm",
@@ -2106,7 +2164,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "heroine-restaurant-bar-rtm",
@@ -2142,7 +2201,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "+31681963763",
-    "postalCode": "3011 RT"
+    "postalCode": "3011 RT",
+    "country": "Netherlands"
   },
   {
     "id": "renilde-rtm",
@@ -2178,7 +2238,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "+31 10 441 9400",
-    "postalCode": "3015 CX"
+    "postalCode": "3015 CX",
+    "country": "Netherlands"
   },
   {
     "id": "celest-rtm",
@@ -2212,7 +2273,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "rotonde-rtm",
@@ -2245,7 +2307,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "foodhallen-rotterdam-kop-van-zuid-rtm",
@@ -2279,7 +2342,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "fenix-food-factory-rtm",
@@ -2315,7 +2379,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "+31 10 218 0853",
-    "postalCode": "3072 LM"
+    "postalCode": "3072 LM",
+    "country": "Netherlands"
   },
   {
     "id": "rozey-rotterdam-rtm",
@@ -2348,7 +2413,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tui-reisbureau-rotterdam-karel-doormanstraat-rtm",
@@ -2386,7 +2452,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "010-4130840",
-    "email": "rotterdamkare@tui.nl"
+    "email": "rotterdamkare@tui.nl",
+    "country": "Netherlands"
   },
   {
     "id": "tui-reisbureau-rotterdam-keizerswaard-rtm",
@@ -2424,7 +2491,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "010-4795911",
-    "email": "rotterdamkeiz@tui.nl"
+    "email": "rotterdamkeiz@tui.nl",
+    "country": "Netherlands"
   },
   {
     "id": "lv-travel-agency-rtm",
@@ -2460,7 +2528,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "address": "Weena 1083, 3013 AL Rotterdam",
-    "postalCode": "3013 AL"
+    "postalCode": "3013 AL",
+    "country": "Netherlands"
   },
   {
     "id": "salsabil-travel-rtm",
@@ -2498,7 +2567,8 @@
     "phone": "+31104775614",
     "email": "info@salsabiltravel.nl",
     "address": "Vierambachtsstraat 19A, 3022 AB Rotterdam",
-    "postalCode": "3022 AB"
+    "postalCode": "3022 AB",
+    "country": "Netherlands"
   },
   {
     "id": "lavida-travel-b-v-rtm",
@@ -2534,7 +2604,8 @@
     "isDemo": false,
     "phone": "+31368200226",
     "address": "Dorpsweg 98A, 3083 LE Rotterdam",
-    "postalCode": "3083 LE"
+    "postalCode": "3083 LE",
+    "country": "Netherlands"
   },
   {
     "id": "panta-reizen-rtm",
@@ -2571,7 +2642,8 @@
     "phone": "010-4925492",
     "email": "info@panta.nl",
     "address": "Bierens de Haanweg 22-28, 3076 DC Rotterdam",
-    "postalCode": "3076 DC"
+    "postalCode": "3076 DC",
+    "country": "Netherlands"
   },
   {
     "id": "reas-reizen-rtm",
@@ -2608,7 +2680,8 @@
     "phone": "010-4814488",
     "email": "info@reasreizen.nl",
     "address": "Laan op Zuid 196, 3071 AA Rotterdam",
-    "postalCode": "3071 AA"
+    "postalCode": "3071 AA",
+    "country": "Netherlands"
   },
   {
     "id": "reisbureau-buitenlandsche-zaken-rtm",
@@ -2641,7 +2714,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "reisbureau-schiebroek-rtm",
@@ -2678,7 +2752,8 @@
     "phone": "010-4614316",
     "email": "info@reisbureauschiebroek.nl",
     "address": "Peppelweg 81a, 3053 GD Rotterdam",
-    "postalCode": "3053 GD"
+    "postalCode": "3053 GD",
+    "country": "Netherlands"
   },
   {
     "id": "travelxl-hillegersberg-rtm",
@@ -2711,7 +2786,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "uniglobe-alliance-travel-rtm",
@@ -2747,7 +2823,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ata-tours-rtm",
@@ -2783,7 +2860,8 @@
     "isDemo": false,
     "phone": "010-4852628",
     "address": "Beijerlandselaan 73, 3074 EC Rotterdam",
-    "postalCode": "3074 EC"
+    "postalCode": "3074 EC",
+    "country": "Netherlands"
   },
   {
     "id": "cruisereizen-rtm",
@@ -2816,7 +2894,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "zoyo-travel-services-rtm",
@@ -2850,7 +2929,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "travelessence-rtm",
@@ -2883,7 +2963,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "travelxl-reisbureau-mathe-de-groot-rtm",
@@ -2916,7 +2997,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "rotterdam-marriott-hotel-rtm",
@@ -2952,7 +3034,8 @@
     ],
     "dealValue": 1300,
     "updatedAt": "2026-09-29",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "citizenm-rotterdam-rtm",
@@ -2987,7 +3070,8 @@
     ],
     "dealValue": 1300,
     "updatedAt": "2026-09-29",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "hassaan-travel-rtm",
@@ -3023,7 +3107,8 @@
     ],
     "dealValue": 850,
     "updatedAt": "2026-09-29",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "christoffel-travel-rtm",
@@ -3059,7 +3144,8 @@
     ],
     "dealValue": 850,
     "updatedAt": "2026-09-29",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "flywise-travel-b-v-rtm",
@@ -3093,7 +3179,8 @@
     ],
     "dealValue": 850,
     "updatedAt": "2026-09-29",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "nubian-queen-cosmetics-rtm",
@@ -3128,7 +3215,8 @@
     ],
     "dealValue": 1100,
     "updatedAt": "2026-09-29",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "the-punch-rotterdam-rtm",
@@ -3163,7 +3251,8 @@
     ],
     "dealValue": 1100,
     "updatedAt": "2026-09-29",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "sneaker-centre-rotterdam-centrum-rtm",
@@ -3198,7 +3287,8 @@
     ],
     "dealValue": 1100,
     "updatedAt": "2026-09-29",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "dienstapotheek-rotterdam-zuid-rtm",
@@ -3233,7 +3323,8 @@
     ],
     "dealValue": 650,
     "updatedAt": "2026-09-29",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "pharmacy-spanhoff-b-v-rtm",
@@ -3268,7 +3359,8 @@
     ],
     "dealValue": 650,
     "updatedAt": "2026-09-29",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "dienstapotheek-rotterdam-noord-rtm",
@@ -3303,7 +3395,8 @@
     ],
     "dealValue": 650,
     "updatedAt": "2026-09-29",
-    "status": "Ready to Contact"
+    "status": "Ready to Contact",
+    "country": "Netherlands"
   },
   {
     "id": "suite-hotel-pincoffs-rtm",
@@ -3335,7 +3428,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "room-mate-bruno-rtm",
@@ -3368,7 +3462,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hotel-new-york-rtm",
@@ -3400,7 +3495,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "nhow-rotterdam-rtm",
@@ -3433,7 +3529,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "a-o-rotterdam-city-rtm",
@@ -3466,7 +3563,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sparks-hostel-rtm",
@@ -3498,7 +3596,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "stayokay-hostel-rotterdam-rtm",
@@ -3531,7 +3630,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ani-haakien-hostel-rotterdam-rtm",
@@ -3563,7 +3663,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bastion-hotel-rotterdam-alexander-hoofdweg-40-3067-gh-rotterdam-rtm",
@@ -3598,7 +3699,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "motto-by-hilton-rotterdam-blaak-rtm",
@@ -3631,7 +3733,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "le-marin-hotel-rotterdam-city-rtm",
@@ -3663,7 +3766,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "rotterdam-city-loft-delfshaven-rtm",
@@ -3695,7 +3799,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "premier-suites-rotterdam-rtm",
@@ -3728,7 +3833,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "urban-residences-rotterdam-rtm",
@@ -3760,7 +3866,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "midtown-hotel-rotterdam-rtm",
@@ -3792,7 +3899,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "numa-rotterdam-coolsingel-rtm",
@@ -3825,7 +3933,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "maurits-apartments-suites-rtm",
@@ -3857,7 +3966,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "boathotel-rotterdam-rtm",
@@ -3889,7 +3999,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ruby-rotterdam-rtm",
@@ -3922,7 +4033,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hotel-supernova-rtm",
@@ -3954,7 +4066,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "d-reizen-rotterdam-keizerswaard-keizerswaard-42-42a-rotterdam-rtm",
@@ -3988,7 +4101,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "d-reizen-rotterdam-watermanweg-watermanweg-349-rotterdam-rtm",
@@ -4022,7 +4136,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "d-reizen-rotterdam-zwart-janstraat-zwart-janstraat-104-rotterdam-rtm",
@@ -4056,7 +4171,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "d-reizen-rotterdam-beijerlandse-passage-beijerlandse-passage-4-3074-rw-rotterdam-rtm",
@@ -4092,7 +4208,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "d-reizen-rotterdam-coolsingel-coolsingel-60d-3011-ae-rotterdam-rtm",
@@ -4128,7 +4245,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "d-reizen-rotterdam-poolsterstraat-poolsterstraat-146-rotterdam-rtm",
@@ -4162,7 +4280,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "d-reizen-rotterdam-zuidplein-zuidplein-hoog-425-3083-be-rotterdam-rtm",
@@ -4198,7 +4317,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "istanbul-reisbureau-rtm",
@@ -4230,7 +4350,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "selkam-travel-west-kruiskade-75-b-rotterdam-rtm",
@@ -4263,7 +4384,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "fatih-reizen-zwart-janstraat-63-b-3035-al-rotterdam-rtm",
@@ -4297,7 +4419,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "topkapi-reizen-rtm",
@@ -4329,7 +4452,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "savannah-travel-overschiese-dorpsstraat-127-3043-cp-rotterdam-rtm",
@@ -4364,7 +4488,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "douglas-rotterdam-beurstraverse-beurstraverse-41-3011-ae-rotterdam-rtm",
@@ -4400,7 +4525,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "douglas-rotterdam-lijnbaan-lijnbaan-72-3012-ep-rotterdam-rtm",
@@ -4436,7 +4562,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "douglas-rotterdam-alexandrium-poolsterstraat-85-3067-lx-rotterdam-rtm",
@@ -4472,7 +4599,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "douglas-rotterdam-weissenbruchlaan-weissenbruchlaan-158-3054-ls-rotterdam-rtm",
@@ -4508,7 +4636,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "douglas-rotterdam-zuidplein-zuidplein-hoog-695-3083-bh-rotterdam-rtm",
@@ -4544,7 +4673,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "rituals-rotterdam-bergse-dorpsstraat-bergse-dorpsstraat-99-3054-gc-rotterdam-rtm",
@@ -4579,7 +4709,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "rituals-rotterdam-korte-lijnbaan-korte-lijnbaan-8-3012-ed-rotterdam-rtm",
@@ -4615,7 +4746,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "rituals-rotterdam-watermanweg-watermanweg-341-3067-ga-rotterdam-rtm",
@@ -4650,7 +4782,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ici-paris-xl-rotterdam-poolsterstraat-poolsterstraat-98-3067-lx-rotterdam-rtm",
@@ -4685,7 +4818,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ici-paris-xl-rotterdam-zuidplein-zuidplein-hoog-827-3083-bk-rotterdam-rtm",
@@ -4720,7 +4854,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ici-paris-xl-rotterdam-lijnbaan-lijnbaan-138-3012-er-rotterdam-rtm",
@@ -4755,7 +4890,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ici-paris-xl-rotterdam-streksingel-streksingel-67b-3054-hb-rotterdam-rtm",
@@ -4790,7 +4926,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ici-paris-xl-rotterdam-zwart-janstraat-zwart-janstraat-103-105-3035-an-rotterdam-rtm",
@@ -4825,7 +4962,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ici-paris-xl-rotterdam-stationsplein-stationsplein-17a-3013-aj-rotterdam-rtm",
@@ -4860,7 +4998,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ezoncs-beauty-salon-bredestraat-316-rotterdam-rtm",
@@ -4893,7 +5032,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "le-esthetics-freericksplaats-6-3054-gm-rotterdam-rtm",
@@ -4927,7 +5067,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "nailky-bierstraat-101-3011-xw-rotterdam-rtm",
@@ -4961,7 +5102,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "house-of-dash-viervantstraat-324-3066-ph-rotterdam-rtm",
@@ -4995,7 +5137,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "evy-beauty-concept-antoine-platekade-1011-3072-me-rotterdam-rtm",
@@ -5029,7 +5172,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "studio-l-spanjaardstraat-42b-3025-tr-rotterdam-rtm",
@@ -5064,7 +5208,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "beautylounge-rotterdam-oostzeedijk-beneden-103-rotterdam-rtm",
@@ -5097,7 +5242,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bei-capelli-andries-copierhof-3a-3059-lm-rotterdam-rtm",
@@ -5132,7 +5278,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ixxi-kappers-hair-sun-nails-beauty-zevenkampse-ring-333-rotterdam-rtm",
@@ -5165,7 +5312,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "city-palace-hair-beauty-middellandstraat-38a-3014-be-rotterdam-rtm",
@@ -5199,7 +5347,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "cheap-fashion-rtm",
@@ -5231,7 +5380,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "daily-sneaker-steals-rtm",
@@ -5263,7 +5413,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "square-eight-rtm",
@@ -5295,7 +5446,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "funkie-house-rotterdam-rtm",
@@ -5327,7 +5479,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-swapshop-rtm",
@@ -5359,7 +5512,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "buuf-rtm",
@@ -5391,7 +5545,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "basecamp-rtm",
@@ -5423,7 +5578,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hidden-youth-rtm",
@@ -5455,7 +5611,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "maison-maas-rtm",
@@ -5487,7 +5644,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "stil-leven-rtm",
@@ -5519,7 +5677,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "rejoes-rtm",
@@ -5551,7 +5710,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "nelson-rotterdam-lijnbaan-lijnbaan-76-3012-er-rotterdam-rtm",
@@ -5587,7 +5747,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "foot-locker-rotterdam-lijnbaan-lijnbaan-75-rotterdam-rtm",
@@ -5621,7 +5782,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ecco-rotterdam-lijnbaan-134-rotterdam-rtm",
@@ -5655,7 +5817,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "omoda-rotterdam-korte-lijnbaan-rotterdam-rtm",
@@ -5689,7 +5852,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "wear-rtm",
@@ -5721,7 +5885,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "be-so-different-pannekoekstraat-39a-rotterdam-rtm",
@@ -5755,7 +5920,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "lot-boutique-pannekoekstraat-42-a-3011-lh-rotterdam-rtm",
@@ -5790,7 +5956,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "suitable-rotterdam-meent-29a-3011-jk-rotterdam-rtm",
@@ -5825,7 +5992,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "claudia-strater-rotterdam-korte-lijnbaan-25-3012-ec-rotterdam-rtm",
@@ -5861,7 +6029,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "shoesme-brandstore-rotterdam-bergse-dorpsstraat-36b-3054-ge-rotterdam-rtm",
@@ -5896,7 +6065,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "vos-schoenmode-rtm",
@@ -5928,7 +6098,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "jd-sports-rotterdam-lijnbaan-lijnbaan-77-3012-em-rotterdam-rtm",
@@ -5963,7 +6134,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "jd-sports-rotterdam-alexandrium-poolsterstraat-92a-3067-lx-rotterdam-rtm",
@@ -5998,7 +6170,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "jd-sports-rotterdam-zuidplein-zuidplein-hg-523-537-3083-bg-rotterdam-rtm",
@@ -6033,7 +6206,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "perry-sport-rotterdam-hoogstraat-196a-3011-pv-rotterdam-rtm",
@@ -6068,7 +6242,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-hillegersberg-minervaplein-2a-3054-sk-rotterdam-rtm",
@@ -6103,7 +6278,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "overschiese-apotheek-rotterdamse-rijweg-130-3042-as-rotterdam-rtm",
@@ -6138,7 +6314,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kralingsche-apotheek-oudedijk-133-3061-aa-rotterdam-rtm",
@@ -6173,7 +6350,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-delfshaven-schiedamseweg-5a-7c-3026-aa-rotterdam-rtm",
@@ -6208,7 +6386,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-zevenkamp-imkerstraat-35-3068-gx-rotterdam-rtm",
@@ -6243,7 +6422,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-ommoord-marshallweg-1-3068-jn-rotterdam-rtm",
@@ -6279,7 +6459,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "service-apotheek-lombardijen-spinozaweg-285-3076-ep-rotterdam-rtm",
@@ -6315,7 +6496,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "vreewijk-apotheek-breeplein-6-3075-kc-rotterdam-rtm",
@@ -6350,7 +6532,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-pernis-burgemeester-van-esstraat-25-3195-aa-rotterdam-rtm",
@@ -6385,7 +6568,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-stelle-stelle-2-3191-ke-rotterdam-rtm",
@@ -6420,7 +6604,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-de-murene-zetangel-30-3192-hn-rotterdam-rtm",
@@ -6455,7 +6640,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-machinist-rtm",
@@ -6487,7 +6673,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "oase-rotterdam-rtm",
@@ -6519,7 +6706,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "landhuis-de-oliphant-rtm",
@@ -6551,7 +6739,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "maritiem-museum-rotterdam-leuvehaven-1-3011-ea-rotterdam-rtm",
@@ -6585,7 +6774,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "stadshaven-brouwerij-gastropub-rtm",
@@ -6617,7 +6807,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "oceandiva-original-rotterdam-rtm",
@@ -6649,7 +6840,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "dudok-rotterdam-rtm",
@@ -6681,7 +6873,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "vessel-11-rtm",
@@ -6713,7 +6906,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "excelsior-events-rtm",
@@ -6745,7 +6939,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-boat-bar-rtm",
@@ -6777,7 +6972,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "adventure-city-rotterdam-rtm",
@@ -6809,7 +7005,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ss-rotterdam-rtm",
@@ -6841,7 +7038,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "spaces-rotterdam-weena-weena-290-rotterdam-rtm",
@@ -6875,7 +7073,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "spaces-rotterdam-hofplein-hofplein-20-rotterdam-rtm",
@@ -6909,7 +7108,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "spaces-rotterdam-delftse-poort-rtm",
@@ -6942,7 +7142,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "spaces-rotterdam-willemswerf-rtm",
@@ -6975,7 +7176,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tribes-rotterdam-blaak-34-rotterdam-rtm",
@@ -7008,7 +7210,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "startdock-rotterdam-westplein-12-rotterdam-rtm",
@@ -7041,7 +7244,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hnk-rotterdam-vasteland-78-rotterdam-rtm",
@@ -7075,7 +7279,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "regus-rotterdam-weena-zuid-weena-zuid-130-rotterdam-rtm",
@@ -7109,7 +7314,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "microlab-rotterdam-rtm",
@@ -7141,7 +7347,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sijf-rtm",
@@ -7173,7 +7380,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "casathai-witte-de-with-rtm",
@@ -7205,7 +7413,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "restaurant-oliva-rtm",
@@ -7237,7 +7446,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "soju-korean-chicken-beer-rtm",
@@ -7269,7 +7479,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hung-kee-rotterdam-rtm",
@@ -7301,7 +7512,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "brewdog-rotterdam-rtm",
@@ -7334,7 +7546,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sugo-westblaak-rtm",
@@ -7366,7 +7579,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "eatery-bazar-rtm",
@@ -7398,7 +7612,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "vivu-rtm",
@@ -7430,7 +7645,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "vader-kleinjan-rtm",
@@ -7462,7 +7678,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kade-4-rtm",
@@ -7494,7 +7711,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apartt-rtm",
@@ -7526,7 +7744,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "het-poort-cafe-rtm",
@@ -7558,7 +7777,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "1898-food-drinks-gelderseplein-rotterdam-rtm",
@@ -7591,7 +7811,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "restaurant-kralingen-kralingseweg-200-3062-cg-rotterdam-rtm",
@@ -7625,7 +7846,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-kleine-ondeugd-oostzeedijk-348-3063-cd-rotterdam-rtm",
@@ -7659,7 +7881,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "lokanta-proeflokaal-waterloostraat-148a-3062-tw-rotterdam-rtm",
@@ -7693,7 +7916,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "pizzabar-di-vicini-lusthofstraat-2a-3062-wn-rotterdam-rtm",
@@ -7727,7 +7951,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-commons-willem-ruyslaan-225-3063-er-rotterdam-rtm",
@@ -7761,7 +7986,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-tuin-plaszoom-354-3062-cl-rotterdam-rtm",
@@ -7795,7 +8021,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-boathouse-kralingen-langepad-51-rotterdam-rtm",
@@ -7828,7 +8055,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bertmans-karel-doormanstraat-292-rotterdam-rtm",
@@ -7862,7 +8090,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-brunch-club-zaagmolenkade-15-rotterdam-rtm",
@@ -7895,7 +8124,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "no-10-coffee-hoogstraat-47a-rotterdam-rtm",
@@ -7928,7 +8158,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "savor-nosh-westewagenstraat-66-rotterdam-rtm",
@@ -7961,7 +8192,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "lilith-coffee-nieuwe-binnenweg-125h-rotterdam-rtm",
@@ -7994,7 +8226,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "la-zia-maria-italiaanse-delicatessen-nieuwe-binnenweg-222a-rotterdam-rtm",
@@ -8027,7 +8260,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bombay-curry-house-nieuwe-binnenweg-228a-rotterdam-rtm",
@@ -8060,7 +8294,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "pistache-halab-nieuwe-binnenweg-209b-3021-gb-rotterdam-rtm",
@@ -8094,7 +8329,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "cafe-restaurant-d-afrique-nieuwe-binnenweg-307a-rotterdam-rtm",
@@ -8127,7 +8363,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "dahlak-nieuwe-binnenweg-360b-rotterdam-rtm",
@@ -8160,7 +8397,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "rotown-nieuwe-binnenweg-19-rotterdam-rtm",
@@ -8193,7 +8431,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "dak-rotterdam-rtm",
@@ -8225,7 +8464,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "gastrobar-elvy-rtm",
@@ -8257,7 +8497,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ted-s-all-day-brunch-rtm",
@@ -8289,7 +8530,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kiem-foei-west-kruiskade-29a-3014-ak-rotterdam-rtm",
@@ -8323,7 +8565,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-kade-west-kruiskade-17b-3014-aj-rotterdam-rtm",
@@ -8357,7 +8600,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sranang-west-kruiskade-2a-3014-ap-rotterdam-rtm",
@@ -8391,7 +8635,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "lekker-suriname-west-kruiskade-65-a-3014-am-rotterdam-rtm",
@@ -8425,7 +8670,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "manfield-rotterdam-rtm",
@@ -8457,7 +8703,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "scapino-rotterdam-rtm",
@@ -8489,7 +8736,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "van-haren-rotterdam-rtm",
@@ -8521,7 +8769,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "dolcis-rotterdam-rtm",
@@ -8553,7 +8802,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "little-department-store-rtm",
@@ -8584,7 +8834,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kikaboo-rtm",
@@ -8615,7 +8866,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "maki-more-hillegersberg-rtm",
@@ -8646,7 +8898,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "rotterdam-meetings-rtm",
@@ -8677,7 +8930,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-lijn2-rtm",
@@ -8713,7 +8967,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-blijdorp-rtm",
@@ -8749,7 +9004,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-punt-zuid-rtm",
@@ -8785,7 +9041,8 @@
     "doNotContact": false,
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kralingen-b-b-jericholaan-44a-3061-hg-rotterdam-rtm",
@@ -8819,7 +9076,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "guesthouse-rotterdam-s-gravenweg-790-3065-sk-rotterdam-rtm",
@@ -8853,7 +9111,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "b-b-de-boomhut-rotterdam-paradijslaan-18f-rotterdam-rtm",
@@ -8886,7 +9145,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "b-b-maasview-mullerhoofd-109-rotterdam-rtm",
@@ -8919,7 +9179,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "novotel-rotterdam-brainpark-k-p-van-der-mandelelaan-150-3062-mb-rotterdam-rtm",
@@ -8954,7 +9215,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hotel-rotterdam-zuidplein-mijnsherenlaan-9-3081-ga-rotterdam-rtm",
@@ -8988,7 +9250,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ibis-styles-rotterdam-ahoy-rtm",
@@ -9021,7 +9284,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "fletcher-boutique-hotel-slaak-rotterdam-slaak-34-rotterdam-rtm",
@@ -9055,7 +9319,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "van-der-valk-hotel-rotterdam-blijdorp-energieweg-2-3041-jc-rotterdam-rtm",
@@ -9091,7 +9356,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "vakantie-xperts-blijdorp-stadhoudersweg-87d-3039-eb-rotterdam-rtm",
@@ -9127,7 +9393,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tui-reisbureau-hoogvliet-rotterdam-binnenban-81-c-3191-cb-rotterdam-rtm",
@@ -9164,7 +9431,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "d-reizen-hoogvliet-rotterdam-binnenban-40-3191-ch-rotterdam-rtm",
@@ -9200,7 +9468,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ver-meer-reizen-parsifalstraat-5-3194-wd-rotterdam-rtm",
@@ -9234,7 +9503,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "euro-special-tours-steurweg-45-3192-ag-rotterdam-rtm",
@@ -9268,7 +9538,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sindibad-reizen-beugstraat-102-3192-ga-rotterdam-rtm",
@@ -9302,7 +9573,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "milan-tours-feijenoordkade-144-3071-rx-rotterdam-rtm",
@@ -9336,7 +9608,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kbeauty-lounge-mijnsherenlaan-212-214-3083-bz-rotterdam-rtm",
@@ -9370,7 +9643,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "wings-nails-studio-zuidplein-hoog-405-3083-be-rotterdam-rtm",
@@ -9404,7 +9678,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "trendy-nail-salon-zuidplein-hoog-763-3083-bj-rotterdam-rtm",
@@ -9438,7 +9713,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "luxurious-beauty-zuidplein-zuidplein-788-3083-bd-rotterdam-rtm",
@@ -9472,7 +9748,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "care-4-your-nails-laan-op-zuid-203-3072-db-rotterdam-rtm",
@@ -9506,7 +9783,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "lux-beautyhouse-gaesbeekstraat-106b-rotterdam-rtm",
@@ -9539,7 +9817,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kapsalon-de-kam-crooswijkseweg-91a-3034-hg-rotterdam-rtm",
@@ -9573,7 +9852,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hizi-hair-rotterdam-kralingen-lusthofstraat-52a-3062-wn-rotterdam-rtm",
@@ -9607,7 +9887,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "cosmo-hairstyling-rotterdam-kralingen-kralingseweg-224-3062-cg-rotterdam-rtm",
@@ -9642,7 +9923,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "gozde-kapsalon-goudse-rijweg-42-3031-cg-rotterdam-rtm",
@@ -9676,7 +9958,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "nisa-beauty-center-crooswijkseweg-181-3031-xc-rotterdam-rtm",
@@ -9710,7 +9993,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "studio-haircare-rusthoflaan-62-rotterdam-rtm",
@@ -9743,7 +10027,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "manuela-hairfashion-marconiplein-22b-3027-ha-rotterdam-rtm",
@@ -9777,7 +10062,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "adonis-beautyline-spanjaardstraat-133-d-3025-tn-rotterdam-rtm",
@@ -9811,7 +10097,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tina-kapsalon-1e-middellandstraat-49b-3021-ba-rotterdam-rtm",
@@ -9845,7 +10132,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "grand-salon-rotterdam-wijnkade-15-3011-vz-rotterdam-rtm",
@@ -9880,7 +10168,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "pinky-posh-korte-poolsterstraat-19-3067-lz-rotterdam-rtm",
@@ -9915,7 +10204,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "alexandrium-nails-spa-poolsterstraat-22-3067-lx-rotterdam-rtm",
@@ -9950,7 +10240,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "natascha-s-hairstyle-schakelweg-162-3192-jp-rotterdam-rtm",
@@ -9984,7 +10275,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "highlight-hair-nailstudio-lavasweg-93-3193-gc-rotterdam-rtm",
@@ -10018,7 +10310,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "brainwash-rotterdam-hoogvliet-rijkeeplein-25-3191-vd-rotterdam-rtm",
@@ -10053,7 +10346,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hairbusinezz-bieslook-15-3191-jt-rotterdam-rtm",
@@ -10087,7 +10381,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "uw-kapper-hoogvliet-middenbaan-noord-144-3191-el-rotterdam-rtm",
@@ -10121,7 +10416,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sandy-s-knipboetiek-vlielanderstraat-45-3195-vm-rotterdam-rtm",
@@ -10155,7 +10451,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "laura-hair-styles-burgemeester-van-esstraat-140-3195-aj-rotterdam-rtm",
@@ -10189,7 +10486,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "schoonheidssalon-bella-bellezza-stormshoek-78-3191-tl-rotterdam-rtm",
@@ -10223,7 +10521,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "j-c-beauty-beijerlandselaan-39c-3074-eb-rotterdam-rtm",
@@ -10258,7 +10557,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "beauty-stylist-glammed-beijerlandselaan-3074-ec-rotterdam-rtm",
@@ -10292,7 +10592,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "haarsalon-jorien-van-speykstraat-147a-rotterdam-rtm",
@@ -10325,7 +10626,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "melody-nails-nieuwe-binnenweg-226a-3021-gm-rotterdam-rtm",
@@ -10359,7 +10661,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ursbeautysalon-2e-middellandstraat-9b-3021-bl-rotterdam-rtm",
@@ -10393,7 +10696,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "link2nails-nieuwe-binnenweg-337a-3021-gj-rotterdam-rtm",
@@ -10427,7 +10731,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "vina-nails-nieuwe-binnenweg-252b-3021-gp-rotterdam-rtm",
@@ -10461,7 +10766,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "vivi-nail-bar-nieuwe-binnenweg-201a-3021-ga-rotterdam-rtm",
@@ -10495,7 +10801,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kinki-kappers-nieuwe-binnenweg-120-3015-be-rotterdam-rtm",
@@ -10530,7 +10837,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "jc-hair-nieuwe-binnenweg-162-3015-bh-rotterdam-rtm",
@@ -10564,7 +10872,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "fashion-corner-1e-middellandstraat-97b-3021-bc-rotterdam-rtm",
@@ -10598,7 +10907,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "new-bassy-s-fashion-1e-middellandstraat-7a-3014-ba-rotterdam-rtm",
@@ -10633,7 +10943,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "boys2men-2e-middellandstraat-19-b-l-3021-bl-rotterdam-rtm",
@@ -10667,7 +10978,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "happy-heels-1e-middellandstraat-78a-3021-be-rotterdam-rtm",
@@ -10701,7 +11013,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "subliem-kleding-nieuwe-binnenweg-466b-3023-ez-rotterdam-rtm",
@@ -10735,7 +11048,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "vanharen-schoenen-alexandrium-korte-poolsterstraat-10-rotterdam-rtm",
@@ -10769,7 +11083,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "van-den-assem-schoenen-alexandrium-poolsterstraat-29-3067-lx-rotterdam-rtm",
@@ -10803,7 +11118,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "skechers-rotterdam-alexandrium-poolsterstraat-90-b-c-3067-lx-rotterdam-rtm",
@@ -10838,7 +11154,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "nelson-rotterdam-alexandrium-poolsterstraat-92-b-3067-lx-rotterdam-rtm",
@@ -10873,7 +11190,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "skatestore-rotterdam-westblaak-28-rotterdam-rtm",
@@ -10906,7 +11224,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "livera-zwart-janstraat-17a-3035-ak-rotterdam-rtm",
@@ -10940,7 +11259,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "elif-mode-zwart-janstraat-84-a-3035-aw-rotterdam-rtm",
@@ -10974,7 +11294,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "khadija-mode-zwart-janstraat-133-3035-ar-rotterdam-rtm",
@@ -11008,7 +11329,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "leather-fashion-zwart-janstraat-70-3035-av-rotterdam-rtm",
@@ -11042,7 +11364,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "circuit-herenmode-zwart-janstraat-66-a-3035-av-rotterdam-rtm",
@@ -11076,7 +11399,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "beone-rotterdam-bergse-dorpsstraat-42-3054-ge-rotterdam-rtm",
@@ -11112,7 +11436,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "beryl-modes-bergse-dorpsstraat-95-a-3054-gc-rotterdam-rtm",
@@ -11146,7 +11471,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "jennifer-modes-weissenbruchlaan-104-3054-lr-rotterdam-rtm",
@@ -11180,7 +11506,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "cleopatra-damesmode-weissenbruchlaan-84-3054-lr-rotterdam-rtm",
@@ -11214,7 +11541,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ayselin-mode-beijerlandselaan-25-d-3074-ea-rotterdam-rtm",
@@ -11249,7 +11577,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ramsa-exclusieve-herenmode-beijerlandselaan-116a-3074-en-rotterdam-rtm",
@@ -11284,7 +11613,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "nour-mode-beijerlandselaan-120-b-3074-en-rotterdam-rtm",
@@ -11318,7 +11648,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "swan-market-conceptstore-witte-de-withstraat-23a-rotterdam-rtm",
@@ -11351,7 +11682,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "things-i-like-things-i-love-witte-de-withstraat-9-rotterdam-rtm",
@@ -11384,7 +11716,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hutspot-rotterdam-karel-doormanstraat-317-rotterdam-rtm",
@@ -11417,7 +11750,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-nesselande-cypruslaan-412-3059-xa-rotterdam-rtm",
@@ -11452,7 +11786,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-prinsenland-marie-van-eijsden-vinkstraat-474-3066-hg-rotterdam-rtm",
@@ -11487,7 +11822,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-katendrecht-wodanstraat-21-3072-ev-rotterdam-rtm",
@@ -11522,7 +11858,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-bloemhof-lange-hilleweg-121-3073-bk-rotterdam-rtm",
@@ -11556,7 +11893,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "service-apotheek-oude-wal-oude-wal-24a-3193-en-rotterdam-rtm",
@@ -11592,7 +11930,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-mc-schiebroek-kastanjeplein-4a-3053-cd-rotterdam-rtm",
@@ -11627,7 +11966,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "schiebroekse-apotheek-kleiweg-173-3051-gp-rotterdam-rtm",
@@ -11662,7 +12002,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kostense-apotheek-peppelweg-146-d-3053-gv-rotterdam-rtm",
@@ -11697,7 +12038,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-vasteland-vasteland-22-3011-bl-rotterdam-rtm",
@@ -11732,7 +12074,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "zapp-office-rotterdam-bahialaan-100-3065-wc-rotterdam-rtm",
@@ -11766,7 +12109,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "newday-offices-rotterdam-marten-meesweg-8-3068-av-rotterdam-rtm",
@@ -11800,7 +12144,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "diamond-plaza-dynamostraat-27-3083-ak-rotterdam-rtm",
@@ -11835,7 +12180,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "diva-party-centre-gustoweg-25-rotterdam-rtm",
@@ -11869,7 +12215,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "feestzaal-schalmei-krabbendijkestraat-520-3084-lp-rotterdam-rtm",
@@ -11904,7 +12251,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "partycentre-melody-galvanistraat-34-36-3029-ad-rotterdam-rtm",
@@ -11939,7 +12287,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "diergaarde-blijdorp-blijdorplaan-8-3041-jg-rotterdam-rtm",
@@ -11974,7 +12323,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "maassilo-maashaven-zuidzijde-1-2-rotterdam-rtm",
@@ -12007,7 +12357,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "schiecentrale-rtm",
@@ -12039,7 +12390,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hal4-aan-de-maas-rtm",
@@ -12071,7 +12423,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "congresbureau-erasmus-mc-molewaterplein-50-3015-ge-rotterdam-rtm",
@@ -12107,7 +12460,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "brasserie-koriander-kromme-zandweg-79-3082-pz-rotterdam-rtm",
@@ -12141,7 +12495,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hof-van-charlois-brasserie-charloisse-kerksingel-2-3082-da-rotterdam-rtm",
@@ -12175,7 +12530,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "pegasus-rotterdam-wolphaertsbocht-138a-3083-mr-rotterdam-rtm",
@@ -12209,7 +12565,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tante-sjaar-mezenhof-1-3082-ze-rotterdam-rtm",
@@ -12243,7 +12600,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-gulle-gasterij-kromme-zandweg-102-3084-nd-rotterdam-rtm",
@@ -12277,7 +12635,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "il-carretto-vaerhorst-12a-3085-hs-rotterdam-rtm",
@@ -12311,7 +12670,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sultan-lounge-zuidplein-109-3083-cn-rotterdam-rtm",
@@ -12345,7 +12705,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "eetcafe-prins-alexander-metaalhof-52-3067-gm-rotterdam-rtm",
@@ -12379,7 +12740,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "shiki-sushi-lounge-prins-alexanderlaan-37a-3068-pn-rotterdam-rtm",
@@ -12413,7 +12775,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-beren-rotterdam-alexandrium-poolsterplein-155-156-3067-lw-rotterdam-rtm",
@@ -12448,7 +12811,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "punjabi-food-alexandrium-watermanweg-349-rotterdam-rtm",
@@ -12481,7 +12845,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-matroos-en-het-meisje-delistraat-52-3072-zl-rotterdam-rtm",
@@ -12515,7 +12880,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "la-bleij-ristorante-pizzeria-pasticceria-delistraat-30-3072-zl-rotterdam-rtm",
@@ -12549,7 +12915,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "locale-kaap-delistraat-48c-rotterdam-rtm",
@@ -12582,7 +12949,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "deli-bird-thai-kitchen-delistraat-44-a-rotterdam-rtm",
@@ -12615,7 +12983,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "il-gattopardo-delistraat-2-3072-zk-rotterdam-rtm",
@@ -12649,7 +13018,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "burro-e-salvia-delistraat-16-rotterdam-rtm",
@@ -12682,7 +13052,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kopi-soesoe-deliplein-rotterdam-rtm",
@@ -12715,7 +13086,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bab-al-hara-hillelaan-23-3072-jc-rotterdam-rtm",
@@ -12749,7 +13121,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "flavours-op-zuid-hillelaan-27-3072-jd-rotterdam-rtm",
@@ -12783,7 +13156,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "al-madina-restaurant-putselaan-35-3072-cb-rotterdam-rtm",
@@ -12817,7 +13191,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "cafe-de-sluis-hilledijk-247b-3072-rn-rotterdam-rtm",
@@ -12851,7 +13226,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "eetcafe-boulevard-overschie-burgemeester-baumannlaan-145-147-rotterdam-rtm",
@@ -12884,7 +13260,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "verhage-overschie-burgemeester-baumannlaan-123a-3043-aj-rotterdam-rtm",
@@ -12919,7 +13296,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "eetcafe-limon-burgemeester-baumannlaan-120a-3043-ar-rotterdam-rtm",
@@ -12953,7 +13331,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "in-den-berkebrom-overschiese-dorpstraat-46-3043-cs-rotterdam-rtm",
@@ -12987,7 +13366,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "vispaleis-overschie-baumannlaan-99a-3043-ah-rotterdam-rtm",
@@ -13021,7 +13401,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "het-schielicht-kandelaarweg-123-3047-ev-rotterdam-rtm",
@@ -13055,7 +13436,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "casereccio-abtsweg-55-rotterdam-rtm",
@@ -13088,7 +13470,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "prins-van-terbregge-bergse-linker-rottekade-323-rotterdam-rtm",
@@ -13121,7 +13504,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "piccola-italia-kleiweg-30-3051-gr-rotterdam-rtm",
@@ -13155,7 +13539,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-nieuwe-chinese-muur-bergse-dorpsstraat-47-rotterdam-rtm",
@@ -13188,7 +13573,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "t-ambachthuys-kerkstraat-10-3054-nc-rotterdam-rtm",
@@ -13222,7 +13608,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "da-gianfranco-teldersweg-271-273-3052-tj-rotterdam-rtm",
@@ -13256,7 +13643,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "little-asia-kleiweg-87-a-3051-gk-rotterdam-rtm",
@@ -13290,7 +13678,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "abrazo-weissenbruchlaan-2-3054-ln-rotterdam-rtm",
@@ -13324,7 +13713,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "nossa-nesselande-kosboulevard-35-3059-xz-rotterdam-rtm",
@@ -13358,7 +13748,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "guay-rotterdam-sicilieboulevard-3059-rotterdam-rtm",
@@ -13391,7 +13782,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "verhage-nesselande-maltaplein-11-3059-xw-rotterdam-rtm",
@@ -13426,7 +13818,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "snackkiosk-zevenkamp-zevenkampseweg-20-3068-tv-rotterdam-rtm",
@@ -13460,7 +13853,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "brasserie-me-moeder-cloese-203-3191-ed-rotterdam-rtm",
@@ -13494,7 +13888,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sushimasa-binnenban-15a-b-3191-ca-rotterdam-rtm",
@@ -13528,7 +13923,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "gouden-kroon-middenbaan-noord-14-3191-eh-rotterdam-rtm",
@@ -13562,7 +13958,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kordamco-kitchen-and-barista-tijmweg-166-3193-jn-rotterdam-rtm",
@@ -13596,7 +13993,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "grillroom-luxor-hoogvliet-lampreistraat-106-3192-ek-rotterdam-rtm",
@@ -13630,7 +14028,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "la-place-hoogvliet-kinheim-305-3191-eg-rotterdam-rtm",
@@ -13665,7 +14064,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bagels-beans-rotterdam-hoogstraat-hoogstraat-129b-rotterdam-rtm",
@@ -13699,7 +14099,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tasty-dishes-hoogstraat-28a-rotterdam-rtm",
@@ -13732,7 +14133,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hawaiian-poke-bowl-rotterdam-hoogstraat-185a-rotterdam-rtm",
@@ -13765,7 +14167,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "restaurant-amarone-meent-72a-rotterdam-rtm",
@@ -13798,7 +14201,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-huismeester-meent-115-rotterdam-rtm",
@@ -13831,7 +14235,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "broox-meent-20-rotterdam-rtm",
@@ -13864,7 +14269,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "thoms-restaurant-underground-bar-meent-129-131-rotterdam-rtm",
@@ -13897,7 +14303,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "fg-bistro-lloydstraat-204-rotterdam-rtm",
@@ -13931,7 +14338,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "stroom-rotterdam-lloydstraat-1-rotterdam-rtm",
@@ -13965,7 +14373,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "loos-rotterdam-westplein-51-3016-bm-rotterdam-rtm",
@@ -13999,7 +14408,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "louise-petit-restaurant-veerhaven-13-rotterdam-rtm",
@@ -14032,7 +14442,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "charlie-s-koffie-en-wijnbar-westplein-107-rotterdam-rtm",
@@ -14065,7 +14476,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bar-bistro-nul10-westerstraat-39a-rotterdam-rtm",
@@ -14098,7 +14510,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "dune-rotterdam-van-vollenhovenstraat-14a-rotterdam-rtm",
@@ -14131,7 +14544,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "wildstube-van-vollenhovenstraat-23-rotterdam-rtm",
@@ -14164,7 +14578,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "egge-maritiem-schiedamse-dijk-70-71-3011-ek-rotterdam-rtm",
@@ -14198,7 +14613,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "maritime-hotel-rotterdam-willemskade-13-3016-dk-rotterdam-rtm",
@@ -14232,7 +14648,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "rooms-on-water-wolfshoek-3-3011-tk-rotterdam-rtm",
@@ -14266,7 +14683,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ourdomain-rotterdam-blaak-rtm",
@@ -14299,7 +14717,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ramleh-apotheek-rotterdam-rtm",
@@ -14331,7 +14750,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-binnenweg-apotheek-rotterdam-rtm",
@@ -14363,7 +14783,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hairclub-mk-kleiweg-101a-3051-gl-rotterdam-rtm",
@@ -14397,7 +14818,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kapsalon-hair-art-kleiweg-52b-3051-gt-rotterdam-rtm",
@@ -14431,7 +14853,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "chiclook-studio-kleiweg-21a-3051-gj-rotterdam-rtm",
@@ -14465,7 +14888,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "beauty-center-angela-kleiweg-113-a-3051-gl-rotterdam-rtm",
@@ -14499,7 +14923,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-coffee-company-eendrachtsplein-eendrachtsplein-2-3012-la-rotterdam-rtm",
@@ -14534,7 +14959,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "cool-district-karel-doormanstraat-360-3012-gr-rotterdam-rtm",
@@ -14568,7 +14994,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "what-s-up-india-eendrachtsweg-27-b-be-3012-lb-rotterdam-rtm",
@@ -14602,7 +15029,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "arminius-rotterdam-rtm",
@@ -14634,7 +15062,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "oude-of-pelgrimvaderskerk-rtm",
@@ -14666,7 +15095,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-hospitality-club-rotterdam-rtm",
@@ -14698,7 +15128,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "laurenskerk-rotterdam-rtm",
@@ -14730,7 +15161,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "loetje-rotterdam-kop-van-zuid-antoine-platekade-1013-1021-rotterdam-rtm",
@@ -14765,7 +15197,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "restaurant-ono-antoine-platekade-1005-3072-me-rotterdam-rtm",
@@ -14799,7 +15232,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "humphrey-s-rotterdam-kop-van-zuid-otto-reuchlinweg-1004-3072-md-rotterdam-rtm",
@@ -14834,7 +15268,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "by-ami-antoine-platekade-983-3072-me-rotterdam-rtm",
@@ -14868,7 +15303,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "decathlon-rotterdam-coolsingel-coolsingel-rotterdam-rtm",
@@ -14902,7 +15338,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "le-beaute-avenue-brabantsestraat-16-unit-23-3074-rt-rotterdam-rtm",
@@ -14936,7 +15373,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "shiny-nagelstudio-west-kruiskade-34b-3014-as-rotterdam-rtm",
@@ -14970,7 +15408,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-beverwaard-boxbergenstraat-11-3077-js-rotterdam-rtm",
@@ -15005,7 +15444,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "benu-apotheek-ijsselmonde-prinsenplein-5c-3078-gw-rotterdam-rtm",
@@ -15041,7 +15481,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-don-street-restaurant-beijerlandselaan-34b-3074-ek-rotterdam-rtm",
@@ -15076,7 +15517,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "restaurant-miramar-beijerlandselaan-32-b-3074-ek-rotterdam-rtm",
@@ -15111,7 +15553,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "restaurant-fes-beijerlandselaan-24b-3074-ej-rotterdam-rtm",
@@ -15146,7 +15589,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "simit-and-cheese-beijerlandselaan-44a-3074-ek-rotterdam-rtm",
@@ -15181,7 +15625,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "brasserie-zuidplein-zuidplein-hoog-740-3083-bp-rotterdam-rtm",
@@ -15216,7 +15661,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bed-and-breakfast-rotterdam-graaf-florisstraat-82b-3021-ck-rotterdam-rtm",
@@ -15250,7 +15696,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bed-breakfast-delfshaven-voorhaven-47-3025-hd-rotterdam-rtm",
@@ -15284,7 +15731,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "team-kappers-rotterdam-korte-lijnbaan-4a-3012-ed-rotterdam-rtm",
@@ -15319,7 +15767,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "jachthaven-hillegersberg-straatweg-270a-3054-an-rotterdam-rtm",
@@ -15353,7 +15802,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "watersportvereniging-blijdorp-houtstraat-45-3041-jd-rotterdam-rtm",
@@ -15388,7 +15838,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "watersportvereniging-oud-delfshaven-westzeedijk-925-3025-az-rotterdam-rtm",
@@ -15422,7 +15873,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "watersportvereniging-ijsselmonde-oostdijk-45-3077-cp-rotterdam-rtm",
@@ -15456,7 +15908,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "cafe-het-witte-huis-geldersekade-1c-3011-wb-rotterdam-rtm",
@@ -15490,7 +15943,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "gauchos-grill-restaurant-weissenbruchlaan-149-3054-lm-rotterdam-rtm",
@@ -15526,7 +15980,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "eetcafe-bergpolder-bergselaan-340b-3038-cp-rotterdam-rtm",
@@ -15560,7 +16015,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "mar-mode-boezemsingel-16a-rotterdam-rtm",
@@ -15593,7 +16049,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "carolina-hoogstad-oostzeedijk-beneden-97-3061-vp-rotterdam-rtm",
@@ -15627,7 +16084,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "lou-lou-s-second-hand-fashion-oostzeedijk-beneden-85-b-3061-vn-rotterdam-rtm",
@@ -15661,7 +16119,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-middelland-1e-middellandstraat-105a-3021-bd-rotterdam-rtm",
@@ -15697,7 +16156,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "studio-7-kamp-zevenkampsering-333-3068-hg-rotterdam-rtm",
@@ -15731,7 +16191,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kapsalon-hesseplaats-pearl-buckplaats-33-3069-bz-rotterdam-rtm",
@@ -15766,7 +16227,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "take-c-hair-prinsenland-jacques-dutilhweg-197-rotterdam-rtm",
@@ -15800,7 +16262,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kapperazzi-rotterdam-maltaplein-12-rotterdam-rtm",
@@ -15834,7 +16297,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kunsthal-rotterdam-museumpark-westzeedijk-341-3015-aa-rotterdam-rtm",
@@ -15868,7 +16332,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "museum-boijmans-van-beuningen-het-depot-museumpark-24-rotterdam-rtm",
@@ -15901,7 +16366,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "dutch-art-room-stadionweg-55-3077-as-rotterdam-rtm",
@@ -15935,7 +16401,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "van-nelle-fabriek-van-nelleweg-1-3044-bc-rotterdam-rtm",
@@ -15969,7 +16436,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "carnisser-keuken-ebenhaezerstraat-rotterdam-rtm",
@@ -16002,7 +16470,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "zeeman-rotterdam-hoogvliet-binnenban-52-54-3191-ch-rotterdam-rtm",
@@ -16037,7 +16506,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-stone-hoogvliet-binnenban-32-3191-ch-rotterdam-rtm",
@@ -16072,7 +16542,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "terstal-hoogvliet-binnenban-8-10-rotterdam-rtm",
@@ -16106,7 +16577,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "vanharen-hoogvliet-binnenban-36-3191-ch-rotterdam-rtm",
@@ -16141,7 +16613,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bulterman-de-groot-benthuizerstraat-4-3036-cj-rotterdam-rtm",
@@ -16176,7 +16649,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-exler-noordplein-noordplein-189-3035-ed-rotterdam-rtm",
@@ -16211,7 +16685,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-blijdorp-statenweg-189-c-3039-hp-rotterdam-rtm",
@@ -16246,7 +16721,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-exler-de-savornin-lohmanlaan-117-119-3038-nh-rotterdam-rtm",
@@ -16281,7 +16757,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "walenburg-apotheek-schieweg-6-3039-ba-rotterdam-rtm",
@@ -16316,7 +16793,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "fletcher-hotel-rotterdam-airport-rotterdam-airportplein-68-3045-ap-rotterdam-rtm",
@@ -16351,7 +16829,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "best-western-plus-rotterdam-airport-hotel-vliegveldweg-59-3043-nt-rotterdam-rtm",
@@ -16386,7 +16865,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ibis-budget-rotterdam-the-hague-airport-rotterdam-airportplein-70-3045-ap-rotterdam-rtm",
@@ -16421,7 +16901,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "fletcher-wings-hotel-rotterdam-the-hague-airport-rotterdam-airportplein-55-3045-ap-rotterdam-rtm",
@@ -16456,7 +16937,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "knetter-kleding-nieuwe-binnenweg-88a-3015-bc-rotterdam-rtm",
@@ -16491,7 +16973,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "arcem-mode-nieuwe-binnenweg-507-3023-ep-rotterdam-rtm",
@@ -16526,7 +17009,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "lucky-lenn-nieuwe-binnenweg-44-3015-ba-rotterdam-rtm",
@@ -16561,7 +17045,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "lalunia-rotterdam-nieuwe-binnenweg-42-3015-ba-rotterdam-rtm",
@@ -16595,7 +17080,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "zilch-rotterdam-nieuwe-binnenweg-110-3015-be-rotterdam-rtm",
@@ -16630,7 +17116,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bruidshuis-sonja-rotterdam-mauritsweg-23a-3012-jr-rotterdam-rtm",
@@ -16665,7 +17152,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "jan-segeren-mauritsweg-41-3012-jv-rotterdam-rtm",
@@ -16699,7 +17187,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hei-xian-chinees-afhaalcentrum-van-lennepstraat-54-rotterdam-rtm",
@@ -16732,7 +17221,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kapsalon-nagelstudio-lombardijen-zenostraat-204-3076-az-rotterdam-rtm",
@@ -16766,7 +17256,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "dames-en-herenkapsalon-aj-boergoensestraat-39a-rotterdam-rtm",
@@ -16799,7 +17290,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kapsalon-charlois-wolphaertsbocht-62b-3082-ap-rotterdam-rtm",
@@ -16833,7 +17325,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "nails-maniac-van-eversdijckstraat-57-a2-rotterdam-rtm",
@@ -16866,7 +17359,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "youyou-kliniek-pleinweg-153a-rotterdam-rtm",
@@ -16899,7 +17393,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "7777nails-zuidhoek-236a-3082-ps-rotterdam-rtm",
@@ -16933,7 +17428,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bergweg-reizen-rotterdam-bergweg-278-b-3035-bt-rotterdam-rtm",
@@ -16967,7 +17463,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "creative-factory-rotterdam-maashaven-zuidzijde-2-3081-ae-rotterdam-rtm",
@@ -17001,7 +17498,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-kledingkundige-west-kruiskade-93-95-rotterdam-rtm",
@@ -17034,7 +17532,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kledingwinkel-billboard-west-kruiskade-47b-3014-al-rotterdam-rtm",
@@ -17068,7 +17567,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "janjua-trading-west-kruiskade-83-3014-an-rotterdam-rtm",
@@ -17102,7 +17602,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "boss-menswear-store-rotterdam-kruiskade-57-a-rotterdam-rtm",
@@ -17136,7 +17637,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "wijkrestaurant-de-zuiderkroon-vlissingenplein-108-3086-gz-rotterdam-rtm",
@@ -17171,7 +17673,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ched-kappers-laan-op-zuid-974-3071-ac-rotterdam-rtm",
@@ -17205,7 +17708,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "l-art-de-coiffure-eric-kropstraat-200-3071-ae-rotterdam-rtm",
@@ -17239,7 +17743,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "uw-kapper-zuidplein-zuidplein-hoog-824-3083-bd-rotterdam-rtm",
@@ -17273,7 +17778,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-usual-rotterdam-rtm",
@@ -17305,7 +17811,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hotel-ame-rotterdam-rtm",
@@ -17337,7 +17844,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "eau-lounge-boompjes-750-3011-xz-rotterdam-rtm",
@@ -17371,7 +17879,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "partyboot-de-rotterdammer-eva-cohen-hartogkade-rotterdam-rtm",
@@ -17404,7 +17913,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "loetje-rotterdam-blaak-binnenrotte-192-rotterdam-rtm",
@@ -17438,7 +17948,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "anugerah-botersloot-54a-3011-hj-rotterdam-rtm",
@@ -17472,7 +17983,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "little-v-grotekerkplein-109-3011-gc-rotterdam-rtm",
@@ -17506,7 +18018,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "eazie-rotterdam-blaak-botersloot-549-3011-he-rotterdam-rtm",
@@ -17541,7 +18054,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "volle-kast-zwaanshals-329-3035-kl-rotterdam-rtm",
@@ -17575,7 +18089,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "firstserved-vintage-zwaanshals-239-rotterdam-rtm",
@@ -17608,7 +18123,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ceno-classics-zwaanshals-283-a-3035-kh-rotterdam-rtm",
@@ -17642,7 +18158,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ding-dingen-zwaanshals-494-3035-ks-rotterdam-rtm",
@@ -17676,7 +18193,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-albus-boutique-hotel-amsterdam-centre-vijzelstraat-49-1017-he-amsterdam-xnl",
@@ -17711,7 +18229,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-dylan-amsterdam-keizersgracht-384-1016-gb-amsterdam-xnl",
@@ -17746,7 +18265,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-hendrick-s-hotel-prins-hendrikkade-139-1011-as-amsterdam-xnl",
@@ -17781,7 +18301,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "grand-canal-boutique-hotel-keizersgracht-304-1016-ex-amsterdam-xnl",
@@ -17816,7 +18337,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hotel-notting-hill-amsterdam-westeinde-26-1017-zp-amsterdam-xnl",
@@ -17851,7 +18373,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "cafe-de-pijp-ferdinand-bolstraat-17-19-1072-la-amsterdam-xnl",
@@ -17886,7 +18409,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "arisa-de-pijp-a-h-eerste-van-der-helststraat-62-1072-nx-amsterdam-xnl",
@@ -17921,7 +18445,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-seafood-bar-amsterdam-ferdinand-bolstraat-32-amsterdam-xnl",
@@ -17956,7 +18481,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "cafe-par-hasard-ceintuurbaan-113-115-amsterdam-xnl",
@@ -17990,7 +18516,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "oolong-amsterdam-ferdinand-bolstraat-13-15-amsterdam-xnl",
@@ -18024,7 +18551,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "broodje-jordaan-tweede-tuindwarsstraat-5i-1015-rx-amsterdam-xnl",
@@ -18059,7 +18587,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-jordaan-restaurant-rozengracht-89-1016-lt-amsterdam-xnl",
@@ -18094,7 +18623,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "parfumerie-marjo-damstraat-27-29-1012-jl-amsterdam-xnl",
@@ -18129,7 +18659,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ici-paris-xl-amsterdam-nieuwendijk-nieuwendijk-233-235-1012-mh-amsterdam-xnl",
@@ -18164,7 +18695,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "oorbeek-parfumerie-drogisterij-utrechtsestraat-97-amsterdam-xnl",
@@ -18198,7 +18730,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "douglas-amsterdam-kalverstraat-kalverstraat-71-amsterdam-xnl",
@@ -18232,7 +18765,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "nyx-professional-makeup-kalverstraat-kalverstraat-12-amsterdam-xnl",
@@ -18266,7 +18800,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "inglot-kalverstraat-kalverstraat-64-amsterdam-xnl",
@@ -18300,7 +18835,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "lush-amsterdam-flagship-kalverstraat-121-123-amsterdam-xnl",
@@ -18334,7 +18870,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "l-occitane-en-provence-heiligeweg-heiligeweg-24-1012-xr-amsterdam-xnl",
@@ -18369,7 +18906,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "foot-locker-amsterdam-kalverstraat-kalverstraat-100-106-amsterdam-xnl",
@@ -18403,7 +18941,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "taft-shoes-amsterdam-kalverstraat-109-111-1012-pa-amsterdam-xnl",
@@ -18438,7 +18977,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "boots-shoes-amsterdam-kalverstraat-163-1012-xb-amsterdam-xnl",
@@ -18472,7 +19012,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "cafe-moda-amsterdam-kalverstraat-54-56-1012-pe-amsterdam-xnl",
@@ -18506,7 +19047,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sidestep-amsterdam-kalverstraat-49-1012-nz-amsterdam-xnl",
@@ -18541,7 +19083,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sacha-shoes-kalverstraat-kalverstraat-20-1012-pd-amsterdam-xnl",
@@ -18576,7 +19119,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "michael-kors-pc-hooftstraat-p-c-hooftstraat-111-1071-br-amsterdam-xnl",
@@ -18611,7 +19155,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ab-donkers-modeschoenen-p-c-hooftstraat-108-1071-cd-amsterdam-xnl",
@@ -18645,7 +19190,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "amsterdam-central-pharmacy-de-ruijterkade-24a-amsterdam-xnl",
@@ -18679,7 +19225,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-leidsestraat-leidsestraat-74-76-1017-pd-amsterdam-xnl",
@@ -18714,7 +19261,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "amsterdam-hotel-authority-prins-hendrikkade-103bg-1011-ah-amsterdam-xnl",
@@ -18749,7 +19297,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tico-reis-consult-brouwersgracht-270-e-1013-hg-amsterdam-xnl",
@@ -18784,7 +19333,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "zoyo-travel-amsterdam-herengracht-280-1016-bx-amsterdam-xnl",
@@ -18819,7 +19369,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tui-reisbureau-amsterdam-utrechtsestraat-utrechtsestraat-48-1017-vp-amsterdam-xnl",
@@ -18855,7 +19406,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tui-reisbureau-amsterdam-gelderlandplein-gelderlandplein-223-1082-lx-amsterdam-xnl",
@@ -18891,7 +19443,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tui-reisbureau-amsterdam-buikslotermeerplein-buikslotermeerplein-151-1025-et-amsterdam-xnl",
@@ -18927,7 +19480,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "reisbureau-capricho-tours-albert-cuypstraat-43-h-1072-cl-amsterdam-xnl",
@@ -18961,7 +19515,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "huis-bartolotti-herengracht-170-amsterdam-xnl",
@@ -18994,7 +19549,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "huis-van-brienen-herengracht-284-amsterdam-xnl",
@@ -19027,7 +19583,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "desmet-studio-s-plantage-middenlaan-4a-1018-dd-amsterdam-xnl",
@@ -19061,7 +19618,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "skypalace-amsterdam-jan-rebelstraat-21-1069-ca-amsterdam-xnl",
@@ -19095,7 +19653,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ijver-amsterdam-scheepsbouwkade-72-1033-wm-amsterdam-xnl",
@@ -19129,7 +19688,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "van-der-valk-hotel-amsterdam-zuidas-tommaso-albinonistraat-200-1083-hm-amsterdam-xnl",
@@ -19164,7 +19724,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "makovr-ferdinand-bolstraat-130-1072-lr-amsterdam-xnl",
@@ -19199,7 +19760,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kapsalon-modern-amsterdam-de-clercqstraat-24-1052-ne-amsterdam-xnl",
@@ -19233,7 +19795,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kapsalon-carla-b-tweede-nassaustraat-1-1052-bj-amsterdam-xnl",
@@ -19267,7 +19830,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kapsalon-sibel-coiffure-postjesweg-58-1057-ec-amsterdam-xnl",
@@ -19301,7 +19865,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "48-50-amsterdam-camperstraat-48-50-1091-ah-amsterdam-xnl",
@@ -19336,7 +19901,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "de-kas-amsterdam-kamerlingh-onneslaan-3-1097-de-amsterdam-xnl",
@@ -19371,7 +19937,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "rijsel-amsterdam-marcusstraat-52-1091-tk-amsterdam-xnl",
@@ -19406,7 +19973,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "la-vallade-ringdijk-23-1097-ab-amsterdam-xnl",
@@ -19441,7 +20009,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sham-oost-borneosteiger-1-amsterdam-xnl",
@@ -19475,7 +20044,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "polly-goudvisch-buiksloterweg-3-amsterdam-xnl",
@@ -19508,7 +20078,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "corner-store-amsterdam-noord-papaverweg-11-amsterdam-xnl",
@@ -19541,7 +20112,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "v12-amsterdam-veldbiesstraat-10-12-amsterdam-xnl",
@@ -19574,7 +20146,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hotel-de-goudfazant-aambeeldstraat-10h-1021-kb-amsterdam-xnl",
@@ -19609,7 +20182,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "the-ald-boutique-hotel-den-haag-fluwelen-burgwal-42-2511-cj-den-haag-xnl",
@@ -19644,7 +20218,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "first-city-hotel-den-haag-spui-275-2511-br-den-haag-xnl",
@@ -19679,7 +20254,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "boutique-hotel-corona-buitenhof-39-42-2513-ah-den-haag-xnl",
@@ -19714,7 +20290,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "restaurant-hudson-den-haag-turfhaven-23-2511-dk-den-haag-xnl",
@@ -19749,7 +20326,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "restaurant-de-luca-passage-3-7-2511-ab-den-haag-xnl",
@@ -19784,7 +20362,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "restaurant-zebedeus-rond-de-grote-kerk-8-2513-am-den-haag-xnl",
@@ -19819,7 +20398,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "cafe-de-florez-annastraat-17-2513-at-den-haag-xnl",
@@ -19854,7 +20434,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bij-hem-eten-en-drinken-molenstraat-21-a-2513-bh-den-haag-xnl",
@@ -19889,7 +20470,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "restaurant-de-basiliek-korte-houtstraat-4a-2511-cd-den-haag-xnl",
@@ -19924,7 +20506,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-prins-hendrikplein-prins-hendrikplein-3-2518-ja-den-haag-xnl",
@@ -19959,7 +20542,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-mch-lijnbaan-lijnbaan-32-2512-va-den-haag-xnl",
@@ -19994,7 +20578,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "boots-apotheek-den-haag-westeinde-148-2512-hh-den-haag-xnl",
@@ -20030,7 +20615,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "d-reizen-den-haag-de-savornin-lohmanplein-22a-2566-ac-den-haag-xnl",
@@ -20066,7 +20652,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "gaborstore-den-haag-venestraat-12-2511-as-den-haag-xnl",
@@ -20101,7 +20688,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ziengs-den-haag-venestraat-14-16-2511-as-den-haag-xnl",
@@ -20136,7 +20724,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "nolten-den-haag-centrum-spuistraat-9-2511-bc-den-haag-xnl",
@@ -20171,7 +20760,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "van-haren-den-haag-venestraat-venestraat-49-2511-ar-den-haag-xnl",
@@ -20206,7 +20796,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "klijsen-schoenmode-dames-hoogstraat-7-2513-an-den-haag-xnl",
@@ -20240,7 +20831,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "klijsen-schoenmode-heren-hoogstraat-13-2513-an-den-haag-xnl",
@@ -20274,7 +20866,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "grand-hotel-karel-v-geertebolwerk-1-3511-xa-utrecht-xnl",
@@ -20309,7 +20902,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "van-der-valk-hotel-utrecht-winthontlaan-4-6-3526-kv-utrecht-xnl",
@@ -20345,7 +20939,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "crowne-plaza-utrecht-central-station-catharijne-esplanade-13-3511-wk-utrecht-xnl",
@@ -20381,7 +20976,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "park-plaza-utrecht-westplein-50-3531-bl-utrecht-xnl",
@@ -20417,7 +21013,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "inntel-hotels-utrecht-centre-smakkelaarshoek-24-3511-ec-utrecht-xnl",
@@ -20452,7 +21049,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-koert-binnenstad-van-asch-van-wijckskade-30-3512-vs-utrecht-xnl",
@@ -20487,7 +21085,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-boswijk-oudegracht-386-3511-pr-utrecht-xnl",
@@ -20522,7 +21121,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-buijs-balijelaan-6-3521-gr-utrecht-xnl",
@@ -20557,7 +21157,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kapsalon-be-beautiful-voorstraat-82-3512-at-utrecht-xnl",
@@ -20592,7 +21193,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kinki-kappers-utrecht-oudegracht-198-3511-nr-utrecht-xnl",
@@ -20628,7 +21230,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "kapsalon-cocopelo-korte-koestraat-1-3511-rp-utrecht-xnl",
@@ -20663,7 +21266,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "house-of-lush-utrecht-wittevrouwenstraat-32-3512-cv-utrecht-xnl",
@@ -20698,7 +21302,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "maestro-kapper-beautysalon-wittevrouwenstraat-36-3512-cv-utrecht-xnl",
@@ -20733,7 +21338,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "campanile-eindhoven-noord-brabantlaan-309-5657-gb-eindhoven-xnl",
@@ -20769,7 +21375,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "sandton-eindhoven-centre-stratumsedijk-23d-5611-na-eindhoven-xnl",
@@ -20805,7 +21412,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "nh-collection-eindhoven-centre-vestdijk-5-5611-ca-eindhoven-xnl",
@@ -20841,7 +21449,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "pullman-eindhoven-cocagne-vestdijk-47-5611-ca-eindhoven-xnl",
@@ -20877,7 +21486,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "queen-eindhoven-markt-7-5611-eb-eindhoven-xnl",
@@ -20912,7 +21522,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "centrale-dienstapotheek-eindhoven-michelangelolaan-2-5623-ej-eindhoven-xnl",
@@ -20947,7 +21558,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "stratumse-benu-apotheek-hooftlaan-8-5611-nv-eindhoven-xnl",
@@ -20983,7 +21595,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-medicenter-haagdijk-tongelresestraat-205-5613-dg-eindhoven-xnl",
@@ -21018,7 +21631,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tui-reisbureau-eindhoven-elzentlaan-elzentlaan-137-5611-ll-eindhoven-xnl",
@@ -21054,7 +21668,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "tui-reisbureau-eindhoven-woensel-winkelcentrum-woensel-250-5625-ag-eindhoven-xnl",
@@ -21090,7 +21705,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "reisbureau-eindhoven-oberto-14-5629-ng-eindhoven-xnl",
@@ -21124,7 +21740,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "flonk-hotel-groningen-centre-radesingel-50-9711-ek-groningen-xnl",
@@ -21160,7 +21777,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "westcord-market-hotel-groningen-grote-markt-31-9712-hs-groningen-xnl",
@@ -21196,7 +21814,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hotel-halbert-oude-boteringestraat-43-9712-gn-groningen-xnl",
@@ -21230,7 +21849,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hotel-prinsenhof-groningen-groningen-xnl",
@@ -21263,7 +21883,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "martini-hotel-groningen-gedempte-zuiderdiep-8-9711-hg-groningen-xnl",
@@ -21298,7 +21919,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "service-apotheek-centrum-groningen-kwinkenplein-6-9712-gz-groningen-xnl",
@@ -21334,7 +21956,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-oosterpark-gorechtkade-2-9713-ca-groningen-xnl",
@@ -21369,7 +21992,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "apotheek-hanzeplein-hanzeplein-122-9713-gw-groningen-xnl",
@@ -21404,7 +22028,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "mercure-hotel-tilburg-centrum-heuvel-37-5038-cp-tilburg-xnl",
@@ -21440,7 +22065,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "van-der-valk-hotel-tilburg-dr-bloemenlaan-8-5022-kw-tilburg-xnl",
@@ -21477,7 +22103,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "bastion-hotel-tilburg-kempenbaan-2-5018-tk-tilburg-xnl",
@@ -21513,7 +22140,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "van-der-valk-hotel-gilze-tilburg-klein-zwitserland-8-5126-ta-gilze-xnl",
@@ -21550,7 +22178,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hotel-restaurant-frenchie-gedempte-oude-gracht-46-2011-gs-haarlem-xnl",
@@ -21585,7 +22214,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ml-in-haarlem-klokhuisplein-9-2011-hk-haarlem-xnl",
@@ -21620,7 +22250,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "hotel-carillon-haarlem-grote-markt-27-2011-rc-haarlem-xnl",
@@ -21655,7 +22286,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ambassador-city-centre-hotel-oude-groenmarkt-20-2011-hl-haarlem-xnl",
@@ -21690,7 +22322,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "golden-tulip-leiden-centre-schipholweg-3-2316-xb-leiden-xnl",
@@ -21726,7 +22359,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "ibis-leiden-centre-stationsplein-240-242-2312-ar-leiden-xnl",
@@ -21762,7 +22396,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Netherlands"
   },
   {
     "id": "wellton-riga-hotel-spa-valnu-iela-49-lv-1050-riga-xnl",
@@ -21798,7 +22433,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "wellton-centrum-hotel-spa-kaleju-iela-33-lv-1050-riga-xnl",
@@ -21834,7 +22470,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "ibis-riga-centre-marijas-iela-5-lv-1050-riga-xnl",
@@ -21870,7 +22507,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "ac-hotel-riga-dzirnavu-iela-33-lv-1010-riga-xnl",
@@ -21906,7 +22544,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "rixwell-old-riga-palace-hotel-minsterejas-iela-8-10-lv-1050-riga-xnl",
@@ -21942,7 +22581,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "hanza-hotel-riga-elijas-iela-7-lv-1050-riga-xnl",
@@ -21977,7 +22617,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "radisson-blu-ridzene-hotel-riga-xnl",
@@ -22010,7 +22651,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "bellevue-park-hotel-riga-slokas-iela-1-lv-1048-riga-xnl",
@@ -22045,7 +22687,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "laivu-centrs-restorans-krasta-iela-7-riga-xnl",
@@ -22079,7 +22722,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "restorans-gutenbergs-terase-doma-laukums-1-lv-1050-riga-xnl",
@@ -22114,7 +22758,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "skyline-bar-riga-elizabetes-iela-55-lv-1010-riga-xnl",
@@ -22149,7 +22794,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "restorans-stage22-aspazijas-bulvaris-22-riga-xnl",
@@ -22183,7 +22829,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "restorans-limone-dzirnavu-iela-67-riga-xnl",
@@ -22217,7 +22864,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "restorans-herbarijs-dzirnavu-iela-67-riga-xnl",
@@ -22251,7 +22899,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "skaistumkopsanas-salons-eliza-brivibas-gatve-386-k2-riga-xnl",
@@ -22285,7 +22934,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "lux-skaistumkopsanas-salons-jekaba-iela-3-5-riga-xnl",
@@ -22319,7 +22969,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "siluets-riga-matisa-iela-19-riga-xnl",
@@ -22353,7 +23004,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "hairriga-olimpia-azenes-iela-5-riga-xnl",
@@ -22387,7 +23039,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "skaistumkopsanas-salons-vecriga-teatra-iela-2-riga-xnl",
@@ -22421,7 +23074,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "salons-aneri-latgales-iela-264-riga-xnl",
@@ -22454,7 +23108,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "saules-aptieka-brivibas-brivibas-iela-68-lv-1011-riga-xnl",
@@ -22490,7 +23145,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "latvijas-aptieka-kr-valdemara-kr-valdemara-iela-70-lv-1013-riga-xnl",
@@ -22526,7 +23182,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "euroaptieka-cesu-iela-cesu-iela-31-riga-xnl",
@@ -22561,7 +23218,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "latvia-tours-marijas-iela-13-lv-1011-riga-xnl",
@@ -22596,7 +23254,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "join-up-baltic-vienibas-gatve-109-lv-1058-riga-xnl",
@@ -22631,7 +23290,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "astra-ture-maza-pils-iela-5-lv-1050-riga-xnl",
@@ -22666,7 +23326,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "interlux-travel-skolas-iela-9-lv-1010-riga-xnl",
@@ -22701,7 +23362,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "atlantic-travel-riga-merkela-iela-19-riga-xnl",
@@ -22735,7 +23397,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "tez-tour-riga-brivibas-iela-40-riga-xnl",
@@ -22770,7 +23433,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "vanilla-travel-maldugunu-iela-4-501-riga-xnl",
@@ -22804,7 +23468,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "apavu-centrs-k-barona-iela-46-lv-1011-riga-xnl",
@@ -22839,7 +23504,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "ecco-galerija-centrs-audeju-iela-16-riga-xnl",
@@ -22874,7 +23540,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "este-apavu-veikals-audeju-iela-16-riga-xnl",
@@ -22908,7 +23575,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "eiropas-apavi-tc-origo-stacijas-laukums-4-riga-xnl",
@@ -22942,7 +23610,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "danija-apavu-veikals-dzirnavu-iela-67-riga-xnl",
@@ -22976,7 +23645,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "kazu-agentura-biekensalas-iela-32-riga-xnl",
@@ -23009,7 +23679,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "dizaina-fabrika-slokas-iela-52d-riga-xnl",
@@ -23042,7 +23713,8 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   },
   {
     "id": "ramava-riga-xnl",
@@ -23074,6 +23746,7 @@
     "doNotContact": false,
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
-    "isDemo": false
+    "isDemo": false,
+    "country": "Latvia"
   }
 ]
