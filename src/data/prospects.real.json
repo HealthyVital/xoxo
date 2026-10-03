@@ -40535,14 +40535,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Moscow",
-    "source": "Web search (directory/listing), Oct 2026",
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
     "lastVerified": "2026-10-03",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -40561,7 +40562,8 @@
     "updatedAt": "2026-10-03",
     "isDemo": false,
     "country": "Russia",
-    "address": "Nikoloyamskaya St 38/23, Moscow"
+    "address": "Nikoloyamskaya St 38/23, Moscow",
+    "email": "reservation@theroomshotel.ru"
   },
   {
     "id": "grada-boutique-hotel-moscow-c7f",
@@ -47414,14 +47416,15 @@
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Restaurant & bar",
     "city": "Kyiv",
-    "source": "Web search (directory/listing), Oct 2026",
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
     "lastVerified": "2026-10-03",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -47441,7 +47444,8 @@
     "isDemo": false,
     "country": "Ukraine",
     "phone": "(044) 581-00-11",
-    "address": "Bohdana Khmelnytskoho St 34A, Kyiv"
+    "address": "Bohdana Khmelnytskoho St 34A, Kyiv",
+    "email": "restaurant@11mirrors-hotel.com"
   },
   {
     "id": "river-grill-kyiv-kyiv-thm",
@@ -48912,14 +48916,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Odesa",
-    "source": "Web search (directory/listing), Oct 2026",
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
     "lastVerified": "2026-10-03",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -48938,7 +48943,8 @@
     "updatedAt": "2026-10-03",
     "isDemo": false,
     "country": "Ukraine",
-    "address": "Yevreiska St 27, Odesa"
+    "address": "Yevreiska St 27, Odesa",
+    "email": "manager@hotelcaliforniaodessa.com"
   },
   {
     "id": "dacha-lanzheron-boutique-hotel-odesa-4pm",
@@ -49049,14 +49055,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Apart-hotel",
     "city": "Odesa",
-    "source": "Web search (directory/listing), Oct 2026",
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
     "lastVerified": "2026-10-03",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -49076,7 +49083,8 @@
     "isDemo": false,
     "country": "Ukraine",
     "phone": "+380 67 510-15-04",
-    "address": "Italiyska (Pushkinska) St 12, Odesa"
+    "address": "Italiyska (Pushkinska) St 12, Odesa",
+    "email": "metrohotelodesa@gmail.com"
   },
   {
     "id": "vivmar-apartments-odesa-gx9",
