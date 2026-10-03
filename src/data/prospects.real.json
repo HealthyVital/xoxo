@@ -22455,15 +22455,16 @@
     "address": "Vaļņu iela 49, LV-1050 Rīga",
     "city": "Riga",
     "postalCode": "LV-1050",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -22481,7 +22482,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Latvia"
+    "country": "Latvia",
+    "email": "info@wellton.com"
   },
   {
     "id": "wellton-centrum-hotel-spa-kaleju-iela-33-lv-1050-riga-xnl",
@@ -22492,15 +22494,16 @@
     "address": "Kalēju iela 33, LV-1050 Rīga",
     "city": "Riga",
     "postalCode": "LV-1050",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -22518,7 +22521,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Latvia"
+    "country": "Latvia",
+    "email": "info@welltoncentrum.com"
   },
   {
     "id": "ibis-riga-centre-marijas-iela-5-lv-1050-riga-xnl",
@@ -22529,15 +22533,16 @@
     "address": "Marijas iela 5, LV-1050 Rīga",
     "city": "Riga",
     "postalCode": "LV-1050",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -22555,7 +22560,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Latvia"
+    "country": "Latvia",
+    "email": "HA016@accor.com"
   },
   {
     "id": "ac-hotel-riga-dzirnavu-iela-33-lv-1010-riga-xnl",
@@ -22566,15 +22572,16 @@
     "address": "Dzirnavu iela 33, LV-1010 Rīga",
     "city": "Riga",
     "postalCode": "LV-1010",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -22592,7 +22599,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Latvia"
+    "country": "Latvia",
+    "email": "info@achotelriga.com"
   },
   {
     "id": "rixwell-old-riga-palace-hotel-minsterejas-iela-8-10-lv-1050-riga-xnl",
@@ -22603,15 +22611,16 @@
     "address": "Minsterejas iela 8/10, LV-1050 Rīga",
     "city": "Riga",
     "postalCode": "LV-1050",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -22629,7 +22638,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Latvia"
+    "country": "Latvia",
+    "email": "info.orp@rixwell.com"
   },
   {
     "id": "hanza-hotel-riga-elijas-iela-7-lv-1050-riga-xnl",
@@ -22640,14 +22650,15 @@
     "address": "Elijas iela 7, LV-1050 Rīga",
     "city": "Riga",
     "postalCode": "LV-1050",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -22665,7 +22676,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Latvia"
+    "country": "Latvia",
+    "email": "info@hanzahotel.lv"
   },
   {
     "id": "radisson-blu-ridzene-hotel-riga-xnl",
@@ -22673,15 +22685,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "International hotel chain",
     "city": "Riga",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -22699,7 +22712,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Latvia"
+    "country": "Latvia",
+    "email": "info.ridzene.riga@radissonblu.com"
   },
   {
     "id": "bellevue-park-hotel-riga-slokas-iela-1-lv-1048-riga-xnl",
@@ -22709,15 +22723,16 @@
     "address": "Slokas iela 1, LV-1048 Rīga",
     "city": "Riga",
     "postalCode": "LV-1048",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -22735,7 +22750,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Latvia"
+    "country": "Latvia",
+    "email": "info@bellevue.lv"
   },
   {
     "id": "laivu-centrs-restorans-krasta-iela-7-riga-xnl",
@@ -23277,14 +23293,15 @@
     "address": "Marijas iela 13, LV-1011 Rīga",
     "city": "Riga",
     "postalCode": "LV-1011",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -23302,7 +23319,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Latvia"
+    "country": "Latvia",
+    "email": "celojumi@latviatours.lv"
   },
   {
     "id": "join-up-baltic-vienibas-gatve-109-lv-1058-riga-xnl",
@@ -23313,14 +23331,15 @@
     "address": "Vienības gatve 109, LV-1058 Rīga",
     "city": "Riga",
     "postalCode": "LV-1058",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -23338,7 +23357,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Latvia"
+    "country": "Latvia",
+    "email": "celojumi@joinup.lv"
   },
   {
     "id": "astra-ture-maza-pils-iela-5-lv-1050-riga-xnl",
@@ -23455,15 +23475,16 @@
     "phone": "+37167202000",
     "address": "Brīvības iela 40, Rīga",
     "city": "Riga",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -23481,7 +23502,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Latvia"
+    "country": "Latvia",
+    "email": "online@teztour.lv"
   },
   {
     "id": "vanilla-travel-maldugunu-iela-4-501-riga-xnl",
@@ -23837,14 +23859,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel",
     "city": "Jurmala",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -23864,7 +23887,8 @@
     "isDemo": false,
     "country": "Latvia",
     "phone": "+37167784400",
-    "address": "Jomas iela 47/49, LV-2015 Jūrmala"
+    "address": "Jomas iela 47/49, LV-2015 Jūrmala",
+    "email": "booking@hoteljurmala.com"
   },
   {
     "id": "villa-joma-jurmala-qeh",
@@ -24762,14 +24786,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel",
     "city": "Liepaja",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -24789,7 +24814,8 @@
     "isDemo": false,
     "country": "Latvia",
     "phone": "+37163488288",
-    "address": "Vecā Ostmala 40, LV-3401 Liepāja"
+    "address": "Vecā Ostmala 40, LV-3401 Liepāja",
+    "email": "info@promenadehotel.lv"
   },
   {
     "id": "amrita-hotel-liepaja-liepaja-etd",
@@ -24797,14 +24823,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel",
     "city": "Liepaja",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -24824,7 +24851,8 @@
     "isDemo": false,
     "country": "Latvia",
     "phone": "+37163480888",
-    "address": "Rīgas iela 7/9, LV-3401 Liepāja"
+    "address": "Rīgas iela 7/9, LV-3401 Liepāja",
+    "email": "info@amrita.lv"
   },
   {
     "id": "liva-hotel-liepaja-fjy",
@@ -24832,14 +24860,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel",
     "city": "Liepaja",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -24859,7 +24888,8 @@
     "isDemo": false,
     "country": "Latvia",
     "phone": "+37163420102",
-    "address": "Lielā iela 11, LV-3401 Liepāja"
+    "address": "Lielā iela 11, LV-3401 Liepāja",
+    "email": "info@liva.lv"
   },
   {
     "id": "mo-liepaja-liepaja-gzs",
@@ -26065,15 +26095,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "International hotel chain",
     "city": "Minsk",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -26093,7 +26124,8 @@
     "isDemo": false,
     "country": "Belarus",
     "phone": "+375173098000",
-    "address": "9 Pobediteley Avenue, Minsk, 220004"
+    "address": "9 Pobediteley Avenue, Minsk, 220004",
+    "email": "doubletreeminsk.info@hilton.com"
   },
   {
     "id": "hampton-by-hilton-minsk-city-centre-minsk-zxd",
@@ -26101,15 +26133,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "International hotel chain",
     "city": "Minsk",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -26129,7 +26162,8 @@
     "isDemo": false,
     "country": "Belarus",
     "phone": "+375172154000",
-    "address": "8 Tolstogo Street, Minsk, 220007"
+    "address": "8 Tolstogo Street, Minsk, 220007",
+    "email": "MSQHX_Hampton@hilton.com"
   },
   {
     "id": "president-hotel-minsk-minsk-aoy",
@@ -27674,15 +27708,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "International hotel chain",
     "city": "Brest",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -27702,7 +27737,8 @@
     "isDemo": false,
     "country": "Belarus",
     "phone": "+375162278200",
-    "address": "Varshavskoe shosse 41, Brest, 224003"
+    "address": "Varshavskoe shosse 41, Brest, 224003",
+    "email": "LUZBB_Hampton@hilton.com"
   },
   {
     "id": "hotel-hermitage-brest-brest-zms",
@@ -28412,14 +28448,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Vilnius",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -28439,7 +28476,8 @@
     "isDemo": false,
     "country": "Lithuania",
     "phone": "+37061443849",
-    "address": "Pilies g. 24, Vilnius, 01123"
+    "address": "Pilies g. 24, Vilnius, 01123",
+    "email": "info@narutis.com"
   },
   {
     "id": "stikliai-hotel-vilnius-c2y",
@@ -28482,14 +28520,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Vilnius",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -28509,7 +28548,8 @@
     "isDemo": false,
     "country": "Lithuania",
     "phone": "+37052665885",
-    "address": "Bernardinų g. 8, Vilnius, 01124"
+    "address": "Bernardinų g. 8, Vilnius, 01124",
+    "email": "info@shakespeare.lt"
   },
   {
     "id": "artagonist-hotel-vilnius-si0",
@@ -28552,14 +28592,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Vilnius",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -28578,7 +28619,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Lithuania",
-    "address": "Didžioji g. 7, Vilnius, 01128"
+    "address": "Didžioji g. 7, Vilnius, 01128",
+    "email": "reservations@hotelpacai.com"
   },
   {
     "id": "radisson-blu-hotel-lietuva-vilnius-vilnius-wpm",
@@ -28586,15 +28628,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Vilnius",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -28613,7 +28656,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Lithuania",
-    "address": "Konstitucijos Av. 20, Vilnius, 09308"
+    "address": "Konstitucijos Av. 20, Vilnius, 09308",
+    "email": "info.lietuva.vilnius@radissonblu.com"
   },
   {
     "id": "vilnius-grand-resort-ariela-therapeutic-centre-vilnius-jzz",
@@ -29079,15 +29123,16 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency (chain)",
     "city": "Vilnius",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -29107,7 +29152,8 @@
     "isDemo": false,
     "country": "Lithuania",
     "phone": "+37052660700",
-    "address": "Šeimyniškių g. 17, Vilnius, LT-09312"
+    "address": "Šeimyniškių g. 17, Vilnius, LT-09312",
+    "email": "info@guliveriokeliones.lt"
   },
   {
     "id": "kelioniu-akademija-vilnius-fzt",
@@ -29945,14 +29991,15 @@
     "industry": "Events & Corporate",
     "subIndustry": "Conference & exhibition centre",
     "city": "Vilnius",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -29972,7 +30019,8 @@
     "isDemo": false,
     "country": "Lithuania",
     "phone": "+37061561089",
-    "address": "Laisvės pr. 5, Vilnius, 04215"
+    "address": "Laisvės pr. 5, Vilnius, 04215",
+    "email": "info@litexpo.lt"
   },
   {
     "id": "talent-garden-vilnius-vilnius-960",
@@ -30048,15 +30096,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Kaunas",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -30076,7 +30125,8 @@
     "isDemo": false,
     "country": "Lithuania",
     "phone": "+37037302702",
-    "address": "J. Gruodžio g. 21, Kaunas"
+    "address": "J. Gruodžio g. 21, Kaunas",
+    "email": "office@santakahotel.eu"
   },
   {
     "id": "keturi-metu-laikai-kaunas-5yi",
@@ -30294,15 +30344,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Kaunas",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -30321,7 +30372,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Lithuania",
-    "address": "27 Donelaičio g., Kaunas"
+    "address": "27 Donelaičio g., Kaunas",
+    "email": "info.kaunas@radisson.com"
   },
   {
     "id": "unison-beauty-lab-kaunas-wv9",
@@ -30755,15 +30807,16 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency (chain)",
     "city": "Kaunas",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -30783,7 +30836,8 @@
     "isDemo": false,
     "country": "Lithuania",
     "phone": "+37037331418",
-    "address": "Savanorių pr. 128-1, Kaunas, LT-44148"
+    "address": "Savanorių pr. 128-1, Kaunas, LT-44148",
+    "email": "kaunas@guliveriokeliones.lt"
   },
   {
     "id": "keliones-lt-kaunas-kaunas-82z",
@@ -32288,14 +32342,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Tallinn",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -32314,7 +32369,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Estonia",
-    "address": "Vene tn 9, Tallinn"
+    "address": "Vene tn 9, Tallinn",
+    "email": "info@telegraafhotel.com"
   },
   {
     "id": "hotel-st-petersbourg-tallinn-3ed",
@@ -32356,14 +32412,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Tallinn",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -32382,7 +32439,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Estonia",
-    "address": "Pikk 71 / Tolli 2, Tallinn"
+    "address": "Pikk 71 / Tolli 2, Tallinn",
+    "email": "reservations@threesistershotel.ee"
   },
   {
     "id": "swissotel-tallinn-tallinn-8mo",
@@ -32390,15 +32448,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Tallinn",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -32418,7 +32477,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3726240000",
-    "address": "Tornimäe 3, Tallinn"
+    "address": "Tornimäe 3, Tallinn",
+    "email": "tallinn@swissotel.com"
   },
   {
     "id": "radisson-blu-sky-hotel-tallinn-tallinn-oke",
@@ -32426,15 +32486,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Tallinn",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -32454,7 +32515,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3726823000",
-    "address": "Rävala pst 3, Tallinn"
+    "address": "Rävala pst 3, Tallinn",
+    "email": "reservations.tallinn@radissonblu.com"
   },
   {
     "id": "hilton-tallinn-park-tallinn-v9h",
@@ -32462,15 +32524,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Tallinn",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -32490,7 +32553,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3726305333",
-    "address": "Fr. R. Kreutzwaldi 23, Tallinn"
+    "address": "Fr. R. Kreutzwaldi 23, Tallinn",
+    "email": "tallinn.info@hilton.com"
   },
   {
     "id": "hyatt-place-tallinn-tallinn-esg",
@@ -32534,14 +32598,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel",
     "city": "Tallinn",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -32561,7 +32626,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3726674500",
-    "address": "Roseni 13, Tallinn"
+    "address": "Roseni 13, Tallinn",
+    "email": "booking@metropol.ee"
   },
   {
     "id": "ilusalong-number-uks-tallinn-yfw",
@@ -32884,15 +32950,16 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency (chain)",
     "city": "Tallinn",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -32912,7 +32979,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3723726310110",
-    "address": "Toompuiestee 37, Tallinn, 10149"
+    "address": "Toompuiestee 37, Tallinn, 10149",
+    "email": "gotravel@gotravel.ee"
   },
   {
     "id": "reisiekspert-tallinn-dbo",
@@ -33680,14 +33748,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel",
     "city": "Tartu",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -33707,7 +33776,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3727447100",
-    "address": "Ülikooli 8, Tartu, 51003"
+    "address": "Ülikooli 8, Tartu, 51003",
+    "email": "barclay@barclay.ee"
   },
   {
     "id": "hotel-tartu-tartu-xdv",
@@ -33820,14 +33890,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel",
     "city": "Tartu",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -33847,7 +33918,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3727330377",
-    "address": "Ülikooli 14, Tartu, 51003"
+    "address": "Ülikooli 14, Tartu, 51003",
+    "email": "sales@lydia.ee"
   },
   {
     "id": "v-spa-and-conference-hotel-tartu-zvp",
@@ -33855,14 +33927,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Resort & spa hotel",
     "city": "Tartu",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -33882,7 +33955,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3726776677",
-    "address": "Riia 2, Tartu, 51013"
+    "address": "Riia 2, Tartu, 51013",
+    "email": "info@vspahotel.ee"
   },
   {
     "id": "aleksandri-hotell-tartu-77r",
@@ -34125,14 +34199,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Resort & spa hotel",
     "city": "Pärnu",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -34152,7 +34227,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3724475370",
-    "address": "A. H. Tammsaare pst 35, Pärnu, 80010"
+    "address": "A. H. Tammsaare pst 35, Pärnu, 80010",
+    "email": "info.strand@hestiahotels.com"
   },
   {
     "id": "estonia-resort-hotel-spa-parnu-fba",
@@ -34160,14 +34236,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Resort & spa hotel",
     "city": "Pärnu",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -34187,7 +34264,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3724401017",
-    "address": "A. H. Tammsaare pst 4a/6, Pärnu"
+    "address": "A. H. Tammsaare pst 4a/6, Pärnu",
+    "email": "resorthotel@spaestonia.ee"
   },
   {
     "id": "hedon-spa-hotel-parnu-t5r",
@@ -34195,14 +34273,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Resort & spa hotel",
     "city": "Pärnu",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -34222,7 +34301,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3724499000",
-    "address": "Ranna puiestee 1, Pärnu, 80012"
+    "address": "Ranna puiestee 1, Pärnu, 80012",
+    "email": "info@hedonspa.com"
   },
   {
     "id": "parnu-hotel-parnu-qxg",
@@ -34265,14 +34345,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Resort & spa hotel",
     "city": "Pärnu",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -34292,7 +34373,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3724450700",
-    "address": "Suvituse 14, Pärnu, 80010"
+    "address": "Suvituse 14, Pärnu, 80010",
+    "email": "resort@wasahotels.ee"
   },
   {
     "id": "ranna-apteek-parnu-ydh",
@@ -34335,14 +34417,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel",
     "city": "Narva",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -34362,7 +34445,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3723599600",
-    "address": "Aleksander Puškini 6, Narva, 20308"
+    "address": "Aleksander Puškini 6, Narva, 20308",
+    "email": "hotell@narvahotell.ee"
   },
   {
     "id": "hotel-inger-narva-k9x",
@@ -34370,14 +34454,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel",
     "city": "Narva",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -34397,7 +34482,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3726881100",
-    "address": "Aleksander Puškini 28, Narva"
+    "address": "Aleksander Puškini 28, Narva",
+    "email": "inger@inger.ee"
   },
   {
     "id": "marc-chagall-restaurant-narva-p7u",
@@ -34405,14 +34491,15 @@
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Restaurant",
     "city": "Narva",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -34432,7 +34519,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3723599600",
-    "address": "Aleksander Puškini 6, Narva, 20308"
+    "address": "Aleksander Puškini 6, Narva, 20308",
+    "email": "hotell@narvahotell.ee"
   },
   {
     "id": "inger-cafe-narva-t8m",
@@ -34440,14 +34528,15 @@
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Restaurant",
     "city": "Narva",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -34467,7 +34556,8 @@
     "isDemo": false,
     "country": "Estonia",
     "phone": "+3726881100",
-    "address": "Aleksander Puškini 28, Narva"
+    "address": "Aleksander Puškini 28, Narva",
+    "email": "inger@inger.ee"
   },
   {
     "id": "hotel-bellotto-warsaw-qik",
