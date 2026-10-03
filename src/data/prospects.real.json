@@ -6,15 +6,15 @@
     "subIndustry": "International hotel chain",
     "website": "ihg.com",
     "city": "Rotterdam",
-    "source": "IHG hotel directory",
+    "source": "IHG hotel directory; email confirmed via official website, Oct 2026",
     "sourceUrl": "https://www.ihg.com/holidayinnexpress/hotels/us/en/rotterdam/rtmcs/hoteldetail",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 25,
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -33,7 +33,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "+31-20-7979196",
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "info.rtmcs@hiex.nl"
   },
   {
     "id": "hilton-rotterdam-rtm",
@@ -116,15 +117,15 @@
     "subIndustry": "International hotel chain",
     "website": "all.accor.com",
     "city": "Rotterdam",
-    "source": "Accor hotel directory",
+    "source": "Accor hotel directory; email confirmed via official website, Oct 2026",
     "sourceUrl": "https://all.accor.com/hotel/8188/index.en.shtml",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 25,
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -143,7 +144,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "+31 10 750 2520",
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "H8188@accor.com"
   },
   {
     "id": "h3-hotel-rotterdam-city-center-rtm",
@@ -301,15 +303,15 @@
     "subIndustry": "International hotel chain",
     "address": "Coolsingel, Rotterdam",
     "city": "Rotterdam",
-    "source": "Tripadvisor Rotterdam hotel listing",
+    "source": "Tripadvisor Rotterdam hotel listing; email confirmed via official website, Oct 2026",
     "sourceUrl": "https://www.tripadvisor.com/HotelsList-Rotterdam-Downtown-Hotels-zfp706788.html",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 25,
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -328,7 +330,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "+31 10-206-7800",
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "nhatlantarotterdam@nh-hotels.com"
   },
   {
     "id": "leonardo-hotel-rotterdam-savoy-rtm",
@@ -2066,16 +2069,16 @@
     "industry": "Events & Corporate",
     "subIndustry": "Stadium / event venue",
     "city": "Rotterdam",
-    "source": "Rotterdam.info unique venues guide",
+    "source": "Rotterdam.info unique venues guide; email confirmed via official website, Oct 2026",
     "sourceUrl": "https://www.rotterdam.info/en/10-unique-venues-in-rotterdam-the-netherlands",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
       "+10 — Business is built around hosting events",
-      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -2094,7 +2097,8 @@
     "updatedAt": "2026-09-29",
     "isDemo": false,
     "phone": "010-4929455",
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "info@dekuip.nl"
   },
   {
     "id": "restaurant-fred-rtm",
@@ -2211,15 +2215,15 @@
     "subIndustry": "Museum restaurant",
     "address": "Museumpark 24, 3015 CX Rotterdam",
     "city": "Rotterdam",
-    "source": "Rotterdam.info fine dining guide",
+    "source": "Rotterdam.info fine dining guide; email confirmed via official website, Oct 2026",
     "sourceUrl": "https://www.rotterdam.info/en/visit/guide/luxury-restaurants-in-rotterdam",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Phone/email found via targeted search, Sept 2026 — still confirm before outreach."
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -2239,7 +2243,8 @@
     "isDemo": false,
     "phone": "+31 10 441 9400",
     "postalCode": "3015 CX",
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "renilde@boijmans.nl"
   },
   {
     "id": "celest-rtm",
@@ -2798,15 +2803,16 @@
     "address": "Wilhelminakade 91, 3072 AP Rotterdam",
     "city": "Rotterdam",
     "postalCode": "3072 AP",
-    "source": "Company website",
+    "source": "Company website; email confirmed via official website, Oct 2026",
     "sourceUrl": "https://alliancetravel.nl/en/",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -2824,7 +2830,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "contact@uniglobealliancetravel.nl"
   },
   {
     "id": "ata-tours-rtm",
@@ -2904,15 +2911,16 @@
     "subIndustry": "DMC / inbound tour operator",
     "website": "zoyotravel-dmc.com",
     "city": "Rotterdam",
-    "source": "Company website",
+    "source": "Company website; email confirmed via official website, Oct 2026",
     "sourceUrl": "https://www.zoyotravel-dmc.com/destinations/dmc-rotterdam-and-tour-operator/",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 30,
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Assumed inconsistent visual content (independent/local business, not yet verified)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -2930,7 +2938,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "info@zoyotravel.com"
   },
   {
     "id": "travelessence-rtm",
@@ -3404,14 +3413,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel (national monument)",
     "city": "Rotterdam",
-    "source": "Hotelpincoffs.nl / boutique hotel guides",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Hotelpincoffs.nl / boutique hotel guides; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -3429,7 +3439,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "info@hotelpincoffs.nl"
   },
   {
     "id": "room-mate-bruno-rtm",
@@ -3437,15 +3448,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel chain",
     "city": "Rotterdam",
-    "source": "Boutique hotel guides",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Boutique hotel guides; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -3463,7 +3475,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "bruno@room-matehotels.com"
   },
   {
     "id": "hotel-new-york-rtm",
@@ -3471,14 +3484,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel (former HAL head office)",
     "city": "Rotterdam",
-    "source": "Boutique hotel guides",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Boutique hotel guides; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -3496,7 +3510,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "info@hotelnewyork.nl"
   },
   {
     "id": "nhow-rotterdam-rtm",
@@ -3605,15 +3620,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hostel chain (Cube Houses)",
     "city": "Rotterdam",
-    "source": "Hostel directory guides",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Hostel directory guides; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -3631,7 +3647,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "rotterdam@stayokay.com"
   },
   {
     "id": "ani-haakien-hostel-rotterdam-rtm",
@@ -3742,14 +3759,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Independent hotel (Delfshaven)",
     "city": "Rotterdam",
-    "source": "Booking.com hotel directory",
-    "lastVerified": "2026-09-29",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Booking.com hotel directory; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -3767,7 +3785,8 @@
     "createdAt": "2026-09-29",
     "updatedAt": "2026-09-29",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "HC3N9@accor.com"
   },
   {
     "id": "rotterdam-city-loft-delfshaven-rtm",
@@ -9190,15 +9209,16 @@
     "address": "K.P. Van Der Mandelelaan 150, 3062 MB Rotterdam",
     "city": "Rotterdam",
     "postalCode": "3062 MB",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -9216,7 +9236,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "H1134@accor.com"
   },
   {
     "id": "hotel-rotterdam-zuidplein-mijnsherenlaan-9-3081-ga-rotterdam-rtm",
@@ -9259,15 +9280,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "International hotel chain",
     "city": "Rotterdam",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -9285,7 +9307,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "HB9R9@accor.com"
   },
   {
     "id": "fletcher-boutique-hotel-slaak-rotterdam-slaak-34-rotterdam-rtm",
@@ -9331,15 +9354,16 @@
     "address": "Energieweg 2, 3041 JC Rotterdam",
     "city": "Rotterdam",
     "postalCode": "3041 JC",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -9357,7 +9381,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "blijdorp@valk.nl"
   },
   {
     "id": "vakantie-xperts-blijdorp-stadhoudersweg-87d-3039-eb-rotterdam-rtm",
@@ -16876,15 +16901,16 @@
     "address": "Rotterdam Airportplein 70, 3045 AP Rotterdam",
     "city": "Rotterdam",
     "postalCode": "3045 AP",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -16902,7 +16928,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "HA347@accor.com"
   },
   {
     "id": "fletcher-wings-hotel-rotterdam-the-hague-airport-rotterdam-airportplein-55-3045-ap-rotterdam-rtm",
@@ -18241,14 +18268,15 @@
     "address": "Keizersgracht 384, 1016 GB Amsterdam",
     "city": "Amsterdam",
     "postalCode": "1016 GB",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -18266,7 +18294,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "hotel@dylanamsterdam.com"
   },
   {
     "id": "the-hendrick-s-hotel-prins-hendrikkade-139-1011-as-amsterdam-xnl",
@@ -18277,14 +18306,15 @@
     "address": "Prins Hendrikkade 139, 1011 AS Amsterdam",
     "city": "Amsterdam",
     "postalCode": "1011 AS",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -18302,7 +18332,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "info@thehendrickshotel.com"
   },
   {
     "id": "grand-canal-boutique-hotel-keizersgracht-304-1016-ex-amsterdam-xnl",
@@ -19699,15 +19730,16 @@
     "address": "Tommaso Albinonistraat 200, 1083 HM Amsterdam",
     "city": "Amsterdam",
     "postalCode": "1083 HM",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -19725,7 +19757,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "zuidas@valk.nl"
   },
   {
     "id": "makovr-ferdinand-bolstraat-130-1072-lr-amsterdam-xnl",
@@ -20878,14 +20911,15 @@
     "address": "Geertebolwerk 1, 3511 XA Utrecht",
     "city": "Utrecht",
     "postalCode": "3511 XA",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -20903,7 +20937,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "info@karelv.nl"
   },
   {
     "id": "van-der-valk-hotel-utrecht-winthontlaan-4-6-3526-kv-utrecht-xnl",
@@ -20914,15 +20949,16 @@
     "address": "Winthontlaan 4-6, 3526 KV Utrecht",
     "city": "Utrecht",
     "postalCode": "3526 KV",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -20940,7 +20976,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "utrecht@valk.nl"
   },
   {
     "id": "crowne-plaza-utrecht-central-station-catharijne-esplanade-13-3511-wk-utrecht-xnl",
@@ -21461,15 +21498,16 @@
     "address": "Vestdijk 47, 5611 CA Eindhoven",
     "city": "Eindhoven",
     "postalCode": "5611 CA",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -21487,7 +21525,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "H5374@accor.com"
   },
   {
     "id": "queen-eindhoven-markt-7-5611-eb-eindhoven-xnl",
@@ -21752,15 +21791,16 @@
     "address": "Radesingel 50, 9711 EK Groningen",
     "city": "Groningen",
     "postalCode": "9711 EK",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -21778,7 +21818,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "info@hotelgroningencentre.nl"
   },
   {
     "id": "westcord-market-hotel-groningen-grote-markt-31-9712-hs-groningen-xnl",
@@ -22040,15 +22081,16 @@
     "address": "Heuvel 37, 5038 CP Tilburg",
     "city": "Tilburg",
     "postalCode": "5038 CP",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -22066,7 +22108,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "reservations@mercure-tilburg.nl"
   },
   {
     "id": "van-der-valk-hotel-tilburg-dr-bloemenlaan-8-5022-kw-tilburg-xnl",
@@ -22298,14 +22341,15 @@
     "address": "Oude Groenmarkt 20, 2011 HL Haarlem",
     "city": "Haarlem",
     "postalCode": "2011 HL",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -22323,7 +22367,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "info@haarlem.com"
   },
   {
     "id": "golden-tulip-leiden-centre-schipholweg-3-2316-xb-leiden-xnl",
@@ -22371,15 +22416,16 @@
     "address": "Stationsplein 240-242, 2312 AR Leiden",
     "city": "Leiden",
     "postalCode": "2312 AR",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -22397,7 +22443,8 @@
     "createdAt": "2026-10-02",
     "updatedAt": "2026-10-02",
     "isDemo": false,
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "email": "h8087@accor.com"
   },
   {
     "id": "wellton-riga-hotel-spa-valnu-iela-49-lv-1050-riga-xnl",
