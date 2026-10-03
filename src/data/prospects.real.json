@@ -34599,15 +34599,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel (chain)",
     "city": "Warsaw",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -34626,7 +34627,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Poland",
-    "address": "Kościelna 12, Warszawa"
+    "address": "Kościelna 12, Warszawa",
+    "email": "reservations.mmreg@mamaison.com"
   },
   {
     "id": "h15-boutique-hotel-warsaw-7oy",
@@ -34634,14 +34636,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Warsaw",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -34660,7 +34663,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Poland",
-    "address": "Poznańska 15, Warszawa"
+    "address": "Poznańska 15, Warszawa",
+    "email": "recepcja@hotelh15boutique.pl"
   },
   {
     "id": "arthotel-warszawa-warsaw-6bx",
@@ -35087,15 +35091,16 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency (chain)",
     "city": "Warsaw",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -35115,7 +35120,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48221100136",
-    "address": "Astronautów 1, Warszawa, 02-154"
+    "address": "Astronautów 1, Warszawa, 02-154",
+    "email": "warszawa_astronautow@travelplanet.pl"
   },
   {
     "id": "biuro-podrozy-artur-warsaw-4yd",
@@ -35123,14 +35129,15 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency",
     "city": "Warsaw",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -35150,7 +35157,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48602431440",
-    "address": "Konwiktorska 9/38, Warszawa, 00-216"
+    "address": "Konwiktorska 9/38, Warszawa, 00-216",
+    "email": "biuro@artur.waw.pl"
   },
   {
     "id": "krok-travel-warsaw-3pk",
@@ -35263,14 +35271,15 @@
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Restaurant",
     "city": "Warsaw",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -35290,7 +35299,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48604598764",
-    "address": "Szeroki Dunaj 1/3, Warszawa"
+    "address": "Szeroki Dunaj 1/3, Warszawa",
+    "email": "restauracjastolica@gmail.com"
   },
   {
     "id": "restauracja-setka-warsaw-9kt",
@@ -35757,14 +35767,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Kraków",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -35784,7 +35795,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48124466000",
-    "address": "Grodzka 63, Kraków, 31-001"
+    "address": "Grodzka 63, Kraków, 31-001",
+    "email": "recepcja@balthazarhotel.com"
   },
   {
     "id": "queen-boutique-hotel-krakow-krakow-7l3",
@@ -35792,14 +35804,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Kraków",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -35819,7 +35832,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48124333333",
-    "address": "Dietla 60, Kraków, 31-039"
+    "address": "Dietla 60, Kraków, 31-039",
+    "email": "reservations.queenboutiquehotel@icastelli.net"
   },
   {
     "id": "plaza-boutique-hotel-krakow-krakow-mlx",
@@ -35862,14 +35876,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Kraków",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -35889,7 +35904,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48124467600",
-    "address": "Józefa Szujskiego 4, Kraków, 31-123"
+    "address": "Józefa Szujskiego 4, Kraków, 31-123",
+    "email": "recepcja@grandascot.pl"
   },
   {
     "id": "radisson-blu-hotel-krakow-krakow-yom",
@@ -35932,14 +35948,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Kraków",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -35958,7 +35975,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Poland",
-    "address": "Kanonicza 16, Kraków"
+    "address": "Kanonicza 16, Kraków",
+    "email": "copernicus@hotel.com.pl"
   },
   {
     "id": "perfect-estetic-salon-kosmetyczny-krakow-sjw",
@@ -36318,14 +36336,15 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency",
     "city": "Kraków",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -36345,7 +36364,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48124229955",
-    "address": "Szpitalna 20-22, Kraków, 31-024"
+    "address": "Szpitalna 20-22, Kraków, 31-024",
+    "email": "tkt@albatros.krakow.pl"
   },
   {
     "id": "biuro-podrozy-centrum-krakow-krakow-jrp",
@@ -36563,14 +36583,15 @@
     "industry": "Events & Corporate",
     "subIndustry": "Conference & event venue",
     "city": "Kraków",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -36590,7 +36611,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48123072759",
-    "address": "Marii Konopnickiej 17, Kraków, 30-302"
+    "address": "Marii Konopnickiej 17, Kraków, 30-302",
+    "email": "office@icekrakow.pl"
   },
   {
     "id": "lubicz-park-sala-konferencyjna-krakow-k74",
@@ -36878,15 +36900,16 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency (chain)",
     "city": "Gdańsk",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -36906,7 +36929,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48512951540",
-    "address": "Niepołomicka 32, Gdańsk, 80-180"
+    "address": "Niepołomicka 32, Gdańsk, 80-180",
+    "email": "gdansk_niepolomicka@travelplanet.pl"
   },
   {
     "id": "travelplanet-pl-wodnika-gdansk-gdansk-25x",
@@ -36914,15 +36938,16 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency (chain)",
     "city": "Gdańsk",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -36942,7 +36967,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48535906162",
-    "address": "Wodnika 79, Gdańsk, 80-299"
+    "address": "Wodnika 79, Gdańsk, 80-299",
+    "email": "gdansk_selgros@travelplanet.pl"
   },
   {
     "id": "wyloty-z-gdanska-biuro-podrozy-gdansk-w1b",
@@ -37090,14 +37116,15 @@
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Restaurant",
     "city": "Gdańsk",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -37117,7 +37144,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+583333358",
-    "address": "Chmielna 10, Gdańsk, 80-748"
+    "address": "Chmielna 10, Gdańsk, 80-748",
+    "email": "restauracja@geneza.net"
   },
   {
     "id": "hotel-hp-park-plaza-wroc-aw-wroc-aw-vlc",
@@ -37125,15 +37153,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Wrocław",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -37153,7 +37182,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48713208400",
-    "address": "Bolesława Drobnera 11-13, Wrocław, 50-257"
+    "address": "Bolesława Drobnera 11-13, Wrocław, 50-257",
+    "email": "hpwroclaw@hotelepark.pl"
   },
   {
     "id": "bw-hotel-wroc-aw-wroc-aw-9td",
@@ -37197,14 +37227,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Wrocław",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -37224,7 +37255,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48661120300",
-    "address": "Kiełbaśnicza 20, Wrocław, 50-110"
+    "address": "Kiełbaśnicza 20, Wrocław, 50-110",
+    "email": "rezerwacja@arthotel.pl"
   },
   {
     "id": "q-hotel-plus-wroc-aw-wroc-aw-l7a",
@@ -37232,15 +37264,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (chain)",
     "city": "Wrocław",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -37260,7 +37293,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48717491700",
-    "address": "Zaolziańska 2, Wrocław, 53-334"
+    "address": "Zaolziańska 2, Wrocław, 53-334",
+    "email": "wroclawplus@qhotels.pl"
   },
   {
     "id": "db-hotel-wroc-aw-wroc-aw-sfv",
@@ -37268,14 +37302,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel",
     "city": "Wrocław",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -37295,7 +37330,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48608108001",
-    "address": "Strzegomska 3, Wrocław, 53-611"
+    "address": "Strzegomska 3, Wrocław, 53-611",
+    "email": "dbhotel@dbhotel.com.pl"
   },
   {
     "id": "hotel-slask-wroc-aw-wroc-aw-aih",
@@ -37547,15 +37583,16 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency (chain)",
     "city": "Wrocław",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -37575,7 +37612,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48717717655",
-    "address": "Wojanowska 20, Wrocław, 54-050"
+    "address": "Wojanowska 20, Wrocław, 54-050",
+    "email": "wroclaw_wojanowska@travelplanet.pl"
   },
   {
     "id": "lido-biuro-podrozy-wroc-aw-f3j",
@@ -37689,14 +37727,15 @@
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Restaurant",
     "city": "Wrocław",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -37716,7 +37755,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48717265400",
-    "address": "Pomorska 1, Wrocław, 50-215"
+    "address": "Pomorska 1, Wrocław, 50-215",
+    "email": "restauracja@lamaddalena.pl"
   },
   {
     "id": "le-gosse-wroc-aw-wroc-aw-xbv",
@@ -37793,15 +37833,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (chain)",
     "city": "Poznań",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -37820,7 +37861,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Poland",
-    "address": "Serafitek 4, Poznań, 61-144"
+    "address": "Serafitek 4, Poznań, 61-144",
+    "email": "poznan@focushotels.pl"
   },
   {
     "id": "ilonn-hotel-poznan-poznan-0zj",
@@ -37828,14 +37870,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel",
     "city": "Poznań",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -37855,7 +37898,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48616687575",
-    "address": "Szarych Szeregów 16, Poznań, 60-462"
+    "address": "Szarych Szeregów 16, Poznań, 60-462",
+    "email": "marketing@ilonnhotel.pl"
   },
   {
     "id": "novotel-poznan-malta-poznan-5t8",
@@ -37863,15 +37907,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Poznań",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -37890,7 +37935,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Poland",
-    "address": "Termalna 5, Poznań, 61-028"
+    "address": "Termalna 5, Poznań, 61-028",
+    "email": "h0525@accor.com"
   },
   {
     "id": "hotel-moxy-poznan-poznan-ni0",
@@ -38249,14 +38295,15 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency",
     "city": "Poznań",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -38276,7 +38323,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48613332238",
-    "address": "Śląska 10, Poznań, 60-614"
+    "address": "Śląska 10, Poznań, 60-614",
+    "email": "biuro@misjatravel.pl"
   },
   {
     "id": "travelstore-poznan-poznan-nxt",
@@ -38319,15 +38367,16 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency (chain)",
     "city": "Poznań",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -38347,7 +38396,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48616534455",
-    "address": "Szwajcarska 14, Poznań, 61-285"
+    "address": "Szwajcarska 14, Poznań, 61-285",
+    "email": "poznanm1@travelplanet.pl"
   },
   {
     "id": "biuro-turystyczne-horyzont-poznan-poznan-b1s",
@@ -38530,15 +38580,16 @@
     "industry": "Events & Corporate",
     "subIndustry": "Conference & event venue (chain)",
     "city": "Poznań",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -38558,7 +38609,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48618587009",
-    "address": "Pl. Wł. Andersa 1, Poznań, 61-898"
+    "address": "Pl. Wł. Andersa 1, Poznań, 61-898",
+    "email": "H3376@accor.com"
   },
   {
     "id": "puro-hotel-odz-centrum-odz-qs9",
@@ -38637,14 +38689,15 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Łódź",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -38664,7 +38717,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48577357157",
-    "address": "Adama Próchnika 53, Łódź, 90-712"
+    "address": "Adama Próchnika 53, Łódź, 90-712",
+    "email": "recepcja@krzywakamienica.pl"
   },
   {
     "id": "hampton-by-hilton-odz-city-center-odz-of0",
@@ -38672,15 +38726,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Łódź",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -38700,7 +38755,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48422022022",
-    "address": "Piotrkowska 157, Łódź, 90-440"
+    "address": "Piotrkowska 157, Łódź, 90-440",
+    "email": "patryk.baczyk@hbhlodz.com"
   },
   {
     "id": "citi-hotel-s-odz-odz-1so",
@@ -38849,15 +38905,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Szczecin",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -38877,7 +38934,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48913595595",
-    "address": "Plac Rodła 10, Szczecin"
+    "address": "Plac Rodła 10, Szczecin",
+    "email": "reservations.szczecin@radissonblu.com"
   },
   {
     "id": "campanile-szczecin-szczecin-drd",
@@ -38921,15 +38979,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Szczecin",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -38949,7 +39008,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48918513800",
-    "address": "Panieńska 10, Szczecin, 70-535"
+    "address": "Panieńska 10, Szczecin, 70-535",
+    "email": "HA0C7@accor.com"
   },
   {
     "id": "novotel-szczecin-centrum-szczecin-sw5",
@@ -38957,15 +39017,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Szczecin",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -38985,7 +39046,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48914801400",
-    "address": "Al. 3 Maja 31, Szczecin, 70-215"
+    "address": "Al. 3 Maja 31, Szczecin, 70-215",
+    "email": "H3367@accor.com"
   },
   {
     "id": "courtyard-by-marriott-szczecin-city-szczecin-e1b",
@@ -39269,15 +39331,16 @@
     "industry": "Cosmetics & Beauty",
     "subIndustry": "Beauty salon (chain)",
     "city": "Szczecin",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on product close-up and routine video content.",
     "companySize": "Unknown",
@@ -39297,7 +39360,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48914210004",
-    "address": "Felczaka 20, Szczecin, 71-417"
+    "address": "Felczaka 20, Szczecin, 71-417",
+    "email": "szczecin@instytut.drirenaeris.com"
   },
   {
     "id": "doz-apteka-dbam-o-zdrowie-m-odziezy-polskiej-szczecin-szczecin-jz8",
@@ -39375,15 +39439,16 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency (chain)",
     "city": "Szczecin",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -39403,7 +39468,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48717717655",
-    "address": "pl. Rodła 1-2, Szczecin, 70-410"
+    "address": "pl. Rodła 1-2, Szczecin, 70-410",
+    "email": "szczecin_rodla@travelplanet.pl"
   },
   {
     "id": "hotel-monopol-katowice-katowice-2sl",
@@ -39446,15 +39512,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Katowice",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -39474,7 +39541,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+4848322004444",
-    "address": "Roździeńskiego 16, Katowice"
+    "address": "Roździeńskiego 16, Katowice",
+    "email": "H3377@accor.com"
   },
   {
     "id": "angelo-hotel-katowice-katowice-qqj",
@@ -39518,15 +39586,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (chain)",
     "city": "Katowice",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -39546,7 +39615,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+4848327200000",
-    "address": "Wita Stwosza 37, Katowice"
+    "address": "Wita Stwosza 37, Katowice",
+    "email": "katowicepark@hotelediament.pl"
   },
   {
     "id": "mercure-katowice-centrum-katowice-hjl",
@@ -39554,15 +39624,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (international chain)",
     "city": "Katowice",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -39582,7 +39653,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48327978800",
-    "address": "Młyńska 6, Katowice, 40-098"
+    "address": "Młyńska 6, Katowice, 40-098",
+    "email": "hb580@accor.com"
   },
   {
     "id": "qubus-hotel-katowice-katowice-ihl",
@@ -39590,15 +39662,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (chain)",
     "city": "Katowice",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -39618,7 +39691,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48327780100",
-    "address": "Moniuszki 9, Katowice, 40-005"
+    "address": "Moniuszki 9, Katowice, 40-005",
+    "email": "katowice@qubushotel.com"
   },
   {
     "id": "b-b-hotel-katowice-centrum-katowice-mrm",
@@ -39900,14 +39974,15 @@
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Restaurant",
     "city": "Katowice",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -39926,7 +40001,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Poland",
-    "address": "Chorzowska 109, Katowice"
+    "address": "Chorzowska 109, Katowice",
+    "email": "lukasz.godzich@sztolnia.katowice.pl"
   },
   {
     "id": "doz-apteka-dbam-o-zdrowie-karliczka-katowice-katowice-rn2",
@@ -40107,15 +40183,16 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Hotel (chain)",
     "city": "Lublin",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 40,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Verified",
+    "leadScore": 55,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -40135,7 +40212,8 @@
     "isDemo": false,
     "country": "Poland",
     "phone": "+48443333333",
-    "address": "Podzamcze 1, Lublin, 20-126"
+    "address": "Podzamcze 1, Lublin, 20-126",
+    "email": "lublin@focushotels.pl"
   },
   {
     "id": "instytut-dr-irena-eris-lublin-lublin-5gb",
@@ -40143,15 +40221,16 @@
     "industry": "Cosmetics & Beauty",
     "subIndustry": "Beauty salon (chain)",
     "city": "Lublin",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-02",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 25,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-03",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 40,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "Not yet confirmed: phone/address (directory listing did not include both)",
       "+10 — Multiple locations (known chain/group)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on product close-up and routine video content.",
     "companySize": "Unknown",
@@ -40170,7 +40249,8 @@
     "updatedAt": "2026-10-02",
     "isDemo": false,
     "country": "Poland",
-    "address": "Nałęczowska 18a/U17, Lublin, 20-701"
+    "address": "Nałęczowska 18a/U17, Lublin, 20-701",
+    "email": "lublin@instytut.drirenaeris.com"
   },
   {
     "id": "salonbeyonce-lublin-lublin-9uu",
