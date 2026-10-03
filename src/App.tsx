@@ -39,6 +39,7 @@ export default function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/audit" element={<FreeAudit />} />
             <Route path="/quiz" element={<Quiz />} />
+            <Route path="/quiz/:lang" element={<Quiz />} />
 
             <Route
               path="/app"

@@ -1,17 +1,23 @@
 import { useState, type FormEvent } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { ArrowLeft, Camera, Gift, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Input, Label, Select } from '@/components/ui/Input'
 import { useDataStore } from '@/store/DataStoreContext'
 import { VERTICALS } from '@/data/verticals'
-import { QUIZ_QUESTIONS, computeQuizScore, buildProspectFromQuiz } from '@/lib/quiz'
+import { computeQuizScore, buildProspectFromQuiz } from '@/lib/quiz'
+import { resolveQuizLocale, getLocalizedQuestions, getVerticalLabel, QUIZ_UI } from '@/lib/quizI18n'
 import type { QuizAnswer, Vertical } from '@/types'
 
 type Stage = 'question' | 'contact' | 'result'
 
 export default function Quiz() {
+  const { lang } = useParams<{ lang?: string }>()
+  const locale = resolveQuizLocale(lang)
+  const questions = getLocalizedQuestions(locale)
+  const ui = QUIZ_UI[locale]
+
   const { addQuizSubmission, addProspect } = useDataStore()
   const [stage, setStage] = useState<Stage>('question')
   const [step, setStep] = useState(0)
@@ -26,13 +32,13 @@ export default function Quiz() {
 
   const [result, setResult] = useState<{ score: number; qualified: boolean } | null>(null)
 
-  const question = QUIZ_QUESTIONS[step]
-  const progress = Math.round((step / QUIZ_QUESTIONS.length) * 100)
+  const question = questions[step]
+  const progress = Math.round((step / questions.length) * 100)
 
   function selectOption(optionId: string, label: string) {
     const next = [...answers.filter((a) => a.questionId !== question.id), { questionId: question.id, optionId, label }]
     setAnswers(next)
-    if (step + 1 < QUIZ_QUESTIONS.length) {
+    if (step + 1 < questions.length) {
       setStep(step + 1)
     } else {
       setStage('contact')
@@ -48,7 +54,7 @@ export default function Quiz() {
     // own self-reported info, not researched/invented, so it's real data.
     // Qualifying leads are marked "Ready to Contact" so they surface as
     // priority in the pipeline/follow-up queue immediately, regardless of
-    // whether they filled this in on mobile or desktop (same web page either way).
+    // device or language used to fill it in.
     const prospect = addProspect(
       buildProspectFromQuiz({
         companyName,
@@ -73,7 +79,7 @@ export default function Quiz() {
       answers,
       qualificationScore: score,
       qualified,
-      source: 'Quiz link (social post)',
+      source: locale === 'en' ? 'Quiz link (social post)' : `Quiz link (social post, ${locale})`,
       convertedToProspectId: prospect.id,
     })
     setResult({ score, qualified })
@@ -91,7 +97,7 @@ export default function Quiz() {
             Agrita&Vin Content Co.
           </Link>
           <Link to="/" className="inline-flex items-center gap-1 text-xs text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]">
-            <ArrowLeft size={13} /> Back home
+            <ArrowLeft size={13} /> {ui.backHome.replace('← ', '')}
           </Link>
         </div>
       </header>
@@ -101,7 +107,7 @@ export default function Quiz() {
           <>
             <div className="mb-6">
               <div className="mb-2 flex items-center justify-between text-xs text-[var(--color-ink-muted)]">
-                <span>Question {step + 1} of {QUIZ_QUESTIONS.length}</span>
+                <span>{ui.questionProgress(step + 1, questions.length)}</span>
                 <span>{progress}%</span>
               </div>
               <div className="h-1.5 w-full overflow-hidden rounded-full bg-[var(--color-hairline)]">
@@ -131,47 +137,45 @@ export default function Quiz() {
           <>
             <div className="mb-6 text-center">
               <Gift size={28} className="mx-auto mb-2 text-[var(--color-brand)]" />
-              <h1 className="text-xl font-semibold text-[var(--color-ink)]">Almost done — where should we send your result?</h1>
-              <p className="mt-1 text-sm text-[var(--color-ink-secondary)]">
-                Tell us a bit about your business so we can see if a Free Content Pilot is a fit.
-              </p>
+              <h1 className="text-xl font-semibold text-[var(--color-ink)]">{ui.contactTitle}</h1>
+              <p className="mt-1 text-sm text-[var(--color-ink-secondary)]">{ui.contactSubtitle}</p>
             </div>
             <Card>
               <CardContent>
                 <form onSubmit={handleContactSubmit} className="space-y-4">
                   <div>
-                    <Label htmlFor="companyName">Business name *</Label>
+                    <Label htmlFor="companyName">{ui.businessNameLabel}</Label>
                     <Input id="companyName" required value={companyName} onChange={(e) => setCompanyName(e.target.value)} />
                   </div>
                   <div>
-                    <Label htmlFor="industry">Industry *</Label>
+                    <Label htmlFor="industry">{ui.industryLabel}</Label>
                     <Select id="industry" required value={industry} onChange={(e) => setIndustry(e.target.value as Vertical)}>
-                      <option value="">Select your industry</option>
+                      <option value="">{ui.industryPlaceholder}</option>
                       {VERTICALS.map((v) => (
                         <option key={v} value={v}>
-                          {v}
+                          {getVerticalLabel(v, locale)}
                         </option>
                       ))}
                     </Select>
                   </div>
                   <div>
-                    <Label htmlFor="contactName">Your name</Label>
+                    <Label htmlFor="contactName">{ui.yourNameLabel}</Label>
                     <Input id="contactName" value={contactName} onChange={(e) => setContactName(e.target.value)} />
                   </div>
                   <div>
-                    <Label htmlFor="contactEmail">Email</Label>
+                    <Label htmlFor="contactEmail">{ui.emailLabel}</Label>
                     <Input id="contactEmail" type="email" value={contactEmail} onChange={(e) => setContactEmail(e.target.value)} />
                   </div>
                   <div>
-                    <Label htmlFor="contactPhone">Phone / WhatsApp</Label>
+                    <Label htmlFor="contactPhone">{ui.phoneLabel}</Label>
                     <Input id="contactPhone" value={contactPhone} onChange={(e) => setContactPhone(e.target.value)} />
                   </div>
                   <div>
-                    <Label htmlFor="instagram">Instagram</Label>
+                    <Label htmlFor="instagram">{ui.instagramLabel}</Label>
                     <Input id="instagram" value={instagram} onChange={(e) => setInstagram(e.target.value)} placeholder="@yourbusiness" />
                   </div>
                   <Button type="submit" className="w-full">
-                    <Sparkles size={14} /> See my result
+                    <Sparkles size={14} /> {ui.submitButton}
                   </Button>
                 </form>
               </CardContent>
@@ -182,33 +186,28 @@ export default function Quiz() {
         {stage === 'result' && result && (
           <div className="space-y-4 text-center">
             <Card className="p-6">
-              <p className="text-xs font-medium text-[var(--color-ink-muted)]">Your content fit score</p>
+              <p className="text-xs font-medium text-[var(--color-ink-muted)]">{ui.resultScoreLabel}</p>
               <p className="tabular-nums mt-1 text-5xl font-semibold text-[var(--color-brand)]">{result.score}</p>
-              <p className="mt-1 text-xs text-[var(--color-ink-muted)]">out of 100 — based on your answers</p>
+              <p className="mt-1 text-xs text-[var(--color-ink-muted)]">{ui.resultScoreCaption}</p>
             </Card>
 
             {result.qualified ? (
               <Card className="border-[var(--color-brand)] p-6">
                 <Gift size={24} className="mx-auto mb-2 text-[var(--color-brand)]" />
-                <p className="text-lg font-semibold text-[var(--color-ink)]">You qualify for a Free Content Pilot</p>
-                <p className="mt-2 text-sm text-[var(--color-ink-secondary)]">
-                  Based on what you told us, {companyName} looks like a great fit for a free, no-obligation content shoot —
-                  real photos and video of your own business, on us. Our team will reach out within 1 business day to
-                  schedule it.
-                </p>
+                <p className="text-lg font-semibold text-[var(--color-ink)]">{ui.qualifiedTitle}</p>
+                <p className="mt-2 text-sm text-[var(--color-ink-secondary)]">{ui.qualifiedBody(companyName)}</p>
               </Card>
             ) : (
               <Card className="p-6">
-                <p className="text-lg font-semibold text-[var(--color-ink)]">Thanks for taking the quiz!</p>
+                <p className="text-lg font-semibold text-[var(--color-ink)]">{ui.notQualifiedTitle}</p>
                 <p className="mt-2 text-sm text-[var(--color-ink-secondary)]">
-                  We've saved your answers — our team reviews every submission personally and will reach out if a Free
-                  Content Pilot makes sense for {companyName || 'your business'}.
+                  {ui.notQualifiedBody(companyName || ui.businessNameLabel)}
                 </p>
               </Card>
             )}
 
             <Link to="/" className="inline-block text-sm font-medium text-[var(--color-brand)] hover:underline">
-              ← Back to homepage
+              {ui.backHome}
             </Link>
           </div>
         )}

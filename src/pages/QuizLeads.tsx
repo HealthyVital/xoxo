@@ -9,16 +9,21 @@ import { Badge } from '@/components/ui/Badge'
 import { formatDate } from '@/lib/utils'
 import { buildProspectFromQuiz } from '@/lib/quiz'
 
-const QUIZ_LINK = `${location.origin}${import.meta.env.BASE_URL}quiz`
+const QUIZ_BASE_LINK = `${location.origin}${import.meta.env.BASE_URL}quiz`
+const QUIZ_LINKS = [
+  { label: 'English', url: QUIZ_BASE_LINK },
+  { label: 'Русский (Russian)', url: `${QUIZ_BASE_LINK}/ru` },
+  { label: 'Latviešu (Latvian)', url: `${QUIZ_BASE_LINK}/lv` },
+]
 
 export default function QuizLeads() {
   const { quizSubmissions, addProspect, markQuizConverted } = useDataStore()
-  const [copied, setCopied] = useState(false)
+  const [copiedUrl, setCopiedUrl] = useState<string | null>(null)
 
-  function copyLink() {
-    navigator.clipboard.writeText(QUIZ_LINK).then(() => {
-      setCopied(true)
-      setTimeout(() => setCopied(false), 1500)
+  function copyLink(url: string) {
+    navigator.clipboard.writeText(url).then(() => {
+      setCopiedUrl(url)
+      setTimeout(() => setCopiedUrl((u) => (u === url ? null : u)), 1500)
     })
   }
 
@@ -50,14 +55,18 @@ export default function QuizLeads() {
         description="Submissions from the public lead-qualification quiz, added to Prospects automatically — qualified leads are marked priority (Ready to Contact)."
       />
 
-      <Card className="mb-4 flex flex-col items-start gap-2 p-4 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p className="text-xs font-medium text-[var(--color-ink-muted)]">Quiz link to post</p>
-          <p className="text-sm font-medium text-[var(--color-ink)]">{QUIZ_LINK}</p>
-        </div>
-        <Button variant="outline" onClick={copyLink}>
-          <ClipboardCopy size={14} /> {copied ? 'Copied!' : 'Copy link'}
-        </Button>
+      <Card className="mb-4 divide-y divide-[var(--color-hairline)] p-0">
+        {QUIZ_LINKS.map(({ label, url }) => (
+          <div key={url} className="flex flex-col items-start gap-2 p-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-xs font-medium text-[var(--color-ink-muted)]">Quiz link to post — {label}</p>
+              <p className="text-sm font-medium text-[var(--color-ink)]">{url}</p>
+            </div>
+            <Button variant="outline" onClick={() => copyLink(url)}>
+              <ClipboardCopy size={14} /> {copiedUrl === url ? 'Copied!' : 'Copy link'}
+            </Button>
+          </div>
+        ))}
       </Card>
 
       <Card className="overflow-x-auto">
