@@ -19,7 +19,14 @@ import { formatCurrencyEUR, formatNumber, formatPercent } from '@/lib/utils'
 import { PageHeader, EmptyState } from '@/components/ui/Misc'
 import { StatCard } from '@/components/ui/StatCard'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card'
-import { FunnelViz, PipelineValueChart, ContentProductionChart, RetentionBar } from '@/components/dashboard/Charts'
+import {
+  FunnelViz,
+  PipelineValueChart,
+  ContentProductionChart,
+  RetentionBar,
+  CountryBreakdownChart,
+  VerificationBreakdownBar,
+} from '@/components/dashboard/Charts'
 import { PIPELINE_STAGES } from '@/types'
 
 export default function Dashboard() {
@@ -66,6 +73,23 @@ export default function Dashboard() {
     const churned = realClients.filter((c) => c.status === 'Churned').length
     return { active, paused, churned }
   }, [realClients])
+
+  const countryBreakdown = useMemo(() => {
+    const counts = new Map<string, number>()
+    for (const p of realProspects) counts.set(p.country, (counts.get(p.country) ?? 0) + 1)
+    return Array.from(counts.entries())
+      .map(([country, count]) => ({ country, count }))
+      .sort((a, b) => b.count - a.count)
+  }, [realProspects])
+
+  const verificationBreakdown = useMemo(() => {
+    const verified = realProspects.filter((p) => p.verificationStatus === 'Verified').length
+    const partiallyVerified = realProspects.filter((p) => p.verificationStatus === 'Partially Verified').length
+    const needsVerification = realProspects.filter((p) => p.verificationStatus === 'Needs Verification').length
+    const withEmail = realProspects.filter((p) => p.email).length
+    const withPhone = realProspects.filter((p) => p.phone).length
+    return { verified, partiallyVerified, needsVerification, withEmail, withPhone }
+  }, [realProspects])
 
   return (
     <div>
@@ -175,6 +199,48 @@ export default function Dashboard() {
             ) : (
               <RetentionBar {...retention} />
             )}
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div>
+              <CardTitle>Prospects by country</CardTitle>
+              <CardDescription>Where the {formatNumber(stats.totalProspects)} real prospects are based</CardDescription>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <CountryBreakdownChart data={countryBreakdown} />
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <div>
+              <CardTitle>Contact data quality</CardTitle>
+              <CardDescription>How much of the database is independently verified</CardDescription>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <VerificationBreakdownBar
+              verified={verificationBreakdown.verified}
+              partiallyVerified={verificationBreakdown.partiallyVerified}
+              needsVerification={verificationBreakdown.needsVerification}
+            />
+            <div className="mt-4 grid grid-cols-2 gap-3 text-xs text-[var(--color-ink-secondary)]">
+              <div>
+                <p className="tabular-nums text-lg font-semibold text-[var(--color-ink)]">
+                  {formatPercent((verificationBreakdown.withEmail / Math.max(stats.totalProspects, 1)) * 100)}
+                </p>
+                <p>have a verified email</p>
+              </div>
+              <div>
+                <p className="tabular-nums text-lg font-semibold text-[var(--color-ink)]">
+                  {formatPercent((verificationBreakdown.withPhone / Math.max(stats.totalProspects, 1)) * 100)}
+                </p>
+                <p>have a verified phone</p>
+              </div>
+            </div>
           </CardContent>
         </Card>
       </div>

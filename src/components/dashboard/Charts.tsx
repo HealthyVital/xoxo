@@ -157,6 +157,54 @@ export function RetentionBar({ active, paused, churned }: { active: number; paus
   )
 }
 
+export function CountryBreakdownChart({ data }: { data: { country: string; count: number }[] }) {
+  const height = Math.max(data.length * 28 + 20, 120)
+  return (
+    <ResponsiveContainer width="100%" height={height}>
+      <BarChart data={data} layout="vertical" margin={{ top: 8, right: 24, left: 8, bottom: 0 }}>
+        <CartesianGrid stroke={GRID} horizontal={false} />
+        <XAxis type="number" tick={TICK} axisLine={false} tickLine={false} allowDecimals={false} />
+        <YAxis type="category" dataKey="country" tick={TICK} axisLine={false} tickLine={false} width={96} />
+        <Tooltip contentStyle={tooltipStyle} formatter={(v) => `${formatNumber(Number(v))} prospects`} />
+        <Bar dataKey="count" fill={SERIES.blue} radius={[0, 4, 4, 0]} maxBarSize={18} />
+      </BarChart>
+    </ResponsiveContainer>
+  )
+}
+
+export function VerificationBreakdownBar({
+  verified,
+  partiallyVerified,
+  needsVerification,
+}: {
+  verified: number
+  partiallyVerified: number
+  needsVerification: number
+}) {
+  const total = Math.max(verified + partiallyVerified + needsVerification, 1)
+  const seg = (n: number) => (n / total) * 100
+  return (
+    <div>
+      <div className="flex h-4 w-full overflow-hidden rounded-full bg-[var(--color-plane)]">
+        <div style={{ width: `${seg(verified)}%`, background: SERIES.aqua }} title={`Verified: ${verified}`} />
+        <div
+          style={{ width: `${seg(partiallyVerified)}%`, background: SERIES.yellow }}
+          title={`Partially Verified: ${partiallyVerified}`}
+        />
+        <div
+          style={{ width: `${seg(needsVerification)}%`, background: '#d8d5cb' }}
+          title={`Needs Verification: ${needsVerification}`}
+        />
+      </div>
+      <div className="mt-2 flex flex-wrap gap-3 text-xs text-[var(--color-ink-secondary)]">
+        <LegendDot color={SERIES.aqua} label={`Verified (${verified})`} />
+        <LegendDot color={SERIES.yellow} label={`Partially Verified (${partiallyVerified})`} />
+        <LegendDot color="#d8d5cb" label={`Needs Verification (${needsVerification})`} />
+      </div>
+    </div>
+  )
+}
+
 function LegendDot({ color, label }: { color: string; label: string }) {
   return (
     <span className="inline-flex items-center gap-1.5">

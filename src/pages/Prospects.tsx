@@ -74,6 +74,7 @@ export default function Prospects() {
   const [industry, setIndustry] = useState('all')
   const [country, setCountry] = useState('all')
   const [status, setStatus] = useState('all')
+  const [verification, setVerification] = useState('all')
   const [minScore, setMinScore] = useState(0)
   const [companySize, setCompanySize] = useState('all')
   const [sortKey, setSortKey] = useState<SortableKey>('leadScore')
@@ -102,6 +103,7 @@ export default function Prospects() {
       if (industry !== 'all' && p.industry !== industry) return false
       if (country !== 'all' && p.country !== country) return false
       if (status !== 'all' && p.status !== status) return false
+      if (verification !== 'all' && p.verificationStatus !== verification) return false
       if (companySize !== 'all' && p.companySize !== companySize) return false
       if (p.leadScore < minScore) return false
       if (search.trim()) {
@@ -114,7 +116,7 @@ export default function Prospects() {
     const columnType = COLUMNS.find((c) => c.key === sortKey)?.type ?? 'text'
     list = [...list].sort((a, b) => compareProspects(a, b, sortKey, columnType, sortDir))
     return list
-  }, [prospects, industry, country, status, companySize, minScore, search, sortKey, sortDir])
+  }, [prospects, industry, country, status, verification, companySize, minScore, search, sortKey, sortDir])
 
   function exportCsv() {
     const headers = ['companyName', 'phone', 'email', 'industry', 'city', 'country', 'status', 'leadScore', 'verificationStatus', 'website', 'source', 'sourceUrl']
@@ -146,7 +148,7 @@ export default function Prospects() {
         }
       />
       <Card className="mb-4 p-4">
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-7">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-8">
           <div className="relative lg:col-span-2">
             <Search size={14} className="absolute top-1/2 left-3 -translate-y-1/2 text-[var(--color-ink-muted)]" />
             <Input placeholder="Search company, city, industry…" value={search} onChange={(e) => setSearch(e.target.value)} className="pl-8" />
@@ -174,6 +176,12 @@ export default function Prospects() {
                 {s}
               </option>
             ))}
+          </Select>
+          <Select value={verification} onChange={(e) => setVerification(e.target.value)}>
+            <option value="all">Any verification</option>
+            <option value="Verified">Verified</option>
+            <option value="Partially Verified">Partially Verified</option>
+            <option value="Needs Verification">Needs Verification</option>
           </Select>
           <Select value={companySize} onChange={(e) => setCompanySize(e.target.value)}>
             <option value="all">Any company size</option>
@@ -274,7 +282,17 @@ export default function Prospects() {
                   <LeadScoreBadge score={p.leadScore} />
                 </td>
                 <td className="px-4 py-3">
-                  <Badge tone={p.verificationStatus === 'Verified' ? 'good' : 'neutral'}>{p.verificationStatus}</Badge>
+                  <Badge
+                    tone={
+                      p.verificationStatus === 'Verified'
+                        ? 'good'
+                        : p.verificationStatus === 'Partially Verified'
+                          ? 'warning'
+                          : 'neutral'
+                    }
+                  >
+                    {p.verificationStatus}
+                  </Badge>
                 </td>
                 <td className="px-4 py-3 text-[var(--color-ink-secondary)]">{formatDate(p.lastContact)}</td>
                 <td className="px-4 py-3 text-[var(--color-ink-secondary)]">{formatDate(p.nextFollowUp)}</td>
