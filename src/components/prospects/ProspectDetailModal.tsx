@@ -11,13 +11,49 @@ import { PROSPECT_STATUSES } from '@/data/statuses'
 import { formatDate, nowIso } from '@/lib/utils'
 
 export function ProspectDetailModal({ prospect, onClose }: { prospect: Prospect; onClose: () => void }) {
-  const { communications, updateProspect, deleteProspect, logCommunication } = useDataStore()
+  const { communications, updateProspect, deleteProspect, logCommunication, proposals, pilotProposals, serviceRequests, services, clients } =
+    useDataStore()
   const [channel, setChannel] = useState<CommunicationChannel>('Email')
   const [summary, setSummary] = useState('')
 
   const timeline = communications
     .filter((c) => c.prospectId === prospect.id)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+
+  // Company 360 — every opportunity tied to this company, joined purely via the
+  // existing prospectId / linkedProspectId links already on each record (no new
+  // companyId field needed: this prospect's own id already is the company key).
+  const client = clients.find((c) => c.prospectId === prospect.id)
+  const serviceById = new Map(services.map((s) => [s.id, s]))
+  const opportunities = [
+    ...proposals
+      .filter((p) => p.prospectId === prospect.id)
+      .map((p) => ({
+        key: `proposal-${p.id}`,
+        kind: 'Proposal',
+        label: p.packageId === 'custom' ? 'Custom proposal' : `${p.packageId} package`,
+        status: p.status,
+        createdAt: p.createdAt,
+      })),
+    ...pilotProposals
+      .filter((p) => p.prospectId === prospect.id)
+      .map((p) => ({
+        key: `pilot-${p.id}`,
+        kind: 'Free Pilot',
+        label: p.objective || 'Free content pilot',
+        status: p.status,
+        createdAt: p.createdAt,
+      })),
+    ...serviceRequests
+      .filter((r) => r.linkedProspectId === prospect.id)
+      .map((r) => ({
+        key: `request-${r.id}`,
+        kind: 'Service Request',
+        label: serviceById.get(r.serviceId)?.name ?? 'Service request',
+        status: r.status,
+        createdAt: r.createdAt,
+      })),
+  ].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
 
   const field = (label: string, value?: string) => (
     <div>
@@ -181,6 +217,33 @@ export function ProspectDetailModal({ prospect, onClose }: { prospect: Prospect;
             <Button size="sm" onClick={handleLog}>
               Log
             </Button>
+          </div>
+
+          <div className="space-y-2 border-t border-[var(--color-hairline)] pt-4">
+            <p className="text-[11px] font-medium text-[var(--color-ink-muted)]">Opportunities for this company</p>
+            {client && (
+              <div className="flex items-center justify-between rounded-lg border border-[var(--color-hairline)] bg-[var(--color-brand-soft)] px-3 py-2 text-xs">
+                <span className="font-medium text-[var(--color-ink)]">Recurring client</span>
+                <Badge tone="good">
+                  {client.status} · {client.mrr ? `€${client.mrr}/mo` : 'no MRR set'}
+                </Badge>
+              </div>
+            )}
+            {opportunities.length === 0 && !client && (
+              <p className="text-xs text-[var(--color-ink-muted)]">No proposals or service requests yet.</p>
+            )}
+            {opportunities.map((o) => (
+              <div
+                key={o.key}
+                className="flex items-center justify-between rounded-lg border border-[var(--color-hairline)] px-3 py-2 text-xs"
+              >
+                <div>
+                  <span className="font-medium text-[var(--color-ink)]">{o.kind}</span>
+                  <span className="ml-1.5 text-[var(--color-ink-secondary)]">{o.label}</span>
+                </div>
+                <Badge>{o.status}</Badge>
+              </div>
+            ))}
           </div>
 
           <div className="mt-4 space-y-3 border-t border-[var(--color-hairline)] pt-4">
