@@ -50347,14 +50347,14 @@
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Georgian cuisine restaurant",
     "city": "Tbilisi",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-03",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
-      "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -50370,10 +50370,11 @@
     "dealValue": 650,
     "doNotContact": false,
     "createdAt": "2026-10-03",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "isDemo": false,
     "country": "Georgia",
-    "address": "Beliashvili St 99, Tbilisi"
+    "address": "Beliashvili St 99, Tbilisi",
+    "email": "info@tsiskvili.ge"
   },
   {
     "id": "faeton-restaurant-tbilisi-qdz",
@@ -50865,14 +50866,14 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Tbilisi",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-03",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
-      "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -50888,10 +50889,11 @@
     "dealValue": 1100,
     "doNotContact": false,
     "createdAt": "2026-10-03",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "isDemo": false,
     "country": "Georgia",
-    "address": "Iakob Gogebashvili St 9, Tbilisi"
+    "address": "Iakob Gogebashvili St 9, Tbilisi",
+    "email": "info@urbanhotel.ge"
   },
   {
     "id": "buta-boutique-hotel-tbilisi-y7s",
@@ -51140,14 +51142,15 @@
     "industry": "Events & Corporate",
     "subIndustry": "Event agency",
     "city": "Tbilisi",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-03",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -51163,11 +51166,12 @@
     "dealValue": 1100,
     "doNotContact": false,
     "createdAt": "2026-10-03",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "isDemo": false,
     "country": "Georgia",
     "phone": "+995 32 299 90 00",
-    "address": "Isani St 22, Tbilisi"
+    "address": "Isani St 22, Tbilisi",
+    "email": "georgia@events.ge"
   },
   {
     "id": "dolmama-restaurant-yerevan-pbc",
@@ -51311,14 +51315,14 @@
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Armenian cuisine restaurant",
     "city": "Yerevan",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-03",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
-      "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -51334,10 +51338,11 @@
     "dealValue": 650,
     "doNotContact": false,
     "createdAt": "2026-10-03",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "isDemo": false,
     "country": "Armenia",
-    "address": "Tumanyan St 21, Yerevan"
+    "address": "Tumanyan St 21, Yerevan",
+    "email": "info@yeremyanprojects.com"
   },
   {
     "id": "tun-lahmajo-yerevan-qco",
@@ -51413,14 +51418,14 @@
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Restaurant with live music",
     "city": "Yerevan",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-03",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
-      "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -51436,10 +51441,11 @@
     "dealValue": 650,
     "doNotContact": false,
     "createdAt": "2026-10-03",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "isDemo": false,
     "country": "Armenia",
-    "address": "Amiryan St 1, Yerevan"
+    "address": "Amiryan St 1, Yerevan",
+    "email": "info@yeremyanprojects.com"
   },
   {
     "id": "anka-beauty-studio-yerevan-ga6",
@@ -51724,14 +51730,15 @@
     "industry": "Travel & Tour Operators",
     "subIndustry": "Travel agency",
     "city": "Yerevan",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-03",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a destination/deal Reel tied to their current offer.",
     "companySize": "Unknown",
@@ -51747,11 +51754,12 @@
     "dealValue": 850,
     "doNotContact": false,
     "createdAt": "2026-10-03",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "isDemo": false,
     "country": "Armenia",
     "phone": "+374 41 362131",
-    "address": "Kazar Parpetsi St 16, Yerevan"
+    "address": "Kazar Parpetsi St 16, Yerevan",
+    "email": "incoming@onewaytour.com"
   },
   {
     "id": "ararat-tour-yerevan-3i2",
@@ -52766,14 +52774,15 @@
     "industry": "Restaurants & Lifestyle",
     "subIndustry": "Restaurant",
     "city": "Bishkek",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-03",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
     "companySize": "Unknown",
@@ -52789,11 +52798,12 @@
     "dealValue": 650,
     "doNotContact": false,
     "createdAt": "2026-10-03",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "isDemo": false,
     "country": "Kyrgyzstan",
     "phone": "+996 551 664 466",
-    "address": "Abdumomunova St 220A, Bishkek"
+    "address": "Abdumomunova St 220A, Bishkek",
+    "email": "frunze@kaynar.kg"
   },
   {
     "id": "oblako-53-bishkek-iew",
@@ -53010,14 +53020,14 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Bishkek",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-03",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
-      "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -53033,10 +53043,11 @@
     "dealValue": 1100,
     "doNotContact": false,
     "createdAt": "2026-10-03",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "isDemo": false,
     "country": "Kyrgyzstan",
-    "address": "Erkindik Blvd 21, Bishkek, 720040"
+    "address": "Erkindik Blvd 21, Bishkek, 720040",
+    "email": "info@orionbishkek.com"
   },
   {
     "id": "hotel-alpinist-bishkek-8om",
@@ -54014,14 +54025,14 @@
     "industry": "Hotels & Hospitality",
     "subIndustry": "Boutique hotel",
     "city": "Tashkent",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-03",
-    "verificationStatus": "Needs Verification",
-    "leadScore": 15,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Partially Verified",
+    "leadScore": 30,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
-      "Not yet confirmed: phone/address (directory listing did not include both)",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
     "companySize": "Unknown",
@@ -54037,10 +54048,11 @@
     "dealValue": 1100,
     "doNotContact": false,
     "createdAt": "2026-10-03",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "isDemo": false,
     "country": "Uzbekistan",
-    "address": "9th Abdullah Kakhkhar Passage 1A, Yakkasaray district, Tashkent"
+    "address": "9th Abdullah Kakhkhar Passage 1A, Yakkasaray district, Tashkent",
+    "email": "hotel_cityline@mail.ru"
   },
   {
     "id": "master-event-tashkent-tashkent-xr3",
@@ -54048,14 +54060,15 @@
     "industry": "Events & Corporate",
     "subIndustry": "Event agency",
     "city": "Tashkent",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-03",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
     "companySize": "Unknown",
@@ -54071,11 +54084,12 @@
     "dealValue": 1100,
     "doNotContact": false,
     "createdAt": "2026-10-03",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "isDemo": false,
     "country": "Uzbekistan",
     "phone": "+998 97 157 22 37",
-    "address": "Amira Temura Ave 1, Tashkent"
+    "address": "Amira Temura Ave 1, Tashkent",
+    "email": "masterevent.uz@gmail.com"
   },
   {
     "id": "si-event-agency-tashkent-9eo",
@@ -55543,14 +55557,15 @@
     "industry": "Cosmetics & Beauty",
     "subIndustry": "Cosmetics & beauty supply store",
     "city": "Brooklyn",
-    "source": "Web search (directory/listing), Oct 2026",
-    "lastVerified": "2026-10-03",
-    "verificationStatus": "Partially Verified",
-    "leadScore": 30,
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
     "scoreReasons": [
       "+15 — Product/service is well suited to visual marketing",
       "+15 — Phone and address confirmed via directory search",
-      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score."
+      "Not scored: Instagram/TikTok activity, promotions and recent posting — verify their channels to refine this score.",
+      "+15 — Direct email contact confirmed (verified channel)"
     ],
     "recommendedApproach": "Open with a Free Content Pilot centered on product close-up and routine video content.",
     "companySize": "Unknown",
@@ -55566,11 +55581,12 @@
     "dealValue": 650,
     "doNotContact": false,
     "createdAt": "2026-10-03",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "isDemo": false,
     "country": "United States",
     "phone": "(718) 513-4640",
-    "address": "419 Brighton Beach Ave, Brooklyn, NY 11235"
+    "address": "419 Brighton Beach Ave, Brooklyn, NY 11235",
+    "email": "info@brightonbeautysupply.com"
   },
   {
     "id": "shahnoz-nails-brooklyn-5uo",
@@ -55885,5 +55901,195 @@
     "isDemo": false,
     "country": "United States",
     "address": "306 Brighton Beach Ave, 2nd Fl, Brooklyn, NY 11235"
+  },
+  {
+    "id": "hotel-pincoffs-stieltjesstraat-34-rotterdam-nw1",
+    "companyName": "Hotel Pincoffs",
+    "industry": "Hotels & Hospitality",
+    "subIndustry": "Boutique hotel (national monument)",
+    "website": "hotelpincoffs.nl",
+    "phone": "+31 10 29 74 500",
+    "email": "info@hotelpincoffs.nl",
+    "address": "Stieltjesstraat 34, 3071 JX Rotterdam",
+    "city": "Rotterdam",
+    "country": "Netherlands",
+    "postalCode": "3071 JX",
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
+    "scoreReasons": [
+      "+15 — Product/service is well suited to visual marketing",
+      "+15 — Phone and address confirmed via official website",
+      "+15 — Direct email contact confirmed (verified channel)"
+    ],
+    "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
+    "companySize": "Unknown",
+    "location": "Rotterdam",
+    "notes": "",
+    "painPoints": [
+      "Content presence not yet audited",
+      "Likely leans on OTA/stock imagery rather than owned photography and video"
+    ],
+    "contentOpportunity": "Room tours, breakfast/spa/restaurant content and weekend-package Reels to drive direct bookings instead of OTA traffic.",
+    "status": "New",
+    "assignedTo": "Unassigned",
+    "dealValue": 1100,
+    "doNotContact": false,
+    "createdAt": "2026-10-04",
+    "updatedAt": "2026-10-04",
+    "isDemo": false
+  },
+  {
+    "id": "restaurant-bazar-witte-de-withstraat-16-rotterdam-nw2",
+    "companyName": "Restaurant Bazar",
+    "industry": "Restaurants & Lifestyle",
+    "subIndustry": "Middle Eastern & North African restaurant",
+    "website": "hotelbazar.nl",
+    "phone": "+31 10 206 5151",
+    "email": "guests@hotelbazar.nl",
+    "address": "Witte de Withstraat 16, 3012 BP Rotterdam",
+    "city": "Rotterdam",
+    "country": "Netherlands",
+    "postalCode": "3012 BP",
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
+    "scoreReasons": [
+      "+15 — Product/service is well suited to visual marketing",
+      "+15 — Phone and address confirmed via official website",
+      "+15 — Direct email contact confirmed (verified channel)"
+    ],
+    "recommendedApproach": "Open with a Free Content Pilot centered on food photography + a behind-the-scenes Reel.",
+    "companySize": "Unknown",
+    "location": "Rotterdam",
+    "notes": "",
+    "painPoints": [
+      "Content presence not yet audited",
+      "High-value, visually distinctive food likely under-leveraged on short-form video"
+    ],
+    "contentOpportunity": "Food photography, chef/behind-the-scenes content and Reels to fill slow nights and build a waitlist for peak ones.",
+    "status": "New",
+    "assignedTo": "Unassigned",
+    "dealValue": 650,
+    "doNotContact": false,
+    "createdAt": "2026-10-04",
+    "updatedAt": "2026-10-04",
+    "isDemo": false
+  },
+  {
+    "id": "fort-1881-stationsweg-80-hoek-van-holland-nw3",
+    "companyName": "Fort 1881",
+    "industry": "Events & Corporate",
+    "subIndustry": "Historic fort event & wedding venue",
+    "website": "fort1881.nl",
+    "phone": "088-1881500",
+    "email": "info@fort1881.nl",
+    "address": "Stationsweg 80, 3151 HS Hoek van Holland",
+    "city": "Hoek van Holland",
+    "country": "Netherlands",
+    "postalCode": "3151 HS",
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
+    "scoreReasons": [
+      "+15 — Product/service is well suited to visual marketing",
+      "+15 — Phone and address confirmed via official website",
+      "+15 — Direct email contact confirmed (verified channel)"
+    ],
+    "recommendedApproach": "Open with a Free Content Pilot centered on aftermovie-style recap content from their next event.",
+    "companySize": "Unknown",
+    "location": "Hoek van Holland",
+    "notes": "",
+    "painPoints": [
+      "Content presence not yet audited",
+      "Event/venue photography likely produced ad hoc rather than as a recurring asset library"
+    ],
+    "contentOpportunity": "Recap aftermovies, event photography and behind-the-scenes content that double as sales collateral for future bookings.",
+    "status": "New",
+    "assignedTo": "Unassigned",
+    "dealValue": 1100,
+    "doNotContact": false,
+    "createdAt": "2026-10-04",
+    "updatedAt": "2026-10-04",
+    "isDemo": false
+  },
+  {
+    "id": "the-court-hotel-korte-nieuwstraat-14-utrecht-nw4",
+    "companyName": "The Court Hotel",
+    "industry": "Hotels & Hospitality",
+    "subIndustry": "Boutique hotel (former courthouse)",
+    "website": "courthotel.nl",
+    "phone": "+31 30-233-0033",
+    "email": "Welcome@Courthotel.nl",
+    "address": "Korte Nieuwstraat 14, 3512 NM Utrecht",
+    "city": "Utrecht",
+    "country": "Netherlands",
+    "postalCode": "3512 NM",
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
+    "scoreReasons": [
+      "+15 — Product/service is well suited to visual marketing",
+      "+15 — Phone and address confirmed via official website",
+      "+15 — Direct email contact confirmed (verified channel)"
+    ],
+    "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
+    "companySize": "Unknown",
+    "location": "Utrecht",
+    "notes": "",
+    "painPoints": [
+      "Content presence not yet audited",
+      "Likely leans on OTA/stock imagery rather than owned photography and video"
+    ],
+    "contentOpportunity": "Room tours, breakfast/spa/restaurant content and weekend-package Reels to drive direct bookings instead of OTA traffic.",
+    "status": "New",
+    "assignedTo": "Unassigned",
+    "dealValue": 1100,
+    "doNotContact": false,
+    "createdAt": "2026-10-04",
+    "updatedAt": "2026-10-04",
+    "isDemo": false
+  },
+  {
+    "id": "the-anthony-hotel-kanaalstraat-197-utrecht-nw5",
+    "companyName": "The Anthony Hotel",
+    "industry": "Hotels & Hospitality",
+    "subIndustry": "Boutique hotel (former convent)",
+    "website": "theanthony.nl",
+    "phone": "+31 30 227 2975",
+    "email": "welcome@theanthony.nl",
+    "address": "Kanaalstraat 197, 3531 CG Utrecht",
+    "city": "Utrecht",
+    "country": "Netherlands",
+    "postalCode": "3531 CG",
+    "source": "Web search (directory/listing), Oct 2026; email confirmed via official website, Oct 2026",
+    "lastVerified": "2026-10-04",
+    "verificationStatus": "Verified",
+    "leadScore": 45,
+    "scoreReasons": [
+      "+15 — Product/service is well suited to visual marketing",
+      "+15 — Phone and address confirmed via official website",
+      "+15 — Direct email contact confirmed (verified channel)"
+    ],
+    "recommendedApproach": "Open with a Free Content Pilot centered on a room tour + breakfast/spa short-form video.",
+    "companySize": "Unknown",
+    "location": "Utrecht",
+    "notes": "",
+    "painPoints": [
+      "Content presence not yet audited",
+      "Likely leans on OTA/stock imagery rather than owned photography and video"
+    ],
+    "contentOpportunity": "Room tours, breakfast/spa/restaurant content and weekend-package Reels to drive direct bookings instead of OTA traffic.",
+    "status": "New",
+    "assignedTo": "Unassigned",
+    "dealValue": 1100,
+    "doNotContact": false,
+    "createdAt": "2026-10-04",
+    "updatedAt": "2026-10-04",
+    "isDemo": false
   }
 ]
