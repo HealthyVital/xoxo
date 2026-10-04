@@ -177,6 +177,9 @@ export default function Landing() {
             <a href="#how-it-works" className="hover:text-[var(--color-ink)]">How it works</a>
             <a href="#packages" className="hover:text-[var(--color-ink)]">Packages</a>
             <a href="#faq" className="hover:text-[var(--color-ink)]">FAQ</a>
+            <Link to="/quiz" onClick={() => trackEvent('cta_click', { cta: 'nav_quiz' })} className="hover:text-[var(--color-ink)]">
+              Take the Quiz
+            </Link>
           </nav>
           <div className="flex items-center gap-2">
             <Link to="/app/dashboard" className="hidden text-xs text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] sm:block">
@@ -224,6 +227,13 @@ export default function Landing() {
               </Button>
             </a>
           </div>
+          <Link
+            to="/quiz"
+            onClick={() => trackEvent('cta_click', { cta: 'hero_quiz' })}
+            className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[var(--color-brand)] hover:underline"
+          >
+            Not sure where to start? Take the 2-minute quiz <ArrowRight size={14} />
+          </Link>
 
           <HeroMosaic />
 
