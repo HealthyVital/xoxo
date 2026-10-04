@@ -10,11 +10,39 @@ import { formatCurrencyEUR, formatPercent } from '@/lib/utils'
 import { Percent, TrendingUp, Users, Wallet } from 'lucide-react'
 
 export default function Analytics() {
-  const { prospects, clients } = useDataStore()
+  const { prospects, clients, professionals, serviceRequests } = useDataStore()
   const realProspects = useMemo(() => prospects.filter((p) => !p.isDemo), [prospects])
   const realClients = useMemo(() => clients.filter((c) => !c.isDemo), [clients])
   const stats = useMemo(() => computeCrmStats(realProspects, realClients), [realProspects, realClients])
   const [monthlyCost, setMonthlyCost] = useState(2500)
+
+  // Marketplace: demand (open one-time requests) vs. supply (available professionals), by city.
+  const demandSupplyByCity = useMemo(() => {
+    const openRequests = serviceRequests.filter((r) => r.status === 'New' || r.status === 'Matched' || r.status === 'In Progress')
+    const cities = new Map<string, { city: string; country: string; demand: number; supply: number }>()
+    for (const r of openRequests) {
+      const key = `${r.city}|${r.country}`
+      const row = cities.get(key) ?? { city: r.city, country: r.country, demand: 0, supply: 0 }
+      row.demand += 1
+      cities.set(key, row)
+    }
+    for (const p of professionals.filter((p) => p.availability === 'Available')) {
+      const key = `${p.city}|${p.country}`
+      const row = cities.get(key) ?? { city: p.city, country: p.country, demand: 0, supply: 0 }
+      row.supply += 1
+      cities.set(key, row)
+    }
+    return [...cities.values()].sort((a, b) => b.demand - a.demand - (b.supply - a.supply))
+  }, [serviceRequests, professionals])
+
+  const topProfessionals = useMemo(
+    () =>
+      [...professionals]
+        .filter((p) => p.reviewCount > 0 && p.ratingAvg !== undefined)
+        .sort((a, b) => (b.ratingAvg ?? 0) - (a.ratingAvg ?? 0))
+        .slice(0, 5),
+    [professionals],
+  )
 
   const funnelStages = [
     { label: 'Prospects', value: Math.max(stats.totalProspects, 1) },
@@ -109,6 +137,73 @@ export default function Analytics() {
           />
         </CardContent>
       </Card>
+
+      <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <Card>
+          <CardHeader>
+            <CardTitle>Marketplace: demand vs. supply by city</CardTitle>
+            <CardDescription>Open service requests vs. available professionals, same city</CardDescription>
+          </CardHeader>
+          <CardContent>
+            {demandSupplyByCity.length === 0 ? (
+              <EmptyState
+                title="No marketplace activity yet"
+                description="This fills in once there are open service requests or available professionals."
+              />
+            ) : (
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-[var(--color-hairline)] text-left text-xs text-[var(--color-ink-muted)]">
+                    <th className="py-2 font-medium">City</th>
+                    <th className="py-2 font-medium">Open requests</th>
+                    <th className="py-2 font-medium">Available pros</th>
+                    <th className="py-2 font-medium">Gap</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {demandSupplyByCity.map((row) => (
+                    <tr key={`${row.city}|${row.country}`} className="border-b border-[var(--color-hairline)] last:border-0">
+                      <td className="py-2 text-[var(--color-ink)]">
+                        {row.city}, {row.country}
+                      </td>
+                      <td className="tabular-nums py-2 text-[var(--color-ink-secondary)]">{row.demand}</td>
+                      <td className="tabular-nums py-2 text-[var(--color-ink-secondary)]">{row.supply}</td>
+                      <td className="tabular-nums py-2 font-medium" style={{ color: row.demand > row.supply ? 'var(--color-critical)' : 'var(--color-good)' }}>
+                        {row.demand > row.supply ? `-${row.demand - row.supply}` : 'covered'}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Top professionals</CardTitle>
+            <CardDescription>By real review rating — only professionals with at least one review</CardDescription>
+          </CardHeader>
+          <CardContent>
+            {topProfessionals.length === 0 ? (
+              <EmptyState title="No reviews yet" description="Ratings appear here once real service requests are completed and reviewed." />
+            ) : (
+              <ul className="space-y-2">
+                {topProfessionals.map((p) => (
+                  <li key={p.id} className="flex items-center justify-between text-sm">
+                    <span className="text-[var(--color-ink)]">
+                      {p.name} <span className="text-xs text-[var(--color-ink-muted)]">· {p.city}</span>
+                    </span>
+                    <span className="tabular-nums font-medium text-[var(--color-ink-secondary)]">
+                      {p.ratingAvg?.toFixed(1)} ★ ({p.reviewCount})
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </CardContent>
+        </Card>
+      </div>
     </div>
   )
 }
