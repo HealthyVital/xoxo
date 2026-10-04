@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowLeft, Camera, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
@@ -14,10 +14,16 @@ import type { FreeAuditResult, Vertical } from '@/types'
 
 export default function FreeAudit() {
   const { addFreeAuditSubmission } = useDataStore()
-  const [company, setCompany] = useState('')
+  const [searchParams] = useSearchParams()
+  // Pre-filled when arriving as the next step after qualifying in the quiz
+  // (see Quiz.tsx's "qualified" result CTA) — avoids asking the same two
+  // questions twice. Still a perfectly normal blank form for anyone else.
+  const prefillCompany = searchParams.get('company') ?? ''
+  const prefillIndustry = (searchParams.get('industry') as Vertical | null) ?? ''
+  const [company, setCompany] = useState(prefillCompany)
   const [website, setWebsite] = useState('')
   const [instagram, setInstagram] = useState('')
-  const [industry, setIndustry] = useState<Vertical | ''>('')
+  const [industry, setIndustry] = useState<Vertical | ''>(VERTICALS.includes(prefillIndustry as Vertical) ? prefillIndustry : '')
   const [mainChallenge, setMainChallenge] = useState('')
   const [mainGoal, setMainGoal] = useState('')
   const [result, setResult] = useState<FreeAuditResult | null>(null)

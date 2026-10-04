@@ -258,6 +258,7 @@ interface QuizUiCopy {
   resultScoreCaption: string
   qualifiedTitle: string
   qualifiedBody: (company: string) => string
+  qualifiedCta: string
   notQualifiedTitle: string
   notQualifiedBody: (company: string) => string
 }
@@ -281,6 +282,7 @@ export const QUIZ_UI: Record<QuizLocale, QuizUiCopy> = {
     qualifiedTitle: 'You qualify for a Free Content Pilot',
     qualifiedBody: (company) =>
       `Based on what you told us, ${company} looks like a great fit for a free, no-obligation content shoot — real photos and video of your own business, on us. Our team will reach out within 1 business day to schedule it.`,
+    qualifiedCta: 'Continue →',
     notQualifiedTitle: 'Thanks for taking the quiz!',
     notQualifiedBody: (company) =>
       `We've saved your answers — our team reviews every submission personally and will reach out if a Free Content Pilot makes sense for ${company}.`,
@@ -303,6 +305,7 @@ export const QUIZ_UI: Record<QuizLocale, QuizUiCopy> = {
     qualifiedTitle: 'Вы подходите для бесплатной пробной съёмки',
     qualifiedBody: (company) =>
       `Судя по вашим ответам, ${company} отлично подходит для бесплатной пробной фото/видео съёмки — без каких-либо обязательств. Наша команда свяжется с вами в течение 1 рабочего дня, чтобы договориться о съёмке.`,
+    qualifiedCta: 'Продолжить →',
     notQualifiedTitle: 'Спасибо, что прошли опрос!',
     notQualifiedBody: (company) =>
       `Мы сохранили ваши ответы — наша команда лично рассматривает каждую заявку и свяжется с вами, если бесплатная пробная съёмка подойдёт для ${company}.`,
@@ -325,6 +328,7 @@ export const QUIZ_UI: Record<QuizLocale, QuizUiCopy> = {
     qualifiedTitle: 'Jūs kvalificējaties bezmaksas satura izmēģinājumam',
     qualifiedBody: (company) =>
       `Pamatojoties uz jūsu atbildēm, ${company} izskatās kā lielisks kandidāts bezmaksas, bez saistībām izmēģinājuma fotosesijai — reāliem sava uzņēmuma foto un video. Mūsu komanda sazināsies ar jums 1 darba dienas laikā, lai vienotos par laiku.`,
+    qualifiedCta: 'Turpināt →',
     notQualifiedTitle: 'Paldies, ka piedalījāties aptaujā!',
     notQualifiedBody: (company) =>
       `Mēs saglabājām jūsu atbildes — mūsu komanda personīgi izskata katru pieteikumu un sazināsies, ja bezmaksas satura izmēģinājums der uzņēmumam ${company}.`,

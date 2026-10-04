@@ -205,6 +205,13 @@ export default function Quiz() {
                 <Gift size={24} className="mx-auto mb-2 text-[var(--color-brand)]" />
                 <p className="text-lg font-semibold text-[var(--color-ink)]">{ui.qualifiedTitle}</p>
                 <p className="mt-2 text-sm text-[var(--color-ink-secondary)]">{ui.qualifiedBody(companyName)}</p>
+                <Link
+                  to={`/audit?company=${encodeURIComponent(companyName)}&industry=${encodeURIComponent(industry)}`}
+                  onClick={() => trackEvent('cta_click', { cta: 'quiz_qualified_continue' })}
+                  className="mt-4 inline-block"
+                >
+                  <Button>{ui.qualifiedCta}</Button>
+                </Link>
               </Card>
             ) : (
               <Card className="p-6">
