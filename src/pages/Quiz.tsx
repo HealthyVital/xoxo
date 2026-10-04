@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ArrowLeft, Camera, Gift, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
@@ -8,6 +8,7 @@ import { useDataStore } from '@/store/DataStoreContext'
 import { VERTICALS } from '@/data/verticals'
 import { computeQuizScore, buildProspectFromQuiz } from '@/lib/quiz'
 import { resolveQuizLocale, getLocalizedQuestions, getVerticalLabel, QUIZ_UI } from '@/lib/quizI18n'
+import { trackEvent } from '@/lib/analytics'
 import type { QuizAnswer, Vertical } from '@/types'
 
 type Stage = 'question' | 'contact' | 'result'
@@ -35,9 +36,16 @@ export default function Quiz() {
   const question = questions[step]
   const progress = Math.round((step / questions.length) * 100)
 
+  useEffect(() => {
+    trackEvent('quiz_start', { locale })
+    // Only fire once per page load — intentionally omits `locale` from deps.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   function selectOption(optionId: string, label: string) {
     const next = [...answers.filter((a) => a.questionId !== question.id), { questionId: question.id, optionId, label }]
     setAnswers(next)
+    trackEvent('quiz_step', { step: step + 1, total: questions.length })
     if (step + 1 < questions.length) {
       setStep(step + 1)
     } else {
@@ -49,6 +57,7 @@ export default function Quiz() {
     e.preventDefault()
     if (!companyName.trim() || !industry) return
     const { score, qualified } = computeQuizScore(answers)
+    trackEvent('quiz_complete', { qualified, score })
 
     // Every submission is added straight to Prospects — it's the business's
     // own self-reported info, not researched/invented, so it's real data.

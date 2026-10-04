@@ -74,9 +74,15 @@ level security), which is exactly the kind of upgrade the architecture notes bel
 ## Environment variables
 
 **None are required to run the app.** See [`.env.example`](.env.example) for placeholders covering
-every future integration listed below — they're commented out on purpose. The one exception is
-`VITE_INTEGRATIONS_API_URL`, used by the real Gmail/Calendar integration described below — see
-[`INTEGRATIONS_SETUP.md`](INTEGRATIONS_SETUP.md).
+every future integration listed below — they're commented out on purpose. Two are already wired up:
+
+- `VITE_INTEGRATIONS_API_URL`, used by the real Gmail/Calendar integration described below — see
+  [`INTEGRATIONS_SETUP.md`](INTEGRATIONS_SETUP.md).
+- `VITE_GOOGLE_ANALYTICS_ID` — set this to a free GA4 Measurement ID to actually measure the public
+  site: visits, which CTA people click, where they drop off in the quiz, and audit/quiz completions
+  (`src/lib/analytics.ts`). Without it, `trackEvent()` calls are silent no-ops — no script loads, no
+  data is sent anywhere, no fabricated numbers. This is how "is the landing page/quiz working"
+  becomes an answerable, measured question instead of a guess.
 
 ## Data & demo data — read this before showing the app to anyone
 

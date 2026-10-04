@@ -9,6 +9,7 @@ import { useDataStore } from '@/store/DataStoreContext'
 import { VERTICALS } from '@/data/verticals'
 import { computeFreeAudit } from '@/lib/freeAudit'
 import { SEED_PRICING_PACKAGES } from '@/data/seedData'
+import { trackEvent } from '@/lib/analytics'
 import type { FreeAuditResult, Vertical } from '@/types'
 
 export default function FreeAudit() {
@@ -25,6 +26,7 @@ export default function FreeAudit() {
     e.preventDefault()
     const submission = { company, website, instagram, industry, mainChallenge, mainGoal }
     addFreeAuditSubmission(submission)
+    trackEvent('audit_submit', { industry: industry || 'unspecified' })
     setResult(computeFreeAudit(submission))
   }
 

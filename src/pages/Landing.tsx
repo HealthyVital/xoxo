@@ -22,6 +22,7 @@ import { Card } from '@/components/ui/Card'
 import { SEED_PRICING_PACKAGES } from '@/data/seedData'
 import { VERTICAL_STRATEGIES } from '@/data/verticals'
 import { cn } from '@/lib/utils'
+import { trackEvent } from '@/lib/analytics'
 import vinFlowerTunnel from '@/assets/team/vin-flower-tunnel.jpg'
 import vinForestRock from '@/assets/team/vin-forest-rock.jpg'
 import vinBoardwalk from '@/assets/team/vin-boardwalk.jpg'
@@ -181,7 +182,7 @@ export default function Landing() {
             <Link to="/app/dashboard" className="hidden text-xs text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] sm:block">
               Team login
             </Link>
-            <Link to="/audit">
+            <Link to="/audit" onClick={() => trackEvent('cta_click', { cta: 'nav_audit' })}>
               <Button size="sm">Get a Free Content Audit</Button>
             </Link>
           </div>
@@ -212,12 +213,12 @@ export default function Landing() {
             Photography, short-form video and social content created around your business goals.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link to="/audit">
+            <Link to="/audit" onClick={() => trackEvent('cta_click', { cta: 'hero_audit' })}>
               <Button size="lg" className="shadow-[0_8px_24px_-6px_var(--color-brand)]">
                 Get a Free Content Audit <ArrowRight size={16} />
               </Button>
             </Link>
-            <a href="#services">
+            <a href="#services" onClick={() => trackEvent('cta_click', { cta: 'hero_see_work' })}>
               <Button size="lg" variant="outline">
                 See Our Work
               </Button>
@@ -471,7 +472,7 @@ export default function Landing() {
           <p className="mb-6 text-sm text-[var(--color-ink-secondary)]">
             Takes two minutes. No cost, no commitment — just a clear look at what's possible.
           </p>
-          <Link to="/audit">
+          <Link to="/audit" onClick={() => trackEvent('cta_click', { cta: 'bottom_audit' })}>
             <Button size="lg" className="shadow-[0_8px_24px_-6px_var(--color-brand)]">
               Get a Free Content Audit <ArrowRight size={16} />
             </Button>
