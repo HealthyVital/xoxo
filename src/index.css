@@ -54,3 +54,96 @@ body {
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
+
+/* Landing page hero: animated aurora backdrop + a floating 3D tile scene. */
+@keyframes aurora {
+  0%,
+  100% {
+    background-position:
+      0% 50%,
+      100% 20%,
+      50% 80%;
+  }
+  50% {
+    background-position:
+      100% 50%,
+      0% 80%,
+      20% 20%;
+  }
+}
+.animate-aurora {
+  background-size: 200% 200%;
+  animation: aurora 16s ease-in-out infinite;
+}
+
+@keyframes float-1 {
+  0%,
+  100% {
+    transform: translateY(0) translateZ(70px) rotateZ(-8deg);
+  }
+  50% {
+    transform: translateY(-18px) translateZ(70px) rotateZ(-8deg);
+  }
+}
+@keyframes float-2 {
+  0%,
+  100% {
+    transform: translateY(0) translateZ(20px) rotateZ(7deg);
+  }
+  50% {
+    transform: translateY(-10px) translateZ(20px) rotateZ(7deg);
+  }
+}
+@keyframes float-3 {
+  0%,
+  100% {
+    transform: translateY(0) translateZ(100px) rotateZ(10deg);
+  }
+  50% {
+    transform: translateY(-22px) translateZ(100px) rotateZ(10deg);
+  }
+}
+@keyframes float-4 {
+  0%,
+  100% {
+    transform: translateY(0) translateZ(0px) rotateZ(-12deg);
+  }
+  50% {
+    transform: translateY(-9px) translateZ(0px) rotateZ(-12deg);
+  }
+}
+@keyframes float-5 {
+  0%,
+  100% {
+    transform: translateY(0) translateZ(55px) rotateZ(5deg);
+  }
+  50% {
+    transform: translateY(-15px) translateZ(55px) rotateZ(5deg);
+  }
+}
+.float-1 {
+  animation: float-1 5.5s ease-in-out infinite;
+}
+.float-2 {
+  animation: float-2 4.5s ease-in-out infinite 0.3s;
+}
+.float-3 {
+  animation: float-3 6.5s ease-in-out infinite 0.7s;
+}
+.float-4 {
+  animation: float-4 4s ease-in-out infinite 0.15s;
+}
+.float-5 {
+  animation: float-5 5s ease-in-out infinite 0.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-aurora,
+  .float-1,
+  .float-2,
+  .float-3,
+  .float-4,
+  .float-5 {
+    animation: none !important;
+  }
+}

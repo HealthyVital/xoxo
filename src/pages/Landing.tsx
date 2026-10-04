@@ -1,3 +1,4 @@
+import { useRef, useState, type MouseEvent } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Camera,
@@ -14,11 +15,26 @@ import {
   Building2,
   UtensilsCrossed,
   Heart,
+  Film,
+  Aperture,
+  Image as ImageIcon,
 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import { SEED_PRICING_PACKAGES } from '@/data/seedData'
 import { VERTICAL_STRATEGIES } from '@/data/verticals'
+import { cn } from '@/lib/utils'
+
+const SERIES = [
+  'var(--color-series-1)',
+  'var(--color-series-2)',
+  'var(--color-series-3)',
+  'var(--color-series-4)',
+  'var(--color-series-5)',
+  'var(--color-series-6)',
+  'var(--color-series-7)',
+  'var(--color-series-8)',
+]
 
 const SERVICES = [
   { icon: Camera, title: 'Event photography', desc: 'Corporate events, launches and conferences, delivered fast.' },
@@ -55,13 +71,88 @@ const FAQ = [
   { q: 'Can we cancel a monthly package?', a: 'Yes, our packages run month-to-month with a short notice period — no long lock-in contracts.' },
 ]
 
+/** Decorative, truly-3D content-tile scene for the hero: a perspective
+ *  container whose group tilts toward the cursor (real parallax, not a CSS
+ *  trick), while each tile continuously floats at its own depth (translateZ)
+ *  via the float-1..float-5 keyframes in index.css. Abstract gradient tiles
+ *  with content-type icons — never real photos, since we don't have real
+ *  client work to show yet and won't fake it. */
+function HeroMosaic() {
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [tilt, setTilt] = useState({ x: 0, y: 0 })
+
+  function handleMouseMove(e: MouseEvent<HTMLDivElement>) {
+    const rect = containerRef.current?.getBoundingClientRect()
+    if (!rect) return
+    const px = (e.clientX - rect.left) / rect.width - 0.5 // -0.5 .. 0.5
+    const py = (e.clientY - rect.top) / rect.height - 0.5
+    setTilt({ x: px, y: py })
+  }
+
+  function handleMouseLeave() {
+    setTilt({ x: 0, y: 0 })
+  }
+
+  const tiles: { icon: typeof Camera; color: string; floatClass: string; size: string; x: string; y: string }[] = [
+    { icon: Camera, color: SERIES[0], floatClass: 'float-3', size: 'h-28 w-28 sm:h-36 sm:w-36', x: '-translate-x-[6.5rem] sm:-translate-x-32', y: '' },
+    { icon: Film, color: SERIES[1], floatClass: 'float-2', size: 'h-16 w-16 sm:h-20 sm:w-20', x: '-translate-x-[2.5rem] sm:-translate-x-12', y: '-translate-y-16 sm:-translate-y-20' },
+    { icon: Aperture, color: SERIES[2], floatClass: 'float-1', size: 'h-24 w-24 sm:h-28 sm:w-28', x: '', y: '' },
+    { icon: ImageIcon, color: SERIES[4], floatClass: 'float-4', size: 'h-16 w-16 sm:h-20 sm:w-20', x: 'translate-x-[2.5rem] sm:translate-x-12', y: '-translate-y-12 sm:-translate-y-16' },
+    { icon: Video, color: SERIES[6], floatClass: 'float-5', size: 'h-20 w-20 sm:h-24 sm:w-24', x: 'translate-x-[6.5rem] sm:translate-x-32', y: 'translate-y-4' },
+  ]
+
+  return (
+    <div
+      ref={containerRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      aria-hidden
+      className="relative mx-auto mt-14 h-64 max-w-2xl [perspective:1400px] sm:h-80"
+    >
+      <div
+        className="absolute inset-0 flex items-center justify-center transition-transform duration-200 ease-out [transform-style:preserve-3d]"
+        style={{ transform: `rotateX(${14 - tilt.y * 22}deg) rotateY(${tilt.x * 28}deg)` }}
+      >
+        {tiles.map((t, i) => (
+          // Outer div holds the static scatter position (its own transform:
+          // translate-x/y) so the inner div's float-N keyframe animation
+          // (which sets translateY/translateZ/rotateZ every frame) never
+          // overwrites that position — the two transforms compose because
+          // both ancestors keep transform-style: preserve-3d.
+          <div
+            key={i}
+            className={cn('absolute inset-0 flex items-center justify-center [transform-style:preserve-3d]', t.x, t.y)}
+          >
+            <div className={cn('flex shrink-0 items-center justify-center rounded-3xl [transform-style:preserve-3d]', t.floatClass, t.size)}>
+              <div
+                className="flex h-full w-full items-center justify-center rounded-3xl border border-white/25 shadow-[0_20px_45px_-12px_rgba(11,11,11,0.45)]"
+                style={{ background: `linear-gradient(135deg, ${t.color}, color-mix(in oklab, ${t.color} 55%, black))` }}
+              >
+                <t.icon size={i === 0 ? 40 : 26} className="text-white/95" strokeWidth={1.6} />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+function SectionKicker({ children }: { children: string }) {
+  return (
+    <p className="mb-3 text-center text-xs font-semibold tracking-[0.18em] text-[var(--color-brand)] uppercase">
+      {children}
+    </p>
+  )
+}
+
 export default function Landing() {
   return (
-    <div className="min-h-screen bg-[var(--color-surface)]">
-      <header className="sticky top-0 z-30 border-b border-[var(--color-hairline)] bg-[var(--color-surface)]/95 backdrop-blur">
+    <div className="min-h-screen overflow-x-hidden bg-[var(--color-surface)]">
+      <header className="sticky top-0 z-30 border-b border-[var(--color-hairline)] bg-[var(--color-surface)]/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--color-ink)] text-white">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[var(--color-brand)] to-[var(--color-brand-strong)] text-white shadow-sm">
               <Camera size={16} />
             </div>
             <span className="text-sm font-semibold">Agrita&Vin Content Co.</span>
@@ -84,38 +175,70 @@ export default function Landing() {
         </div>
       </header>
 
-      <section className="mx-auto max-w-6xl px-4 pt-16 pb-20 text-center sm:px-6">
-        <p className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-[var(--color-brand-soft)] px-3 py-1 text-xs font-medium text-[var(--color-brand-strong)]">
-          <Sparkles size={12} /> Content for business — Rotterdam
-        </p>
-        <h1 className="mx-auto max-w-3xl text-4xl font-semibold tracking-tight text-[var(--color-ink)] sm:text-5xl">
-          Professional Content That Makes Your Brand Visible.
-        </h1>
-        <p className="mx-auto mt-4 max-w-xl text-base text-[var(--color-ink-secondary)]">
-          Photography, short-form video and social content created around your business goals.
-        </p>
-        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link to="/audit">
-            <Button size="lg">
-              Get a Free Content Audit <ArrowRight size={16} />
-            </Button>
-          </Link>
-          <a href="#services">
-            <Button size="lg" variant="outline">
-              See Our Work
-            </Button>
-          </a>
+      {/* HERO */}
+      <section className="relative">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -top-24 left-1/2 h-[560px] w-[1100px] -translate-x-1/2 opacity-[0.16] blur-3xl"
+          style={{
+            background:
+              'radial-gradient(40% 55% at 20% 30%, var(--color-series-1), transparent), radial-gradient(35% 50% at 80% 20%, var(--color-series-5), transparent), radial-gradient(45% 60% at 50% 80%, var(--color-series-3), transparent)',
+          }}
+        />
+        <div className="relative mx-auto max-w-6xl px-4 pt-16 pb-12 text-center sm:px-6">
+          <p className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-[var(--color-brand-soft)] px-3 py-1 text-xs font-medium text-[var(--color-brand-strong)]">
+            <Sparkles size={12} /> Content for business — Rotterdam
+          </p>
+          <h1 className="mx-auto max-w-3xl text-5xl font-semibold tracking-tight text-balance text-[var(--color-ink)] sm:text-6xl">
+            Professional content that makes your brand{' '}
+            <span className="bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-series-3)] bg-clip-text text-transparent">
+              visible.
+            </span>
+          </h1>
+          <p className="mx-auto mt-5 max-w-xl text-base text-[var(--color-ink-secondary)] sm:text-lg">
+            Photography, short-form video and social content created around your business goals.
+          </p>
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link to="/audit">
+              <Button size="lg" className="shadow-[0_8px_24px_-6px_var(--color-brand)]">
+                Get a Free Content Audit <ArrowRight size={16} />
+              </Button>
+            </Link>
+            <a href="#services">
+              <Button size="lg" variant="outline">
+                See Our Work
+              </Button>
+            </a>
+          </div>
+
+          <HeroMosaic />
+
+          <div className="mx-auto mt-10 flex max-w-3xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-[var(--color-ink-muted)]">
+            {INDUSTRIES.map((ind) => (
+              <span key={ind.label} className="inline-flex items-center gap-1.5">
+                <ind.icon size={13} className="text-[var(--color-brand)]" /> {ind.label}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section id="services" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-16">
+      {/* SERVICES */}
+      <section id="services" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="mb-8 text-center text-2xl font-semibold text-[var(--color-ink)]">Services</h2>
+          <SectionKicker>What we make</SectionKicker>
+          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Services</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {SERVICES.map((s) => (
-              <Card key={s.title} className="p-5">
-                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--color-brand-soft)] text-[var(--color-brand-strong)]">
-                  <s.icon size={17} />
+            {SERVICES.map((s, i) => (
+              <Card
+                key={s.title}
+                className="group p-5 transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_16px_32px_-12px_rgba(11,11,11,0.18)]"
+              >
+                <div
+                  className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl text-white shadow-sm transition-transform duration-200 group-hover:scale-105"
+                  style={{ background: `linear-gradient(135deg, ${SERIES[i % SERIES.length]}, color-mix(in oklab, ${SERIES[i % SERIES.length]} 65%, black))` }}
+                >
+                  <s.icon size={18} />
                 </div>
                 <p className="text-sm font-semibold text-[var(--color-ink)]">{s.title}</p>
                 <p className="mt-1 text-xs text-[var(--color-ink-secondary)]">{s.desc}</p>
@@ -125,16 +248,26 @@ export default function Landing() {
         </div>
       </section>
 
-      <section id="industries" className="py-16">
+      {/* INDUSTRIES */}
+      <section id="industries" className="py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="mb-2 text-center text-2xl font-semibold text-[var(--color-ink)]">Industries we focus on</h2>
-          <p className="mx-auto mb-8 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
+          <SectionKicker>Focused, not generic</SectionKicker>
+          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Industries we focus on</h2>
+          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
             Every industry gets a dedicated content playbook, not a one-size-fits-all package.
           </p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {INDUSTRIES.map((ind) => (
-              <div key={ind.label} className="flex flex-col items-center gap-2 rounded-xl border border-[var(--color-hairline)] p-5 text-center">
-                <ind.icon size={22} className="text-[var(--color-brand)]" />
+            {INDUSTRIES.map((ind, i) => (
+              <div
+                key={ind.label}
+                className="group flex flex-col items-center gap-3 rounded-2xl border border-[var(--color-hairline)] bg-[var(--color-surface)] p-6 text-center transition-all duration-200 hover:-translate-y-1 hover:border-transparent hover:shadow-[0_16px_32px_-12px_rgba(11,11,11,0.18)]"
+              >
+                <div
+                  className="flex h-12 w-12 items-center justify-center rounded-full text-white transition-transform duration-200 group-hover:scale-110"
+                  style={{ background: `linear-gradient(135deg, ${SERIES[i % SERIES.length]}, color-mix(in oklab, ${SERIES[i % SERIES.length]} 65%, black))` }}
+                >
+                  <ind.icon size={20} />
+                </div>
                 <p className="text-xs font-medium text-[var(--color-ink)]">{ind.label}</p>
               </div>
             ))}
@@ -142,48 +275,69 @@ export default function Landing() {
         </div>
       </section>
 
-      <section id="how-it-works" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-16">
+      {/* HOW IT WORKS */}
+      <section id="how-it-works" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="mb-8 text-center text-2xl font-semibold text-[var(--color-ink)]">How it works</h2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {STEPS.map((s) => (
-              <Card key={s.step} className="p-5">
-                <p className="mb-2 text-xs font-semibold text-[var(--color-brand)]">{s.step}</p>
+          <SectionKicker>The process</SectionKicker>
+          <h2 className="mb-12 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">How it works</h2>
+          <div className="relative grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div
+              aria-hidden
+              className="absolute top-6 right-[12%] left-[12%] hidden h-px bg-[var(--color-hairline)] lg:block"
+            />
+            {STEPS.map((s, i) => (
+              <div key={s.step} className="relative">
+                <div
+                  className="relative z-10 mb-4 flex h-12 w-12 items-center justify-center rounded-full text-sm font-semibold text-white shadow-md"
+                  style={{ background: `linear-gradient(135deg, ${SERIES[i % SERIES.length]}, color-mix(in oklab, ${SERIES[i % SERIES.length]} 65%, black))` }}
+                >
+                  {s.step}
+                </div>
                 <p className="mb-1 text-sm font-semibold text-[var(--color-ink)]">{s.title}</p>
                 <p className="text-xs text-[var(--color-ink-secondary)]">{s.desc}</p>
-              </Card>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="examples" className="py-16">
+      {/* EXAMPLES */}
+      <section id="examples" className="py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="mb-2 text-center text-2xl font-semibold text-[var(--color-ink)]">Content built for real objectives</h2>
-          <p className="mx-auto mb-8 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
+          <SectionKicker>Strategy first</SectionKicker>
+          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Content built for real objectives</h2>
+          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
             A sample of the content pillars we build per industry — see the full playbook once you're a client.
           </p>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {(['Hotels & Hospitality', 'Cosmetics & Beauty', 'Restaurants & Lifestyle'] as const).map((v) => (
-              <Card key={v} className="p-5">
-                <p className="mb-2 text-sm font-semibold text-[var(--color-ink)]">{v}</p>
-                <ul className="space-y-1 text-xs text-[var(--color-ink-secondary)]">
-                  {VERTICAL_STRATEGIES[v].contentIdeas.slice(0, 4).map((i) => (
-                    <li key={i} className="flex items-start gap-1.5">
-                      <CheckCircle2 size={13} className="mt-0.5 shrink-0 text-[var(--color-good)]" />
-                      {i}
-                    </li>
-                  ))}
-                </ul>
+            {(['Hotels & Hospitality', 'Cosmetics & Beauty', 'Restaurants & Lifestyle'] as const).map((v, i) => (
+              <Card key={v} className="overflow-hidden p-0">
+                <div
+                  className="h-2 w-full"
+                  style={{ background: `linear-gradient(90deg, ${SERIES[i * 2]}, ${SERIES[i * 2 + 1]})` }}
+                />
+                <div className="p-5">
+                  <p className="mb-2 text-sm font-semibold text-[var(--color-ink)]">{v}</p>
+                  <ul className="space-y-1 text-xs text-[var(--color-ink-secondary)]">
+                    {VERTICAL_STRATEGIES[v].contentIdeas.slice(0, 4).map((i) => (
+                      <li key={i} className="flex items-start gap-1.5">
+                        <CheckCircle2 size={13} className="mt-0.5 shrink-0 text-[var(--color-good)]" />
+                        {i}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="results" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-16">
+      {/* RESULTS */}
+      <section id="results" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <h2 className="mb-3 text-2xl font-semibold text-[var(--color-ink)]">Results, reported honestly</h2>
+          <SectionKicker>Honesty over hype</SectionKicker>
+          <h2 className="mb-3 text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Results, reported honestly</h2>
           <p className="mx-auto max-w-xl text-sm text-[var(--color-ink-secondary)]">
             Every client gets a monthly report showing reach, engagement, leads and what we're changing next. We don't
             promise guaranteed outcomes — every number in your report is your own, clearly separated between observed,
@@ -192,14 +346,29 @@ export default function Landing() {
         </div>
       </section>
 
-      <section id="packages" className="py-16">
+      {/* PACKAGES */}
+      <section id="packages" className="py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="mb-8 text-center text-2xl font-semibold text-[var(--color-ink)]">Packages</h2>
+          <SectionKicker>Simple pricing</SectionKicker>
+          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Packages</h2>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
             {SEED_PRICING_PACKAGES.map((pkg, i) => (
-              <Card key={pkg.id} className={i === 1 ? 'border-[var(--color-brand)] p-6 ring-1 ring-[var(--color-brand)]' : 'p-6'}>
+              <Card
+                key={pkg.id}
+                className={cn(
+                  'relative p-6 transition-transform duration-200',
+                  i === 1
+                    ? 'border-transparent shadow-[0_24px_48px_-16px_var(--color-brand)] ring-2 ring-[var(--color-brand)] lg:-translate-y-2'
+                    : 'hover:-translate-y-1',
+                )}
+              >
+                {i === 1 && (
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--color-brand)] px-3 py-1 text-[10px] font-semibold tracking-wide text-white uppercase">
+                    Most popular
+                  </span>
+                )}
                 <p className="text-sm font-semibold text-[var(--color-ink)]">{pkg.name}</p>
-                <p className="mt-1 text-xl font-semibold text-[var(--color-ink)]">{pkg.priceRange}</p>
+                <p className="mt-1 text-2xl font-semibold text-[var(--color-ink)]">{pkg.priceRange}</p>
                 <p className="mt-2 text-xs text-[var(--color-ink-secondary)]">{pkg.description}</p>
                 <ul className="mt-4 space-y-1.5 text-xs text-[var(--color-ink-secondary)]">
                   {pkg.deliverables.map((d) => (
@@ -212,34 +381,53 @@ export default function Landing() {
               </Card>
             ))}
           </div>
-          <p className="mt-4 text-center text-xs text-[var(--color-ink-muted)]">
+          <p className="mt-6 text-center text-xs text-[var(--color-ink-muted)]">
             Reference pricing only — every engagement is custom-quoted.
           </p>
         </div>
       </section>
 
-      <section id="faq" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-16">
+      {/* FAQ */}
+      <section id="faq" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
         <div className="mx-auto max-w-2xl px-4 sm:px-6">
-          <h2 className="mb-8 text-center text-2xl font-semibold text-[var(--color-ink)]">FAQ</h2>
+          <SectionKicker>Questions</SectionKicker>
+          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">FAQ</h2>
           <div className="space-y-3">
-            {FAQ.map((f) => (
-              <Card key={f.q} className="p-4">
-                <p className="text-sm font-semibold text-[var(--color-ink)]">{f.q}</p>
-                <p className="mt-1 text-xs text-[var(--color-ink-secondary)]">{f.a}</p>
+            {FAQ.map((f, i) => (
+              <Card key={f.q} className="overflow-hidden p-0">
+                <div className="flex gap-3 p-4">
+                  <div
+                    className="mt-0.5 h-full w-1 shrink-0 self-stretch rounded-full"
+                    style={{ background: SERIES[i % SERIES.length] }}
+                  />
+                  <div>
+                    <p className="text-sm font-semibold text-[var(--color-ink)]">{f.q}</p>
+                    <p className="mt-1 text-xs text-[var(--color-ink-secondary)]">{f.a}</p>
+                  </div>
+                </div>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="contact" className="py-16">
-        <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">
-          <h2 className="mb-3 text-2xl font-semibold text-[var(--color-ink)]">Ready to see your content opportunity?</h2>
+      {/* CONTACT */}
+      <section id="contact" className="relative overflow-hidden py-20">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-[0.12]"
+          style={{
+            background:
+              'radial-gradient(50% 80% at 50% 0%, var(--color-brand), transparent)',
+          }}
+        />
+        <div className="relative mx-auto max-w-2xl px-4 text-center sm:px-6">
+          <h2 className="mb-3 text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Ready to see your content opportunity?</h2>
           <p className="mb-6 text-sm text-[var(--color-ink-secondary)]">
             Takes two minutes. No cost, no commitment — just a clear look at what's possible.
           </p>
           <Link to="/audit">
-            <Button size="lg">
+            <Button size="lg" className="shadow-[0_8px_24px_-6px_var(--color-brand)]">
               Get a Free Content Audit <ArrowRight size={16} />
             </Button>
           </Link>
