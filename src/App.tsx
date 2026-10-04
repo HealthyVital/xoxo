@@ -11,6 +11,8 @@ const QuizLeads = lazy(() => import('@/pages/QuizLeads'))
 const Dashboard = lazy(() => import('@/pages/Dashboard'))
 const Prospects = lazy(() => import('@/pages/Prospects'))
 const Pipeline = lazy(() => import('@/pages/Pipeline'))
+const Professionals = lazy(() => import('@/pages/Professionals'))
+const ServiceRequests = lazy(() => import('@/pages/ServiceRequests'))
 const Outreach = lazy(() => import('@/pages/Outreach'))
 const ContentStudio = lazy(() => import('@/pages/ContentStudio'))
 const Verticals = lazy(() => import('@/pages/Verticals'))
@@ -54,6 +56,8 @@ export default function App() {
               <Route path="prospects" element={<Prospects />} />
               <Route path="quiz-leads" element={<QuizLeads />} />
               <Route path="pipeline" element={<Pipeline />} />
+              <Route path="professionals" element={<Professionals />} />
+              <Route path="service-requests" element={<ServiceRequests />} />
               <Route path="outreach" element={<Outreach />} />
               <Route path="content-studio" element={<ContentStudio />} />
               <Route path="verticals" element={<Verticals />} />

@@ -46,8 +46,9 @@ npm run preview  # preview the production build locally
 ```
 
 The public marketing site is at `/`, the Free Content Audit at `/audit`, and the CRM app lives
-under `/app/*` (dashboard, prospects, pipeline, outreach, content studio, verticals, free pilot,
-proposals, clients, campaigns, analytics, client reports, calendar, templates, pricing, settings).
+under `/app/*` (dashboard, prospects, pipeline, professionals, service requests, outreach, content
+studio, verticals, free pilot, proposals, clients, campaigns, analytics, client reports, calendar,
+templates, pricing, settings).
 
 ## Access control — read this before treating it as real security
 
@@ -101,6 +102,30 @@ every future integration listed below — they're commented out on purpose. The 
   it's ever re-introduced behind an explicit toggle. Reset the live app back to the real-only seed
   any time from Settings → "Reset to seed data" (useful after clearing a browser that still has an
   older, demo-blended localStorage cache).
+
+## Marketplace layer — Professionals & Service Requests (supply side)
+
+The business is pivoting from a single in-house agency to a two-sided marketplace (Uber/Airbnb
+model): the 1,400+ prospects above are the **demand** side (companies that might need content),
+and a new, separate supply side models **independent professionals** (photographers,
+videographers, makeup artists, designers, marketers) who can take on either a one-time job or a
+recurring retainer.
+
+- **New types** (`src/types/index.ts`): `Skill`, `Service`, `Professional`, `ServiceRequest`,
+  `Review`, `Payment` — added alongside the existing prospect/client types, not replacing them.
+- **New pages**: `/app/professionals` (a filterable directory of professionals, with add/edit) and
+  `/app/service-requests` (a status board for one-time jobs — New → Matched → In Progress →
+  Completed/Cancelled — with a "Match professional" action).
+- **Same honesty rule as prospects**: `Professional.verificationStatus` reuses the exact
+  `VerificationStatus` type used for prospects. A professional's email/phone is left empty and
+  marked `"Needs Verification"` until it's actually confirmed — never invented.
+- **Starts empty.** `SEED_SKILLS`, `SEED_SERVICES`, `SEED_PROFESSIONALS`, `SEED_SERVICE_REQUESTS`,
+  `SEED_REVIEWS` and `SEED_PAYMENTS` in `src/data/seedData.ts` are all empty arrays — there is no
+  fabricated marketplace activity. Skills and services can be added inline from the Professionals /
+  Service Requests add-forms as real ones are identified.
+- **Deliberately not done yet** (deferred, see the Phase 1 architecture plan): `Prospect` has not
+  been restructured into a separate `Company` entity shared with `Professional`/`ServiceRequest` —
+  that would require migrating 1,400+ real records already gathered, and is a separate future pass.
 
 ## Architecture notes (for adding Supabase later)
 

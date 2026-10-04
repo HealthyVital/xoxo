@@ -361,6 +361,109 @@ export interface FunnelStage {
   value: number
 }
 
+// ---------------------------------------------------------------------------
+// Marketplace layer (supply side) — added alongside the existing
+// prospect-to-client sales pipeline above, which models the demand side.
+// See the architecture plan: a two-sided marketplace (Uber/Airbnb model)
+// matching companies that need photo/video/marketing work (demand, already
+// modeled via Prospect/Client above) with independent professionals who
+// deliver it (supply, modeled here for the first time). Nothing above this
+// comment was changed to make room for this — it's purely additive.
+// ---------------------------------------------------------------------------
+
+export interface Skill {
+  id: string
+  name: string
+  category: string
+}
+
+export type ServiceMode = 'one-time' | 'recurring'
+
+export interface Service {
+  id: string
+  name: string
+  category: Vertical | 'General'
+  mode: ServiceMode
+  description: string
+  typicalPriceRange: string
+}
+
+export type ProfessionalAvailability = 'Available' | 'Booked' | 'Unavailable'
+
+export interface Professional {
+  id: string
+  name: string
+  email?: string
+  phone?: string
+  city: string
+  country: string
+  skillIds: string[]
+  serviceIds: string[]
+  bio: string
+  portfolioUrl?: string
+  rateRange?: string
+  availability: ProfessionalAvailability
+  /** Same honesty rule as Prospect.verificationStatus: never invent a
+   *  professional's contact info — leave fields empty and mark this
+   *  "Needs Verification" until someone actually confirms them. */
+  verificationStatus: VerificationStatus
+  ratingAvg?: number
+  reviewCount: number
+  source: string
+  notes: string
+  isDemo: boolean
+  createdAt: string
+  updatedAt: string
+}
+
+export type ServiceRequestStatus = 'New' | 'Matched' | 'In Progress' | 'Completed' | 'Cancelled'
+
+export interface ServiceRequest {
+  id: string
+  companyName: string
+  contactEmail?: string
+  contactPhone?: string
+  city: string
+  country: string
+  serviceId: string
+  description: string
+  budget?: number
+  requestedDate?: string // ISO date
+  status: ServiceRequestStatus
+  matchedProfessionalId?: string
+  /** Optional bridge to an existing Prospect, so a one-time request from a
+   *  company we already have doesn't duplicate its data. */
+  linkedProspectId?: string
+  notes: string
+  isDemo: boolean
+  createdAt: string
+  updatedAt: string
+}
+
+export interface Review {
+  id: string
+  serviceRequestId: string
+  professionalId: string
+  rating: number // 1-5
+  comment: string
+  authorType: 'client' | 'professional'
+  createdAt: string
+}
+
+export type PaymentType = 'one-time' | 'recurring-invoice'
+export type PaymentStatus = 'Pending' | 'Paid' | 'Overdue'
+
+export interface Payment {
+  id: string
+  serviceRequestId?: string
+  clientId?: string
+  amount: number
+  currency: 'EUR'
+  type: PaymentType
+  status: PaymentStatus
+  createdAt: string
+}
+
 export interface DemoAnalyticsMonth {
   month: string // "2026-04"
   prospectsAdded: number

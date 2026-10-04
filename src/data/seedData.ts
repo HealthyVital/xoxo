@@ -5,11 +5,17 @@ import type {
   CommunicationLogEntry,
   OutreachTemplate,
   PilotProposal,
+  Payment,
   PricingPackage,
   OneOffService,
+  Professional,
   Prospect,
   Proposal,
+  Review,
   SavedContentIdea,
+  Service,
+  ServiceRequest,
+  Skill,
 } from '@/types'
 
 import prospectsReal from './prospects.real.json'
@@ -38,3 +44,15 @@ export const PRICING_DISCLAIMER: string = pricingRaw.disclaimer
 export const SEED_PILOT_PROPOSALS: PilotProposal[] = []
 export const SEED_PROPOSALS: Proposal[] = []
 export const SEED_SAVED_CONTENT_IDEAS: SavedContentIdea[] = []
+
+// ---------------------------------------------------------------------------
+// Marketplace layer (supply side) — see src/types/index.ts for context.
+// Starts empty: no fabricated professionals or service requests. Populating
+// these with real, verified professionals is a separate future task.
+// ---------------------------------------------------------------------------
+export const SEED_SKILLS: Skill[] = []
+export const SEED_SERVICES: Service[] = []
+export const SEED_PROFESSIONALS: Professional[] = []
+export const SEED_SERVICE_REQUESTS: ServiceRequest[] = []
+export const SEED_REVIEWS: Review[] = []
+export const SEED_PAYMENTS: Payment[] = []

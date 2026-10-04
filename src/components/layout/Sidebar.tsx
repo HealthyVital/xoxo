@@ -20,6 +20,8 @@ import {
   Camera,
   X,
   LogOut,
+  Briefcase,
+  ClipboardCheck,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useAuthEmail, logoutTeamMember } from '@/components/layout/AuthGate'
@@ -29,6 +31,8 @@ const NAV = [
   { to: '/app/prospects', label: 'Prospects', icon: Users },
   { to: '/app/quiz-leads', label: 'Quiz leads', icon: ListChecks },
   { to: '/app/pipeline', label: 'Pipeline', icon: KanbanSquare },
+  { to: '/app/professionals', label: 'Professionals', icon: Briefcase },
+  { to: '/app/service-requests', label: 'Service Requests', icon: ClipboardCheck },
   { to: '/app/outreach', label: 'Outreach', icon: Send },
   { to: '/app/content-studio', label: 'Content Studio', icon: Clapperboard },
   { to: '/app/verticals', label: 'Verticals', icon: Layers },

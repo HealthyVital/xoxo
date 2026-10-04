@@ -11,6 +11,12 @@ import {
   SEED_PROPOSALS,
   SEED_SAVED_CONTENT_IDEAS,
   SEED_TEMPLATES,
+  SEED_SKILLS,
+  SEED_SERVICES,
+  SEED_PROFESSIONALS,
+  SEED_SERVICE_REQUESTS,
+  SEED_REVIEWS,
+  SEED_PAYMENTS,
 } from '@/data/seedData'
 import type {
   CalendarItem,
@@ -19,11 +25,17 @@ import type {
   CommunicationLogEntry,
   FreeAuditSubmission,
   OutreachTemplate,
+  Payment,
   PilotProposal,
+  Professional,
   Prospect,
   Proposal,
   QuizSubmission,
+  Review,
   SavedContentIdea,
+  Service,
+  ServiceRequest,
+  Skill,
 } from '@/types'
 
 interface DataStoreValue {
@@ -38,6 +50,12 @@ interface DataStoreValue {
   freeAuditSubmissions: FreeAuditSubmission[]
   quizSubmissions: QuizSubmission[]
   templates: OutreachTemplate[]
+  skills: Skill[]
+  services: Service[]
+  professionals: Professional[]
+  serviceRequests: ServiceRequest[]
+  reviews: Review[]
+  payments: Payment[]
 
   addProspect: (p: Omit<Prospect, 'id' | 'createdAt' | 'updatedAt'>) => Prospect
   updateProspect: (id: string, patch: Partial<Prospect>) => void
@@ -67,6 +85,19 @@ interface DataStoreValue {
 
   addQuizSubmission: (s: Omit<QuizSubmission, 'id' | 'createdAt'>) => QuizSubmission
   markQuizConverted: (id: string, prospectId: string) => void
+
+  addSkill: (s: Omit<Skill, 'id'>) => Skill
+  addService: (s: Omit<Service, 'id'>) => Service
+
+  addProfessional: (p: Omit<Professional, 'id' | 'createdAt' | 'updatedAt'>) => Professional
+  updateProfessional: (id: string, patch: Partial<Professional>) => void
+
+  addServiceRequest: (r: Omit<ServiceRequest, 'id' | 'createdAt' | 'updatedAt'>) => ServiceRequest
+  updateServiceRequest: (id: string, patch: Partial<ServiceRequest>) => void
+
+  addReview: (r: Omit<Review, 'id' | 'createdAt'>) => Review
+
+  addPayment: (p: Omit<Payment, 'id' | 'createdAt'>) => Payment
 
   updateTemplate: (id: string, patch: Partial<OutreachTemplate>) => void
 
@@ -117,6 +148,15 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
   )
   const [quizSubmissions, setQuizSubmissions] = usePersistedState<QuizSubmission[]>('quizSubmissions', [])
   const [templates, setTemplates] = usePersistedState<OutreachTemplate[]>('templates', SEED_TEMPLATES)
+  const [skills, setSkills] = usePersistedState<Skill[]>('skills', SEED_SKILLS)
+  const [services, setServices] = usePersistedState<Service[]>('services', SEED_SERVICES)
+  const [professionals, setProfessionals] = usePersistedState<Professional[]>('professionals', SEED_PROFESSIONALS)
+  const [serviceRequests, setServiceRequests] = usePersistedState<ServiceRequest[]>(
+    'serviceRequests',
+    SEED_SERVICE_REQUESTS,
+  )
+  const [reviews, setReviews] = usePersistedState<Review[]>('reviews', SEED_REVIEWS)
+  const [payments, setPayments] = usePersistedState<Payment[]>('payments', SEED_PAYMENTS)
 
   const addProspect = useCallback<DataStoreValue['addProspect']>(
     (p) => {
@@ -275,6 +315,74 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
     [setQuizSubmissions],
   )
 
+  const addSkill = useCallback<DataStoreValue['addSkill']>(
+    (s) => {
+      const record: Skill = { ...s, id: uid('skill') }
+      setSkills((prev) => [...prev, record])
+      return record
+    },
+    [setSkills],
+  )
+
+  const addService = useCallback<DataStoreValue['addService']>(
+    (s) => {
+      const record: Service = { ...s, id: uid('service') }
+      setServices((prev) => [...prev, record])
+      return record
+    },
+    [setServices],
+  )
+
+  const addProfessional = useCallback<DataStoreValue['addProfessional']>(
+    (p) => {
+      const record: Professional = { ...p, id: uid('pro'), createdAt: nowIso(), updatedAt: nowIso() }
+      setProfessionals((prev) => [record, ...prev])
+      return record
+    },
+    [setProfessionals],
+  )
+
+  const updateProfessional = useCallback<DataStoreValue['updateProfessional']>(
+    (id, patch) => {
+      setProfessionals((prev) => prev.map((p) => (p.id === id ? { ...p, ...patch, updatedAt: nowIso() } : p)))
+    },
+    [setProfessionals],
+  )
+
+  const addServiceRequest = useCallback<DataStoreValue['addServiceRequest']>(
+    (r) => {
+      const record: ServiceRequest = { ...r, id: uid('req'), createdAt: nowIso(), updatedAt: nowIso() }
+      setServiceRequests((prev) => [record, ...prev])
+      return record
+    },
+    [setServiceRequests],
+  )
+
+  const updateServiceRequest = useCallback<DataStoreValue['updateServiceRequest']>(
+    (id, patch) => {
+      setServiceRequests((prev) => prev.map((r) => (r.id === id ? { ...r, ...patch, updatedAt: nowIso() } : r)))
+    },
+    [setServiceRequests],
+  )
+
+  const addReview = useCallback<DataStoreValue['addReview']>(
+    (r) => {
+      const record: Review = { ...r, id: uid('review'), createdAt: nowIso() }
+      setReviews((prev) => [record, ...prev])
+      return record
+    },
+    [setReviews],
+  )
+
+  const addPayment = useCallback<DataStoreValue['addPayment']>(
+    (p) => {
+      const record: Payment = { ...p, id: uid('payment'), createdAt: nowIso() }
+      setPayments((prev) => [record, ...prev])
+      return record
+    },
+    [setPayments],
+  )
+
   const updateTemplate = useCallback<DataStoreValue['updateTemplate']>(
     (id, patch) => {
       setTemplates((prev) => prev.map((t) => (t.id === id ? { ...t, ...patch } : t)))
@@ -300,6 +408,12 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
       freeAuditSubmissions,
       quizSubmissions,
       templates,
+      skills,
+      services,
+      professionals,
+      serviceRequests,
+      reviews,
+      payments,
       addProspect,
       updateProspect,
       deleteProspect,
@@ -319,6 +433,14 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
       addFreeAuditSubmission,
       addQuizSubmission,
       markQuizConverted,
+      addSkill,
+      addService,
+      addProfessional,
+      updateProfessional,
+      addServiceRequest,
+      updateServiceRequest,
+      addReview,
+      addPayment,
       updateTemplate,
       resetDemoData,
     }),
@@ -334,6 +456,12 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
       freeAuditSubmissions,
       quizSubmissions,
       templates,
+      skills,
+      services,
+      professionals,
+      serviceRequests,
+      reviews,
+      payments,
       addProspect,
       updateProspect,
       deleteProspect,
@@ -353,6 +481,14 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
       addFreeAuditSubmission,
       addQuizSubmission,
       markQuizConverted,
+      addSkill,
+      addService,
+      addProfessional,
+      updateProfessional,
+      addServiceRequest,
+      updateServiceRequest,
+      addReview,
+      addPayment,
       updateTemplate,
       resetDemoData,
     ],
