@@ -16,14 +16,20 @@ import {
   UtensilsCrossed,
   Heart,
   Film,
-  Aperture,
-  Image as ImageIcon,
 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import { SEED_PRICING_PACKAGES } from '@/data/seedData'
 import { VERTICAL_STRATEGIES } from '@/data/verticals'
 import { cn } from '@/lib/utils'
+import agritaCountryside from '@/assets/team/agrita-countryside.jpg'
+import agritaRigaFacade from '@/assets/team/agrita-riga-facade.jpg'
+import agritaVinetaRiga from '@/assets/team/agrita-vineta-riga.jpg'
+
+const TEAM = [
+  { name: 'Agrita', role: 'Model & content creator', bio: 'The face and eye behind the content — on both sides of the camera, from concept to the final shot.' },
+  { name: 'Vin', role: 'Content producer', bio: 'Keeps every shoot and every client timeline running — production, logistics, delivery.' },
+]
 
 const SERIES = [
   'var(--color-series-1)',
@@ -71,12 +77,11 @@ const FAQ = [
   { q: 'Can we cancel a monthly package?', a: 'Yes, our packages run month-to-month with a short notice period — no long lock-in contracts.' },
 ]
 
-/** Decorative, truly-3D content-tile scene for the hero: a perspective
- *  container whose group tilts toward the cursor (real parallax, not a CSS
- *  trick), while each tile continuously floats at its own depth (translateZ)
- *  via the float-1..float-5 keyframes in index.css. Abstract gradient tiles
- *  with content-type icons — never real photos, since we don't have real
- *  client work to show yet and won't fake it. */
+/** A truly-3D content-tile scene for the hero: a perspective container whose
+ *  group tilts toward the cursor (real parallax, not a CSS trick), while each
+ *  tile continuously floats at its own depth (translateZ) via the
+ *  float-1..float-5 keyframes in index.css. Mixes real photos of the team
+ *  with small gradient content-type icon accents. */
 function HeroMosaic() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [tilt, setTilt] = useState({ x: 0, y: 0 })
@@ -93,12 +98,12 @@ function HeroMosaic() {
     setTilt({ x: 0, y: 0 })
   }
 
-  const tiles: { icon: typeof Camera; color: string; floatClass: string; size: string; x: string; y: string }[] = [
-    { icon: Camera, color: SERIES[0], floatClass: 'float-3', size: 'h-28 w-28 sm:h-36 sm:w-36', x: '-translate-x-[6.5rem] sm:-translate-x-32', y: '' },
+  const tiles: { photo?: string; icon?: typeof Camera; color: string; floatClass: string; size: string; x: string; y: string }[] = [
+    { photo: agritaRigaFacade, color: SERIES[0], floatClass: 'float-3', size: 'h-32 w-32 sm:h-40 sm:w-40', x: '-translate-x-[6.5rem] sm:-translate-x-36', y: '' },
     { icon: Film, color: SERIES[1], floatClass: 'float-2', size: 'h-16 w-16 sm:h-20 sm:w-20', x: '-translate-x-[2.5rem] sm:-translate-x-12', y: '-translate-y-16 sm:-translate-y-20' },
-    { icon: Aperture, color: SERIES[2], floatClass: 'float-1', size: 'h-24 w-24 sm:h-28 sm:w-28', x: '', y: '' },
-    { icon: ImageIcon, color: SERIES[4], floatClass: 'float-4', size: 'h-16 w-16 sm:h-20 sm:w-20', x: 'translate-x-[2.5rem] sm:translate-x-12', y: '-translate-y-12 sm:-translate-y-16' },
-    { icon: Video, color: SERIES[6], floatClass: 'float-5', size: 'h-20 w-20 sm:h-24 sm:w-24', x: 'translate-x-[6.5rem] sm:translate-x-32', y: 'translate-y-4' },
+    { photo: agritaCountryside, color: SERIES[2], floatClass: 'float-1', size: 'h-28 w-28 sm:h-32 sm:w-32', x: '', y: '' },
+    { icon: Camera, color: SERIES[4], floatClass: 'float-4', size: 'h-16 w-16 sm:h-20 sm:w-20', x: 'translate-x-[2.5rem] sm:translate-x-12', y: '-translate-y-12 sm:-translate-y-16' },
+    { photo: agritaVinetaRiga, color: SERIES[6], floatClass: 'float-5', size: 'h-24 w-24 sm:h-28 sm:w-28', x: 'translate-x-[6.5rem] sm:translate-x-36', y: 'translate-y-4' },
   ]
 
   return (
@@ -124,12 +129,20 @@ function HeroMosaic() {
             className={cn('absolute inset-0 flex items-center justify-center [transform-style:preserve-3d]', t.x, t.y)}
           >
             <div className={cn('flex shrink-0 items-center justify-center rounded-3xl [transform-style:preserve-3d]', t.floatClass, t.size)}>
-              <div
-                className="flex h-full w-full items-center justify-center rounded-3xl border border-white/25 shadow-[0_20px_45px_-12px_rgba(11,11,11,0.45)]"
-                style={{ background: `linear-gradient(135deg, ${t.color}, color-mix(in oklab, ${t.color} 55%, black))` }}
-              >
-                <t.icon size={i === 0 ? 40 : 26} className="text-white/95" strokeWidth={1.6} />
-              </div>
+              {t.photo ? (
+                <img
+                  src={t.photo}
+                  alt=""
+                  className="h-full w-full rounded-3xl border border-white/40 object-cover shadow-[0_20px_45px_-12px_rgba(11,11,11,0.45)]"
+                />
+              ) : (
+                <div
+                  className="flex h-full w-full items-center justify-center rounded-3xl border border-white/25 shadow-[0_20px_45px_-12px_rgba(11,11,11,0.45)]"
+                  style={{ background: `linear-gradient(135deg, ${t.color}, color-mix(in oklab, ${t.color} 55%, black))` }}
+                >
+                  {t.icon && <t.icon size={26} className="text-white/95" strokeWidth={1.6} />}
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -219,6 +232,37 @@ export default function Landing() {
                 <ind.icon size={13} className="text-[var(--color-brand)]" /> {ind.label}
               </span>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MEET THE CREATORS */}
+      <section id="team" className="border-t border-[var(--color-hairline)] py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <SectionKicker>Behind the camera</SectionKicker>
+          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Meet the creators</h2>
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
+            <div className="relative overflow-hidden rounded-3xl shadow-[0_24px_60px_-20px_rgba(11,11,11,0.3)]">
+              <img src={agritaVinetaRiga} alt="Agrita and Vin, the two people behind Agrita&Vin Content Co., in Riga" className="aspect-[4/5] w-full object-cover" />
+            </div>
+            <div className="space-y-6">
+              {TEAM.map((person, i) => (
+                <div key={person.name} className="flex gap-4">
+                  <div
+                    className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
+                    style={{ background: `linear-gradient(135deg, ${SERIES[i * 3]}, color-mix(in oklab, ${SERIES[i * 3]} 60%, black))` }}
+                  >
+                    {person.name[0]}
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-[var(--color-ink)]">
+                      {person.name} <span className="font-normal text-[var(--color-ink-muted)]">— {person.role}</span>
+                    </p>
+                    <p className="mt-1 text-sm text-[var(--color-ink-secondary)]">{person.bio}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
