@@ -30,6 +30,28 @@ Every screen in the app maps to a stage of this workflow:
 
 Dashboard and Analytics roll all of the above into one view for a general manager.
 
+## The marketplace workflow (one-time jobs, additive)
+
+Alongside the recurring workflow above, a second workflow handles one-time jobs fulfilled by
+independent professionals instead of the in-house team — the "Uber/Airbnb" side of the business:
+
+```
+PROFESSIONAL SOURCING → SERVICE REQUEST INTAKE → MATCHING → FULFILLMENT → REVIEW / PAYMENT
+```
+
+| Stage | Screen(s) |
+|---|---|
+| Professional sourcing | Professionals |
+| Service request intake | Service Requests |
+| Matching | Service Requests ("Match professional") |
+| Fulfillment | Service Requests board (In Progress → Completed) |
+| Review / payment | `Review` / `Payment` records (data model only — no dedicated screen yet) |
+
+This is additive to, not a replacement for, the recurring workflow above: a company can be a
+one-time `ServiceRequest` today and a recurring `Client` later, or vice versa. See
+`docs/data-model.md` for the `Skill`/`Service`/`Professional`/`ServiceRequest`/`Review`/`Payment`
+types and the Phase 1 architecture plan referenced in the README.
+
 ## The twelve questions
 
 Every feature in this app answers one of:
