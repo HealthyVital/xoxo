@@ -12,6 +12,7 @@ import {
   Wallet,
   TrendingUp,
   Percent,
+  Target,
 } from 'lucide-react'
 import { useDataStore } from '@/store/DataStoreContext'
 import { computeCrmStats } from '@/lib/metrics'
@@ -91,12 +92,43 @@ export default function Dashboard() {
     return { verified, partiallyVerified, needsVerification, withEmail, withPhone }
   }, [realProspects])
 
+  const CLIENT_GOAL = 500
+  const activeClientCount = useMemo(() => realClients.filter((c) => c.status === 'Active').length, [realClients])
+  const goalProgressPct = Math.min((activeClientCount / CLIENT_GOAL) * 100, 100)
+
   return (
     <div>
       <PageHeader
         title="Dashboard"
         description="Your commercial pipeline and content production at a glance — real data only."
       />
+
+      <Card className="mb-6">
+        <CardHeader>
+          <div className="flex items-center gap-2">
+            <Target size={16} className="text-[var(--color-brand)]" />
+            <div>
+              <CardTitle>Path to 500 stable monthly clients</CardTitle>
+              <CardDescription>Active recurring clients vs. the long-term goal</CardDescription>
+            </div>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <div className="mb-2 flex items-end justify-between">
+            <p className="tabular-nums text-3xl font-semibold text-[var(--color-ink)]">
+              {activeClientCount} <span className="text-base font-normal text-[var(--color-ink-muted)]">/ {CLIENT_GOAL}</span>
+            </p>
+            <p className="tabular-nums text-sm font-medium text-[var(--color-ink-secondary)]">{formatPercent(goalProgressPct)}</p>
+          </div>
+          <div className="h-2 w-full overflow-hidden rounded-full bg-[var(--color-hairline)]">
+            <div className="h-full rounded-full bg-[var(--color-brand)] transition-all" style={{ width: `${goalProgressPct}%` }} />
+          </div>
+          <p className="mt-3 text-xs text-[var(--color-ink-muted)]">
+            {stats.totalProspects} prospects in the database, {stats.won} won so far. There isn't enough monthly
+            history yet to project a real pace — that becomes possible once a few months of won/lost data build up.
+          </p>
+        </CardContent>
+      </Card>
 
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-6">
         <StatCard label="Total prospects" value={formatNumber(stats.totalProspects)} icon={Users} />
