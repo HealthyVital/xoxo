@@ -22,13 +22,13 @@ import { Card } from '@/components/ui/Card'
 import { SEED_PRICING_PACKAGES } from '@/data/seedData'
 import { VERTICAL_STRATEGIES } from '@/data/verticals'
 import { cn } from '@/lib/utils'
-import agritaCountryside from '@/assets/team/agrita-countryside.jpg'
-import agritaRigaFacade from '@/assets/team/agrita-riga-facade.jpg'
-import agritaVinetaRiga from '@/assets/team/agrita-vineta-riga.jpg'
+import vinFlowerTunnel from '@/assets/team/vin-flower-tunnel.jpg'
+import vinForestRock from '@/assets/team/vin-forest-rock.jpg'
+import vinBoardwalk from '@/assets/team/vin-boardwalk.jpg'
 
 const TEAM = [
-  { name: 'Agrita', role: 'Model & content creator', bio: 'The face and eye behind the content — on both sides of the camera, from concept to the final shot.' },
-  { name: 'Vin', role: 'Content producer', bio: 'Keeps every shoot and every client timeline running — production, logistics, delivery.' },
+  { photo: undefined as string | undefined, name: 'Agrita', role: 'Model & content creator', bio: 'The face and eye behind the content — on both sides of the camera, from concept to the final shot.' },
+  { photo: vinFlowerTunnel as string | undefined, name: 'Vin', role: 'Content producer', bio: 'Keeps every shoot and every client timeline running — production, logistics, delivery.' },
 ]
 
 const SERIES = [
@@ -99,11 +99,11 @@ function HeroMosaic() {
   }
 
   const tiles: { photo?: string; icon?: typeof Camera; color: string; floatClass: string; size: string; x: string; y: string }[] = [
-    { photo: agritaRigaFacade, color: SERIES[0], floatClass: 'float-3', size: 'h-32 w-32 sm:h-40 sm:w-40', x: '-translate-x-[6.5rem] sm:-translate-x-36', y: '' },
+    { photo: vinFlowerTunnel, color: SERIES[0], floatClass: 'float-3', size: 'h-32 w-32 sm:h-40 sm:w-40', x: '-translate-x-[6.5rem] sm:-translate-x-36', y: '' },
     { icon: Film, color: SERIES[1], floatClass: 'float-2', size: 'h-16 w-16 sm:h-20 sm:w-20', x: '-translate-x-[2.5rem] sm:-translate-x-12', y: '-translate-y-16 sm:-translate-y-20' },
-    { photo: agritaCountryside, color: SERIES[2], floatClass: 'float-1', size: 'h-28 w-28 sm:h-32 sm:w-32', x: '', y: '' },
+    { photo: vinForestRock, color: SERIES[2], floatClass: 'float-1', size: 'h-28 w-28 sm:h-32 sm:w-32', x: '', y: '' },
     { icon: Camera, color: SERIES[4], floatClass: 'float-4', size: 'h-16 w-16 sm:h-20 sm:w-20', x: 'translate-x-[2.5rem] sm:translate-x-12', y: '-translate-y-12 sm:-translate-y-16' },
-    { photo: agritaVinetaRiga, color: SERIES[6], floatClass: 'float-5', size: 'h-24 w-24 sm:h-28 sm:w-28', x: 'translate-x-[6.5rem] sm:translate-x-36', y: 'translate-y-4' },
+    { photo: vinBoardwalk, color: SERIES[6], floatClass: 'float-5', size: 'h-24 w-24 sm:h-28 sm:w-28', x: 'translate-x-[6.5rem] sm:translate-x-36', y: 'translate-y-4' },
   ]
 
   return (
@@ -241,28 +241,29 @@ export default function Landing() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <SectionKicker>Behind the camera</SectionKicker>
           <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Meet the creators</h2>
-          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
-            <div className="relative overflow-hidden rounded-3xl shadow-[0_24px_60px_-20px_rgba(11,11,11,0.3)]">
-              <img src={agritaVinetaRiga} alt="Agrita and Vin, the two people behind Agrita&Vin Content Co., in Riga" className="aspect-[4/5] w-full object-cover" />
-            </div>
-            <div className="space-y-6">
-              {TEAM.map((person, i) => (
-                <div key={person.name} className="flex gap-4">
-                  <div
-                    className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
-                    style={{ background: `linear-gradient(135deg, ${SERIES[i * 3]}, color-mix(in oklab, ${SERIES[i * 3]} 60%, black))` }}
-                  >
-                    {person.name[0]}
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-[var(--color-ink)]">
-                      {person.name} <span className="font-normal text-[var(--color-ink-muted)]">— {person.role}</span>
-                    </p>
-                    <p className="mt-1 text-sm text-[var(--color-ink-secondary)]">{person.bio}</p>
-                  </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {TEAM.map((person, i) => (
+              <Card key={person.name} className="overflow-hidden p-0">
+                <div className="aspect-[4/5] w-full bg-[var(--color-plane)]">
+                  {person.photo ? (
+                    <img src={person.photo} alt={person.name} className="h-full w-full object-cover" />
+                  ) : (
+                    <div
+                      className="flex h-full w-full items-center justify-center text-5xl font-semibold text-white"
+                      style={{ background: `linear-gradient(135deg, ${SERIES[i * 3]}, color-mix(in oklab, ${SERIES[i * 3]} 60%, black))` }}
+                    >
+                      {person.name[0]}
+                    </div>
+                  )}
                 </div>
-              ))}
-            </div>
+                <div className="p-5">
+                  <p className="text-sm font-semibold text-[var(--color-ink)]">
+                    {person.name} <span className="font-normal text-[var(--color-ink-muted)]">— {person.role}</span>
+                  </p>
+                  <p className="mt-1 text-sm text-[var(--color-ink-secondary)]">{person.bio}</p>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
