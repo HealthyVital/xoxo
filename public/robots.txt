@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /app/
+
+Sitemap: https://healthyvital.github.io/xoxo/sitemap.xml
