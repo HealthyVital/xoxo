@@ -27,6 +27,10 @@ import { WhatsAppFab } from '@/components/landing/WhatsAppFab'
 import vinFlowerTunnel from '@/assets/team/vin-flower-tunnel.jpg'
 import vinForestRock from '@/assets/team/vin-forest-rock.jpg'
 import vinBoardwalk from '@/assets/team/vin-boardwalk.jpg'
+import reel1 from '@/assets/reels/reel-1.mp4'
+import reel1Poster from '@/assets/reels/reel-1-poster.jpg'
+import reel2 from '@/assets/reels/reel-2.mp4'
+import reel2Poster from '@/assets/reels/reel-2-poster.jpg'
 
 const TEAM = [
   { photo: undefined as string | undefined, name: 'Agrita', role: 'Model & content creator', bio: 'The face and eye behind the content — on both sides of the camera, from concept to the final shot.' },
@@ -53,6 +57,11 @@ const SERVICES = [
   { icon: Clapperboard, title: 'Reels & TikTok content', desc: 'Platform-native content, not repurposed ads.' },
   { icon: Sparkles, title: 'UGC-style content', desc: 'Authentic-feeling content that performs like organic.' },
   { icon: Sparkle, title: 'Monthly content packages', desc: 'A steady content engine, not a one-off shoot.' },
+]
+
+const REELS = [
+  { src: reel1, poster: reel1Poster },
+  { src: reel2, poster: reel2Poster },
 ]
 
 const INDUSTRIES = [
@@ -173,6 +182,7 @@ export default function Landing() {
             <span className="text-sm font-semibold">Agrita&Vin Content Co.</span>
           </div>
           <nav className="hidden items-center gap-6 text-sm text-[var(--color-ink-secondary)] md:flex">
+            <a href="#reels" className="hover:text-[var(--color-ink)]">Reels</a>
             <a href="#services" className="hover:text-[var(--color-ink)]">Services</a>
             <a href="#industries" className="hover:text-[var(--color-ink)]">Industries</a>
             <a href="#how-it-works" className="hover:text-[var(--color-ink)]">How it works</a>
@@ -222,7 +232,7 @@ export default function Landing() {
                 Get a Free Content Audit <ArrowRight size={16} />
               </Button>
             </Link>
-            <a href="#services" onClick={() => trackEvent('cta_click', { cta: 'hero_see_work' })}>
+            <a href="#reels" onClick={() => trackEvent('cta_click', { cta: 'hero_see_work' })}>
               <Button size="lg" variant="outline">
                 See Our Work
               </Button>
@@ -243,6 +253,41 @@ export default function Landing() {
               <span key={ind.label} className="inline-flex items-center gap-1.5">
                 <ind.icon size={13} className="text-[var(--color-brand)]" /> {ind.label}
               </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* REELS — real work, not stock */}
+      <section id="reels" className="border-t border-[var(--color-hairline)] py-20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <SectionKicker>Real work, not stock</SectionKicker>
+          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">See it in motion</h2>
+          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
+            Short-form reels, shot and edited by our own team — weddings, events and everyday business
+            moments, the same format we produce for clients every month.
+          </p>
+          <div className="mx-auto grid max-w-sm grid-cols-2 gap-5 sm:max-w-xl sm:gap-8">
+            {REELS.map((r, i) => (
+              <div
+                key={r.src}
+                className="group relative aspect-[9/16] overflow-hidden rounded-2xl shadow-xl ring-1 ring-[var(--color-hairline)] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+              >
+                <video
+                  src={r.src}
+                  poster={r.poster}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                  className="h-full w-full object-cover"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
+                <span className="pointer-events-none absolute top-3 left-3 inline-flex items-center gap-1 rounded-full bg-black/40 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">
+                  <Sparkles size={10} /> Reel {i + 1}
+                </span>
+              </div>
             ))}
           </div>
         </div>
