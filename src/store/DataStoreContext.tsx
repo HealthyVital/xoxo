@@ -22,6 +22,7 @@ import type {
   CalendarItem,
   Campaign,
   Client,
+  ClientMetricSnapshot,
   CommunicationLogEntry,
   FreeAuditSubmission,
   OutreachTemplate,
@@ -42,6 +43,10 @@ interface DataStoreValue {
   prospects: Prospect[]
   communications: CommunicationLogEntry[]
   clients: Client[]
+  /** Our OWN monthly content-ops numbers (Estrategia Ejemplo) — deliberately
+   *  separate from `clients` so running our own Partner-tier operation on
+   *  ourselves never counts toward, or pollutes, real client/MRR metrics. */
+  ownBrandSnapshots: ClientMetricSnapshot[]
   campaigns: Campaign[]
   calendarItems: CalendarItem[]
   pilotProposals: PilotProposal[]
@@ -101,6 +106,9 @@ interface DataStoreValue {
 
   updateTemplate: (id: string, patch: Partial<OutreachTemplate>) => void
 
+  /** Upserts by period — logging the same month twice edits it, never duplicates. */
+  addOwnBrandSnapshot: (s: ClientMetricSnapshot) => void
+
   resetDemoData: () => void
 }
 
@@ -128,6 +136,7 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
     SEED_COMMUNICATIONS,
   )
   const [clients, setClients] = usePersistedState<Client[]>('clients', SEED_CLIENTS)
+  const [ownBrandSnapshots, setOwnBrandSnapshots] = usePersistedState<ClientMetricSnapshot[]>('ownBrandSnapshots', [])
   const [campaigns, setCampaigns] = usePersistedState<Campaign[]>('campaigns', SEED_CAMPAIGNS)
   const [calendarItems, setCalendarItems] = usePersistedState<CalendarItem[]>(
     'calendarItems',
@@ -208,6 +217,13 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
       setClients((prev) => prev.map((c) => (c.id === id ? { ...c, ...patch } : c)))
     },
     [setClients],
+  )
+
+  const addOwnBrandSnapshot = useCallback<DataStoreValue['addOwnBrandSnapshot']>(
+    (snapshot) => {
+      setOwnBrandSnapshots((prev) => [...prev.filter((s) => s.period !== snapshot.period), snapshot].sort((a, b) => a.period.localeCompare(b.period)))
+    },
+    [setOwnBrandSnapshots],
   )
 
   const addCampaign = useCallback<DataStoreValue['addCampaign']>(
@@ -400,6 +416,7 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
       prospects,
       communications,
       clients,
+      ownBrandSnapshots,
       campaigns,
       calendarItems,
       pilotProposals,
@@ -442,12 +459,14 @@ export function DataStoreProvider({ children }: { children: ReactNode }) {
       addReview,
       addPayment,
       updateTemplate,
+      addOwnBrandSnapshot,
       resetDemoData,
     }),
     [
       prospects,
       communications,
       clients,
+      ownBrandSnapshots,
       campaigns,
       calendarItems,
       pilotProposals,

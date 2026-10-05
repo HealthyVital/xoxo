@@ -22,6 +22,7 @@ import {
   LogOut,
   Briefcase,
   ClipboardCheck,
+  Rocket,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useAuthEmail, logoutTeamMember } from '@/components/layout/AuthGate'
@@ -36,6 +37,7 @@ const NAV = [
   { to: '/app/outreach', label: 'Outreach', icon: Send },
   { to: '/app/content-studio', label: 'Content Studio', icon: Clapperboard },
   { to: '/app/verticals', label: 'Verticals', icon: Layers },
+  { to: '/app/strategy-example', label: 'Estrategia Ejemplo', icon: Rocket },
   { to: '/app/free-pilot', label: 'Free Pilot', icon: Gift },
   { to: '/app/proposals', label: 'Proposals', icon: FileText },
   { to: '/app/clients', label: 'Clients', icon: Building2 },

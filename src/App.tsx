@@ -16,6 +16,7 @@ const ServiceRequests = lazy(() => import('@/pages/ServiceRequests'))
 const Outreach = lazy(() => import('@/pages/Outreach'))
 const ContentStudio = lazy(() => import('@/pages/ContentStudio'))
 const Verticals = lazy(() => import('@/pages/Verticals'))
+const StrategyExample = lazy(() => import('@/pages/StrategyExample'))
 const FreePilot = lazy(() => import('@/pages/FreePilot'))
 const Proposals = lazy(() => import('@/pages/Proposals'))
 const Clients = lazy(() => import('@/pages/Clients'))
@@ -61,6 +62,7 @@ export default function App() {
               <Route path="outreach" element={<Outreach />} />
               <Route path="content-studio" element={<ContentStudio />} />
               <Route path="verticals" element={<Verticals />} />
+              <Route path="strategy-example" element={<StrategyExample />} />
               <Route path="free-pilot" element={<FreePilot />} />
               <Route path="proposals" element={<Proposals />} />
               <Route path="clients" element={<Clients />} />
