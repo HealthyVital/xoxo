@@ -32,6 +32,8 @@ import reel1 from '@/assets/reels/reel-1.mp4'
 import reel1Poster from '@/assets/reels/reel-1-poster.jpg'
 import reel2 from '@/assets/reels/reel-2.mp4'
 import reel2Poster from '@/assets/reels/reel-2-poster.jpg'
+import reel3 from '@/assets/reels/reel-3.mp4'
+import reel3Poster from '@/assets/reels/reel-3-poster.jpg'
 import agritaPortrait from '@/assets/team/agrita.jpg'
 import vinPortrait from '@/assets/team/vin.jpg'
 import wedding1 from '@/assets/portfolio/wedding-1.jpg'
@@ -77,6 +79,7 @@ const SERVICES = [
 
 const REELS = [
   { src: reel1, poster: reel1Poster },
+  { src: reel3, poster: reel3Poster },
   { src: reel2, poster: reel2Poster },
 ]
 
@@ -341,11 +344,14 @@ export default function Landing() {
             Short-form reels, shot and edited by our own team — weddings, events and everyday business
             moments, the same format we produce for clients every month.
           </p>
-          <div className="mx-auto grid max-w-sm grid-cols-2 gap-5 sm:max-w-xl sm:gap-8">
+          <div className="mx-auto grid max-w-md grid-cols-3 items-center gap-3 sm:max-w-3xl sm:gap-8">
             {REELS.map((r, i) => (
               <div
                 key={r.src}
-                className="group relative aspect-[9/16] overflow-hidden rounded-2xl shadow-xl ring-1 ring-[var(--color-hairline)] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                className={cn(
+                  'group relative aspect-[9/16] overflow-hidden rounded-2xl shadow-xl ring-1 ring-[var(--color-hairline)] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl',
+                  i === 1 && 'z-10 scale-[1.06]',
+                )}
               >
                 <video
                   src={r.src}
