@@ -25,9 +25,9 @@ import { cn } from '@/lib/utils'
 import { trackEvent } from '@/lib/analytics'
 import { WhatsAppFab } from '@/components/landing/WhatsAppFab'
 import { buildWhatsAppLink } from '@/lib/contact'
-import vinFlowerTunnel from '@/assets/team/vin-flower-tunnel.jpg'
-import vinForestRock from '@/assets/team/vin-forest-rock.jpg'
-import vinBoardwalk from '@/assets/team/vin-boardwalk.jpg'
+import heroTulips from '@/assets/hero/hero-tulips.jpg'
+import heroMirror from '@/assets/hero/hero-mirror.jpg'
+import heroArch from '@/assets/hero/hero-arch.jpg'
 import reel1 from '@/assets/reels/reel-1.mp4'
 import reel1Poster from '@/assets/reels/reel-1-poster.jpg'
 import reel2 from '@/assets/reels/reel-2.mp4'
@@ -182,11 +182,11 @@ function HeroMosaic() {
   }
 
   const tiles: { photo?: string; icon?: typeof Camera; color: string; floatClass: string; size: string; x: string; y: string }[] = [
-    { photo: vinFlowerTunnel, color: SERIES[0], floatClass: 'float-3', size: 'h-32 w-32 sm:h-40 sm:w-40', x: '-translate-x-[6.5rem] sm:-translate-x-36', y: '' },
+    { photo: heroTulips, color: SERIES[0], floatClass: 'float-3', size: 'h-32 w-32 sm:h-40 sm:w-40', x: '-translate-x-[6.5rem] sm:-translate-x-36', y: '' },
     { icon: Film, color: SERIES[1], floatClass: 'float-2', size: 'h-16 w-16 sm:h-20 sm:w-20', x: '-translate-x-[2.5rem] sm:-translate-x-12', y: '-translate-y-16 sm:-translate-y-20' },
-    { photo: vinForestRock, color: SERIES[2], floatClass: 'float-1', size: 'h-28 w-28 sm:h-32 sm:w-32', x: '', y: '' },
+    { photo: heroMirror, color: SERIES[2], floatClass: 'float-1', size: 'h-28 w-28 sm:h-32 sm:w-32', x: '', y: '' },
     { icon: Camera, color: SERIES[4], floatClass: 'float-4', size: 'h-16 w-16 sm:h-20 sm:w-20', x: 'translate-x-[2.5rem] sm:translate-x-12', y: '-translate-y-12 sm:-translate-y-16' },
-    { photo: vinBoardwalk, color: SERIES[6], floatClass: 'float-5', size: 'h-24 w-24 sm:h-28 sm:w-28', x: 'translate-x-[6.5rem] sm:translate-x-36', y: 'translate-y-4' },
+    { photo: heroArch, color: SERIES[6], floatClass: 'float-5', size: 'h-24 w-24 sm:h-28 sm:w-28', x: 'translate-x-[6.5rem] sm:translate-x-36', y: 'translate-y-4' },
   ]
 
   return (
