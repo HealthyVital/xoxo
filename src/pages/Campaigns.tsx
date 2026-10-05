@@ -15,7 +15,7 @@ import type { Campaign, Vertical } from '@/types'
 const STATUSES: Campaign['status'][] = ['Planning', 'In Production', 'Live', 'Completed']
 
 export default function Campaigns() {
-  const { campaigns, clients, savedContentIdeas, addCampaign, updateSavedContentIdea } = useDataStore()
+  const { campaigns, clients, savedContentIdeas, addCampaign, updateCampaign, updateSavedContentIdea } = useDataStore()
   const [statusFilter, setStatusFilter] = useState<Campaign['status'] | 'all'>('all')
   const [showNew, setShowNew] = useState(false)
 
@@ -60,7 +60,17 @@ export default function Campaigns() {
                 ))}
               </div>
               <div className="flex items-center justify-between text-xs text-[var(--color-ink-muted)]">
-                <Badge tone="brand">{c.status}</Badge>
+                <Select
+                  value={c.status}
+                  onChange={(e) => updateCampaign(c.id, { status: e.target.value as Campaign['status'] })}
+                  className="h-7 w-32 text-xs"
+                >
+                  {STATUSES.map((s) => (
+                    <option key={s} value={s}>
+                      {s}
+                    </option>
+                  ))}
+                </Select>
                 <span>{ideaCount} idea{ideaCount === 1 ? '' : 's'} attached</span>
               </div>
               <p className="mt-2 text-[11px] text-[var(--color-ink-muted)]">

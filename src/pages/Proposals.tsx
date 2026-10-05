@@ -11,8 +11,10 @@ import { SEED_PRICING_PACKAGES } from '@/data/seedData'
 import { formatDate, formatCurrencyEUR } from '@/lib/utils'
 import type { Proposal, PricingPackageId } from '@/types'
 
+const PROPOSAL_STATUSES: Proposal['status'][] = ['Draft', 'Sent', 'Won', 'Lost']
+
 export default function Proposals() {
-  const { prospects, proposals, addProposal } = useDataStore()
+  const { prospects, proposals, addProposal, updateProposal } = useDataStore()
   const [prospectId, setProspectId] = useState('')
   const [clientProblem, setClientProblem] = useState('')
   const [contentOpportunity, setContentOpportunity] = useState('')
@@ -151,7 +153,17 @@ export default function Proposals() {
                   <p className="text-xs text-[var(--color-ink-muted)]">Created {formatDate(p.createdAt)}</p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Badge tone="brand">{p.status}</Badge>
+                  <Select
+                    value={p.status}
+                    onChange={(e) => updateProposal(p.id, { status: e.target.value as Proposal['status'] })}
+                    className="h-8 w-28 text-xs"
+                  >
+                    {PROPOSAL_STATUSES.map((s) => (
+                      <option key={s} value={s}>
+                        {s}
+                      </option>
+                    ))}
+                  </Select>
                   <Button size="sm" variant="outline" onClick={() => setViewing(p)}>
                     View
                   </Button>
