@@ -38,13 +38,19 @@ import wedding2 from '@/assets/portfolio/wedding-2.jpg'
 import wedding3 from '@/assets/portfolio/wedding-3.jpg'
 import wedding4 from '@/assets/portfolio/wedding-4.jpg'
 import wedding5 from '@/assets/portfolio/wedding-5.jpg'
+import wedding6 from '@/assets/portfolio/wedding-6.jpg'
+import wedding7 from '@/assets/portfolio/wedding-7.jpg'
+import lifestyle1 from '@/assets/portfolio/lifestyle-1.jpg'
+import lifestyle2 from '@/assets/portfolio/lifestyle-2.jpg'
+import lifestyle3 from '@/assets/portfolio/lifestyle-3.jpg'
 
 const TEAM = [
   { photo: agritaPortrait as string | undefined, name: 'Agrita', role: 'Model & content creator', bio: 'The face and eye behind the content — on both sides of the camera, from concept to the final shot.' },
   { photo: vinFlowerTunnel as string | undefined, name: 'Vin', role: 'Content producer', bio: 'Keeps every shoot and every client timeline running — production, logistics, delivery.' },
 ]
 
-const WEDDING_GALLERY = [wedding1, wedding2, wedding3, wedding4, wedding5]
+const WEDDING_GALLERY = [wedding1, wedding2, wedding3, wedding4, wedding5, wedding6, wedding7]
+const LIFESTYLE_GALLERY = [lifestyle1, lifestyle2, lifestyle3]
 
 const SERIES = [
   'var(--color-series-1)',
@@ -422,6 +428,35 @@ export default function Landing() {
                   <ind.icon size={20} />
                 </div>
                 <p className="text-xs font-medium text-[var(--color-ink)]">{ind.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TRAVEL & LIFESTYLE SAMPLE CONTENT */}
+      <section className="border-t border-[var(--color-hairline)] py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <SectionKicker>Travel &amp; lifestyle</SectionKicker>
+          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">
+            The same eye, for travel &amp; lifestyle content
+          </h2>
+          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
+            The destination, hospitality and lifestyle content style we bring to travel and tour
+            operator clients.
+          </p>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {LIFESTYLE_GALLERY.map((src) => (
+              <div
+                key={src}
+                className="group aspect-[4/5] overflow-hidden rounded-2xl shadow-md ring-1 ring-[var(--color-hairline)] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
+                <img
+                  src={src}
+                  alt="Travel & lifestyle content sample"
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
             ))}
           </div>

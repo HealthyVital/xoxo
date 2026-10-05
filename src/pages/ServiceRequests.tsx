@@ -8,7 +8,7 @@ import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import { ServiceRequestFormModal } from '@/components/service-requests/ServiceRequestFormModal'
 import { cn, formatCurrencyEUR } from '@/lib/utils'
-import type { ServiceRequest, ServiceRequestStatus } from '@/types'
+import type { Professional, ServiceRequest, ServiceRequestStatus } from '@/types'
 
 const STAGES: ServiceRequestStatus[] = ['New', 'Matched', 'In Progress', 'Completed', 'Cancelled']
 
@@ -131,13 +131,25 @@ function MatchProfessionalModal({
   onMatch: (professionalId: string) => void
 }) {
   const { professionals } = useDataStore()
-  const candidates = professionals.filter(
-    (p) => p.serviceIds.includes(request.serviceId) && p.city === request.city,
-  )
-  const fallback = professionals.filter(
-    (p) => p.serviceIds.includes(request.serviceId) && p.city !== request.city,
-  )
-  const [selected, setSelected] = useState('')
+  // Best match first: available beats booked/unavailable, then higher rating,
+  // then more reviews — so the auto-suggested pick below is a real
+  // recommendation, not just whoever happens to be first in the list.
+  const byRank = (a: Professional, b: Professional) => {
+    const availRank = (p: Professional) => (p.availability === 'Available' ? 0 : p.availability === 'Booked' ? 1 : 2)
+    if (availRank(a) !== availRank(b)) return availRank(a) - availRank(b)
+    if ((b.ratingAvg ?? 0) !== (a.ratingAvg ?? 0)) return (b.ratingAvg ?? 0) - (a.ratingAvg ?? 0)
+    return b.reviewCount - a.reviewCount
+  }
+  const candidates = professionals
+    .filter((p) => p.serviceIds.includes(request.serviceId) && p.city === request.city)
+    .sort(byRank)
+  const fallback = professionals
+    .filter((p) => p.serviceIds.includes(request.serviceId) && p.city !== request.city)
+    .sort(byRank)
+  // Auto-suggest the top-ranked candidate (same-city preferred) so matching
+  // is a one-click confirm by default — the team can still override via the
+  // dropdown before confirming.
+  const [selected, setSelected] = useState(() => candidates[0]?.id ?? fallback[0]?.id ?? '')
 
   return (
     <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/40 p-4 py-10">
@@ -155,18 +167,22 @@ function MatchProfessionalModal({
             <option value="">Select a professional…</option>
             {candidates.length > 0 && (
               <optgroup label={`In ${request.city}`}>
-                {candidates.map((p) => (
+                {candidates.map((p, i) => (
                   <option key={p.id} value={p.id}>
-                    {p.name} ({p.availability})
+                    {i === 0 ? '★ Suggested — ' : ''}
+                    {p.name} ({p.availability}
+                    {p.ratingAvg !== undefined ? `, ${p.ratingAvg.toFixed(1)}★` : ''})
                   </option>
                 ))}
               </optgroup>
             )}
             {fallback.length > 0 && (
               <optgroup label="Other cities">
-                {fallback.map((p) => (
+                {fallback.map((p, i) => (
                   <option key={p.id} value={p.id}>
-                    {p.name} — {p.city} ({p.availability})
+                    {candidates.length === 0 && i === 0 ? '★ Suggested — ' : ''}
+                    {p.name} — {p.city} ({p.availability}
+                    {p.ratingAvg !== undefined ? `, ${p.ratingAvg.toFixed(1)}★` : ''})
                   </option>
                 ))}
               </optgroup>
