@@ -1,4 +1,4 @@
-import { useRef, useState, type MouseEvent } from 'react'
+import { useEffect, useRef, useState, type MouseEvent } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Camera,
@@ -104,6 +104,62 @@ const FAQ = [
   { q: 'Can we cancel a monthly package?', a: 'Yes, our packages run month-to-month with a short notice period — no long lock-in contracts.' },
 ]
 
+const LATVIA_BRANDS = ['Maxima', 'Drogas', 'Lidl', 'Lido', 'REWE', 'Gambas', 'VIVI', 'Origo']
+
+/** Wordmark chips orbiting the hero tiles on an ellipse. Positions are written
+ *  straight to the DOM each frame (no React re-render); chips on the front half
+ *  of the orbit sit above the tiles (z-20), the back half passes behind them. */
+function BrandOrbit() {
+  const wrapRef = useRef<HTMLDivElement>(null)
+  const chipRefs = useRef<(HTMLDivElement | null)[]>([])
+
+  useEffect(() => {
+    const n = LATVIA_BRANDS.length
+    function place(t: number) {
+      const wrap = wrapRef.current
+      if (!wrap) return
+      const rx = wrap.offsetWidth * 0.46
+      const ry = wrap.offsetHeight * 0.4
+      chipRefs.current.forEach((el, i) => {
+        if (!el) return
+        const a = t + (i / n) * Math.PI * 2
+        const depth = (Math.sin(a) + 1) / 2 // 0 = back, 1 = front
+        el.style.transform = `translate(-50%, -50%) translate(${Math.cos(a) * rx}px, ${Math.sin(a) * ry}px) scale(${0.72 + 0.38 * depth})`
+        el.style.zIndex = depth > 0.5 ? '20' : '0'
+        el.style.opacity = String(0.5 + 0.5 * depth)
+      })
+    }
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      place(0)
+      return
+    }
+    let raf = 0
+    const start = performance.now()
+    const tick = (now: number) => {
+      place(((now - start) / 1000) * 0.22)
+      raf = requestAnimationFrame(tick)
+    }
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
+  }, [])
+
+  return (
+    <div ref={wrapRef} className="pointer-events-none absolute inset-0">
+      {LATVIA_BRANDS.map((brand, i) => (
+        <div
+          key={brand}
+          ref={(el) => {
+            chipRefs.current[i] = el
+          }}
+          className="absolute top-1/2 left-1/2 rounded-2xl border border-[var(--color-hairline)] bg-white/90 px-3 py-1.5 text-sm font-bold tracking-tight whitespace-nowrap text-[var(--color-ink)] shadow-[0_10px_25px_-10px_rgba(11,11,11,0.35)] backdrop-blur sm:px-4 sm:py-2 sm:text-base"
+        >
+          {brand}
+        </div>
+      ))}
+    </div>
+  )
+}
+
 /** A truly-3D content-tile scene for the hero: a perspective container whose
  *  group tilts toward the cursor (real parallax, not a CSS trick), while each
  *  tile continuously floats at its own depth (translateZ) via the
@@ -141,8 +197,9 @@ function HeroMosaic() {
       aria-hidden
       className="relative mx-auto mt-14 h-64 max-w-2xl [perspective:1400px] sm:h-80"
     >
+      <BrandOrbit />
       <div
-        className="absolute inset-0 flex items-center justify-center transition-transform duration-200 ease-out [transform-style:preserve-3d]"
+        className="absolute inset-0 z-10 flex items-center justify-center transition-transform duration-200 ease-out [transform-style:preserve-3d]"
         style={{ transform: `rotateX(${14 - tilt.y * 22}deg) rotateY(${tilt.x * 28}deg)` }}
       >
         {tiles.map((t, i) => (
