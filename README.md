@@ -76,8 +76,11 @@ level security), which is exactly the kind of upgrade the architecture notes bel
 **None are required to run the app.** See [`.env.example`](.env.example) for placeholders covering
 every future integration listed below — they're commented out on purpose. Two are already wired up:
 
-- `VITE_INTEGRATIONS_API_URL`, used by the real Gmail/Calendar integration described below — see
-  [`INTEGRATIONS_SETUP.md`](INTEGRATIONS_SETUP.md).
+- `VITE_INTEGRATIONS_API_URL`, used by the real Gmail/Calendar integration described below, **and**
+  by the public lead-sync fix that routes real quiz/audit submissions from a visitor's own browser
+  into the team's CRM automatically (`worker`'s `/leads/*` endpoints, `src/lib/integrations.ts`,
+  `AppLayout.tsx`'s auto-sync on login) — see [`INTEGRATIONS_SETUP.md`](INTEGRATIONS_SETUP.md)
+  Step 6.
 - `VITE_GOOGLE_ANALYTICS_ID` — set this to a free GA4 Measurement ID to actually measure the public
   site: visits, which CTA people click, where they drop off in the quiz, and audit/quiz completions
   (`src/lib/analytics.ts`). Without it, `trackEvent()` calls are silent no-ops — no script loads, no

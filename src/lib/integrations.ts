@@ -109,6 +109,70 @@ export interface CreateCalendarEventArgs {
   endIso: string
 }
 
+// ---------------------------------------------------------------------------
+// Public lead capture — closes the gap where a real visitor's quiz/audit
+// submission would otherwise only ever live in that visitor's own browser
+// (see worker/src/index.ts's comment above leadsSubmit for the full flow).
+// ---------------------------------------------------------------------------
+export type PublicLeadKind = 'quiz' | 'audit'
+
+export interface PendingLead {
+  id: string
+  kind: PublicLeadKind
+  payload: unknown
+  submittedAt: string
+}
+
+/** Fire-and-forget: the public quiz/audit must work standalone (localStorage
+ *  only) even when this fails or integrations aren't configured — this is a
+ *  progressive enhancement, never a requirement for the form to "succeed". */
+export async function submitPublicLead(kind: PublicLeadKind, payload: unknown): Promise<void> {
+  const base = getApiBaseUrl()
+  if (!base) return
+  try {
+    await fetch(`${base}/leads/submit`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ kind, payload }),
+    })
+  } catch {
+    // Network failure, Worker not deployed, etc. — the local record (already
+    // saved via addQuizSubmission/addFreeAuditSubmission) is still there.
+  }
+}
+
+/** Used only from the authenticated CRM, by a team member, to pull in real
+ *  leads submitted on the public site since anyone last synced. */
+export async function fetchPendingLeads(email: string): Promise<PendingLead[]> {
+  const base = getApiBaseUrl()
+  if (!base) return []
+  try {
+    const res = await fetch(`${base}/leads/pending?email=${encodeURIComponent(email)}`)
+    if (!res.ok) return []
+    const data = await safeJson(res)
+    return Array.isArray(data?.leads) ? (data.leads as PendingLead[]) : []
+  } catch {
+    return []
+  }
+}
+
+/** Deletes the given leads from the Worker's pending queue once they've been
+ *  merged into local data — prevents re-importing the same lead twice. */
+export async function claimLeads(email: string, ids: string[]): Promise<void> {
+  const base = getApiBaseUrl()
+  if (!base || ids.length === 0) return
+  try {
+    await fetch(`${base}/leads/claim`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, ids }),
+    })
+  } catch {
+    // Best-effort — if this fails, the lead stays in the Worker's queue and
+    // is simply re-synced (and re-deduped locally) next time.
+  }
+}
+
 export async function createCalendarEvent(
   args: CreateCalendarEventArgs,
 ): Promise<{ ok: true; eventId: string; htmlLink: string | null }> {

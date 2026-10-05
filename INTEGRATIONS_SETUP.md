@@ -170,6 +170,36 @@ autorizadas puede conectar su propia cuenta así:
 
 ---
 
+## Paso 6 — Activar la sincronización automática de leads públicos (importante)
+
+**Este paso arregla un problema serio: hasta ahora, cuando una visita real completaba el quiz o el
+audit gratis en el sitio público, esa respuesta se guardaba solo en el navegador de esa persona —
+¡nunca llegaba al CRM del equipo! Esto es porque el sitio no tiene servidor propio (todo vive en
+`localStorage`, por persona). Sin este paso, ningún lead real del quiz/audit se puede seguir.**
+
+Si ya completaste los Pasos 1-4 (el Worker ya está desplegado y `VITE_INTEGRATIONS_API_URL` ya
+está configurado), activar esto es un solo comando — no hace falta ninguna cuenta ni configuración
+nueva, porque reutiliza exactamente el mismo Worker y el mismo almacenamiento (`TOKENS` KV) que ya
+existen para Gmail/Calendar:
+
+1. Abrir una terminal en la carpeta `worker/` del repositorio (`cd worker`).
+2. Volver a desplegar el Worker para que incluya el código nuevo:
+   ```
+   npx wrangler deploy
+   ```
+3. Listo. A partir de ahora:
+   - Cuando alguien completa el quiz o el audit gratis en el sitio público, su respuesta se guarda
+     localmente (como siempre) **y además** se envía al Worker.
+   - La próxima vez que cualquier persona del equipo abra el CRM (`/app/...`), el CRM busca
+     automáticamente esos leads pendientes, los agrega a Prospects/Quiz leads, y los borra de la
+     cola del Worker — sin que nadie tenga que hacer clic en nada.
+
+Si todavía no completaste los Pasos 1-4 (no hay Worker desplegado), el quiz y el audit siguen
+funcionando exactamente igual que siempre — simplemente las respuestas seguirán quedando solo en el
+navegador de cada visitante hasta que se complete este paso.
+
+---
+
 ## Costos
 
 - **Google Cloud (modo Testing):** $0. El modo "Testing" del consentimiento OAuth es gratis y no

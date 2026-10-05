@@ -9,6 +9,7 @@ import { VERTICALS } from '@/data/verticals'
 import { computeQuizScore, buildProspectFromQuiz } from '@/lib/quiz'
 import { resolveQuizLocale, getLocalizedQuestions, getVerticalLabel, QUIZ_UI } from '@/lib/quizI18n'
 import { trackEvent } from '@/lib/analytics'
+import { submitPublicLead } from '@/lib/integrations'
 import { buildWhatsAppLink } from '@/lib/contact'
 import { WhatsAppFab } from '@/components/landing/WhatsAppFab'
 import { cn } from '@/lib/utils'
@@ -96,6 +97,23 @@ export default function Quiz() {
       source: locale === 'en' ? 'Quiz link (social post)' : `Quiz link (social post, ${locale})`,
       convertedToProspectId: prospect.id,
     })
+
+    // Best-effort: also sends this submission to the Worker's pending-leads
+    // queue so it reaches the team even if this visitor's own browser is the
+    // only place the local record above ever lives (see src/lib/integrations.ts).
+    void submitPublicLead('quiz', {
+      companyName,
+      industry,
+      contactName: contactName || undefined,
+      contactEmail: contactEmail || undefined,
+      contactPhone: contactPhone || undefined,
+      instagram: instagram || undefined,
+      answers,
+      score,
+      qualified,
+      locale,
+    })
+
     setResult({ score, qualified })
     setStage('result')
   }

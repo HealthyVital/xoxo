@@ -10,6 +10,7 @@ import { VERTICALS } from '@/data/verticals'
 import { computeFreeAudit } from '@/lib/freeAudit'
 import { SEED_PRICING_PACKAGES } from '@/data/seedData'
 import { trackEvent } from '@/lib/analytics'
+import { submitPublicLead } from '@/lib/integrations'
 import { buildWhatsAppLink } from '@/lib/contact'
 import { WhatsAppFab } from '@/components/landing/WhatsAppFab'
 import type { FreeAuditResult, Vertical } from '@/types'
@@ -35,6 +36,10 @@ export default function FreeAudit() {
     const submission = { company, website, instagram, industry, mainChallenge, mainGoal }
     addFreeAuditSubmission(submission)
     trackEvent('audit_submit', { industry: industry || 'unspecified' })
+    // Best-effort: see src/lib/integrations.ts — ensures this reaches the
+    // team even though the local record above only lives in this visitor's
+    // own browser.
+    void submitPublicLead('audit', submission)
     setResult(computeFreeAudit(submission))
   }
 

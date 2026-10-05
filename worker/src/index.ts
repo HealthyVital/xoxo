@@ -21,6 +21,7 @@ interface KVNamespace {
   get(key: string): Promise<string | null>
   put(key: string, value: string): Promise<void>
   delete(key: string): Promise<void>
+  list(options?: { prefix?: string }): Promise<{ keys: { name: string }[] }>
 }
 
 interface Env {
@@ -501,6 +502,85 @@ async function calendarCreateEvent(request: Request, env: Env, origin: string | 
 }
 
 // ---------------------------------------------------------------------------
+// Public lead capture — POST /leads/submit  GET /leads/pending  POST /leads/claim
+//
+// The CRM itself has no server — it's a static site with localStorage
+// persistence. That's fine for the authenticated team's own data, but it
+// means a REAL visitor's quiz/audit submission on the public site would
+// otherwise be trapped in that visitor's own browser, never reaching the
+// business. These three endpoints close that gap using the same TOKENS KV
+// namespace already bound for OAuth tokens (prefixed "lead:" so the two
+// never collide) — no new Cloudflare resource to provision.
+//
+// Flow: public page POSTs the submission (fire-and-forget, no auth — anyone
+// can submit, same as the public quiz itself) -> stored in KV -> next time
+// any team member opens the authenticated CRM, it GETs pending leads, merges
+// them into local Prospects/QuizSubmissions/FreeAuditSubmissions, then POSTs
+// their ids back to /leads/claim to delete them from KV (claim-and-remove,
+// so two team members opening the CRM around the same time don't double-
+// import the same lead).
+// ---------------------------------------------------------------------------
+type LeadKind = 'quiz' | 'audit'
+
+interface LeadRecord {
+  id: string
+  kind: LeadKind
+  payload: unknown
+  submittedAt: string
+}
+
+const MAX_LEAD_PAYLOAD_CHARS = 20000
+
+async function leadsSubmit(request: Request, env: Env, origin: string | null): Promise<Response> {
+  const body = await readJsonBody<{ kind?: string; payload?: unknown }>(request)
+  if (!body || (body.kind !== 'quiz' && body.kind !== 'audit') || body.payload === undefined) {
+    return jsonResponse({ ok: false, error: 'kind ("quiz" | "audit") and payload are required.' }, 400, origin)
+  }
+  const serialized = JSON.stringify(body.payload)
+  if (serialized.length > MAX_LEAD_PAYLOAD_CHARS) {
+    return jsonResponse({ ok: false, error: 'Payload too large.' }, 413, origin)
+  }
+  const record: LeadRecord = {
+    id: crypto.randomUUID(),
+    kind: body.kind,
+    payload: body.payload,
+    submittedAt: new Date().toISOString(),
+  }
+  await env.TOKENS.put(`lead:${record.id}`, JSON.stringify(record))
+  return jsonResponse({ ok: true }, 200, origin)
+}
+
+async function leadsPending(url: URL, env: Env, origin: string | null): Promise<Response> {
+  const email = normalizeEmail(url.searchParams.get('email') ?? '')
+  if (!email || !isAllowedTeamEmail(email)) {
+    return jsonResponse({ ok: false, error: "This email isn't on the team access list." }, 403, origin)
+  }
+  const { keys } = await env.TOKENS.list({ prefix: 'lead:' })
+  const records: LeadRecord[] = []
+  for (const key of keys) {
+    const raw = await env.TOKENS.get(key.name)
+    if (!raw) continue
+    try {
+      records.push(JSON.parse(raw) as LeadRecord)
+    } catch {
+      // Skip a corrupted entry rather than failing the whole sync.
+    }
+  }
+  return jsonResponse({ ok: true, leads: records }, 200, origin)
+}
+
+async function leadsClaim(request: Request, env: Env, origin: string | null): Promise<Response> {
+  const body = await readJsonBody<{ email?: string; ids?: string[] }>(request)
+  const email = normalizeEmail(body?.email ?? '')
+  if (!email || !isAllowedTeamEmail(email)) {
+    return jsonResponse({ ok: false, error: "This email isn't on the team access list." }, 403, origin)
+  }
+  const ids = Array.isArray(body?.ids) ? body.ids : []
+  await Promise.all(ids.filter((id) => typeof id === 'string').map((id) => env.TOKENS.delete(`lead:${id}`)))
+  return jsonResponse({ ok: true }, 200, origin)
+}
+
+// ---------------------------------------------------------------------------
 // Entry point
 // ---------------------------------------------------------------------------
 export default {
@@ -525,6 +605,12 @@ export default {
           return await gmailSend(request, env, origin)
         case 'POST /calendar/create-event':
           return await calendarCreateEvent(request, env, origin)
+        case 'POST /leads/submit':
+          return await leadsSubmit(request, env, origin)
+        case 'GET /leads/pending':
+          return await leadsPending(url, env, origin)
+        case 'POST /leads/claim':
+          return await leadsClaim(request, env, origin)
         default:
           return jsonResponse({ ok: false, error: 'Not found' }, 404, origin)
       }
