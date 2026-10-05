@@ -16,7 +16,7 @@ export function WhatsAppFab({
       target="_blank"
       rel="noreferrer"
       onClick={() => trackEvent('cta_click', { cta: 'whatsapp_fab', source })}
-      className="fixed right-5 bottom-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition-transform hover:scale-105"
+      className="fixed right-5 bottom-14 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition-transform hover:scale-105"
       aria-label="Chat on WhatsApp"
     >
       <MessageCircle size={26} className="text-white" />

@@ -245,7 +245,7 @@ function SectionKicker({ children }: { children: string }) {
 
 export default function Landing() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[var(--color-surface)]">
+    <div className="min-h-screen overflow-x-hidden bg-[var(--color-surface)] pb-9">
       <header className="sticky top-0 z-30 border-b border-[var(--color-hairline)] bg-[var(--color-surface)]/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <div className="flex items-center gap-2">
@@ -692,10 +692,12 @@ export default function Landing() {
         </div>
       </section>
 
-      <footer className="border-t border-[var(--color-hairline)] py-8">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 text-xs text-[var(--color-ink-muted)] sm:flex-row sm:px-6">
-          <span>© {new Date().getFullYear()} Agrita&Vin Content Co. — content production MVP.</span>
-          <Link to="/app/dashboard" className="hover:text-[var(--color-ink)]">Team login</Link>
+      <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-[var(--color-hairline)] bg-[var(--color-surface)]/90 backdrop-blur">
+        <div className="mx-auto flex h-9 max-w-6xl items-center justify-between gap-3 px-4 text-[10px] text-[var(--color-ink-muted)] sm:px-6 sm:text-[11px]">
+          <span className="truncate">
+            © {new Date().getFullYear()} CreatiVibe Media Netherlands, trading as Agrita&Vin Content Co. All rights reserved.
+          </span>
+          <Link to="/app/dashboard" className="shrink-0 hover:text-[var(--color-ink)]">Team login</Link>
         </div>
       </footer>
 
