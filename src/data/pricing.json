@@ -28,6 +28,7 @@
   "oneOffServices": [
     { "id": "one-off-shoot", "name": "One-off shoot", "priceRange": "From €350", "description": "A single half-day or full-day photo/video shoot." },
     { "id": "event-coverage", "name": "Event coverage", "priceRange": "From €450", "description": "Full event photography and/or video coverage with a same-week highlight edit." },
+    { "id": "wedding-coverage", "name": "Wedding day coverage", "priceRange": "From €750", "description": "Full-day wedding photography and/or video, edited highlight reel included — booked as a single one-time package, corporate or family." },
     { "id": "product-photography", "name": "Product photography", "priceRange": "From €300", "description": "Studio or on-location product photography, e-commerce or campaign ready." },
     { "id": "corporate-photography", "name": "Corporate photography", "priceRange": "From €400", "description": "Team portraits, office/venue photography and employer-branding content." },
     { "id": "campaign-production", "name": "Campaign production", "priceRange": "Custom quote", "description": "Multi-day, multi-deliverable production for a seasonal or launch campaign." }

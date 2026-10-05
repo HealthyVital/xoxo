@@ -97,8 +97,11 @@ export const VERTICAL_STRATEGIES: Record<Vertical, VerticalStrategy> = {
   'Events & Corporate': {
     vertical: 'Events & Corporate',
     summary:
-      'Corporate and event clients need proof of professionalism and scale. Recap and employer-branding content does double duty as sales collateral for the next event.',
+      'Corporate and event clients need proof of professionalism and scale — and families planning a wedding want proof the day will be captured beautifully. Recap and highlight content does double duty as sales collateral for the next event, and as the actual memories a couple keeps forever.',
     contentIdeas: [
+      'Wedding highlights',
+      'Ceremony & reception reels',
+      'Engagement shoots',
       'Event photography',
       'Corporate portraits',
       'Behind the scenes',

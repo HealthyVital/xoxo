@@ -19,7 +19,7 @@ import {
 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
-import { SEED_PRICING_PACKAGES } from '@/data/seedData'
+import { SEED_PRICING_PACKAGES, SEED_ONE_OFF_SERVICES } from '@/data/seedData'
 import { VERTICAL_STRATEGIES } from '@/data/verticals'
 import { cn } from '@/lib/utils'
 import { trackEvent } from '@/lib/analytics'
@@ -531,6 +531,18 @@ export default function Landing() {
                     </li>
                   ))}
                 </ul>
+              </Card>
+            ))}
+          </div>
+          <p className="mt-10 mb-5 text-center text-sm font-medium text-[var(--color-ink-secondary)]">
+            Prefer a single one-time project instead of a monthly package?
+          </p>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {SEED_ONE_OFF_SERVICES.map((s) => (
+              <Card key={s.id} className={cn('p-4', s.id === 'wedding-coverage' && 'border-[var(--color-brand)]')}>
+                <p className="text-sm font-semibold text-[var(--color-ink)]">{s.name}</p>
+                <p className="mt-1 text-lg font-semibold text-[var(--color-brand)]">{s.priceRange}</p>
+                <p className="mt-1 text-xs text-[var(--color-ink-secondary)]">{s.description}</p>
               </Card>
             ))}
           </div>
