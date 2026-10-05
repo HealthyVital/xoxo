@@ -78,9 +78,11 @@ const SERVICES = [
 ]
 
 const REELS = [
-  { src: reel1, poster: reel1Poster },
-  { src: reel3, poster: reel3Poster },
-  { src: reel2, poster: reel2Poster },
+  // DOM order = mobile layout (two side by side, featured full-width below);
+  // `layout` reorders on sm+ so the featured reel sits in the middle.
+  { src: reel1, poster: reel1Poster, label: 'Reel 1', layout: 'sm:order-1' },
+  { src: reel2, poster: reel2Poster, label: 'Reel 2', layout: 'sm:order-3' },
+  { src: reel3, poster: reel3Poster, label: 'Featured', layout: 'col-span-2 sm:col-span-1 sm:order-2 sm:z-10 sm:scale-[1.06]' },
 ]
 
 const INDUSTRIES = [
@@ -344,13 +346,13 @@ export default function Landing() {
             Short-form reels, shot and edited by our own team — weddings, events and everyday business
             moments, the same format we produce for clients every month.
           </p>
-          <div className="mx-auto grid max-w-md grid-cols-3 items-center gap-3 sm:max-w-3xl sm:gap-8">
-            {REELS.map((r, i) => (
+          <div className="mx-auto grid max-w-sm grid-cols-2 items-center gap-4 sm:max-w-3xl sm:grid-cols-3 sm:gap-8">
+            {REELS.map((r) => (
               <div
                 key={r.src}
                 className={cn(
                   'group relative aspect-[9/16] overflow-hidden rounded-2xl shadow-xl ring-1 ring-[var(--color-hairline)] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl',
-                  i === 1 && 'z-10 scale-[1.06]',
+                  r.layout,
                 )}
               >
                 <video
@@ -365,7 +367,7 @@ export default function Landing() {
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
                 <span className="pointer-events-none absolute top-3 left-3 inline-flex items-center gap-1 rounded-full bg-black/40 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">
-                  <Sparkles size={10} /> Reel {i + 1}
+                  <Sparkles size={10} /> {r.label}
                 </span>
               </div>
             ))}
