@@ -12,7 +12,7 @@ import type { ProfessionalAvailability } from '@/types'
 const AVAILABILITY_OPTIONS: ProfessionalAvailability[] = ['Available', 'Booked', 'Unavailable']
 
 export default function Professionals() {
-  const { professionals, skills, services } = useDataStore()
+  const { professionals, skills, services, updateProfessional } = useDataStore()
   const [search, setSearch] = useState('')
   const [city, setCity] = useState('all')
   const [country, setCountry] = useState('all')
@@ -139,13 +139,17 @@ export default function Professionals() {
               </div>
               <p className="mb-3 line-clamp-3 text-xs text-[var(--color-ink-secondary)]">{p.bio}</p>
               <div className="flex items-center justify-between">
-                <Badge
-                  tone={
-                    p.availability === 'Available' ? 'good' : p.availability === 'Booked' ? 'warning' : 'neutral'
-                  }
+                <Select
+                  value={p.availability}
+                  onChange={(e) => updateProfessional(p.id, { availability: e.target.value as ProfessionalAvailability })}
+                  className="h-7 w-28 text-xs"
                 >
-                  {p.availability}
-                </Badge>
+                  {AVAILABILITY_OPTIONS.map((a) => (
+                    <option key={a} value={a}>
+                      {a}
+                    </option>
+                  ))}
+                </Select>
                 <Badge
                   tone={
                     p.verificationStatus === 'Verified'
