@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/Button'
 import { Select } from '@/components/ui/Input'
 import { Badge, DemoBadge } from '@/components/ui/Badge'
 import { defaultVariablesFor, fillTemplate } from '@/lib/templateFill'
-import { formatDate, nowIso, todayIso, cn } from '@/lib/utils'
+import { formatDate, nowIso, todayIso, addDaysIso, cn } from '@/lib/utils'
 import { useAuthEmail } from '@/components/layout/AuthGate'
 import { isIntegrationsConfigured, getIntegrationStatus, sendGmail } from '@/lib/integrations'
 import type { CommunicationChannel, OutreachTemplate, OutreachTemplateKind } from '@/types'
@@ -16,6 +16,18 @@ import type { CommunicationChannel, OutreachTemplate, OutreachTemplateKind } fro
 // WhatsApp follow-up) stays a manual compose-and-paste flow on purpose: see
 // README.md for why those platforms' APIs don't support real cold outreach.
 const EMAIL_TEMPLATE_KINDS: ReadonlySet<OutreachTemplateKind> = new Set(['Email #1', 'Follow-up #1', 'Follow-up #2'])
+
+// Auto-schedules the next touch after a send, keyed by the sequenceDay of the
+// template just sent — this is what actually makes "Day 0 → 3 → 7 → 14" a
+// real cadence instead of just a label, since nothing else in the app ever
+// sets nextFollowUp. `null` at day 14 means the sequence is complete: per
+// outreach-strategy.md, four touches then stop — no more auto-follow-up.
+const DAYS_UNTIL_NEXT_TOUCH: Record<number, number | null> = {
+  0: 3,
+  3: 4,
+  7: 7,
+  14: null,
+}
 
 export default function Outreach() {
   const { prospects, templates, logCommunication, updateProspect } = useDataStore()
@@ -87,9 +99,13 @@ export default function Outreach() {
       summary: summaryOverride ?? `${selectedTemplate.kind} sent.`,
       templateId: selectedTemplate.id,
     })
-    if (selectedProspect.status === 'New' || selectedProspect.status === 'Researching' || selectedProspect.status === 'Ready to Contact') {
-      updateProspect(selectedProspect.id, { status: 'Contacted' })
-    }
+    const daysUntilNext = DAYS_UNTIL_NEXT_TOUCH[selectedTemplate.sequenceDay]
+    const nextFollowUp = daysUntilNext !== null && daysUntilNext !== undefined ? addDaysIso(daysUntilNext) : undefined
+    const statusPatch =
+      selectedProspect.status === 'New' || selectedProspect.status === 'Researching' || selectedProspect.status === 'Ready to Contact'
+        ? { status: 'Contacted' as const }
+        : {}
+    updateProspect(selectedProspect.id, { ...statusPatch, nextFollowUp })
   }
 
   function handleMarkSent() {
@@ -217,6 +233,11 @@ export default function Outreach() {
                 <pre className="mb-4 rounded-lg border border-[var(--color-hairline)] bg-[var(--color-plane)] p-4 text-xs whitespace-pre-wrap text-[var(--color-ink-secondary)]">
                   {preview}
                 </pre>
+                <p className="mb-3 text-[11px] text-[var(--color-ink-muted)]">
+                  {DAYS_UNTIL_NEXT_TOUCH[selectedTemplate.sequenceDay] !== null
+                    ? `Sending this automatically schedules the next follow-up for ${formatDate(addDaysIso(DAYS_UNTIL_NEXT_TOUCH[selectedTemplate.sequenceDay]!))}.`
+                    : 'This is the last touch in the sequence — no further auto follow-up will be scheduled.'}
+                </p>
 
                 {canSendGmail ? (
                   <>

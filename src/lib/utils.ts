@@ -51,3 +51,11 @@ export function nowIso(): string {
 export function todayIso(): string {
   return new Date().toISOString().slice(0, 10)
 }
+
+/** Today + N days, as an ISO date (YYYY-MM-DD). Used to auto-schedule the
+ *  next touch in the outreach sequence. */
+export function addDaysIso(days: number): string {
+  const d = new Date()
+  d.setDate(d.getDate() + days)
+  return d.toISOString().slice(0, 10)
+}
