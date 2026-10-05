@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card'
 import { DemoBadge } from '@/components/ui/Badge'
 import { LeadScoreBadge } from '@/components/prospects/LeadScoreBadge'
 import { ProspectDetailModal } from '@/components/prospects/ProspectDetailModal'
+import { ConvertToClientModal } from '@/components/prospects/ConvertToClientModal'
 import { PIPELINE_STAGES, type PipelineStage, type Prospect } from '@/types'
 import { formatCurrencyEUR, formatDate, cn } from '@/lib/utils'
 
@@ -12,7 +13,9 @@ export default function Pipeline() {
   const { prospects, updateProspect } = useDataStore()
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [dragOverStage, setDragOverStage] = useState<PipelineStage | null>(null)
+  const [convertingId, setConvertingId] = useState<string | null>(null)
   const selected = selectedId ? (prospects.find((p) => p.id === selectedId) ?? null) : null
+  const converting = convertingId ? (prospects.find((p) => p.id === convertingId) ?? null) : null
 
   const byStage = useMemo(() => {
     const map = new Map<PipelineStage, Prospect[]>()
@@ -46,7 +49,16 @@ export default function Pipeline() {
             onDrop={(e) => {
               e.preventDefault()
               const id = e.dataTransfer.getData('text/prospect-id')
-              if (id) updateProspect(id, { status: stage })
+              if (id) {
+                if (stage === 'Won') {
+                  // Won only counts once the Client record actually exists —
+                  // see ConvertToClientModal. The status itself is set there,
+                  // not here, so a cancelled conversion leaves the card put.
+                  setConvertingId(id)
+                } else {
+                  updateProspect(id, { status: stage })
+                }
+              }
               setDragOverStage(null)
             }}
           >
@@ -93,6 +105,13 @@ export default function Pipeline() {
       </div>
 
       {selected && <ProspectDetailModal prospect={selected} onClose={() => setSelectedId(null)} />}
+      {converting && (
+        <ConvertToClientModal
+          prospect={converting}
+          onClose={() => setConvertingId(null)}
+          onConverted={() => setConvertingId(null)}
+        />
+      )}
     </div>
   )
 }

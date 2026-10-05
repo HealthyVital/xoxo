@@ -5,6 +5,7 @@ import { Badge, DemoBadge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { Select, Textarea, Label } from '@/components/ui/Input'
 import { LeadScoreBadge } from './LeadScoreBadge'
+import { ConvertToClientModal } from './ConvertToClientModal'
 import { useDataStore } from '@/store/DataStoreContext'
 import type { CommunicationChannel, Prospect, ProspectStatus } from '@/types'
 import { PROSPECT_STATUSES } from '@/data/statuses'
@@ -15,6 +16,7 @@ export function ProspectDetailModal({ prospect, onClose }: { prospect: Prospect;
     useDataStore()
   const [channel, setChannel] = useState<CommunicationChannel>('Email')
   const [summary, setSummary] = useState('')
+  const [showConvert, setShowConvert] = useState(false)
 
   const timeline = communications
     .filter((c) => c.prospectId === prospect.id)
@@ -79,6 +81,7 @@ export function ProspectDetailModal({ prospect, onClose }: { prospect: Prospect;
   }
 
   return (
+    <>
     <Modal open onClose={onClose} title={prospect.companyName} description={prospect.industry} wide>
       <div className="mb-4 flex flex-wrap items-center gap-2">
         {prospect.isDemo && <DemoBadge />}
@@ -147,7 +150,14 @@ export function ProspectDetailModal({ prospect, onClose }: { prospect: Prospect;
             <Select
               id="status"
               value={prospect.status}
-              onChange={(e) => updateProspect(prospect.id, { status: e.target.value as ProspectStatus })}
+              onChange={(e) => {
+                const next = e.target.value as ProspectStatus
+                if (next === 'Won' && prospect.status !== 'Won') {
+                  setShowConvert(true)
+                } else {
+                  updateProspect(prospect.id, { status: next })
+                }
+              }}
             >
               {PROSPECT_STATUSES.map((s) => (
                 <option key={s} value={s}>
@@ -264,5 +274,9 @@ export function ProspectDetailModal({ prospect, onClose }: { prospect: Prospect;
         </div>
       </div>
     </Modal>
+    {showConvert && (
+      <ConvertToClientModal prospect={prospect} onClose={() => setShowConvert(false)} onConverted={() => setShowConvert(false)} />
+    )}
+    </>
   )
 }
