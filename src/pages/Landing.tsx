@@ -27,7 +27,7 @@ import { WhatsAppFab } from '@/components/landing/WhatsAppFab'
 import { buildWhatsAppLink } from '@/lib/contact'
 import heroTulips from '@/assets/hero/hero-tulips.jpg'
 import heroMirror from '@/assets/hero/hero-mirror.jpg'
-import heroArch from '@/assets/hero/hero-arch.jpg'
+import heroGrocery from '@/assets/hero/hero-grocery.jpg'
 import reel1 from '@/assets/reels/reel-1.mp4'
 import reel1Poster from '@/assets/reels/reel-1-poster.jpg'
 import reel2 from '@/assets/reels/reel-2.mp4'
@@ -186,7 +186,7 @@ function HeroMosaic() {
     { icon: Film, color: SERIES[1], floatClass: 'float-2', size: 'h-16 w-16 sm:h-20 sm:w-20', x: '-translate-x-[2.5rem] sm:-translate-x-12', y: '-translate-y-16 sm:-translate-y-20' },
     { photo: heroMirror, color: SERIES[2], floatClass: 'float-1', size: 'h-28 w-28 sm:h-32 sm:w-32', x: '', y: '' },
     { icon: Camera, color: SERIES[4], floatClass: 'float-4', size: 'h-16 w-16 sm:h-20 sm:w-20', x: 'translate-x-[2.5rem] sm:translate-x-12', y: '-translate-y-12 sm:-translate-y-16' },
-    { photo: heroArch, color: SERIES[6], floatClass: 'float-5', size: 'h-24 w-24 sm:h-28 sm:w-28', x: 'translate-x-[6.5rem] sm:translate-x-36', y: 'translate-y-4' },
+    { photo: heroGrocery, color: SERIES[6], floatClass: 'float-5', size: 'h-24 w-24 sm:h-28 sm:w-28', x: 'translate-x-[6.5rem] sm:translate-x-36', y: 'translate-y-4' },
   ]
 
   return (
