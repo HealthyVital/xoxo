@@ -14,16 +14,19 @@ import { useDataStore } from '@/store/DataStoreContext'
 import { PageHeader, EmptyState } from '@/components/ui/Misc'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card'
 import { Badge, DemoBadge } from '@/components/ui/Badge'
-import { Input, Label, Select } from '@/components/ui/Input'
+import { Button } from '@/components/ui/Button'
+import { Input, Label, Select, Textarea } from '@/components/ui/Input'
+import { LogClientMonthModal } from '@/components/clients/LogClientMonthModal'
 import { formatCurrencyEUR, formatNumber, formatPercent } from '@/lib/utils'
 import { SERIES } from '@/components/dashboard/Charts'
 import { computeRoi } from '@/lib/roi'
-import type { RoiInputs } from '@/types'
+import type { Client, RoiInputs } from '@/types'
 
 export default function ClientDetail() {
   const { clientId } = useParams()
-  const { clients } = useDataStore()
+  const { clients, updateClient } = useDataStore()
   const client = clients.find((c) => c.id === clientId)
+  const [showLogMonth, setShowLogMonth] = useState(false)
 
   const [roiInputs, setRoiInputs] = useState<RoiInputs>({
     productionCost: 1300,
@@ -66,9 +69,22 @@ export default function ClientDetail() {
           <>
             {client.isDemo && <DemoBadge />}
             <Badge tone="brand">{formatCurrencyEUR(client.mrr)}/mo</Badge>
+            <Select
+              value={client.status}
+              onChange={(e) => updateClient(client.id, { status: e.target.value as Client['status'] })}
+              className="w-32"
+            >
+              <option value="Active">Active</option>
+              <option value="Paused">Paused</option>
+              <option value="Churned">Churned</option>
+            </Select>
+            <Button size="sm" onClick={() => setShowLogMonth(true)}>
+              Log this month's results
+            </Button>
           </>
         }
       />
+      {showLogMonth && <LogClientMonthModal client={client} onClose={() => setShowLogMonth(false)} />}
       <div className="mb-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
         <Card className="p-5">
           <CardTitle className="mb-3">Before collaboration</CardTitle>
@@ -135,10 +151,15 @@ export default function ClientDetail() {
       </div>
 
       <div className="mb-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
-        <ListCard title="What we created" items={client.whatWeCreated} />
-        <ListCard title="What worked" items={client.whatWorked} tone="good" />
-        <ListCard title="What we'll change next month" items={client.whatWeWillChangeNextMonth} tone="warning" />
-        <ListCard title="Next month's strategy" items={client.nextMonthStrategy} />
+        <ListCard title="What we created" items={client.whatWeCreated} onSave={(items) => updateClient(client.id, { whatWeCreated: items })} />
+        <ListCard title="What worked" items={client.whatWorked} tone="good" onSave={(items) => updateClient(client.id, { whatWorked: items })} />
+        <ListCard
+          title="What we'll change next month"
+          items={client.whatWeWillChangeNextMonth}
+          tone="warning"
+          onSave={(items) => updateClient(client.id, { whatWeWillChangeNextMonth: items })}
+        />
+        <ListCard title="Next month's strategy" items={client.nextMonthStrategy} onSave={(items) => updateClient(client.id, { nextMonthStrategy: items })} />
       </div>
 
       <Card>
@@ -198,18 +219,76 @@ function MetricRow({ label, value }: { label: string; value: string }) {
   )
 }
 
-function ListCard({ title, items, tone }: { title: string; items: string[]; tone?: 'good' | 'warning' }) {
+function ListCard({
+  title,
+  items,
+  tone,
+  onSave,
+}: {
+  title: string
+  items: string[]
+  tone?: 'good' | 'warning'
+  onSave: (items: string[]) => void
+}) {
+  const [editing, setEditing] = useState(false)
+  const [draft, setDraft] = useState(items.join('\n'))
+
+  if (editing) {
+    return (
+      <Card className="p-5">
+        <p className="mb-2 text-xs font-semibold text-[var(--color-ink-muted)]">{title}</p>
+        <Textarea
+          value={draft}
+          onChange={(e) => setDraft(e.target.value)}
+          rows={4}
+          placeholder="One item per line"
+          className="mb-2"
+        />
+        <div className="flex gap-2">
+          <Button
+            size="sm"
+            onClick={() => {
+              onSave(draft.split('\n').map((l) => l.trim()).filter(Boolean))
+              setEditing(false)
+            }}
+          >
+            Save
+          </Button>
+          <Button
+            size="sm"
+            variant="outline"
+            onClick={() => {
+              setDraft(items.join('\n'))
+              setEditing(false)
+            }}
+          >
+            Cancel
+          </Button>
+        </div>
+      </Card>
+    )
+  }
+
   return (
     <Card className="p-5">
-      <p className="mb-2 text-xs font-semibold text-[var(--color-ink-muted)]">{title}</p>
-      <ul className="space-y-1.5 text-sm text-[var(--color-ink-secondary)]">
-        {items.map((item, i) => (
-          <li key={i} className="flex gap-2">
-            <span className={tone === 'good' ? 'text-[var(--color-good)]' : tone === 'warning' ? 'text-[var(--color-warning)]' : 'text-[var(--color-ink-muted)]'}>•</span>
-            {item}
-          </li>
-        ))}
-      </ul>
+      <div className="mb-2 flex items-center justify-between">
+        <p className="text-xs font-semibold text-[var(--color-ink-muted)]">{title}</p>
+        <button onClick={() => setEditing(true)} className="text-xs font-medium text-[var(--color-brand)] hover:underline">
+          Edit
+        </button>
+      </div>
+      {items.length === 0 ? (
+        <p className="text-xs text-[var(--color-ink-muted)]">Nothing logged yet.</p>
+      ) : (
+        <ul className="space-y-1.5 text-sm text-[var(--color-ink-secondary)]">
+          {items.map((item, i) => (
+            <li key={i} className="flex gap-2">
+              <span className={tone === 'good' ? 'text-[var(--color-good)]' : tone === 'warning' ? 'text-[var(--color-warning)]' : 'text-[var(--color-ink-muted)]'}>•</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      )}
     </Card>
   )
 }
