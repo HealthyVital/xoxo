@@ -32,7 +32,8 @@ import reel1 from '@/assets/reels/reel-1.mp4'
 import reel1Poster from '@/assets/reels/reel-1-poster.jpg'
 import reel2 from '@/assets/reels/reel-2.mp4'
 import reel2Poster from '@/assets/reels/reel-2-poster.jpg'
-import agritaPortrait from '@/assets/portfolio/agrita-portrait.jpg'
+import agritaPortrait from '@/assets/team/agrita.jpg'
+import vinPortrait from '@/assets/team/vin.jpg'
 import wedding1 from '@/assets/portfolio/wedding-1.jpg'
 import wedding2 from '@/assets/portfolio/wedding-2.jpg'
 import wedding3 from '@/assets/portfolio/wedding-3.jpg'
@@ -46,7 +47,7 @@ import lifestyle3 from '@/assets/portfolio/lifestyle-3.jpg'
 
 const TEAM = [
   { photo: agritaPortrait as string | undefined, name: 'Agrita', role: 'Model & content creator', bio: 'The face and eye behind the content — on both sides of the camera, from concept to the final shot.' },
-  { photo: vinFlowerTunnel as string | undefined, name: 'Vin', role: 'Content producer', bio: 'Keeps every shoot and every client timeline running — production, logistics, delivery.' },
+  { photo: vinPortrait as string | undefined, name: 'Vin', role: 'Content producer', bio: 'Keeps every shoot and every client timeline running — production, logistics, delivery.' },
 ]
 
 const WEDDING_GALLERY = [wedding1, wedding2, wedding3, wedding4, wedding5, wedding6, wedding7]
