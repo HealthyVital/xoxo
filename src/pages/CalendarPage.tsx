@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Plus } from 'lucide-react'
 import { PageHeader } from '@/components/ui/Misc'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/Badge'
 import { Modal } from '@/components/ui/Modal'
 import { Select, Label, Input } from '@/components/ui/Input'
 import { useDataStore } from '@/store/DataStoreContext'
-import { cn } from '@/lib/utils'
+import { cn, todayIso } from '@/lib/utils'
 import type { CalendarItem, CalendarItemStatus } from '@/types'
 
 const STATUS_TONE: Record<CalendarItemStatus, 'neutral' | 'brand' | 'good' | 'warning'> = {
@@ -39,9 +39,10 @@ function buildGrid(monthDate: Date) {
 }
 
 export default function CalendarPage() {
-  const { calendarItems, clients, updateCalendarItem } = useDataStore()
+  const { calendarItems, clients, addCalendarItem, updateCalendarItem } = useDataStore()
   const [month, setMonth] = useState(() => startOfMonth(new Date()))
   const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [showNew, setShowNew] = useState(false)
   const selected = selectedId ? (calendarItems.find((i) => i.id === selectedId) ?? null) : null
 
   const days = useMemo(() => buildGrid(month), [month])
@@ -61,15 +62,20 @@ export default function CalendarPage() {
         title="Calendar"
         description="Content production calendar across all clients."
         actions={
-          <div className="flex items-center gap-1">
-            <Button variant="outline" size="icon" onClick={() => setMonth((m) => new Date(m.getFullYear(), m.getMonth() - 1, 1))}>
-              <ChevronLeft size={16} />
-            </Button>
-            <span className="w-32 text-center text-sm font-medium">
-              {month.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}
-            </span>
-            <Button variant="outline" size="icon" onClick={() => setMonth((m) => new Date(m.getFullYear(), m.getMonth() + 1, 1))}>
-              <ChevronRight size={16} />
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1">
+              <Button variant="outline" size="icon" onClick={() => setMonth((m) => new Date(m.getFullYear(), m.getMonth() - 1, 1))}>
+                <ChevronLeft size={16} />
+              </Button>
+              <span className="w-32 text-center text-sm font-medium">
+                {month.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}
+              </span>
+              <Button variant="outline" size="icon" onClick={() => setMonth((m) => new Date(m.getFullYear(), m.getMonth() + 1, 1))}>
+                <ChevronRight size={16} />
+              </Button>
+            </div>
+            <Button onClick={() => setShowNew(true)}>
+              <Plus size={14} /> Add content
             </Button>
           </div>
         }
@@ -120,7 +126,73 @@ export default function CalendarPage() {
       {selected && (
         <CalendarItemModal item={selected} onClose={() => setSelectedId(null)} onSave={(patch) => updateCalendarItem(selected.id, patch)} />
       )}
+      {showNew && <NewCalendarItemModal onClose={() => setShowNew(false)} onCreate={addCalendarItem} />}
     </div>
+  )
+}
+
+function NewCalendarItemModal({
+  onClose,
+  onCreate,
+}: {
+  onClose: () => void
+  onCreate: (item: Omit<CalendarItem, 'id'>) => void
+}) {
+  const { clients } = useDataStore()
+  const [clientId, setClientId] = useState('')
+  const [date, setDate] = useState(todayIso())
+  const [platform, setPlatform] = useState('Instagram')
+  const [contentType, setContentType] = useState('Reel')
+
+  return (
+    <Modal open onClose={onClose} title="Add content to the calendar">
+      <div className="space-y-3">
+        <div>
+          <Label htmlFor="newClient">Client</Label>
+          <Select id="newClient" value={clientId} onChange={(e) => setClientId(e.target.value)}>
+            <option value="">Unassigned</option>
+            {clients.map((c) => (
+              <option key={c.id} value={c.id}>
+                {c.companyName}
+              </option>
+            ))}
+          </Select>
+        </div>
+        <div>
+          <Label htmlFor="newDate">Date</Label>
+          <Input id="newDate" type="date" value={date} onChange={(e) => setDate(e.target.value)} />
+        </div>
+        <div>
+          <Label htmlFor="newPlatform">Platform</Label>
+          <Input id="newPlatform" value={platform} onChange={(e) => setPlatform(e.target.value)} />
+        </div>
+        <div>
+          <Label htmlFor="newContentType">Content type</Label>
+          <Input id="newContentType" value={contentType} onChange={(e) => setContentType(e.target.value)} placeholder="e.g. Reel, Carousel, Story" />
+        </div>
+        <div className="flex justify-end gap-2 pt-2">
+          <Button variant="outline" onClick={onClose}>
+            Cancel
+          </Button>
+          <Button
+            onClick={() => {
+              if (!contentType.trim()) return
+              onCreate({
+                date,
+                clientId: clientId || undefined,
+                platform,
+                contentType,
+                status: 'Idea',
+                approval: 'Pending',
+              })
+              onClose()
+            }}
+          >
+            Add to calendar
+          </Button>
+        </div>
+      </div>
+    </Modal>
   )
 }
 
