@@ -24,6 +24,7 @@ import { VERTICAL_STRATEGIES } from '@/data/verticals'
 import { cn } from '@/lib/utils'
 import { trackEvent } from '@/lib/analytics'
 import { WhatsAppFab } from '@/components/landing/WhatsAppFab'
+import { buildWhatsAppLink } from '@/lib/contact'
 import vinFlowerTunnel from '@/assets/team/vin-flower-tunnel.jpg'
 import vinForestRock from '@/assets/team/vin-forest-rock.jpg'
 import vinBoardwalk from '@/assets/team/vin-boardwalk.jpg'
@@ -31,11 +32,19 @@ import reel1 from '@/assets/reels/reel-1.mp4'
 import reel1Poster from '@/assets/reels/reel-1-poster.jpg'
 import reel2 from '@/assets/reels/reel-2.mp4'
 import reel2Poster from '@/assets/reels/reel-2-poster.jpg'
+import agritaPortrait from '@/assets/portfolio/agrita-portrait.jpg'
+import wedding1 from '@/assets/portfolio/wedding-1.jpg'
+import wedding2 from '@/assets/portfolio/wedding-2.jpg'
+import wedding3 from '@/assets/portfolio/wedding-3.jpg'
+import wedding4 from '@/assets/portfolio/wedding-4.jpg'
+import wedding5 from '@/assets/portfolio/wedding-5.jpg'
 
 const TEAM = [
-  { photo: undefined as string | undefined, name: 'Agrita', role: 'Model & content creator', bio: 'The face and eye behind the content — on both sides of the camera, from concept to the final shot.' },
+  { photo: agritaPortrait as string | undefined, name: 'Agrita', role: 'Model & content creator', bio: 'The face and eye behind the content — on both sides of the camera, from concept to the final shot.' },
   { photo: vinFlowerTunnel as string | undefined, name: 'Vin', role: 'Content producer', bio: 'Keeps every shoot and every client timeline running — production, logistics, delivery.' },
 ]
+
+const WEDDING_GALLERY = [wedding1, wedding2, wedding3, wedding4, wedding5]
 
 const SERIES = [
   'var(--color-series-1)',
@@ -83,7 +92,7 @@ const STEPS = [
 
 const FAQ = [
   { q: 'Is the Free Content Pilot really free?', a: 'Yes — one short-form video, 5 edited photos and 3 concepts, with no cost and no obligation to continue.' },
-  { q: 'Do you only work with weddings?', a: 'No. Wedding and event photography is one service among many — our primary focus is recurring content for businesses.' },
+  { q: 'Do you cover weddings and one-time events?', a: 'Yes — weddings and events (corporate or family) are booked as a single one-time package, alongside our recurring monthly content work for businesses. Message us on WhatsApp for availability.' },
   { q: 'Are your prices fixed?', a: 'Pricing shown is a starting reference. Every engagement is custom-quoted based on scope.' },
   { q: 'Can we cancel a monthly package?', a: 'Yes, our packages run month-to-month with a short notice period — no long lock-in contracts.' },
 ]
@@ -183,6 +192,7 @@ export default function Landing() {
           </div>
           <nav className="hidden items-center gap-6 text-sm text-[var(--color-ink-secondary)] md:flex">
             <a href="#reels" className="hover:text-[var(--color-ink)]">Reels</a>
+            <a href="#weddings" className="hover:text-[var(--color-ink)]">Weddings</a>
             <a href="#services" className="hover:text-[var(--color-ink)]">Services</a>
             <a href="#industries" className="hover:text-[var(--color-ink)]">Industries</a>
             <a href="#how-it-works" className="hover:text-[var(--color-ink)]">How it works</a>
@@ -290,6 +300,47 @@ export default function Landing() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* REAL WEDDINGS GALLERY */}
+      <section id="weddings" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <SectionKicker>Weddings &amp; events</SectionKicker>
+          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Real weddings, real moments</h2>
+          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
+            One-time coverage for weddings and events — corporate or family — captured and delivered
+            as a single, no-subscription package.
+          </p>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            {WEDDING_GALLERY.map((src, i) => (
+              <div
+                key={src}
+                className={cn(
+                  'group overflow-hidden rounded-2xl shadow-md ring-1 ring-[var(--color-hairline)] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl',
+                  i === 0 && 'col-span-2 row-span-2 sm:col-span-2',
+                )}
+              >
+                <img
+                  src={src}
+                  alt="Real wedding coverage by Agrita&Vin Content Co."
+                  loading="lazy"
+                  className={cn('h-full w-full object-cover transition-transform duration-500 group-hover:scale-105', i === 0 ? 'aspect-square' : 'aspect-[4/5]')}
+                />
+              </div>
+            ))}
+          </div>
+          <p className="mt-8 text-center">
+            <a
+              href={buildWhatsAppLink("Hi! I'd like to ask about wedding or event coverage.")}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => trackEvent('cta_click', { cta: 'wedding_gallery_whatsapp' })}
+              className="text-sm font-medium text-[#128C7E] hover:underline"
+            >
+              Ask about wedding &amp; event coverage on WhatsApp →
+            </a>
+          </p>
         </div>
       </section>
 
