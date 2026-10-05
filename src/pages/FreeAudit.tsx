@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { ArrowLeft, Camera, Sparkles } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Camera, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Input, Label, Select, Textarea } from '@/components/ui/Input'
@@ -10,6 +10,8 @@ import { VERTICALS } from '@/data/verticals'
 import { computeFreeAudit } from '@/lib/freeAudit'
 import { SEED_PRICING_PACKAGES } from '@/data/seedData'
 import { trackEvent } from '@/lib/analytics'
+import { buildWhatsAppLink } from '@/lib/contact'
+import { WhatsAppFab } from '@/components/landing/WhatsAppFab'
 import type { FreeAuditResult, Vertical } from '@/types'
 
 export default function FreeAudit() {
@@ -161,15 +163,24 @@ export default function FreeAudit() {
               </Card>
             )}
 
-            <p className="text-center text-sm text-[var(--color-ink-secondary)]">
-              Want to see this in action, for free?{' '}
-              <Link to="/" className="font-medium text-[var(--color-brand)] hover:underline">
-                Ask about our Free Content Pilot →
-              </Link>
-            </p>
+            <Card className="border-[var(--color-brand)] p-6 text-center">
+              <p className="mb-3 text-sm text-[var(--color-ink-secondary)]">Want to see this in action, for free?</p>
+              <a
+                href={buildWhatsAppLink(`Hi! I just got my free content audit for ${company || 'my business'} and would like to chat about a Free Content Pilot.`)}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => trackEvent('cta_click', { cta: 'audit_result_whatsapp' })}
+              >
+                <Button size="lg" className="shadow-[0_8px_24px_-6px_var(--color-brand)]">
+                  Ask about our Free Content Pilot on WhatsApp <ArrowRight size={16} />
+                </Button>
+              </a>
+            </Card>
           </div>
         )}
       </div>
+
+      <WhatsAppFab source="audit" message="Hi! I have a question about my free content audit." />
     </div>
   )
 }

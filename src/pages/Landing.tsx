@@ -23,6 +23,7 @@ import { SEED_PRICING_PACKAGES } from '@/data/seedData'
 import { VERTICAL_STRATEGIES } from '@/data/verticals'
 import { cn } from '@/lib/utils'
 import { trackEvent } from '@/lib/analytics'
+import { WhatsAppFab } from '@/components/landing/WhatsAppFab'
 import vinFlowerTunnel from '@/assets/team/vin-flower-tunnel.jpg'
 import vinForestRock from '@/assets/team/vin-forest-rock.jpg'
 import vinBoardwalk from '@/assets/team/vin-boardwalk.jpg'
@@ -496,6 +497,8 @@ export default function Landing() {
           <Link to="/app/dashboard" className="hover:text-[var(--color-ink)]">Team login</Link>
         </div>
       </footer>
+
+      <WhatsAppFab source="landing" message="Hi! I'd like to know more about your content packages, including weddings and events." />
     </div>
   )
 }
