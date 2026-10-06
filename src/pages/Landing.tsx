@@ -16,6 +16,7 @@ import {
   UtensilsCrossed,
   Heart,
   Film,
+  Eye,
 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
@@ -82,8 +83,51 @@ const REELS = [
   // `layout` reorders on sm+ so the featured reel sits in the middle.
   { src: reel1, poster: reel1Poster, label: 'Reel 1', layout: 'sm:order-1' },
   { src: reel2, poster: reel2Poster, label: 'Reel 2', layout: 'sm:order-3' },
-  { src: reel3, poster: reel3Poster, label: 'Featured', layout: 'col-span-2 sm:col-span-1 sm:order-2 sm:z-10 sm:scale-[1.06]' },
-]
+  // views: real view count of this reel, confirmed by the team (2026-10-06).
+  { src: reel3, poster: reel3Poster, label: 'Featured', views: 3_999_999, layout: 'col-span-2 sm:col-span-1 sm:order-2 sm:z-10 sm:scale-[1.06]' },
+] as { src: string; poster: string; label: string; views?: number; layout: string }[]
+
+/** Counts up from 0 to `target` (ease-out) the first time it scrolls into view. */
+function ViewCounter({ target }: { target: number }) {
+  const ref = useRef<HTMLSpanElement>(null)
+  const [value, setValue] = useState(0)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setValue(target)
+      return
+    }
+    let raf = 0
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return
+        observer.disconnect()
+        const start = performance.now()
+        const duration = 2600
+        const tick = (now: number) => {
+          const p = Math.min((now - start) / duration, 1)
+          setValue(Math.round(target * (1 - Math.pow(1 - p, 3))))
+          if (p < 1) raf = requestAnimationFrame(tick)
+        }
+        raf = requestAnimationFrame(tick)
+      },
+      { threshold: 0.4 },
+    )
+    observer.observe(el)
+    return () => {
+      observer.disconnect()
+      cancelAnimationFrame(raf)
+    }
+  }, [target])
+
+  return (
+    <span ref={ref} className="inline-flex items-center gap-1 tabular-nums">
+      <Eye size={10} /> {value.toLocaleString('en-US')} views
+    </span>
+  )
+}
 
 const INDUSTRIES = [
   { icon: Hotel, label: 'Hotels' },
@@ -366,9 +410,16 @@ export default function Landing() {
                   className="h-full w-full object-cover"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
-                <span className="pointer-events-none absolute top-3 left-3 inline-flex items-center gap-1 rounded-full bg-black/40 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">
-                  <Sparkles size={10} /> {r.label}
-                </span>
+                <div className="pointer-events-none absolute top-3 left-3 flex flex-wrap items-center gap-1.5">
+                  <span className="inline-flex items-center gap-1 rounded-full bg-black/40 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">
+                    <Sparkles size={10} /> {r.label}
+                  </span>
+                  {r.views && (
+                    <span className="rounded-full bg-black/40 px-2 py-0.5 text-[10px] font-semibold text-white backdrop-blur-sm">
+                      <ViewCounter target={r.views} />
+                    </span>
+                  )}
+                </div>
               </div>
             ))}
           </div>
