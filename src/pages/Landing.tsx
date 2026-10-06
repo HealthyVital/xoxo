@@ -81,45 +81,32 @@ const SERVICES = [
 const REELS = [
   // DOM order = mobile layout (two side by side, featured full-width below);
   // `layout` reorders on sm+ so the featured reel sits in the middle.
-  { src: reel1, poster: reel1Poster, label: 'Reel 1', layout: 'sm:order-1' },
-  { src: reel2, poster: reel2Poster, label: 'Reel 2', layout: 'sm:order-3' },
-  // views: real view count of this reel, confirmed by the team (2026-10-06).
+  // views: real view counts of each reel, confirmed by the team (2026-10-06).
+  { src: reel1, poster: reel1Poster, label: 'Reel 1', views: 525_375, layout: 'sm:order-1' },
+  { src: reel2, poster: reel2Poster, label: 'Reel 2', views: 1_555_324, layout: 'sm:order-3' },
   { src: reel3, poster: reel3Poster, label: 'Featured', views: 3_999_999, layout: 'col-span-2 sm:col-span-1 sm:order-2 sm:z-10 sm:scale-[1.06]' },
 ] as { src: string; poster: string; label: string; views?: number; layout: string }[]
 
-/** Counts up from 0 to `target` (ease-out) the first time it scrolls into view. */
+/** View count tied to the reel's playback: climbs from 0 to `target` (ease-out)
+ *  as the sibling <video> plays, and restarts each time the video loops. */
 function ViewCounter({ target }: { target: number }) {
   const ref = useRef<HTMLSpanElement>(null)
   const [value, setValue] = useState(0)
 
   useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const video = ref.current?.closest('.group')?.querySelector('video')
+    if (!video || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setValue(target)
       return
     }
     let raf = 0
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) return
-        observer.disconnect()
-        const start = performance.now()
-        const duration = 2600
-        const tick = (now: number) => {
-          const p = Math.min((now - start) / duration, 1)
-          setValue(Math.round(target * (1 - Math.pow(1 - p, 3))))
-          if (p < 1) raf = requestAnimationFrame(tick)
-        }
-        raf = requestAnimationFrame(tick)
-      },
-      { threshold: 0.4 },
-    )
-    observer.observe(el)
-    return () => {
-      observer.disconnect()
-      cancelAnimationFrame(raf)
+    const tick = () => {
+      const p = video.duration ? Math.min(video.currentTime / video.duration, 1) : 0
+      setValue(Math.round(target * (1 - Math.pow(1 - p, 3))))
+      raf = requestAnimationFrame(tick)
     }
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
   }, [target])
 
   return (
