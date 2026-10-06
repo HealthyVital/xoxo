@@ -85,6 +85,7 @@ export function ProspectDetailModal({ prospect, onClose }: { prospect: Prospect;
     <Modal open onClose={onClose} title={prospect.companyName} description={prospect.industry} wide>
       <div className="mb-4 flex flex-wrap items-center gap-2">
         {prospect.isDemo && <DemoBadge />}
+        {prospect.pastWork && <Badge tone="brand">★ Past project — not a recurring client yet</Badge>}
         <Badge tone="brand">{prospect.status}</Badge>
         <Badge tone={prospect.verificationStatus === 'Verified' ? 'good' : 'neutral'}>{prospect.verificationStatus}</Badge>
         <LeadScoreBadge score={prospect.leadScore} />

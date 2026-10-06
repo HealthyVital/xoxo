@@ -97,6 +97,9 @@ export interface Prospect {
   consentNotes?: string
   createdAt: string
   updatedAt: string
+  /** true = we have already delivered one-off work for this brand, but it is
+   *  not (yet) a recurring client — a warm lead for a monthly package. */
+  pastWork?: boolean
   /** true = illustrative demo record used to populate the pipeline/dashboard UI.
    *  false = a real, sourced Rotterdam company from the research seed list. */
   isDemo: boolean

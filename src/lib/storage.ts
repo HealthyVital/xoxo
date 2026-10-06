@@ -25,6 +25,30 @@ export function loadCollection<T>(key: string, seed: T): T {
   }
 }
 
+/** Like loadCollection, but records added to the seed file after a browser was
+ *  first seeded still reach it: seed ids never offered before are appended once.
+ *  Ids already offered are remembered, so a record the team deleted or edited
+ *  locally is never re-added or overwritten. */
+export function loadCollectionWithNewSeed<T extends { id: string }>(key: string, seed: T[]): T[] {
+  if (typeof window === 'undefined') return seed
+  const seenKey = NAMESPACE + key + ':seedIds'
+  try {
+    const current = loadCollection<T[]>(key, seed)
+    const rawSeen = window.localStorage.getItem(seenKey)
+    // First run of this logic: treat whatever is stored as already offered.
+    const seen = new Set<string>(rawSeen ? (JSON.parse(rawSeen) as string[]) : current.map((r) => r.id))
+    const have = new Set(current.map((r) => r.id))
+    const additions = seed.filter((r) => !seen.has(r.id) && !have.has(r.id))
+    window.localStorage.setItem(seenKey, JSON.stringify([...new Set([...seen, ...seed.map((r) => r.id)])]))
+    if (additions.length === 0) return current
+    const merged = [...current, ...additions]
+    saveCollection(key, merged)
+    return merged
+  } catch {
+    return seed
+  }
+}
+
 export function saveCollection<T>(key: string, value: T): void {
   if (typeof window === 'undefined') return
   try {

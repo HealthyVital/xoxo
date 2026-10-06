@@ -68,6 +68,18 @@ function compareProspects(a: Prospect, b: Prospect, key: SortableKey, type: Colu
   return dir === 'asc' ? cmp : -cmp
 }
 
+/** Marks brands we've already delivered one-off work for — warm leads, not recurring clients. */
+export function PastWorkBadge() {
+  return (
+    <span
+      title="We've delivered a one-off project for this brand — not a recurring client yet"
+      className="inline-flex shrink-0 items-center rounded-full bg-[var(--color-brand-soft)] px-1.5 py-0.5 text-[10px] font-semibold whitespace-nowrap text-[var(--color-brand-strong)]"
+    >
+      ★ Past project
+    </span>
+  )
+}
+
 export default function Prospects() {
   const { prospects } = useDataStore()
   const [search, setSearch] = useState('')
@@ -77,6 +89,7 @@ export default function Prospects() {
   const [verification, setVerification] = useState('all')
   const [minScore, setMinScore] = useState(0)
   const [companySize, setCompanySize] = useState('all')
+  const [pastWorkOnly, setPastWorkOnly] = useState(false)
   const [sortKey, setSortKey] = useState<SortableKey>('leadScore')
   const [sortDir, setSortDir] = useState<'asc' | 'desc'>('desc')
 
@@ -106,6 +119,7 @@ export default function Prospects() {
       if (verification !== 'all' && p.verificationStatus !== verification) return false
       if (companySize !== 'all' && p.companySize !== companySize) return false
       if (p.leadScore < minScore) return false
+      if (pastWorkOnly && !p.pastWork) return false
       if (search.trim()) {
         const q = search.toLowerCase()
         if (!p.companyName.toLowerCase().includes(q) && !p.city.toLowerCase().includes(q) && !p.industry.toLowerCase().includes(q))
@@ -116,7 +130,7 @@ export default function Prospects() {
     const columnType = COLUMNS.find((c) => c.key === sortKey)?.type ?? 'text'
     list = [...list].sort((a, b) => compareProspects(a, b, sortKey, columnType, sortDir))
     return list
-  }, [prospects, industry, country, status, verification, companySize, minScore, search, sortKey, sortDir])
+  }, [prospects, industry, country, status, verification, companySize, minScore, pastWorkOnly, search, sortKey, sortDir])
 
   function exportCsv() {
     const headers = ['companyName', 'phone', 'email', 'industry', 'city', 'country', 'status', 'leadScore', 'verificationStatus', 'website', 'source', 'sourceUrl']
@@ -206,6 +220,10 @@ export default function Prospects() {
         </div>
         <div className="mt-3 flex items-center gap-2 text-xs text-[var(--color-ink-secondary)]">
           <span className="text-[var(--color-ink-muted)]">Click a column header to sort by it.</span>
+          <label className="ml-3 inline-flex cursor-pointer items-center gap-1.5">
+            <input type="checkbox" checked={pastWorkOnly} onChange={(e) => setPastWorkOnly(e.target.checked)} />
+            Past projects only (worked with us, not recurring)
+          </label>
           <span className="ml-auto">{filtered.length} of {prospects.length} prospects</span>
         </div>
       </Card>
@@ -255,6 +273,7 @@ export default function Prospects() {
                   <div className="flex items-center gap-1.5 font-medium text-[var(--color-ink)]">
                     {p.companyName}
                     {p.isDemo && <DemoBadge />}
+                    {p.pastWork && <PastWorkBadge />}
                   </div>
                   {p.website && <div className="text-xs text-[var(--color-ink-muted)]">{p.website}</div>}
                 </td>

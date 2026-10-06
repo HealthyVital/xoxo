@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from 'react'
-import { loadCollection, saveCollection, resetAllData } from '@/lib/storage'
+import { loadCollection, loadCollectionWithNewSeed, saveCollection, resetAllData } from '@/lib/storage'
 import { uid, nowIso } from '@/lib/utils'
 import {
   SEED_PROSPECTS,
@@ -114,8 +114,8 @@ interface DataStoreValue {
 
 const DataStoreContext = createContext<DataStoreValue | null>(null)
 
-function usePersistedState<T>(key: string, seed: T) {
-  const [state, setState] = useState<T>(() => loadCollection(key, seed))
+function usePersistedState<T>(key: string, seed: T, load: (key: string, seed: T) => T = loadCollection) {
+  const [state, setState] = useState<T>(() => load(key, seed))
   const set = useCallback(
     (updater: T | ((prev: T) => T)) => {
       setState((prev) => {
@@ -130,7 +130,8 @@ function usePersistedState<T>(key: string, seed: T) {
 }
 
 export function DataStoreProvider({ children }: { children: ReactNode }) {
-  const [prospects, setProspects] = usePersistedState<Prospect[]>('prospects', SEED_PROSPECTS)
+  // New records added to prospects.real.json reach browsers that were seeded earlier.
+  const [prospects, setProspects] = usePersistedState<Prospect[]>('prospects', SEED_PROSPECTS, loadCollectionWithNewSeed)
   const [communications, setCommunications] = usePersistedState<CommunicationLogEntry[]>(
     'communications',
     SEED_COMMUNICATIONS,
