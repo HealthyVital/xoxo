@@ -37,6 +37,13 @@ import {
 import heroTulips from '@/assets/hero/hero-tulips.jpg'
 import heroMirror from '@/assets/hero/hero-mirror.jpg'
 import heroGrocery from '@/assets/hero/hero-grocery.jpg'
+import logoMaxima from '@/assets/brands/maxima.png'
+import logoDrogas from '@/assets/brands/drogas.png'
+import logoLido from '@/assets/brands/lido.png'
+import logoRewe from '@/assets/brands/rewe.png'
+import logoStockmann from '@/assets/brands/stockmann.png'
+import logoVivi from '@/assets/brands/vivi.png'
+import logoOrigo from '@/assets/brands/origo.png'
 import reel1 from '@/assets/reels/reel-1.mp4'
 import reel1Poster from '@/assets/reels/reel-1-poster.jpg'
 import reel2 from '@/assets/reels/reel-2.mp4'
@@ -187,7 +194,19 @@ const INDUSTRY_ICONS = [Hotel, Plane, Sparkle, ShoppingBag, Pill, Building2, Ute
 
 const FEATURED_VERTICALS = ['Hotels & Hospitality', 'Cosmetics & Beauty', 'Restaurants & Lifestyle'] as const
 
-const LATVIA_BRANDS = ['Maxima', 'Drogas', 'Lidl', 'Lido', 'REWE', 'Gambas', 'VIVI', 'Origo']
+// logo: supplied brand artwork; brands without one render as a text wordmark.
+// bleed: the logo has its own background, so it fills the chip edge to edge.
+const LATVIA_BRANDS: { name: string; logo?: string; bleed?: boolean }[] = [
+  { name: 'Maxima', logo: logoMaxima },
+  { name: 'Drogas', logo: logoDrogas },
+  { name: 'Lidl' },
+  { name: 'Lido', logo: logoLido, bleed: true },
+  { name: 'REWE', logo: logoRewe, bleed: true },
+  { name: 'Stockmann', logo: logoStockmann },
+  { name: 'Gambas' },
+  { name: 'VIVI', logo: logoVivi, bleed: true },
+  { name: 'Origo', logo: logoOrigo },
+]
 
 /** Wordmark chips orbiting the hero tiles on an ellipse. Positions are written
  *  straight to the DOM each frame (no React re-render); chips on the front half
@@ -230,13 +249,25 @@ function BrandOrbit() {
     <div ref={wrapRef} className="pointer-events-none absolute inset-0">
       {LATVIA_BRANDS.map((brand, i) => (
         <div
-          key={brand}
+          key={brand.name}
           ref={(el) => {
             chipRefs.current[i] = el
           }}
-          className="absolute top-1/2 left-1/2 rounded-2xl border border-[var(--color-hairline)] bg-white/90 px-3 py-1.5 text-sm font-bold tracking-tight whitespace-nowrap text-[var(--color-ink)] shadow-[0_10px_25px_-10px_rgba(11,11,11,0.35)] backdrop-blur sm:px-4 sm:py-2 sm:text-base"
+          className={cn(
+            'absolute top-1/2 left-1/2 overflow-hidden rounded-2xl border border-[var(--color-hairline)] bg-white whitespace-nowrap shadow-[0_10px_25px_-10px_rgba(11,11,11,0.35)]',
+            !brand.logo && 'px-3 py-1.5 text-sm font-bold tracking-tight text-[var(--color-ink)] sm:px-4 sm:py-2 sm:text-base',
+            brand.logo && !brand.bleed && 'px-2.5 py-1.5 sm:px-3 sm:py-2',
+          )}
         >
-          {brand}
+          {brand.logo ? (
+            <img
+              src={brand.logo}
+              alt={brand.name}
+              className={cn('block w-auto max-w-none', brand.bleed ? 'h-9 sm:h-11' : 'h-6 sm:h-7')}
+            />
+          ) : (
+            brand.name
+          )}
         </div>
       ))}
     </div>
