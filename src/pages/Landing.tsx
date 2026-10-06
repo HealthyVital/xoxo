@@ -145,9 +145,9 @@ function BrandSlot() {
   }, [])
   const Icon = BRAND_SLOT_ICONS[i]
   return (
-    <span className="pointer-events-none absolute top-3 right-3 flex h-20 w-20 flex-col items-center justify-center gap-0.5 rounded-full border-2 border-dashed border-[var(--color-brand)] bg-white/95 text-[var(--color-ink)] shadow-[0_8px_24px_-6px_rgba(0,0,0,0.45)] ring-4 ring-white/40 sm:h-24 sm:w-24">
-      <Icon key={i} strokeWidth={2.2} className="h-8 w-8 animate-[fade-in_400ms_ease-out] sm:h-9 sm:w-9" />
-      <span className="text-center text-[8px] leading-tight font-bold tracking-wider uppercase sm:text-[9px]">
+    <span className="pointer-events-none absolute top-1/2 left-1/2 flex h-40 w-40 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 rounded-full border-[3px] border-dashed border-[var(--color-brand)] bg-white/90 text-[var(--color-ink)] shadow-[0_12px_36px_-8px_rgba(0,0,0,0.5)] ring-8 ring-white/35 sm:h-48 sm:w-48">
+      <Icon key={i} strokeWidth={2} className="h-16 w-16 animate-[fade-in_400ms_ease-out] sm:h-[4.5rem] sm:w-[4.5rem]" />
+      <span className="text-center text-sm leading-tight font-bold tracking-wider uppercase sm:text-base">
         Your
         <br />
         logo
@@ -466,12 +466,7 @@ export default function Landing() {
                   className="h-full w-full object-cover"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
-                <div
-                  className={cn(
-                    'pointer-events-none absolute top-3 left-3 flex flex-wrap items-center gap-1.5',
-                    r.brandSlot && 'max-w-[calc(100%-6.5rem)] sm:max-w-[calc(100%-7.5rem)]',
-                  )}
-                >
+                <div className="pointer-events-none absolute top-3 left-3 flex flex-wrap items-center gap-1.5">
                   <span className="inline-flex items-center gap-1 rounded-full bg-black/40 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">
                     <Sparkles size={10} /> {r.label}
                   </span>
