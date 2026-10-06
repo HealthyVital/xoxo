@@ -100,8 +100,13 @@ function BrandSlot() {
   }, [])
   const Icon = BRAND_SLOT_ICONS[i]
   return (
-    <span className="inline-flex items-center gap-1 rounded-full border border-dashed border-white/70 bg-white/15 px-2 py-0.5 text-[10px] font-semibold tracking-wide text-white uppercase backdrop-blur-sm">
-      <Icon key={i} size={10} className="animate-[fade-in_400ms_ease-out]" /> Your logo
+    <span className="pointer-events-none absolute top-3 right-3 flex h-16 w-16 flex-col items-center justify-center gap-0.5 rounded-full border-2 border-dashed border-white/80 bg-black/30 text-white shadow-lg backdrop-blur-sm sm:h-20 sm:w-20">
+      <Icon key={i} size={22} strokeWidth={1.8} className="animate-[fade-in_400ms_ease-out]" />
+      <span className="text-center text-[8px] leading-tight font-bold tracking-wider uppercase sm:text-[9px]">
+        Your
+        <br />
+        logo
+      </span>
     </span>
   )
 }
@@ -416,7 +421,12 @@ export default function Landing() {
                   className="h-full w-full object-cover"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
-                <div className="pointer-events-none absolute top-3 left-3 flex flex-wrap items-center gap-1.5">
+                <div
+                  className={cn(
+                    'pointer-events-none absolute top-3 left-3 flex flex-wrap items-center gap-1.5',
+                    r.brandSlot && 'max-w-[calc(100%-5.5rem)] sm:max-w-[calc(100%-6.5rem)]',
+                  )}
+                >
                   <span className="inline-flex items-center gap-1 rounded-full bg-black/40 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">
                     <Sparkles size={10} /> {r.label}
                   </span>
@@ -425,8 +435,8 @@ export default function Landing() {
                       <ViewCounter target={r.views} />
                     </span>
                   )}
-                  {r.brandSlot && <BrandSlot />}
                 </div>
+                {r.brandSlot && <BrandSlot />}
               </div>
             ))}
           </div>
