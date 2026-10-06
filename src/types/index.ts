@@ -196,7 +196,7 @@ export interface PilotProposal {
   createdAt: string
 }
 
-export type PricingPackageId = 'starter' | 'growth' | 'partner'
+export type PricingPackageId = 'starter' | 'growth' | 'partner' | 'drop' | 'local'
 
 export interface PricingPackage {
   id: PricingPackageId
@@ -205,6 +205,8 @@ export interface PricingPackage {
   description: string
   deliverables: string[]
   bestFor: string
+  /** Entry tier for very small businesses, shown in its own row. */
+  smallBusiness?: boolean
 }
 
 export interface OneOffService {

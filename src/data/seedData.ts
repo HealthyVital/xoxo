@@ -38,6 +38,10 @@ export const SEED_CAMPAIGNS: Campaign[] = []
 export const SEED_CALENDAR_ITEMS: CalendarItem[] = []
 export const SEED_TEMPLATES: OutreachTemplate[] = templatesRaw as OutreachTemplate[]
 export const SEED_PRICING_PACKAGES: PricingPackage[] = pricingRaw.packages as PricingPackage[]
+/** The three core monthly packages (Starter / Growth / Content Partner). */
+export const MAIN_PRICING_PACKAGES: PricingPackage[] = SEED_PRICING_PACKAGES.filter((p) => !p.smallBusiness)
+/** Entry tiers for very small businesses (Content Drop / Local). */
+export const SMALL_BUSINESS_PACKAGES: PricingPackage[] = SEED_PRICING_PACKAGES.filter((p) => p.smallBusiness)
 export const SEED_ONE_OFF_SERVICES: OneOffService[] = pricingRaw.oneOffServices as OneOffService[]
 export const PRICING_DISCLAIMER: string = pricingRaw.disclaimer
 

@@ -157,6 +157,9 @@ const EN = {
     kicker: 'Simple pricing',
     title: 'Packages',
     mostPopular: 'Most popular',
+    smallKicker: 'Small business?',
+    smallTitle: 'Start small — from €49 a month',
+    smallSub: 'Not every business needs a €1,500 package. Start with what fits your budget and grow when the content starts paying off.',
     items: {} as Record<string, PackageCopy>,
     oneOffIntro: 'Prefer a single one-time project instead of a monthly package?',
     oneOff: {} as Record<string, OneOffCopy>,
@@ -292,7 +295,20 @@ const RU: LandingCopy = {
     kicker: 'Простые цены',
     title: 'Пакеты',
     mostPopular: 'Самый популярный',
+    smallKicker: 'Небольшой бизнес?',
+    smallTitle: 'Начните с малого — от €49 в месяц',
+    smallSub: 'Не каждому бизнесу нужен пакет за €1 500. Начните с того, что по карману, и растите, когда контент начнёт окупаться.',
     items: {
+      drop: {
+        priceRange: '€49 / мес.',
+        description: 'Вы снимаете на телефон — мы превращаем это в готовый к публикации контент. Без выезда на съёмку, поэтому цена минимальная.',
+        deliverables: ['2 коротких видео, смонтированных из ваших съёмок', '4 ретушированных фото', 'Тексты-хуки и подписи', 'Ежемесячный чек-лист для съёмки'],
+      },
+      local: {
+        priceRange: '€249 – €349 / мес.',
+        description: 'Одна короткая выездная съёмка каждый месяц — профессиональный контент без цен крупного агентства.',
+        deliverables: ['1 выездная съёмка в месяц (до 2 часов)', '2 коротких видео', '6–8 обработанных фото', 'Подписи к каждому посту'],
+      },
       starter: {
         priceRange: '€650 – €850 / мес.',
         description: 'Стабильная база контента для бизнеса, который только начинает вкладываться в соцсети.',
@@ -459,7 +475,20 @@ const LV: LandingCopy = {
     kicker: 'Vienkāršas cenas',
     title: 'Paketes',
     mostPopular: 'Populārākā',
+    smallKicker: 'Mazs uzņēmums?',
+    smallTitle: 'Sāciet ar mazumiņu — no €49 mēnesī',
+    smallSub: 'Ne katram uzņēmumam vajag €1500 paketi. Sāciet ar to, kas atbilst budžetam, un augiet, kad saturs sāk atmaksāties.',
     items: {
+      drop: {
+        priceRange: '€49 / mēnesī',
+        description: 'Jūs filmējat ar telefonu, mēs to pārvēršam publicēšanai gatavā saturā — bez filmēšanas izbraukuma, tāpēc cena ir minimāla.',
+        deliverables: ['2 īsi video, samontēti no jūsu materiāla', '4 retušētas fotogrāfijas', 'Āķa teksti un apraksti', 'Ikmēneša filmēšanas kontrolsaraksts'],
+      },
+      local: {
+        priceRange: '€249 – €349 / mēnesī',
+        description: 'Viena īsa filmēšana uz vietas katru mēnesi — profesionāls saturs bez lielas aģentūras cenām.',
+        deliverables: ['1 filmēšana uz vietas mēnesī (līdz 2 stundām)', '2 īsi video', '6–8 apstrādātas fotogrāfijas', 'Apraksti katram ierakstam'],
+      },
       starter: {
         priceRange: '€650 – €850 / mēnesī',
         description: 'Stabils satura pamats uzņēmumiem, kas tikai sāk ieguldīt sociālajos tīklos.',

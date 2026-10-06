@@ -20,7 +20,7 @@ import {
 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
-import { SEED_PRICING_PACKAGES, SEED_ONE_OFF_SERVICES } from '@/data/seedData'
+import { MAIN_PRICING_PACKAGES, SMALL_BUSINESS_PACKAGES, SEED_ONE_OFF_SERVICES } from '@/data/seedData'
 import { VERTICAL_STRATEGIES } from '@/data/verticals'
 import { cn } from '@/lib/utils'
 import { trackEvent } from '@/lib/analytics'
@@ -759,7 +759,7 @@ export default function Landing() {
           <SectionKicker>{t.packages.kicker}</SectionKicker>
           <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.packages.title}</h2>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-            {SEED_PRICING_PACKAGES.map((pkg, i) => {
+            {MAIN_PRICING_PACKAGES.map((pkg, i) => {
               const pc = t.packages.items[pkg.id] ?? pkg
               return (
               <Card
@@ -790,6 +790,31 @@ export default function Landing() {
               </Card>
               )
             })}
+          </div>
+          <div className="mt-12 rounded-3xl border border-dashed border-[var(--color-brand)] bg-[var(--color-brand-soft)]/40 p-5 sm:p-8">
+            <p className="text-center text-xs font-semibold tracking-[0.18em] text-[var(--color-brand)] uppercase">{t.packages.smallKicker}</p>
+            <h3 className="mt-1 text-center text-xl font-semibold tracking-tight text-[var(--color-ink)]">{t.packages.smallTitle}</h3>
+            <p className="mx-auto mt-1 mb-6 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.packages.smallSub}</p>
+            <div className="mx-auto grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2">
+              {SMALL_BUSINESS_PACKAGES.map((pkg) => {
+                const pc = t.packages.items[pkg.id] ?? pkg
+                return (
+                  <Card key={pkg.id} className="p-5">
+                    <p className="text-sm font-semibold text-[var(--color-ink)]">{pkg.name}</p>
+                    <p className="mt-1 text-2xl font-semibold text-[var(--color-brand)]">{pc.priceRange}</p>
+                    <p className="mt-2 text-xs text-[var(--color-ink-secondary)]">{pc.description}</p>
+                    <ul className="mt-3 space-y-1.5 text-xs text-[var(--color-ink-secondary)]">
+                      {pc.deliverables.map((d) => (
+                        <li key={d} className="flex items-start gap-1.5">
+                          <CheckCircle2 size={12} className="mt-0.5 shrink-0 text-[var(--color-good)]" />
+                          {d}
+                        </li>
+                      ))}
+                    </ul>
+                  </Card>
+                )
+              })}
+            </div>
           </div>
           <p className="mt-10 mb-5 text-center text-sm font-medium text-[var(--color-ink-secondary)]">{t.packages.oneOffIntro}</p>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">

@@ -23,6 +23,24 @@
       "description": "A full content operation across every platform that matters, with priority production.",
       "deliverables": ["12+ short-form videos", "25+ photos", "Multiple platforms", "Content strategy", "Campaign support", "Monthly reporting", "Priority production"],
       "bestFor": "Multi-location brands, event venues, businesses running paid campaigns"
+    },
+    {
+      "id": "drop",
+      "name": "Content Drop",
+      "priceRange": "€49 / month",
+      "description": "You film on your phone, we turn it into ready-to-post content — no shoot needed, so the price stays tiny.",
+      "deliverables": ["2 short-form videos edited from your footage", "4 photo touch-ups", "Hook text & captions", "A monthly filming checklist"],
+      "bestFor": "Very small businesses, freelancers, cafés and salons on a tight budget",
+      "smallBusiness": true
+    },
+    {
+      "id": "local",
+      "name": "Local",
+      "priceRange": "€249 – €349 / month",
+      "description": "One short on-site shoot every month — real professional content without the big-agency price.",
+      "deliverables": ["1 on-site shoot per month (up to 2 hours)", "2 short-form videos", "6–8 edited photos", "Captions for every post"],
+      "bestFor": "Single-location shops, salons, cafés and local services",
+      "smallBusiness": true
     }
   ],
   "oneOffServices": [

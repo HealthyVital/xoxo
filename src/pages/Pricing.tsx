@@ -3,8 +3,34 @@ import { Check } from 'lucide-react'
 import { PageHeader } from '@/components/ui/Misc'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Input, Label } from '@/components/ui/Input'
-import { SEED_PRICING_PACKAGES, SEED_ONE_OFF_SERVICES, PRICING_DISCLAIMER } from '@/data/seedData'
+import { MAIN_PRICING_PACKAGES, SMALL_BUSINESS_PACKAGES, SEED_ONE_OFF_SERVICES, PRICING_DISCLAIMER } from '@/data/seedData'
 import { formatCurrencyEUR } from '@/lib/utils'
+import type { PricingPackage } from '@/types'
+
+function PackageCard({ pkg, highlight }: { pkg: PricingPackage; highlight?: boolean }) {
+  return (
+    <Card className={highlight ? 'border-[var(--color-brand)] ring-1 ring-[var(--color-brand)]' : ''}>
+      <CardHeader>
+        <div>
+          <CardTitle>{pkg.name}</CardTitle>
+          <p className="mt-1 text-lg font-semibold text-[var(--color-ink)]">{pkg.priceRange}</p>
+        </div>
+      </CardHeader>
+      <CardContent>
+        <p className="mb-3 text-sm text-[var(--color-ink-secondary)]">{pkg.description}</p>
+        <ul className="mb-4 space-y-1.5 text-sm">
+          {pkg.deliverables.map((d) => (
+            <li key={d} className="flex items-start gap-2 text-[var(--color-ink-secondary)]">
+              <Check size={14} className="mt-0.5 shrink-0 text-[var(--color-good)]" />
+              {d}
+            </li>
+          ))}
+        </ul>
+        <p className="text-xs text-[var(--color-ink-muted)]">Best for: {pkg.bestFor}</p>
+      </CardContent>
+    </Card>
+  )
+}
 
 const VIDEO_RATE = 90
 const PHOTO_RATE = 20
@@ -21,27 +47,19 @@ export default function Pricing() {
       <PageHeader title="Pricing" description="Reference pricing for planning conversations — every engagement is custom-quoted." />
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-        {SEED_PRICING_PACKAGES.map((pkg, i) => (
-          <Card key={pkg.id} className={i === 1 ? 'border-[var(--color-brand)] ring-1 ring-[var(--color-brand)]' : ''}>
-            <CardHeader>
-              <div>
-                <CardTitle>{pkg.name}</CardTitle>
-                <p className="mt-1 text-lg font-semibold text-[var(--color-ink)]">{pkg.priceRange}</p>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="mb-3 text-sm text-[var(--color-ink-secondary)]">{pkg.description}</p>
-              <ul className="mb-4 space-y-1.5 text-sm">
-                {pkg.deliverables.map((d) => (
-                  <li key={d} className="flex items-start gap-2 text-[var(--color-ink-secondary)]">
-                    <Check size={14} className="mt-0.5 shrink-0 text-[var(--color-good)]" />
-                    {d}
-                  </li>
-                ))}
-              </ul>
-              <p className="text-xs text-[var(--color-ink-muted)]">Best for: {pkg.bestFor}</p>
-            </CardContent>
-          </Card>
+        {MAIN_PRICING_PACKAGES.map((pkg, i) => (
+          <PackageCard key={pkg.id} pkg={pkg} highlight={i === 1} />
+        ))}
+      </div>
+
+      <h2 className="mt-8 mb-1 text-sm font-semibold text-[var(--color-ink)]">Small-business entry tiers</h2>
+      <p className="mb-3 text-xs text-[var(--color-ink-muted)]">
+        For businesses that can't justify a full monthly package yet — a low-cost way in that we upsell to Starter once the
+        content proves itself. Content Drop is remote editing only (client films), so it costs us no shoot time.
+      </p>
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+        {SMALL_BUSINESS_PACKAGES.map((pkg) => (
+          <PackageCard key={pkg.id} pkg={pkg} />
         ))}
       </div>
 
