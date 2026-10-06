@@ -196,7 +196,8 @@ const FEATURED_VERTICALS = ['Hotels & Hospitality', 'Cosmetics & Beauty', 'Resta
 
 // logo: supplied brand artwork; brands without one render as a text wordmark.
 // bleed: the logo has its own background, so it fills the chip edge to edge.
-const LATVIA_BRANDS: { name: string; logo?: string; bleed?: boolean }[] = [
+// tall: near-square logo, shown taller so it carries the same visual weight.
+const LATVIA_BRANDS: { name: string; logo?: string; bleed?: boolean; tall?: boolean }[] = [
   { name: 'Maxima', logo: logoMaxima },
   { name: 'Drogas', logo: logoDrogas },
   { name: 'Lidl' },
@@ -205,7 +206,7 @@ const LATVIA_BRANDS: { name: string; logo?: string; bleed?: boolean }[] = [
   { name: 'Stockmann', logo: logoStockmann },
   { name: 'Gambas' },
   { name: 'VIVI', logo: logoVivi, bleed: true },
-  { name: 'Origo', logo: logoOrigo },
+  { name: 'Origo', logo: logoOrigo, tall: true },
 ]
 
 /** Wordmark chips orbiting the hero tiles on an ellipse. Positions are written
@@ -263,7 +264,7 @@ function BrandOrbit() {
             <img
               src={brand.logo}
               alt={brand.name}
-              className={cn('block w-auto max-w-none', brand.bleed ? 'h-9 sm:h-11' : 'h-6 sm:h-7')}
+              className={cn('block w-auto max-w-none', brand.bleed || brand.tall ? 'h-9 sm:h-11' : 'h-6 sm:h-7')}
             />
           ) : (
             brand.name
