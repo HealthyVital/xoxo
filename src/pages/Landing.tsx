@@ -44,6 +44,8 @@ import logoRewe from '@/assets/brands/rewe.png'
 import logoStockmann from '@/assets/brands/stockmann.png'
 import logoVivi from '@/assets/brands/vivi.png'
 import logoOrigo from '@/assets/brands/origo.png'
+import logoLidl from '@/assets/brands/lidl.png'
+import logoGambas from '@/assets/brands/gambas.png'
 import reel1 from '@/assets/reels/reel-1.mp4'
 import reel1Poster from '@/assets/reels/reel-1-poster.jpg'
 import reel2 from '@/assets/reels/reel-2.mp4'
@@ -200,11 +202,11 @@ const FEATURED_VERTICALS = ['Hotels & Hospitality', 'Cosmetics & Beauty', 'Resta
 const LATVIA_BRANDS: { name: string; logo?: string; bleed?: boolean; tall?: boolean }[] = [
   { name: 'Maxima', logo: logoMaxima },
   { name: 'Drogas', logo: logoDrogas },
-  { name: 'Lidl' },
+  { name: 'Lidl', logo: logoLidl, bleed: true },
   { name: 'Lido', logo: logoLido, bleed: true },
   { name: 'REWE', logo: logoRewe, bleed: true },
   { name: 'Stockmann', logo: logoStockmann },
-  { name: 'Gambas' },
+  { name: 'Gambas', logo: logoGambas, tall: true },
   { name: 'VIVI', logo: logoVivi, bleed: true },
   { name: 'Origo', logo: logoOrigo, tall: true },
 ]
