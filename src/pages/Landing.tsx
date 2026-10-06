@@ -26,6 +26,14 @@ import { cn } from '@/lib/utils'
 import { trackEvent } from '@/lib/analytics'
 import { WhatsAppFab } from '@/components/landing/WhatsAppFab'
 import { buildWhatsAppLink } from '@/lib/contact'
+import {
+  LANDING_COPY,
+  LANDING_LOCALES,
+  detectLandingLocale,
+  saveLandingLocale,
+  type LandingCopy,
+  type LandingLocale,
+} from '@/lib/landingI18n'
 import heroTulips from '@/assets/hero/hero-tulips.jpg'
 import heroMirror from '@/assets/hero/hero-mirror.jpg'
 import heroGrocery from '@/assets/hero/hero-grocery.jpg'
@@ -48,9 +56,10 @@ import lifestyle1 from '@/assets/portfolio/lifestyle-1.jpg'
 import lifestyle2 from '@/assets/portfolio/lifestyle-2.jpg'
 import lifestyle3 from '@/assets/portfolio/lifestyle-3.jpg'
 
+// Role/bio text per person lives in landingI18n (team.people, same order).
 const TEAM = [
-  { photo: agritaPortrait as string | undefined, name: 'Agrita', role: 'Model & content creator', bio: 'The face and eye behind the content — on both sides of the camera, from concept to the final shot.' },
-  { photo: vinPortrait as string | undefined, name: 'Vin', role: 'Content producer', bio: 'Keeps every shoot and every client timeline running — production, logistics, delivery.' },
+  { photo: agritaPortrait as string | undefined, name: 'Agrita' },
+  { photo: vinPortrait as string | undefined, name: 'Vin' },
 ]
 
 const WEDDING_GALLERY = [wedding1, wedding2, wedding3, wedding4, wedding5, wedding6, wedding7]
@@ -67,37 +76,25 @@ const SERIES = [
   'var(--color-series-8)',
 ]
 
-const SERVICES = [
-  { icon: Camera, title: 'Event photography', desc: 'Corporate events, launches and conferences, delivered fast.' },
-  { icon: Heart, title: 'Wedding photography', desc: 'A dedicated service, kept separate from our B2B content work.' },
-  { icon: Building2, title: 'Corporate photography', desc: 'Portraits, offices and employer-branding content.' },
-  { icon: ShoppingBag, title: 'Product photography', desc: 'Studio or on-location, e-commerce and campaign ready.' },
-  { icon: Video, title: 'Short-form video', desc: 'Built for how people actually watch — vertical, fast, hooked in 2 seconds.' },
-  { icon: Clapperboard, title: 'Reels & TikTok content', desc: 'Platform-native content, not repurposed ads.' },
-  { icon: Sparkles, title: 'UGC-style content', desc: 'Authentic-feeling content that performs like organic.' },
-  { icon: Sparkle, title: 'Monthly content packages', desc: 'A steady content engine, not a one-off shoot.' },
-]
+// Icons only — titles/descriptions are services.items in landingI18n (same order).
+const SERVICE_ICONS = [Camera, Heart, Building2, ShoppingBag, Video, Clapperboard, Sparkles, Sparkle]
 
 const REELS = [
   // DOM order = mobile layout (two side by side, featured full-width below);
   // `layout` reorders on sm+ so the featured reel sits in the middle.
   // views: real view counts of each reel, confirmed by the team (2026-10-06).
-  { src: reel1, poster: reel1Poster, label: 'Reel 1', views: 525_375, layout: 'sm:order-1' },
-  { src: reel2, poster: reel2Poster, label: 'Reel 2', views: 1_555_324, layout: 'sm:order-3' },
-  { src: reel3, poster: reel3Poster, label: 'Featured', views: 3_999_999, brandSlot: true, captions: true, layout: 'col-span-2 sm:col-span-1 sm:order-2 sm:z-10 sm:scale-[1.06]' },
-] as { src: string; poster: string; label: string; views?: number; brandSlot?: boolean; captions?: boolean; layout: string }[]
+  // label: index into reels.labels in landingI18n.
+  { src: reel1, poster: reel1Poster, label: 0, views: 525_375, layout: 'sm:order-1' },
+  { src: reel2, poster: reel2Poster, label: 1, views: 1_555_324, layout: 'sm:order-3' },
+  { src: reel3, poster: reel3Poster, label: 2, views: 3_999_999, brandSlot: true, captions: true, layout: 'col-span-2 sm:col-span-1 sm:order-2 sm:z-10 sm:scale-[1.06]' },
+] as { src: string; poster: string; label: number; views?: number; brandSlot?: boolean; captions?: boolean; layout: string }[]
 
-/** Generic ad-style captions for the featured reel, as fractions of its
- *  playback (so they stay in sync whatever the clip length). */
-const REEL_CAPTIONS = [
-  { until: 0.24, before: 'Picture', highlight: 'your brand', after: 'here' },
-  { until: 0.5, before: 'Moments people', highlight: 'stop scrolling', after: 'for' },
-  { until: 0.75, before: 'Shot, edited &', highlight: 'ready to post', after: '' },
-  { until: 1.01, before: 'Your story —', highlight: 'told beautifully', after: '' },
-]
+/** Where each featured-reel caption ends, as a fraction of playback (so they
+ *  stay in sync whatever the clip length). Text is reels.captions in landingI18n. */
+const CAPTION_UNTIL = [0.24, 0.5, 0.75, 1.01]
 
 /** Captions synced to the sibling <video>'s playback position. */
-function ReelCaptions() {
+function ReelCaptions({ captions }: { captions: LandingCopy['reels']['captions'] }) {
   const ref = useRef<HTMLDivElement>(null)
   const [index, setIndex] = useState(0)
 
@@ -107,15 +104,15 @@ function ReelCaptions() {
     let raf = 0
     const tick = () => {
       const p = video.duration ? video.currentTime / video.duration : 0
-      const next = REEL_CAPTIONS.findIndex((c) => p < c.until)
-      setIndex(next === -1 ? REEL_CAPTIONS.length - 1 : next)
+      const next = CAPTION_UNTIL.findIndex((until) => p < until)
+      setIndex(next === -1 ? CAPTION_UNTIL.length - 1 : next)
       raf = requestAnimationFrame(tick)
     }
     raf = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(raf)
   }, [])
 
-  const c = REEL_CAPTIONS[index]
+  const c = captions[index]
   return (
     <div ref={ref} className="pointer-events-none absolute inset-x-3 bottom-[18%] flex justify-center">
       <p
@@ -136,7 +133,7 @@ const BRAND_SLOT_ICONS = [Hotel, UtensilsCrossed, ShoppingBag]
 
 /** Generic "Your logo" placeholder whose icon cycles hotel → restaurant → shop,
  *  so visitors picture the reel as their own brand's ad. */
-function BrandSlot() {
+function BrandSlot({ lines }: { lines: string[] }) {
   const [i, setI] = useState(0)
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
@@ -145,12 +142,12 @@ function BrandSlot() {
   }, [])
   const Icon = BRAND_SLOT_ICONS[i]
   return (
-    <span className="pointer-events-none absolute top-1/2 left-1/2 flex h-40 w-40 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 rounded-full border-[3px] border-dashed border-[var(--color-brand)] bg-white/90 text-[var(--color-ink)] shadow-[0_12px_36px_-8px_rgba(0,0,0,0.5)] ring-8 ring-white/35 sm:h-48 sm:w-48">
+    <span className="pointer-events-none absolute top-1/4 left-1/2 flex h-40 w-40 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 rounded-full border-[3px] border-dashed border-[var(--color-brand)] bg-white/90 text-[var(--color-ink)] shadow-[0_12px_36px_-8px_rgba(0,0,0,0.5)] ring-8 ring-white/35 sm:h-48 sm:w-48">
       <Icon key={i} strokeWidth={2} className="h-16 w-16 animate-[fade-in_400ms_ease-out] sm:h-[4.5rem] sm:w-[4.5rem]" />
       <span className="text-center text-sm leading-tight font-bold tracking-wider uppercase sm:text-base">
-        Your
+        {lines[0]}
         <br />
-        logo
+        {lines[1]}
       </span>
     </span>
   )
@@ -158,7 +155,7 @@ function BrandSlot() {
 
 /** View count tied to the reel's playback: climbs from 0 to `target` (ease-out)
  *  as the sibling <video> plays, and restarts each time the video loops. */
-function ViewCounter({ target }: { target: number }) {
+function ViewCounter({ target, format }: { target: number; format: (n: number) => string }) {
   const ref = useRef<HTMLSpanElement>(null)
   const [value, setValue] = useState(0)
 
@@ -180,34 +177,15 @@ function ViewCounter({ target }: { target: number }) {
 
   return (
     <span ref={ref} className="inline-flex items-center gap-1 tabular-nums">
-      <Eye size={10} /> {value.toLocaleString('en-US')} views
+      <Eye size={10} /> {format(value)}
     </span>
   )
 }
 
-const INDUSTRIES = [
-  { icon: Hotel, label: 'Hotels' },
-  { icon: Plane, label: 'Travel' },
-  { icon: Sparkle, label: 'Cosmetics & Beauty' },
-  { icon: ShoppingBag, label: 'Footwear & Fashion' },
-  { icon: Pill, label: 'Pharmacy & Health Retail' },
-  { icon: Building2, label: 'Events & Corporate' },
-  { icon: UtensilsCrossed, label: 'Restaurants' },
-]
+// Icons only — labels are `industries` in landingI18n (same order).
+const INDUSTRY_ICONS = [Hotel, Plane, Sparkle, ShoppingBag, Pill, Building2, UtensilsCrossed]
 
-const STEPS = [
-  { step: '01', title: 'Free Content Audit', desc: 'Tell us about your business — get a content opportunity score and 3 ideas back instantly.' },
-  { step: '02', title: 'Free Content Pilot', desc: 'One short-form video, 5 edited photos and 3 concepts — on us, no commitment.' },
-  { step: '03', title: 'Monthly content', desc: 'If the pilot proves the fit, we build a recurring content engine around your goals.' },
-  { step: '04', title: 'Reporting & growth', desc: 'Monthly reports show what worked and what we\'re changing next — so the budget keeps earning its place.' },
-]
-
-const FAQ = [
-  { q: 'Is the Free Content Pilot really free?', a: 'Yes — one short-form video, 5 edited photos and 3 concepts, with no cost and no obligation to continue.' },
-  { q: 'Do you cover weddings and one-time events?', a: 'Yes — weddings and events (corporate or family) are booked as a single one-time package, alongside our recurring monthly content work for businesses. Message us on WhatsApp for availability.' },
-  { q: 'Are your prices fixed?', a: 'Pricing shown is a starting reference. Every engagement is custom-quoted based on scope.' },
-  { q: 'Can we cancel a monthly package?', a: 'Yes, our packages run month-to-month with a short notice period — no long lock-in contracts.' },
-]
+const FEATURED_VERTICALS = ['Hotels & Hospitality', 'Cosmetics & Beauty', 'Restaurants & Lifestyle'] as const
 
 const LATVIA_BRANDS = ['Maxima', 'Drogas', 'Lidl', 'Lido', 'REWE', 'Gambas', 'VIVI', 'Origo']
 
@@ -348,35 +326,80 @@ function SectionKicker({ children }: { children: string }) {
   )
 }
 
+function LanguageSwitcher({ locale, onChange }: { locale: LandingLocale; onChange: (l: LandingLocale) => void }) {
+  return (
+    <div role="group" aria-label="Language" className="flex rounded-full border border-[var(--color-hairline)] p-0.5 text-[11px] font-semibold">
+      {LANDING_LOCALES.map((l) => (
+        <button
+          key={l.id}
+          type="button"
+          onClick={() => onChange(l.id)}
+          aria-pressed={locale === l.id}
+          className={cn(
+            'rounded-full px-2 py-0.5 transition-colors',
+            locale === l.id ? 'bg-[var(--color-ink)] text-white' : 'text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]',
+          )}
+        >
+          {l.label}
+        </button>
+      ))}
+    </div>
+  )
+}
+
 export default function Landing() {
+  const [locale, setLocale] = useState<LandingLocale>(detectLandingLocale)
+  const t = LANDING_COPY[locale]
+  // The quiz has its own RU/LV versions at /quiz/:lang.
+  const quizPath = locale === 'en' ? '/quiz' : `/quiz/${locale}`
+
+  useEffect(() => {
+    document.documentElement.lang = locale
+  }, [locale])
+
+  function changeLocale(next: LandingLocale) {
+    setLocale(next)
+    saveLandingLocale(next)
+    trackEvent('language_change', { locale: next })
+    // Keep ?lang= in the URL so a link in a given language can be shared.
+    const url = new URL(window.location.href)
+    if (next === 'en') url.searchParams.delete('lang')
+    else url.searchParams.set('lang', next)
+    window.history.replaceState(window.history.state, '', url)
+  }
+
   return (
     <div className="min-h-screen overflow-x-hidden bg-[var(--color-surface)] pb-9">
       <header className="sticky top-0 z-30 border-b border-[var(--color-hairline)] bg-[var(--color-surface)]/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[var(--color-brand)] to-[var(--color-brand-strong)] text-white shadow-sm">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-3 sm:px-6">
+          <div className="flex min-w-0 items-center gap-2">
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-[var(--color-brand)] to-[var(--color-brand-strong)] text-white shadow-sm">
               <Camera size={16} />
             </div>
-            <span className="text-sm font-semibold">Agrita&Vin Content Co.</span>
+            <span className="truncate text-sm font-semibold max-[420px]:hidden">Agrita&Vin Content Co.</span>
           </div>
-          <nav className="hidden items-center gap-6 text-sm text-[var(--color-ink-secondary)] md:flex">
-            <a href="#reels" className="hover:text-[var(--color-ink)]">Reels</a>
-            <a href="#weddings" className="hover:text-[var(--color-ink)]">Weddings</a>
-            <a href="#services" className="hover:text-[var(--color-ink)]">Services</a>
-            <a href="#industries" className="hover:text-[var(--color-ink)]">Industries</a>
-            <a href="#how-it-works" className="hover:text-[var(--color-ink)]">How it works</a>
-            <a href="#packages" className="hover:text-[var(--color-ink)]">Packages</a>
-            <a href="#faq" className="hover:text-[var(--color-ink)]">FAQ</a>
-            <Link to="/quiz" onClick={() => trackEvent('cta_click', { cta: 'nav_quiz' })} className="hover:text-[var(--color-ink)]">
-              Take the Quiz
+          <nav className="hidden items-center gap-5 text-sm text-[var(--color-ink-secondary)] lg:flex">
+            <a href="#reels" className="hover:text-[var(--color-ink)]">{t.nav.reels}</a>
+            <a href="#weddings" className="hover:text-[var(--color-ink)]">{t.nav.weddings}</a>
+            <a href="#services" className="hover:text-[var(--color-ink)]">{t.nav.services}</a>
+            <a href="#industries" className="hover:text-[var(--color-ink)]">{t.nav.industries}</a>
+            <a href="#how-it-works" className="hover:text-[var(--color-ink)]">{t.nav.how}</a>
+            <a href="#packages" className="hover:text-[var(--color-ink)]">{t.nav.packages}</a>
+            <a href="#faq" className="hover:text-[var(--color-ink)]">{t.nav.faq}</a>
+            <Link to={quizPath} onClick={() => trackEvent('cta_click', { cta: 'nav_quiz' })} className="hover:text-[var(--color-ink)]">
+              {t.nav.quiz}
             </Link>
           </nav>
-          <div className="flex items-center gap-2">
-            <Link to="/app/dashboard" className="hidden text-xs text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] sm:block">
-              Team login
+          <div className="flex shrink-0 items-center gap-2">
+            <LanguageSwitcher locale={locale} onChange={changeLocale} />
+            <Link to="/app/dashboard" className="hidden text-xs text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] xl:block">
+              {t.teamLogin}
             </Link>
             <Link to="/audit" onClick={() => trackEvent('cta_click', { cta: 'nav_audit' })}>
-              <Button size="sm">Get a Free Content Audit</Button>
+              <Button size="sm">
+                <span className="sm:hidden">{t.auditCtaShort}</span>
+                <span className="hidden sm:inline">{t.auditCta}</span>
+              </Button>
             </Link>
           </div>
         </div>
@@ -394,43 +417,43 @@ export default function Landing() {
         />
         <div className="relative mx-auto max-w-6xl px-4 pt-16 pb-12 text-center sm:px-6">
           <p className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-[var(--color-brand-soft)] px-3 py-1 text-xs font-medium text-[var(--color-brand-strong)]">
-            <Sparkles size={12} /> Content for business — Rotterdam
+            <Sparkles size={12} /> {t.hero.badge}
           </p>
-          <h1 className="mx-auto max-w-3xl text-5xl font-semibold tracking-tight text-balance text-[var(--color-ink)] sm:text-6xl">
-            Professional content that makes your brand{' '}
+          <h1 className="mx-auto max-w-3xl text-4xl font-semibold tracking-tight text-balance text-[var(--color-ink)] sm:text-6xl">
+            {t.hero.titleA}{' '}
             <span className="bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-series-3)] bg-clip-text text-transparent">
-              visible.
+              {t.hero.titleB}
             </span>
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-base text-[var(--color-ink-secondary)] sm:text-lg">
-            Photography, short-form video and social content created around your business goals.
+            {t.hero.sub}
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link to="/audit" onClick={() => trackEvent('cta_click', { cta: 'hero_audit' })}>
               <Button size="lg" className="shadow-[0_8px_24px_-6px_var(--color-brand)]">
-                Get a Free Content Audit <ArrowRight size={16} />
+                {t.auditCta} <ArrowRight size={16} />
               </Button>
             </Link>
             <a href="#reels" onClick={() => trackEvent('cta_click', { cta: 'hero_see_work' })}>
               <Button size="lg" variant="outline">
-                See Our Work
+                {t.hero.seeWork}
               </Button>
             </a>
           </div>
           <Link
-            to="/quiz"
+            to={quizPath}
             onClick={() => trackEvent('cta_click', { cta: 'hero_quiz' })}
             className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[var(--color-brand)] hover:underline"
           >
-            Not sure where to start? Take the 2-minute quiz <ArrowRight size={14} />
+            {t.hero.quizNudge} <ArrowRight size={14} />
           </Link>
 
           <HeroMosaic />
 
           <div className="mx-auto mt-10 flex max-w-3xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-[var(--color-ink-muted)]">
-            {INDUSTRIES.map((ind) => (
-              <span key={ind.label} className="inline-flex items-center gap-1.5">
-                <ind.icon size={13} className="text-[var(--color-brand)]" /> {ind.label}
+            {INDUSTRY_ICONS.map((Icon, i) => (
+              <span key={i} className="inline-flex items-center gap-1.5">
+                <Icon size={13} className="text-[var(--color-brand)]" /> {t.industries[i]}
               </span>
             ))}
           </div>
@@ -440,12 +463,9 @@ export default function Landing() {
       {/* REELS — real work, not stock */}
       <section id="reels" className="border-t border-[var(--color-hairline)] py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <SectionKicker>Real work, not stock</SectionKicker>
-          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">See it in motion</h2>
-          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
-            Short-form reels, shot and edited by our own team — weddings, events and everyday business
-            moments, the same format we produce for clients every month.
-          </p>
+          <SectionKicker>{t.reels.kicker}</SectionKicker>
+          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.reels.title}</h2>
+          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.reels.sub}</p>
           <div className="mx-auto grid max-w-sm grid-cols-2 items-center gap-4 sm:max-w-3xl sm:grid-cols-3 sm:gap-8">
             {REELS.map((r) => (
               <div
@@ -468,16 +488,16 @@ export default function Landing() {
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
                 <div className="pointer-events-none absolute top-3 left-3 flex flex-wrap items-center gap-1.5">
                   <span className="inline-flex items-center gap-1 rounded-full bg-black/40 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">
-                    <Sparkles size={10} /> {r.label}
+                    <Sparkles size={10} /> {t.reels.labels[r.label]}
                   </span>
                   {r.views && (
                     <span className="rounded-full bg-black/40 px-2 py-0.5 text-[10px] font-semibold text-white backdrop-blur-sm">
-                      <ViewCounter target={r.views} />
+                      <ViewCounter target={r.views} format={t.reels.views} />
                     </span>
                   )}
                 </div>
-                {r.brandSlot && <BrandSlot />}
-                {r.captions && <ReelCaptions />}
+                {r.brandSlot && <BrandSlot lines={t.reels.yourLogo} />}
+                {r.captions && <ReelCaptions captions={t.reels.captions} />}
               </div>
             ))}
           </div>
@@ -487,12 +507,9 @@ export default function Landing() {
       {/* REAL WEDDINGS GALLERY */}
       <section id="weddings" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <SectionKicker>Weddings &amp; events</SectionKicker>
-          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Real weddings, real moments</h2>
-          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
-            One-time coverage for weddings and events — corporate or family — captured and delivered
-            as a single, no-subscription package.
-          </p>
+          <SectionKicker>{t.weddings.kicker}</SectionKicker>
+          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.weddings.title}</h2>
+          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.weddings.sub}</p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
             {WEDDING_GALLERY.map((src, i) => (
               <div
@@ -504,7 +521,7 @@ export default function Landing() {
               >
                 <img
                   src={src}
-                  alt="Real wedding coverage by Agrita&Vin Content Co."
+                  alt={t.weddings.alt}
                   loading="lazy"
                   className={cn('h-full w-full object-cover transition-transform duration-500 group-hover:scale-105', i === 0 ? 'aspect-square' : 'aspect-[4/5]')}
                 />
@@ -513,13 +530,13 @@ export default function Landing() {
           </div>
           <p className="mt-8 text-center">
             <a
-              href={buildWhatsAppLink("Hi! I'd like to ask about wedding or event coverage.")}
+              href={buildWhatsAppLink(t.weddings.whatsappMessage)}
               target="_blank"
               rel="noreferrer"
               onClick={() => trackEvent('cta_click', { cta: 'wedding_gallery_whatsapp' })}
               className="text-sm font-medium text-[#128C7E] hover:underline"
             >
-              Ask about wedding &amp; event coverage on WhatsApp →
+              {t.weddings.whatsappLink}
             </a>
           </p>
         </div>
@@ -528,8 +545,8 @@ export default function Landing() {
       {/* MEET THE CREATORS */}
       <section id="team" className="border-t border-[var(--color-hairline)] py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <SectionKicker>Behind the camera</SectionKicker>
-          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Meet the creators</h2>
+          <SectionKicker>{t.team.kicker}</SectionKicker>
+          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.team.title}</h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {TEAM.map((person, i) => (
               <Card key={person.name} className="overflow-hidden p-0">
@@ -547,9 +564,9 @@ export default function Landing() {
                 </div>
                 <div className="p-5">
                   <p className="text-sm font-semibold text-[var(--color-ink)]">
-                    {person.name} <span className="font-normal text-[var(--color-ink-muted)]">— {person.role}</span>
+                    {person.name} <span className="font-normal text-[var(--color-ink-muted)]">— {t.team.people[i].role}</span>
                   </p>
-                  <p className="mt-1 text-sm text-[var(--color-ink-secondary)]">{person.bio}</p>
+                  <p className="mt-1 text-sm text-[var(--color-ink-secondary)]">{t.team.people[i].bio}</p>
                 </div>
               </Card>
             ))}
@@ -560,24 +577,27 @@ export default function Landing() {
       {/* SERVICES */}
       <section id="services" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <SectionKicker>What we make</SectionKicker>
-          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Services</h2>
+          <SectionKicker>{t.services.kicker}</SectionKicker>
+          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.services.title}</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {SERVICES.map((s, i) => (
+            {t.services.items.map((s, i) => {
+              const Icon = SERVICE_ICONS[i]
+              return (
               <Card
-                key={s.title}
+                key={i}
                 className="group p-5 transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_16px_32px_-12px_rgba(11,11,11,0.18)]"
               >
                 <div
                   className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl text-white shadow-sm transition-transform duration-200 group-hover:scale-105"
                   style={{ background: `linear-gradient(135deg, ${SERIES[i % SERIES.length]}, color-mix(in oklab, ${SERIES[i % SERIES.length]} 65%, black))` }}
                 >
-                  <s.icon size={18} />
+                  <Icon size={18} />
                 </div>
                 <p className="text-sm font-semibold text-[var(--color-ink)]">{s.title}</p>
                 <p className="mt-1 text-xs text-[var(--color-ink-secondary)]">{s.desc}</p>
               </Card>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -585,24 +605,22 @@ export default function Landing() {
       {/* INDUSTRIES */}
       <section id="industries" className="py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <SectionKicker>Focused, not generic</SectionKicker>
-          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Industries we focus on</h2>
-          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
-            Every industry gets a dedicated content playbook, not a one-size-fits-all package.
-          </p>
+          <SectionKicker>{t.industriesSection.kicker}</SectionKicker>
+          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.industriesSection.title}</h2>
+          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.industriesSection.sub}</p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {INDUSTRIES.map((ind, i) => (
+            {INDUSTRY_ICONS.map((Icon, i) => (
               <div
-                key={ind.label}
+                key={i}
                 className="group flex flex-col items-center gap-3 rounded-2xl border border-[var(--color-hairline)] bg-[var(--color-surface)] p-6 text-center transition-all duration-200 hover:-translate-y-1 hover:border-transparent hover:shadow-[0_16px_32px_-12px_rgba(11,11,11,0.18)]"
               >
                 <div
                   className="flex h-12 w-12 items-center justify-center rounded-full text-white transition-transform duration-200 group-hover:scale-110"
                   style={{ background: `linear-gradient(135deg, ${SERIES[i % SERIES.length]}, color-mix(in oklab, ${SERIES[i % SERIES.length]} 65%, black))` }}
                 >
-                  <ind.icon size={20} />
+                  <Icon size={20} />
                 </div>
-                <p className="text-xs font-medium text-[var(--color-ink)]">{ind.label}</p>
+                <p className="text-xs font-medium text-[var(--color-ink)]">{t.industries[i]}</p>
               </div>
             ))}
           </div>
@@ -612,14 +630,9 @@ export default function Landing() {
       {/* TRAVEL & LIFESTYLE SAMPLE CONTENT */}
       <section className="border-t border-[var(--color-hairline)] py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <SectionKicker>Travel &amp; lifestyle</SectionKicker>
-          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">
-            The same eye, for travel &amp; lifestyle content
-          </h2>
-          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
-            The destination, hospitality and lifestyle content style we bring to travel and tour
-            operator clients.
-          </p>
+          <SectionKicker>{t.lifestyle.kicker}</SectionKicker>
+          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.lifestyle.title}</h2>
+          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.lifestyle.sub}</p>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {LIFESTYLE_GALLERY.map((src) => (
               <div
@@ -628,7 +641,7 @@ export default function Landing() {
               >
                 <img
                   src={src}
-                  alt="Travel & lifestyle content sample"
+                  alt={t.lifestyle.alt}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -641,20 +654,20 @@ export default function Landing() {
       {/* HOW IT WORKS */}
       <section id="how-it-works" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <SectionKicker>The process</SectionKicker>
-          <h2 className="mb-12 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">How it works</h2>
+          <SectionKicker>{t.how.kicker}</SectionKicker>
+          <h2 className="mb-12 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.how.title}</h2>
           <div className="relative grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div
               aria-hidden
               className="absolute top-6 right-[12%] left-[12%] hidden h-px bg-[var(--color-hairline)] lg:block"
             />
-            {STEPS.map((s, i) => (
-              <div key={s.step} className="relative">
+            {t.how.steps.map((s, i) => (
+              <div key={i} className="relative">
                 <div
                   className="relative z-10 mb-4 flex h-12 w-12 items-center justify-center rounded-full text-sm font-semibold text-white shadow-md"
                   style={{ background: `linear-gradient(135deg, ${SERIES[i % SERIES.length]}, color-mix(in oklab, ${SERIES[i % SERIES.length]} 65%, black))` }}
                 >
-                  {s.step}
+                  {String(i + 1).padStart(2, '0')}
                 </div>
                 <p className="mb-1 text-sm font-semibold text-[var(--color-ink)]">{s.title}</p>
                 <p className="text-xs text-[var(--color-ink-secondary)]">{s.desc}</p>
@@ -667,31 +680,32 @@ export default function Landing() {
       {/* EXAMPLES */}
       <section id="examples" className="py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <SectionKicker>Strategy first</SectionKicker>
-          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Content built for real objectives</h2>
-          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">
-            A sample of the content pillars we build per industry — see the full playbook once you're a client.
-          </p>
+          <SectionKicker>{t.examples.kicker}</SectionKicker>
+          <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.examples.title}</h2>
+          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.examples.sub}</p>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {(['Hotels & Hospitality', 'Cosmetics & Beauty', 'Restaurants & Lifestyle'] as const).map((v, i) => (
+            {FEATURED_VERTICALS.map((v, i) => {
+              const vc = t.examples.verticals[v] ?? { name: v, ideas: VERTICAL_STRATEGIES[v].contentIdeas.slice(0, 4) }
+              return (
               <Card key={v} className="overflow-hidden p-0">
                 <div
                   className="h-2 w-full"
                   style={{ background: `linear-gradient(90deg, ${SERIES[i * 2]}, ${SERIES[i * 2 + 1]})` }}
                 />
                 <div className="p-5">
-                  <p className="mb-2 text-sm font-semibold text-[var(--color-ink)]">{v}</p>
+                  <p className="mb-2 text-sm font-semibold text-[var(--color-ink)]">{vc.name}</p>
                   <ul className="space-y-1 text-xs text-[var(--color-ink-secondary)]">
-                    {VERTICAL_STRATEGIES[v].contentIdeas.slice(0, 4).map((i) => (
-                      <li key={i} className="flex items-start gap-1.5">
+                    {vc.ideas.map((idea) => (
+                      <li key={idea} className="flex items-start gap-1.5">
                         <CheckCircle2 size={13} className="mt-0.5 shrink-0 text-[var(--color-good)]" />
-                        {i}
+                        {idea}
                       </li>
                     ))}
                   </ul>
                 </div>
               </Card>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -699,23 +713,21 @@ export default function Landing() {
       {/* RESULTS */}
       <section id="results" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <SectionKicker>Honesty over hype</SectionKicker>
-          <h2 className="mb-3 text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Results, reported honestly</h2>
-          <p className="mx-auto max-w-xl text-sm text-[var(--color-ink-secondary)]">
-            Every client gets a monthly report showing reach, engagement, leads and what we're changing next. We don't
-            promise guaranteed outcomes — every number in your report is your own, clearly separated between observed,
-            client-reported and estimated data.
-          </p>
+          <SectionKicker>{t.results.kicker}</SectionKicker>
+          <h2 className="mb-3 text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.results.title}</h2>
+          <p className="mx-auto max-w-xl text-sm text-[var(--color-ink-secondary)]">{t.results.body}</p>
         </div>
       </section>
 
       {/* PACKAGES */}
       <section id="packages" className="py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <SectionKicker>Simple pricing</SectionKicker>
-          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Packages</h2>
+          <SectionKicker>{t.packages.kicker}</SectionKicker>
+          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.packages.title}</h2>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-            {SEED_PRICING_PACKAGES.map((pkg, i) => (
+            {SEED_PRICING_PACKAGES.map((pkg, i) => {
+              const pc = t.packages.items[pkg.id] ?? pkg
+              return (
               <Card
                 key={pkg.id}
                 className={cn(
@@ -727,14 +739,14 @@ export default function Landing() {
               >
                 {i === 1 && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--color-brand)] px-3 py-1 text-[10px] font-semibold tracking-wide text-white uppercase">
-                    Most popular
+                    {t.packages.mostPopular}
                   </span>
                 )}
                 <p className="text-sm font-semibold text-[var(--color-ink)]">{pkg.name}</p>
-                <p className="mt-1 text-2xl font-semibold text-[var(--color-ink)]">{pkg.priceRange}</p>
-                <p className="mt-2 text-xs text-[var(--color-ink-secondary)]">{pkg.description}</p>
+                <p className="mt-1 text-2xl font-semibold text-[var(--color-ink)]">{pc.priceRange}</p>
+                <p className="mt-2 text-xs text-[var(--color-ink-secondary)]">{pc.description}</p>
                 <ul className="mt-4 space-y-1.5 text-xs text-[var(--color-ink-secondary)]">
-                  {pkg.deliverables.map((d) => (
+                  {pc.deliverables.map((d) => (
                     <li key={d} className="flex items-start gap-1.5">
                       <CheckCircle2 size={12} className="mt-0.5 shrink-0 text-[var(--color-good)]" />
                       {d}
@@ -742,33 +754,33 @@ export default function Landing() {
                   ))}
                 </ul>
               </Card>
-            ))}
+              )
+            })}
           </div>
-          <p className="mt-10 mb-5 text-center text-sm font-medium text-[var(--color-ink-secondary)]">
-            Prefer a single one-time project instead of a monthly package?
-          </p>
+          <p className="mt-10 mb-5 text-center text-sm font-medium text-[var(--color-ink-secondary)]">{t.packages.oneOffIntro}</p>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {SEED_ONE_OFF_SERVICES.map((s) => (
-              <Card key={s.id} className={cn('p-4', s.id === 'wedding-coverage' && 'border-[var(--color-brand)]')}>
-                <p className="text-sm font-semibold text-[var(--color-ink)]">{s.name}</p>
-                <p className="mt-1 text-lg font-semibold text-[var(--color-brand)]">{s.priceRange}</p>
-                <p className="mt-1 text-xs text-[var(--color-ink-secondary)]">{s.description}</p>
-              </Card>
-            ))}
+            {SEED_ONE_OFF_SERVICES.map((s) => {
+              const sc = t.packages.oneOff[s.id] ?? s
+              return (
+                <Card key={s.id} className={cn('p-4', s.id === 'wedding-coverage' && 'border-[var(--color-brand)]')}>
+                  <p className="text-sm font-semibold text-[var(--color-ink)]">{sc.name}</p>
+                  <p className="mt-1 text-lg font-semibold text-[var(--color-brand)]">{sc.priceRange}</p>
+                  <p className="mt-1 text-xs text-[var(--color-ink-secondary)]">{sc.description}</p>
+                </Card>
+              )
+            })}
           </div>
-          <p className="mt-6 text-center text-xs text-[var(--color-ink-muted)]">
-            Reference pricing only — every engagement is custom-quoted.
-          </p>
+          <p className="mt-6 text-center text-xs text-[var(--color-ink-muted)]">{t.packages.disclaimer}</p>
         </div>
       </section>
 
       {/* FAQ */}
       <section id="faq" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
         <div className="mx-auto max-w-2xl px-4 sm:px-6">
-          <SectionKicker>Questions</SectionKicker>
-          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">FAQ</h2>
+          <SectionKicker>{t.faq.kicker}</SectionKicker>
+          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.faq.title}</h2>
           <div className="space-y-3">
-            {FAQ.map((f, i) => (
+            {t.faq.items.map((f, i) => (
               <Card key={f.q} className="overflow-hidden p-0">
                 <div className="flex gap-3 p-4">
                   <div
@@ -797,13 +809,11 @@ export default function Landing() {
           }}
         />
         <div className="relative mx-auto max-w-2xl px-4 text-center sm:px-6">
-          <h2 className="mb-3 text-3xl font-semibold tracking-tight text-[var(--color-ink)]">Ready to see your content opportunity?</h2>
-          <p className="mb-6 text-sm text-[var(--color-ink-secondary)]">
-            Takes two minutes. No cost, no commitment — just a clear look at what's possible.
-          </p>
+          <h2 className="mb-3 text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.contact.title}</h2>
+          <p className="mb-6 text-sm text-[var(--color-ink-secondary)]">{t.contact.sub}</p>
           <Link to="/audit" onClick={() => trackEvent('cta_click', { cta: 'bottom_audit' })}>
             <Button size="lg" className="shadow-[0_8px_24px_-6px_var(--color-brand)]">
-              Get a Free Content Audit <ArrowRight size={16} />
+              {t.auditCta} <ArrowRight size={16} />
             </Button>
           </Link>
         </div>
@@ -811,14 +821,12 @@ export default function Landing() {
 
       <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-[var(--color-hairline)] bg-[var(--color-surface)]/90 backdrop-blur">
         <div className="mx-auto flex h-9 max-w-6xl items-center justify-between gap-3 px-4 text-[10px] text-[var(--color-ink-muted)] sm:px-6 sm:text-[11px]">
-          <span className="truncate">
-            © {new Date().getFullYear()} CreatiVibe Media Netherlands, trading as Agrita&Vin Content Co. All rights reserved.
-          </span>
-          <Link to="/app/dashboard" className="shrink-0 hover:text-[var(--color-ink)]">Team login</Link>
+          <span className="truncate">{t.footer(new Date().getFullYear())}</span>
+          <Link to="/app/dashboard" className="shrink-0 hover:text-[var(--color-ink)]">{t.teamLogin}</Link>
         </div>
       </footer>
 
-      <WhatsAppFab source="landing" message="Hi! I'd like to know more about your content packages, including weddings and events." />
+      <WhatsAppFab source="landing" message={t.whatsappFab} />
     </div>
   )
 }
