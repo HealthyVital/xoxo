@@ -84,8 +84,53 @@ const REELS = [
   // views: real view counts of each reel, confirmed by the team (2026-10-06).
   { src: reel1, poster: reel1Poster, label: 'Reel 1', views: 525_375, layout: 'sm:order-1' },
   { src: reel2, poster: reel2Poster, label: 'Reel 2', views: 1_555_324, layout: 'sm:order-3' },
-  { src: reel3, poster: reel3Poster, label: 'Featured', views: 3_999_999, brandSlot: true, layout: 'col-span-2 sm:col-span-1 sm:order-2 sm:z-10 sm:scale-[1.06]' },
-] as { src: string; poster: string; label: string; views?: number; brandSlot?: boolean; layout: string }[]
+  { src: reel3, poster: reel3Poster, label: 'Featured', views: 3_999_999, brandSlot: true, captions: true, layout: 'col-span-2 sm:col-span-1 sm:order-2 sm:z-10 sm:scale-[1.06]' },
+] as { src: string; poster: string; label: string; views?: number; brandSlot?: boolean; captions?: boolean; layout: string }[]
+
+/** Generic ad-style captions for the featured reel, as fractions of its
+ *  playback (so they stay in sync whatever the clip length). */
+const REEL_CAPTIONS = [
+  { until: 0.24, before: 'Picture', highlight: 'your brand', after: 'here' },
+  { until: 0.5, before: 'Moments people', highlight: 'stop scrolling', after: 'for' },
+  { until: 0.75, before: 'Shot, edited &', highlight: 'ready to post', after: '' },
+  { until: 1.01, before: 'Your story —', highlight: 'told beautifully', after: '' },
+]
+
+/** Captions synced to the sibling <video>'s playback position. */
+function ReelCaptions() {
+  const ref = useRef<HTMLDivElement>(null)
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const video = ref.current?.closest('.group')?.querySelector('video')
+    if (!video) return
+    let raf = 0
+    const tick = () => {
+      const p = video.duration ? video.currentTime / video.duration : 0
+      const next = REEL_CAPTIONS.findIndex((c) => p < c.until)
+      setIndex(next === -1 ? REEL_CAPTIONS.length - 1 : next)
+      raf = requestAnimationFrame(tick)
+    }
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
+  }, [])
+
+  const c = REEL_CAPTIONS[index]
+  return (
+    <div ref={ref} className="pointer-events-none absolute inset-x-3 bottom-[18%] flex justify-center">
+      <p
+        key={index}
+        className="animate-[caption-in_450ms_cubic-bezier(0.2,0.9,0.3,1.2)] text-center text-lg leading-snug font-extrabold tracking-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-xl"
+      >
+        {c.before}{' '}
+        <span className="rounded-md bg-[var(--color-brand)] px-1.5 [box-decoration-break:clone] [text-shadow:none]">
+          {c.highlight}
+        </span>
+        {c.after && ` ${c.after}`}
+      </p>
+    </div>
+  )
+}
 
 const BRAND_SLOT_ICONS = [Hotel, UtensilsCrossed, ShoppingBag]
 
@@ -100,8 +145,8 @@ function BrandSlot() {
   }, [])
   const Icon = BRAND_SLOT_ICONS[i]
   return (
-    <span className="pointer-events-none absolute top-3 right-3 flex h-16 w-16 flex-col items-center justify-center gap-0.5 rounded-full border-2 border-dashed border-white/80 bg-black/30 text-white shadow-lg backdrop-blur-sm sm:h-20 sm:w-20">
-      <Icon key={i} size={22} strokeWidth={1.8} className="animate-[fade-in_400ms_ease-out]" />
+    <span className="pointer-events-none absolute top-3 right-3 flex h-20 w-20 flex-col items-center justify-center gap-0.5 rounded-full border-2 border-dashed border-[var(--color-brand)] bg-white/95 text-[var(--color-ink)] shadow-[0_8px_24px_-6px_rgba(0,0,0,0.45)] ring-4 ring-white/40 sm:h-24 sm:w-24">
+      <Icon key={i} strokeWidth={2.2} className="h-8 w-8 animate-[fade-in_400ms_ease-out] sm:h-9 sm:w-9" />
       <span className="text-center text-[8px] leading-tight font-bold tracking-wider uppercase sm:text-[9px]">
         Your
         <br />
@@ -424,7 +469,7 @@ export default function Landing() {
                 <div
                   className={cn(
                     'pointer-events-none absolute top-3 left-3 flex flex-wrap items-center gap-1.5',
-                    r.brandSlot && 'max-w-[calc(100%-5.5rem)] sm:max-w-[calc(100%-6.5rem)]',
+                    r.brandSlot && 'max-w-[calc(100%-6.5rem)] sm:max-w-[calc(100%-7.5rem)]',
                   )}
                 >
                   <span className="inline-flex items-center gap-1 rounded-full bg-black/40 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">
@@ -437,6 +482,7 @@ export default function Landing() {
                   )}
                 </div>
                 {r.brandSlot && <BrandSlot />}
+                {r.captions && <ReelCaptions />}
               </div>
             ))}
           </div>
