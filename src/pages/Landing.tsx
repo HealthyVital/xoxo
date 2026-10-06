@@ -142,8 +142,8 @@ function BrandSlot({ lines }: { lines: string[] }) {
   }, [])
   const Icon = BRAND_SLOT_ICONS[i]
   return (
-    <span className="pointer-events-none absolute top-[30%] left-1/2 flex h-40 w-40 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 rounded-full border-[3px] border-dashed border-[var(--color-brand)] bg-white/90 text-[var(--color-ink)] shadow-[0_12px_36px_-8px_rgba(0,0,0,0.5)] ring-8 ring-white/35 sm:h-48 sm:w-48">
-      <Icon key={i} strokeWidth={2} className="h-16 w-16 animate-[fade-in_400ms_ease-out] sm:h-[4.5rem] sm:w-[4.5rem]" />
+    <span className="pointer-events-none absolute top-[25%] left-1/2 flex h-[150px] w-[150px] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 rounded-full border-[3px] border-dashed border-[var(--color-brand)] bg-white/90 text-[var(--color-ink)] shadow-[0_12px_36px_-8px_rgba(0,0,0,0.5)] ring-8 ring-white/35 sm:h-[180px] sm:w-[180px]">
+      <Icon key={i} strokeWidth={2} className="h-[60px] w-[60px] animate-[fade-in_400ms_ease-out] sm:h-[68px] sm:w-[68px]" />
       <span className="text-center text-sm leading-tight font-bold tracking-wider uppercase sm:text-base">
         {lines[0]}
         <br />
