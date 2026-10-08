@@ -374,25 +374,46 @@ const CLIENT_LOGOS = Object.entries(CLIENT_LOGO_FILES).map(([path, src]) => ({
 
 const MARQUEE_FADE = 'linear-gradient(90deg, transparent, black 10%, black 90%, transparent)'
 
-/** Endless strip of client logos drifting left → right; pauses on hover. The
- *  list is rendered twice so the loop is seamless (track moves -50% → 0). */
-function LogoMarquee() {
+/** One endless row; the list is rendered twice so the loop is seamless. */
+function MarqueeRow({ logos, direction }: { logos: typeof CLIENT_LOGOS; direction: 'right' | 'left' }) {
   return (
     <div
-      className="group relative mx-auto mt-8 max-w-5xl overflow-hidden"
+      className="group overflow-hidden py-1"
       style={{ maskImage: MARQUEE_FADE, WebkitMaskImage: MARQUEE_FADE }}
     >
-      <div className="flex w-max animate-[marquee-right_90s_linear_infinite] gap-3 group-hover:[animation-play-state:paused]">
-        {[...CLIENT_LOGOS, ...CLIENT_LOGOS].map((logo, i) => (
+      <div
+        className={cn(
+          'flex w-max gap-4 group-hover:[animation-play-state:paused]',
+          direction === 'right' ? 'animate-[marquee-right_70s_linear_infinite]' : 'animate-[marquee-left_70s_linear_infinite]',
+        )}
+      >
+        {[...logos, ...logos].map((logo, i) => (
           <div
             key={i}
-            aria-hidden={i >= CLIENT_LOGOS.length}
-            className="flex h-14 shrink-0 items-center justify-center rounded-xl border border-[var(--color-hairline)] bg-white px-3 shadow-[0_6px_18px_-10px_rgba(11,11,11,0.3)]"
+            aria-hidden={i >= logos.length}
+            className="flex h-16 shrink-0 items-center justify-center rounded-2xl border border-[var(--color-hairline)] bg-white px-4 shadow-[0_8px_22px_-12px_rgba(11,11,11,0.35)] sm:h-20 sm:px-5"
           >
-            <img src={logo.src} alt={i < CLIENT_LOGOS.length ? logo.name : ''} loading="lazy" className="h-9 w-auto max-w-[140px] object-contain" />
+            <img
+              src={logo.src}
+              alt={i < logos.length ? logo.name : ''}
+              loading="lazy"
+              className="h-11 w-auto max-w-[180px] object-contain sm:h-14 sm:max-w-[220px]"
+            />
           </div>
         ))}
       </div>
+    </div>
+  )
+}
+
+/** Client logos in two endless rows — top drifts left → right, bottom right → left —
+ *  so every logo comes round twice as often; each row pauses on hover. */
+function LogoMarquee() {
+  const half = Math.ceil(CLIENT_LOGOS.length / 2)
+  return (
+    <div className="mx-auto mt-10 max-w-6xl space-y-3">
+      <MarqueeRow logos={CLIENT_LOGOS.slice(0, half)} direction="right" />
+      <MarqueeRow logos={CLIENT_LOGOS.slice(half)} direction="left" />
     </div>
   )
 }

@@ -146,6 +146,15 @@ body {
   }
 }
 
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @keyframes caption-in {
   from {
     opacity: 0;
@@ -170,6 +179,7 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   [class*='marquee-right'],
+  [class*='marquee-left'],
   .animate-aurora,
   .float-1,
   .float-2,
