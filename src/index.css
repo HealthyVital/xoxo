@@ -137,6 +137,15 @@ body {
   animation: float-5 5s ease-in-out infinite 0.5s;
 }
 
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 @keyframes caption-in {
   from {
     opacity: 0;
@@ -160,6 +169,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  [class*='marquee-right'],
   .animate-aurora,
   .float-1,
   .float-2,

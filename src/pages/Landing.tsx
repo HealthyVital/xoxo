@@ -352,6 +352,51 @@ function HeroMosaic() {
   )
 }
 
+// Logos of businesses we've worked with (supplied by the team), loaded from
+// src/assets/clients — drop a new file there and it joins the strip.
+const CLIENT_LOGO_FILES = import.meta.glob('../assets/clients/*.{png,jpg}', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, string>
+
+const CLIENT_LOGOS = Object.entries(CLIENT_LOGO_FILES).map(([path, src]) => ({
+  src,
+  // "../assets/clients/sea-bees.jpg" -> "Sea Bees"
+  name: path
+    .split('/')
+    .pop()!
+    .replace(/\.[a-z]+$/, '')
+    .split('-')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' '),
+}))
+
+const MARQUEE_FADE = 'linear-gradient(90deg, transparent, black 10%, black 90%, transparent)'
+
+/** Endless strip of client logos drifting left → right; pauses on hover. The
+ *  list is rendered twice so the loop is seamless (track moves -50% → 0). */
+function LogoMarquee() {
+  return (
+    <div
+      className="group relative mx-auto mt-8 max-w-5xl overflow-hidden"
+      style={{ maskImage: MARQUEE_FADE, WebkitMaskImage: MARQUEE_FADE }}
+    >
+      <div className="flex w-max animate-[marquee-right_90s_linear_infinite] gap-3 group-hover:[animation-play-state:paused]">
+        {[...CLIENT_LOGOS, ...CLIENT_LOGOS].map((logo, i) => (
+          <div
+            key={i}
+            aria-hidden={i >= CLIENT_LOGOS.length}
+            className="flex h-14 shrink-0 items-center justify-center rounded-xl border border-[var(--color-hairline)] bg-white px-3 shadow-[0_6px_18px_-10px_rgba(11,11,11,0.3)]"
+          >
+            <img src={logo.src} alt={i < CLIENT_LOGOS.length ? logo.name : ''} loading="lazy" className="h-9 w-auto max-w-[140px] object-contain" />
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 function SectionKicker({ children }: { children: string }) {
   return (
     <p className="mb-3 text-center text-xs font-semibold tracking-[0.18em] text-[var(--color-brand)] uppercase">
@@ -483,6 +528,7 @@ export default function Landing() {
           </Link>
 
           <HeroMosaic />
+          <LogoMarquee />
 
           <div className="mx-auto mt-10 flex max-w-3xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-[var(--color-ink-muted)]">
             {INDUSTRY_ICONS.map((Icon, i) => (
