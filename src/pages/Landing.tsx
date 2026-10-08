@@ -562,11 +562,11 @@ export default function Landing() {
       </section>
 
       {/* REELS — real work, not stock */}
-      <section id="reels" className="border-t border-[var(--color-hairline)] py-20">
+      <section id="reels" className="border-t border-[var(--color-hairline)] py-12 sm:py-14">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <SectionKicker>{t.reels.kicker}</SectionKicker>
           <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.reels.title}</h2>
-          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.reels.sub}</p>
+          <p className="mx-auto mb-6 sm:mb-8 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.reels.sub}</p>
           <div className="mx-auto grid max-w-sm grid-cols-2 items-center gap-4 sm:max-w-3xl sm:grid-cols-3 sm:gap-8">
             {REELS.map((r) => (
               <div
@@ -606,11 +606,11 @@ export default function Landing() {
       </section>
 
       {/* REAL WEDDINGS GALLERY */}
-      <section id="weddings" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
+      <section id="weddings" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-12 sm:py-14">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <SectionKicker>{t.weddings.kicker}</SectionKicker>
           <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.weddings.title}</h2>
-          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.weddings.sub}</p>
+          <p className="mx-auto mb-6 sm:mb-8 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.weddings.sub}</p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
             {WEDDING_GALLERY.map((src, i) => (
               <div
@@ -644,10 +644,10 @@ export default function Landing() {
       </section>
 
       {/* MEET THE CREATORS */}
-      <section id="team" className="border-t border-[var(--color-hairline)] py-20">
+      <section id="team" className="border-t border-[var(--color-hairline)] py-12 sm:py-14">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <SectionKicker>{t.team.kicker}</SectionKicker>
-          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.team.title}</h2>
+          <h2 className="mb-6 sm:mb-8 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.team.title}</h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {TEAM.map((person, i) => (
               <Card key={person.name} className="overflow-hidden p-0">
@@ -676,10 +676,10 @@ export default function Landing() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
+      <section id="services" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-12 sm:py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <SectionKicker>{t.services.kicker}</SectionKicker>
-          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.services.title}</h2>
+          <h2 className="mb-6 sm:mb-8 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.services.title}</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {t.services.items.map((s, i) => {
               const Icon = SERVICE_ICONS[i]
@@ -704,11 +704,11 @@ export default function Landing() {
       </section>
 
       {/* INDUSTRIES */}
-      <section id="industries" className="py-20">
+      <section id="industries" className="py-12 sm:py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <SectionKicker>{t.industriesSection.kicker}</SectionKicker>
           <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.industriesSection.title}</h2>
-          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.industriesSection.sub}</p>
+          <p className="mx-auto mb-6 sm:mb-8 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.industriesSection.sub}</p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {INDUSTRY_ICONS.map((Icon, i) => (
               <div
@@ -729,11 +729,11 @@ export default function Landing() {
       </section>
 
       {/* TRAVEL & LIFESTYLE SAMPLE CONTENT */}
-      <section className="border-t border-[var(--color-hairline)] py-20">
+      <section className="border-t border-[var(--color-hairline)] py-12 sm:py-14">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <SectionKicker>{t.lifestyle.kicker}</SectionKicker>
           <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.lifestyle.title}</h2>
-          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.lifestyle.sub}</p>
+          <p className="mx-auto mb-6 sm:mb-8 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.lifestyle.sub}</p>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {LIFESTYLE_GALLERY.map((src) => (
               <div
@@ -753,10 +753,10 @@ export default function Landing() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section id="how-it-works" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
+      <section id="how-it-works" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-12 sm:py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <SectionKicker>{t.how.kicker}</SectionKicker>
-          <h2 className="mb-12 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.how.title}</h2>
+          <h2 className="mb-6 sm:mb-8 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.how.title}</h2>
           <div className="relative grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div
               aria-hidden
@@ -779,11 +779,11 @@ export default function Landing() {
       </section>
 
       {/* EXAMPLES */}
-      <section id="examples" className="py-20">
+      <section id="examples" className="py-12 sm:py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <SectionKicker>{t.examples.kicker}</SectionKicker>
           <h2 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.examples.title}</h2>
-          <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.examples.sub}</p>
+          <p className="mx-auto mb-6 sm:mb-8 max-w-lg text-center text-sm text-[var(--color-ink-secondary)]">{t.examples.sub}</p>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {FEATURED_VERTICALS.map((v, i) => {
               const vc = t.examples.verticals[v] ?? { name: v, ideas: VERTICAL_STRATEGIES[v].contentIdeas.slice(0, 4) }
@@ -812,7 +812,7 @@ export default function Landing() {
       </section>
 
       {/* RESULTS */}
-      <section id="results" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
+      <section id="results" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-12 sm:py-14">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <SectionKicker>{t.results.kicker}</SectionKicker>
           <h2 className="mb-3 text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.results.title}</h2>
@@ -821,10 +821,10 @@ export default function Landing() {
       </section>
 
       {/* PACKAGES */}
-      <section id="packages" className="py-20">
+      <section id="packages" className="py-12 sm:py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <SectionKicker>{t.packages.kicker}</SectionKicker>
-          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.packages.title}</h2>
+          <h2 className="mb-6 sm:mb-8 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.packages.title}</h2>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
             {MAIN_PRICING_PACKAGES.map((pkg, i) => {
               const pc = t.packages.items[pkg.id] ?? pkg
@@ -901,10 +901,10 @@ export default function Landing() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-20">
+      <section id="faq" className="border-t border-[var(--color-hairline)] bg-[var(--color-plane)] py-12 sm:py-14">
         <div className="mx-auto max-w-2xl px-4 sm:px-6">
           <SectionKicker>{t.faq.kicker}</SectionKicker>
-          <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.faq.title}</h2>
+          <h2 className="mb-6 sm:mb-8 text-center text-3xl font-semibold tracking-tight text-[var(--color-ink)]">{t.faq.title}</h2>
           <div className="space-y-3">
             {t.faq.items.map((f, i) => (
               <Card key={f.q} className="overflow-hidden p-0">
@@ -925,7 +925,7 @@ export default function Landing() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="relative overflow-hidden py-20">
+      <section id="contact" className="relative overflow-hidden py-12 sm:py-14">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 opacity-[0.12]"
